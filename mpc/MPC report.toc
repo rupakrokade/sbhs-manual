@@ -1,0 +1,47 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}The Project}{5}
+\contentsline {section}{\numberline {1.1}Objective}{5}
+\contentsline {section}{\numberline {1.2}Single Board Heater System}{5}
+\contentsline {chapter}{\numberline {2}Model Predictive Control}{6}
+\contentsline {chapter}{\numberline {3} Implementing MPC}{7}
+\contentsline {section}{\numberline {3.1}Working of codes}{7}
+\contentsline {section}{\numberline {3.2}Procedure to implement MPC on SBHS}{7}
+\contentsline {section}{\numberline {3.3}Description of xcos}{8}
+\contentsline {section}{\numberline {3.4}Code for MPC (\emph {mpc\_run.sci})}{9}
+\contentsline {section}{\numberline {3.5}Other codes used}{11}
+\contentsline {subsection}{\numberline {3.5.1}stepc.sce code}{11}
+\contentsline {subsection}{\numberline {3.5.2}steptest.sci code}{12}
+\contentsline {chapter}{\numberline {4}Experiments conducted to implement MPC}{14}
+\contentsline {chapter}{\numberline {5}Sample run to implement MPC}{16}
+\contentsline {section}{\numberline {5.1}Positive Step Change to Set Point and Fan}{16}
+\contentsline {section}{\numberline {5.2}Negative Step Change to Set Point and Fan}{19}
+\contentsline {chapter}{\numberline {6}Effect of Tuning parameters: Weighting factors, We and Wu}{21}
+\contentsline {section}{\numberline {6.1}For same factor of We and Wu}{22}
+\contentsline {subsection}{\numberline {6.1.1}Positive Step Change and (We, Wu)=(1,1) (Expt 1.1)}{22}
+\contentsline {subsection}{\numberline {6.1.2}Positive Step Change and (We, Wu)=(10,10) (Expt 1.2)}{24}
+\contentsline {subsection}{\numberline {6.1.3}Positive Step Change and (We, Wu)=(40,40) (Expt 1.3)}{26}
+\contentsline {subsection}{\numberline {6.1.4}Negative Step Change and (We,Wu)=(1,1) (Expt 2.1) }{28}
+\contentsline {subsection}{\numberline {6.1.5}Negative Step Change and (We, Wu)=(10,10) (Expt 2.2) }{30}
+\contentsline {subsection}{\numberline {6.1.6}Negative Step Change and (We, Wu)=(40,40) (Expt 2.3)}{32}
+\contentsline {section}{\numberline {6.2}For different We and Wu factors}{34}
+\contentsline {subsection}{\numberline {6.2.1}We =100 and Wu = 2 (Expt 5.1) }{34}
+\contentsline {subsection}{\numberline {6.2.2}We =2 and Wu = 100 (Expt 5.2) }{36}
+\contentsline {subsection}{\numberline {6.2.3}We =10 and Wu = 100 (Expt 5.3)}{38}
+\contentsline {subsection}{\numberline {6.2.4}We =100 and Wu = 10 (Expt 5.4)}{40}
+\contentsline {section}{\numberline {6.3}Conclusion on Weighting factor experiments}{42}
+\contentsline {chapter}{\numberline {7}Effect of Control Horizon Paramter, q}{43}
+\contentsline {section}{\numberline {7.1}For positive step change in Set point and Fan speed }{44}
+\contentsline {subsection}{\numberline {7.1.1}For q =2 (Expt 3.1) }{44}
+\contentsline {subsection}{\numberline {7.1.2}For q =3 (Expt 3.2) }{46}
+\contentsline {subsection}{\numberline {7.1.3}For q =4 (Expt 3.3) }{48}
+\contentsline {section}{\numberline {7.2}For negative step change in Set point and Fan speed }{50}
+\contentsline {subsection}{\numberline {7.2.1}For q =2 (Expt 4.1) }{50}
+\contentsline {subsection}{\numberline {7.2.2}For q =3 (Expt 4.2) }{52}
+\contentsline {subsection}{\numberline {7.2.3}For q =4 (Expt 4.3) }{54}
+\contentsline {section}{\numberline {7.3}Conclusion on the effect of Control Horizon parameter }{56}
+\contentsline {chapter}{\numberline {8}Conclusion for MPC project}{57}
+\contentsline {chapter}{\numberline {9}Acknowledgement }{58}
+\contentsline {chapter}{\numberline {10}Appendix}{59}
+\contentsline {section}{\numberline {10.1}Appendix 1: General Information on Experiments for this Project}{59}
+\contentsline {section}{\numberline {10.2}Appendix 2: Values of State Space matrices}{59}
+\contentsline {section}{\numberline {10.3}Appendix 3: Attachments and Contact Information}{60}

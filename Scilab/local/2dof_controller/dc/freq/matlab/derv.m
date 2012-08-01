@@ -1,0 +1,3 @@
+w = 0:0.01:pi;
+plot(w,abs(1+sin(w/2))), grid, ...
+xlabel('w'), ylabel('Magnitude')

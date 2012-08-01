@@ -1,0 +1,61 @@
+\subsection{Firmware}
+Programming of ATmega16L is described next.
+
+ATmega16L features an 8-channel, 10-bit successive approximation ADC
+with 0-Vcc input voltage range. The output of instrumentation
+amplifier feeds into channel-2 of ADC to obtain digital value of
+temperature. The ADC channel is programmed for 208 $\mu$s of
+conversion time using successive approximation method. Timer0 is used
+to trigger it 50 times every second. The ADC module is used with
+10-bit resolution to sense voltage in the multiples of 4.8828 mV. ADC
+Conversion Complete Interrupt is used to indicate the end of
+conversion.
+
+ATmega16L can produce analog output through pulse width modulation, a
+process to modulate duty cycle of a constant frequency square wave.
+Timer1 of the microcontroller generates 8-bit PWM signal at 488 Hz
+that is fed to heating element and fan.
+
+% Pulse width modulation is a process to The duty cycle is defined as
+% $\frac{T_{on}}{T}$, where $T_{on}$ is the ON time and $T$ is the
+% time period of the wave. Power delivered to the load is proportional
+% to $T_{on}$ of the signal. PWM is used to control total amount of
+% power delivered to the load without power losses which generally
+% occur in resistive methods of power control.
+
+The microcontroller has been programmed to handle commands to
+operate heater and fan and also to communicate digital values of
+temperature read by the sensor.  The number 253 followed by a byte
+containing the fan speed in PWM units regulates the fan speed.
+Similarly, 254 followed by a byte indicates the heater power.  The
+number 255, however, indicates that the following two bytes denote
+the temperature reading, to be read by the computer.
+
+All the above commands are sent by the computer to the microcontroller
+via serial port interface through a programmable Universal
+Asynchronous serial Receiver and Transmitter (UART) of ATmega16L. The
+UART is configured in 8-bit mode, with baud rate of 9600 bps and
+parity bit disabled.
+
+As 253, 254 and 255 are reserved as command words, the allowed input
+range is from 0 through 252.  However, the heater input is limited to
+40 while the fan is allowed the entire range of up to 252.
+
+A 2x16 character alphanumeric LCD is used to display temperature, the
+PWM value given to the heating element and the fan, and the last
+serially communicated byte.  The LCD is used in 4-bit interfacing mode
+to reduce the number of GPIOs required.
+
+We have used the open source IDE WinAVR and AVR Studio and the
+commercial ICCAVR as IDE.
+
+The time constant of this system is less than a minute and hence, one
+can do a realistic experiment in ten minutes.  One can also see
+meaningful (and noisy) measurements with naked eye.  It is suitable
+for carrying out ALL experiments of a few control courses.  One only
+needs a 220V power supply and a PC.  It is easy to carry.  The design,
+firmware and data acquisition interface are all in open source!  The
+bill of material costs only \$30.  As a finished product, it is
+available for about \$50 plus shipping charges.  Manuals to build,
+commission and to experiment with this device are available
+\cite{VL010}.

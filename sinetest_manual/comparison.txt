@@ -1,0 +1,4 @@
+conclusion for sine test:
+
+By doing sine test on single Board heater system we found that plant respond to the sine change in input till maximum input frequency 0.4Hz,above this frequency output is no longer varying sinusoidally.Hence for plotting Bode plot we are using frequency below 0.4Hz.
+By doing sine test we found that for low frequency phase shift is minimum ,with increase in frequency phase shift goes on increasing.Same thing happened with Amplitude.

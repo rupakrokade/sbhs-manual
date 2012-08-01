@@ -1,0 +1,51 @@
+\begin{thebibliography}{1}
+
+\bibitem{moodle}
+Fossee moodle.
+\newblock http://www.fossee.in/moodle/.
+\newblock Seen on 10 May 2011.
+
+\bibitem{spoken-sci}
+Spoken tutorials.
+\newblock http://spoken-tutorial.org/Study\_Plans\_Scilab.
+\newblock Seen on 10 May 2011.
+
+\bibitem{kmm010}
+K.~M. Moudgalya.
+\newblock {Introducing National Mission on Education through ICT}.
+\newblock http://www.spoken-tutorial.org/NMEICT-Intro, 2010.
+
+\bibitem{vlabs-kmm}
+K.~M. Moudgalya and Inderpreet Arora.
+\newblock {A Virtual Laboratory for Distance Education}.
+\newblock In {\em Proceedings of 2nd Int. conf. on Technology for Education,
+  T4E}, IIT Bombay, India, 1--3 July 2010. IEEE.
+
+\bibitem{kmmdc09}
+Kannan~M. Moudgalya.
+\newblock {\em Digital Control}.
+\newblock John Wiley and Sons, 2009.
+
+\bibitem{kmm09}
+Kannan~M. Moudgalya.
+\newblock {\em Identification of transfer function of a single board heater
+  system through step response experiments}.
+\newblock 2009.
+
+\bibitem{ogt05}
+Katsuhiko Ogata.
+\newblock {\em Modern Control Engineering}.
+\newblock Prentice-Hall of India, 2005.
+
+\bibitem{dale04}
+Dale~E. Seborg, Thomas~F. Edgar, and Duncan~A. Mellichamp.
+\newblock {\em Process Dynamics and Control}.
+\newblock John Wiley and Sons, 2nd edition, 2004.
+
+\bibitem{vl010}
+{Virtual labs project}.
+\newblock Single board heater system.
+\newblock http://www.co-learn.in/web\_sbhs.
+\newblock Seen on 11 May 2011.
+
+\end{thebibliography}

@@ -1,0 +1,12 @@
+G = [1 -2.1 -5.8]; dG = 2;
+A = [1 -1.7 1]; dA = 2;
+F = [-2.43 2.9]; dF = 1;
+B = [0 0 -1 2]; dB = 3;
+Delta = [1 -1]; dDelta = 1;
+kI = 0.4;
+[GA,dGA] = polmul(G,dG,A,dA);
+[FB,dFB] = polmul(F,dF,B,dB);
+[GAFB,dGAFB] = poladd(GA,dGA,FB,dFB);
+[GAFB2,dGAFB2] = polmul(Delta,dDelta,GAFB,dGAFB);
+[kIB,dkIB] = polmul(kI,0,B,dB);
+[d,dd] = poladd(GAFB2,dGAFB2,kIB,dkIB);

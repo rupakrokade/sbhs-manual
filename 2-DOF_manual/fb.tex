@@ -1,0 +1,20 @@
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[auto, node distance=2cm]
+\node[input, name=input]{};
+\node[sum,right of=input](sum){};
+\draw[->](input) -- node{$r$}(sum);
+\node[block, right of=sum](gc){$G_c(z)$};
+\draw[->](sum)--node{$e$}(gc);
+\node[block, right of=gc, node distance=3cm](g){$G(z)$};
+\draw[->](gc)--node{$u$}(g);
+\node[sum, right of=g,pin={[pinstyle] above:$v$},node distance=2cm](sum2){};
+\draw[->](g)--node{}(sum2);
+\node[output,right of=sum2,node distance=1cm](output){};
+\draw[->](sum2)--node[name=y]{$y$}(output);
+\draw [->] (y)--(8.58,-1.5)-|(sum)node[pos=0.88] {$-$};
+\end{tikzpicture}
+\end{center}
+\caption{Feed back control strategy}
+\label{fb}
+\end{figure}

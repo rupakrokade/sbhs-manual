@@ -1,0 +1,6 @@
+\contentsline {chapter}{\numberline {List of Scilab\ Code}}{2}
+\contentsline {chapter}{\numberline {1}Frequency Response Analysis of a Single Board Heater System by the application of Sine Wave}{3}
+\contentsline {section}{\numberline {1.1}About this Experiment}{3}
+\contentsline {section}{\numberline {1.2}Theory}{3}
+\contentsline {section}{\numberline {1.3}Step by step procedure to perform Sine Test}{6}
+\contentsline {section}{\numberline {1.4}Scilab Codes}{9}

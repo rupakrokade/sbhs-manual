@@ -1,0 +1,27 @@
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[auto,node distance=2cm]
+\node[input](input){};
+\node[sum,right of=input](sum1){};
+\draw[->](input)--node{$r$}(sum1);
+\node[block,right of=sum1](gqz){$G_Q(z)$};
+\draw[->](sum1)--node{$e$}(gqz);
+\node[branch,right of=gqz, node distance=2cm](b1){};
+\node[block, right of=b1](gpz){$G_p(z)$};
+\draw[->](gqz)--node{$u$}(gpz);
+\node[sum, right of=gpz,pin={[pinstyle] above:$\xi$},node distance=2cm](sum2){};
+\draw[->](gpz)--(sum2);
+\node[output, right of=sum2](output){};
+\draw[->](sum2)--node{$y$}(output);
+\node[branch, right of=sum2, node distance=1cm](b2){};
+\node[sum, below of=b2,node distance=2cm](sum3){};
+\draw[->](b2)--(sum3);
+\node[block,below of=gpz](gz){$G(z)$};
+\draw[->](b1)|-(gz);
+\draw[->](gz)--node{$\bar{y}$\hspace{0.7cm} $-$}(sum3);
+\draw[->](sum3)--(10,-3)-|node[pos=0.88]{$-$}(sum1);
+\end{tikzpicture}
+\end{center}
+\caption{IMC feedback configuration}
+\label{imcfeedback}
+\end{figure}

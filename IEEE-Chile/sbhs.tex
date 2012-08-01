@@ -1,0 +1,25 @@
+\section{Single Board Heater System (SBHS)}
+A single-board heater system is a low cost, open source, lab-in-a-box
+setup \cite{ia010}.  It consists of a heater assembly, fan,
+temperature sensor, ATmega16 microcontroller and associated
+circuitry. A stainless steel blade whose temperature has to be
+controlled serves as the plant.  Nichrome helical coil with 20 turns
+kept at a small distance from the steel blade, acts as the heater
+element.  AD590, a monolithic integrated circuit temperature
+transducer, is soldered beneath the steel plate.  A computer fan, a
+low cost and commercially off the shelf component, is used to cool the
+plate from below.
+
+The plant has a small time constant, less than a minute, that allows
+completion of an experiment in a short time.  This in turn facilitates
+performance of a large number of experiments in a single laboratory
+session.  The speed of response not being too fast allows the
+measurements to be seen with naked eye, as it happens in industrial
+systems.  It also demonstrates other measurement issues, such as,
+noise. 
+
+The codes for hardware interface and control experiments, and manuals
+are available at \cite{vl010,moodle}.  Unlike \cite{ia010}, for the
+purpose of remote access, 252 until 255 are reserved as command words
+where 252 is meant for communication of machine I.D. This allows fan
+input to vary from 0 to 251 PWM (Pulse Width Modulation) units. 

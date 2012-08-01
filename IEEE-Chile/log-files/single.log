@@ -1,0 +1,383 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.3.6)  16 MAR 2010 12:11
+entering extended mode
+ %&-line parsing enabled.
+**single
+(./single.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, ku
+rmanji, latin, latvian, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, po
+lish, portuguese, romanian, russian, sanskrit, serbian, slovak, slovenian, span
+ish, swedish, turkish, ukenglish, ukrainian, uppersorbian, welsh, loaded.
+(./ifacconf.cls
+Document Class: ifacconf 2008/04/14, 3.2ModD: IFAC conferences
+
+\@frontmatterwidth=\dimen102
+\@bls=\dimen103
+\eqntopsep=\skip41
+\eqnarraycolsep=\dimen104
+\labelwidthi=\dimen105
+\labelwidthii=\dimen106
+\labelwidthiii=\dimen107
+\labelwidthiv=\dimen108
+\@maxlistdepth=\count79
+\eqnbaselineskip=\skip42
+\eqnlineskip=\skip43
+\mathindent=\dimen109
+\rulepreskip=\dimen110
+\rulepostskip=\dimen111
+\Arrayrulewidth=\dimen112
+\crulepostskip=\dimen113
+\@Ldec=\dimen114
+\@Rdec=\dimen115
+\@Lpmdec=\dimen116
+\@Rpmdec=\dimen117
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+(/usr/local/texlive/2009/texmf-dist/tex/latex/tools/theorem.sty
+Package: theorem 1995/11/23 v2.2c Theorem extension package (FMi)
+\theorem@style=\toks14
+\theorem@bodyfont=\toks15
+\theorempreskipamount=\skip44
+\theorempostskipamount=\skip45
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/tools/thp.sty
+File: thp.sty 1995/11/23 v2.2c Theorem extension package (FMi)
+))
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/newlfont.sty
+Package: newlfont 1998/08/17 v2.2m Standard LaTeX package
+LaTeX Info: Redefining \em on input line 67.
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+))
+LaTeX Info: Redefining \rm on input line 595.
+LaTeX Info: Redefining \sf on input line 596.
+LaTeX Info: Redefining \tt on input line 597.
+LaTeX Info: Redefining \bf on input line 598.
+LaTeX Info: Redefining \it on input line 599.
+LaTeX Info: Redefining \sl on input line 600.
+LaTeX Info: Redefining \sc on input line 601.
+\c@thm=\count85
+\c@alg=\count86
+\c@algorithm=\count87
+\c@note=\count88
+\c@summ=\count89
+\c@case=\count90
+\@tempcntc=\count91
+\c@figure=\count92
+\c@table=\count93
+\t@glob@notes=\toks16
+\t@loc@notes=\toks17
+\note@cnt=\count94
+\c@author=\count95
+\n@author=\count96
+\c@collab=\count97
+\n@collab=\count98
+\c@address=\count99
+\sv@mathsurround=\dimen118
+\sv@hyphenpenalty=\count100
+\prev@elem=\count101
+\cur@elem=\count102
+\fm@box=\box26
+\fm@size=\dimen119
+\t@abstract=\box27
+\t@keyword=\box28
+\rep@mod=\count103
+\t@xtheight=\dimen120
+\@logoheight=\dimen121
+\@pubyear=\count104
+\c@firstpage=\count105
+\c@lastpage=\count106
+\slashbox=\box29
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1506.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1506.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 1506.
+
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+\Slashbox=\box30
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 1507.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 1507.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 1507.
+\@frontindent=\dimen122
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip46
+\bibsep=\skip47
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count107
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count108
+))
+\Gin@req@height=\dimen123
+\Gin@req@width=\dimen124
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen125
+))
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen126
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+LaTeX Info: Redefining \operatorname on input line 58.
+)
+\inf@bad=\count109
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count110
+\leftroot@=\count111
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count112
+\DOTSCASE@=\count113
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen127
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count114
+\c@MaxMatrixCols=\count115
+\dotsspace@=\muskip10
+\c@parentequation=\count116
+\dspbrk@lvl=\count117
+\tag@help=\toks21
+\row@=\count118
+\column@=\count119
+\maxfields@=\count120
+\andhelp@=\toks22
+\eqnshift@=\dimen128
+\alignsep@=\dimen129
+\tagshift@=\dimen130
+\tagwidth@=\dimen131
+\totwidth@=\dimen132
+\lineht@=\dimen133
+\@envbody=\toks23
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(./single.aux)
+\openout1 = `single.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+(/usr/local/texlive/2009/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count121
+\scratchdimen=\dimen134
+\scratchbox=\box33
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen135
+\MPnumerator=\count125
+\everyMPtoPDFconversion=\toks26
+)
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 22.
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+ (/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+\c@sv@footnote=\count126
+ (./intro.tex)
+(./hardware.tex <single-board.jpg, id=1, 1414.083pt x 705.837pt>
+File: single-board.jpg Graphic file (type jpg)
+
+<use single-board.jpg> [1{/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map}
+
+]
+
+pdfTeX warning: pdflatex (file ./hea_31.pdf): PDF inclusion: found PDF version 
+<1.5>, but at most version <1.4> allowed
+<hea_31.pdf, id=16, 908.39375pt x 443.6575pt>
+File: hea_31.pdf Graphic file (type pdf)
+ <use hea_31.pdf>
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 81.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 81.
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 81.
+
+) (./firmware.tex [2 <./single-board.jpg> <./hea_31.pdf>]) (./data.tex
+
+pdfTeX warning: pdflatex (file ./ser-1.pdf): PDF inclusion: found PDF version <
+1.5>, but at most version <1.4> allowed
+<ser-1.pdf, id=23, 715.67375pt x 393.47pt>
+File: ser-1.pdf Graphic file (type pdf)
+ <use ser-1.pdf>
+
+pdfTeX warning: pdflatex (file ./scicos-2.pdf): PDF inclusion: found PDF versio
+n <1.5>, but at most version <1.4> allowed
+<scicos-2.pdf, id=24, 484.81125pt x 358.33875pt>
+File: scicos-2.pdf Graphic file (type pdf)
+ <use scicos-2.pdf>
+
+pdfTeX warning: pdflatex (file ./exp3.pdf): PDF inclusion: found PDF version <1
+.5>, but at most version <1.4> allowed
+<exp3.pdf, id=25, 727.71875pt x 457.71pt>
+File: exp3.pdf Graphic file (type pdf)
+ <use exp3.pdf>) (./expt.tex [3 <./ser-1.pdf> <./scicos-2.pdf>] <mod-11.pdf, id
+=34, 845.1575pt x 597.23125pt>
+File: mod-11.pdf Graphic file (type pdf)
+
+<use mod-11.pdf> <mod-12.pdf, id=35, 845.1575pt x 597.23125pt>
+File: mod-12.pdf Graphic file (type pdf)
+
+<use mod-12.pdf>
+
+pdfTeX warning: pdflatex (file ./sine-5.pdf): PDF inclusion: found PDF version 
+<1.5>, but at most version <1.4> allowed
+<sine-5.pdf, id=36, 731.73375pt x 457.71pt>
+File: sine-5.pdf Graphic file (type pdf)
+ <use sine-5.pdf>
+<bode.pdf, id=37, 845.1575pt x 597.23125pt>
+File: bode.pdf Graphic file (type pdf)
+ <use bode.pdf>
+Overfull \hbox (10.72845pt too wide) in paragraph at lines 122--123
+[] [] 
+ []
+
+[4 <./exp3.pdf> <./mod-11.pdf, page is rotated 90 degrees> <./mod-12.pdf, page 
+is rotated 90 degrees>]
+
+pdfTeX warning: pdflatex (file ./prop-1.pdf): PDF inclusion: found PDF version 
+<1.5>, but at most version <1.4> allowed
+<prop-1.pdf, id=60, 744.7825pt x 457.71pt>
+File: prop-1.pdf Graphic file (type pdf)
+ <use prop-1.pdf>
+
+pdfTeX warning: pdflatex (file ./pi-1.pdf): PDF inclusion: found PDF version <1
+.5>, but at most version <1.4> allowed
+<pi-1.pdf, id=61, 1020.81375pt x 457.71pt>
+File: pi-1.pdf Graphic file (type pdf)
+ <use pi-1.pdf>
+<prbs-mod.pdf, id=62, 602.25pt x 425.59pt>
+File: prbs-mod.pdf Graphic file (type pdf)
+ <use prbs-mod.pdf>) (./virtual.tex
+[5 <./sine-5.pdf> <./bode.pdf, page is rotated 90 degrees> <./prop-1.pdf> <./pi
+-1.pdf>] <lv-1.jpg, id=83, 865.2325pt x 731.73375pt>
+File: lv-1.jpg Graphic file (type jpg)
+ <use lv-1.jpg>
+<ds-1.jpeg, id=84, 1017.8025pt x 654.445pt>
+File: ds-1.jpeg Graphic file (type jpg)
+ <use ds-1.jpeg>) (./conc.tex)
+(./single.bbl) [6 <./prbs-mod.pdf> <./lv-1.jpg (PNG copy)> <./ds-1.jpeg (PNG co
+py)>] (./single.aux) ) 
+Here is how much of TeX's memory you used:
+ 2827 strings out of 493848
+ 33253 string characters out of 3149208
+ 91472 words of memory out of 3000000
+ 6051 multiletter control sequences out of 15000+200000
+ 12496 words of font info for 53 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 30i,12n,23p,211b,224s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2009/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmex10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr7.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+
+Output written on single.pdf (6 pages, 1258500 bytes).
+PDF statistics:
+ 159 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+

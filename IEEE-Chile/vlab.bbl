@@ -1,0 +1,104 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{ia010}
+I.~Arora, K.~M. Moudgalya, and S.~Malewar, ``A low cost, open source,
+  single-board heater system,'' in \emph{International Conference on E-Learning
+  in Industrial Electronics}.\hskip 1em plus 0.5em minus 0.4em\relax AZ, USA:
+  IEEE, November 2010.
+
+\bibitem{vlabs-kmm}
+K.~M. Moudgalya and I.~Arora, ``{A Virtual Laboratory for Distance
+  Education},'' in \emph{Proceedings of 2nd Int. conf. on Technology for
+  Education, T4E}.\hskip 1em plus 0.5em minus 0.4em\relax IIT Bombay, India:
+  IEEE, 1--3 July 2010.
+
+\bibitem{carlos}
+C.~Ramos-Paja, J.~M.~R. Scarpetta, and L.~Martinez-Salamero, ``Integrated
+  learning platform for internet-based control-engineering education,''
+  \emph{IEEE Trans. on Ind. Elec.}, vol.~57, pp. 3284--3296, 2010.
+
+\bibitem{aldo}
+A.~Balestrino, A.~Caiti, V.~Calabrò, and E.~Crisostomi, ``{DCL: a real time
+  portable distributed control telelaboratory},'' in \emph{18th Mediterranean
+  Conference on Control and Automation, MED'10 - Conference Proceedings}.\hskip
+  1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 185--190.
+
+\bibitem{odeh}
+S.~Odeh, ``Building reusable remote labs with adaptable client
+  user-interfaces,'' \emph{Journal of Computer Science and Technology},
+  vol.~25, pp. 999--1015, 2010.
+
+\bibitem{gabriel}
+J.~Gabriel and M.~T. Restivo, ``{Hands-on Using On-line Engineering: The Trend
+  to Better Solutions},'' in \emph{Proceedings - ICELIE 2009, 3rd IEEE
+  International Conference on e-Learning in Industrial Electronics}.\hskip 1em
+  plus 0.5em minus 0.4em\relax Porto: IEEE, 2009, pp. 64--68.
+
+\bibitem{alberto}
+A.~Leva and F.~Donida, ``{Multifunctional remote laboratory for education in
+  automatic control: The CrAutoLab experience},'' \emph{IEEE Transactions on
+  Industrial Electronics}, vol.~55, pp. 2376--2385, 2008.
+
+\bibitem{vl010}
+{Virtual labs project}, ``Single board heater system,''
+  http://www.co-learn.in/web\_sbhs, seen on 11 May 2011.
+
+\bibitem{moodle}
+``Fossee moodle,'' http://www.fossee.in/moodle/, seen on 10 May 2011.
+
+\bibitem{kmm010}
+K.~M. Moudgalya, ``{Introducing National Mission on Education through ICT},''
+  http://www.spoken-tutorial.org/NMEICT-Intro, 2010.
+
+\bibitem{spoken-sci}
+``Spoken tutorials,'' http://spoken-tutorial.org/Study\_Plans\_Scilab, seen on
+  10 May 2011.
+
+\bibitem{karl95}
+K.~J. {\AA str\" om} and T.~{H\"agglund}, \emph{PID Controllers}.\hskip 1em
+  plus 0.5em minus 0.4em\relax Instrument Society of America, 1995.
+
+\bibitem{seborg04}
+D.~E. Seborg, T.~F. Edgar, and D.~A. Mellichamp, \emph{Process Dynamics and
+  Control}.\hskip 1em plus 0.5em minus 0.4em\relax John Wiley \& Sons, Inc.,
+  2004.
+
+\bibitem{kempf96}
+C.~J. Kempf and S.~Kobayashi, ``{Discrete-Time Disturbance Observer Design for
+  Systems with Time Delay},'' in \emph{Proceedings of the 4th International
+  Workshop on Adv. Motion Contr.}\hskip 1em plus 0.5em minus 0.4em\relax
+  Tsu-city, Japan: IEEE, 1996.
+
+\bibitem{jones07}
+R.~W. Jones and M.~T. Tham, ``{Disturbance observer design for continuous
+  systems with delay},'' \emph{Asia-Pacific Journal of Chemical Engg., Wiley
+  Interscience}, vol.~2, 2007.
+
+\bibitem{kmm07}
+K.~M. Moudgalya, \emph{Digital Control}.\hskip 1em plus 0.5em minus 0.4em\relax
+  John Wiley \& Sons, Ltd, Chichester, 2007.
+
+\bibitem{karl84}
+K.~J. {\AA str\" om} and T.~{H\"agglund}, ``{Automatic tuning of simple
+  regulators with specifications on phase and amplitude margins},''
+  \emph{Automatica}, vol.~20, pp. 645--651, 1984.
+
+\end{thebibliography}

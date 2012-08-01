@@ -1,0 +1,10 @@
+There are two folders in this folder. 
+
+1.codes
+2.report
+
+The folder named 'codes' contains the codes that were used. It has its own readme.txt file that should be read first before executing any code.
+
+The folder named 'report' contains the latex files that were required for making the report. The pdf document of the final report is also there. For convenience, I have copied the same pdf here. 
+
+The name of the tex file is self_tuning_report_vikas.tex. This file was written using MikTex 2.7 and TeXnicCenter 1.0 Stable Release Candidate 1. 

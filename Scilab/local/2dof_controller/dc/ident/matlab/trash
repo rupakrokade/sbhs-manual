@@ -1,0 +1,123 @@
+Original
+
+Discrete-time IDPOLY model: y(t) = [B(q)/F(q)]u(t) + e(t)
+B(q) = 1.441 (+-0.02501) q^-1                            
+                                                         
+F(q) = 1 - 0.7136 (+-0.006516) q^-1                      
+                                                         
+Estimated using OE from data set datatrain               
+Loss function 0.523117 and FPE 0.52522                   
+Sampling interval: 1                                     
+Created:       06-Sep-2005 17:40:24                      
+Last modified: 06-Sep-2005 17:40:26                      
+                                                         
+AR model of residual, line 33
+
+Discrete-time IDPOLY model: A(q)y(t) = e(t)                            
+A(q) = 1 - 0.8771 (+-0.01519) q^-1                                     
+                                                                       
+Estimated using AR ('fb'/'now')
+Loss function 0.120275 and FPE 0.120516
+Sampling interval: 1                                                   
+Created:       06-Sep-2005 17:40:30                                    
+Last modified: 06-Sep-2005 17:40:31                                    
+                                                                       
+line 42 - BJ model
+
+Discrete-time IDPOLY model: y(t) = [B(q)/F(q)]u(t) + [1/D(q)]e(t)
+B(q) = 1.341 (+-0.01788) q^-1                                    
+                                                                 
+D(q) = 1 - 0.8906 (+-0.01486) q^-1                               
+                                                                 
+F(q) = 1 - 0.7395 (+-0.005) q^-1                                 
+                                                                 
+Estimated using BJ from data set datatrain                       
+Loss function 0.115904 and FPE 0.116604                          
+Sampling interval: 1                                             
+Created:       06-Sep-2005 17:40:31                              
+Last modified: 06-Sep-2005 17:40:31                              
+                                                                 
+Line 48 - BJ2 model
+
+Discrete-time IDPOLY model: y(t) = [B(q)/F(q)]u(t) + [1/D(q)]e(t)
+B(q) = 1.206 (+-0.021) q^-1                                      
+                                                                 
+D(q) = 1 - 0.8927 (+-0.01442) q^-1                               
+                                                                 
+F(q) = 1 - 0.9156 (+-0.01734) q^-1 + 0.1624 (+-0.01533) q^-2     
+                                                                 
+Estimated using BJ from data set datatrain                       
+Loss function 0.105265 and FPE 0.106115                          
+Sampling interval: 1                                             
+Created:       06-Sep-2005 17:40:32                              
+Last modified: 06-Sep-2005 17:40:32                              
+                   
+Line 58, OE 111
+                                              
+Discrete-time IDPOLY model: y(t) = [B(q)/F(q)]u(t) + e(t)
+B(q) = 1.333 (+-0.0177) q^-1                             
+                                                         
+F(q) = 1 - 0.7422 (+-0.005223) q^-1                      
+                                                         
+Estimated using OE from data set datadifftrain           
+Loss function 0.127381 and FPE 0.127893                  
+Sampling interval: 1                                     
+Created:       06-Sep-2005 17:40:35                      
+Last modified: 06-Sep-2005 17:40:35                      
+                                                         
+Line 62, OE 121
+
+Discrete-time IDPOLY model: y(t) = [B(q)/F(q)]u(t) + e(t) 
+B(q) = 1.2 (+-0.02035) q^-1                               
+                                                          
+F(q) = 1 - 0.9157 (+-0.0169) q^-1 + 0.163 (+-0.01496) q^-2
+                                                          
+Estimated using OE from data set datadifftrain            
+Loss function 0.115816 and FPE 0.116517                   
+Sampling interval: 1                                      
+Created:       06-Sep-2005 17:40:36                       
+Last modified: 06-Sep-2005 17:40:36                       
+                                                          
+Line 66, OE 221
+
+Discrete-time IDPOLY model: y(t) = [B(q)/F(q)]u(t) + e(t) 
+B(q) = 1.205 (+-0.02081) q^-1 - 0.2074 (+-0.1224) q^-2    
+                                                          
+F(q) = 1 - 1.064 (+-0.0856) q^-1 + 0.2733 (+-0.06258) q^-2
+                                                          
+Estimated using OE from data set datadifftrain            
+Loss function 0.115655 and FPE 0.11659                    
+Sampling interval: 1                                      
+Created:       06-Sep-2005 17:40:37                       
+Last modified: 06-Sep-2005 17:40:37                       
+                                                          
+Line 72 - OE route
+
+Discrete-time IDPOLY model: y(t) = [B(q)/F(q)]u(t) + [1/D(q)]e(t)
+B(q) = 1.205 q^-1 - 0.2074 q^-2                                  
+                                                                 
+D(q) = 1 - q^-1                                                  
+                                                                 
+F(q) = 1 - 1.064 q^-1 + 0.2733 q^-2                              
+                                                                 
+This model was not estimated from data.                          
+Sampling interval: 1                                             
+Created:       06-Sep-2005 17:40:38                              
+Last modified: 06-Sep-2005 17:40:38                              
+                                                                 
+Line 73 - BJ2 route
+
+Discrete-time IDPOLY model: y(t) = [B(q)/F(q)]u(t) + [1/D(q)]e(t)
+B(q) = 1.206 (+-0.021) q^-1                                      
+                                                                 
+D(q) = 1 - 0.8927 (+-0.01442) q^-1                               
+                                                                 
+F(q) = 1 - 0.9156 (+-0.01734) q^-1 + 0.1624 (+-0.01533) q^-2     
+                                                                 
+Estimated using BJ from data set datatrain                       
+Loss function 0.105265 and FPE 0.106115                          
+Sampling interval: 1                                             
+Created:       06-Sep-2005 17:40:32                              
+Last modified: 06-Sep-2005 17:40:32                              
+                                                                 
+diary off

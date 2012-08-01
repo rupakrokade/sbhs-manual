@@ -1,0 +1,15 @@
+This folder contains scilab codes for the implementation of self tuning PI Controller and checking the effect of giving disturbance to fan input.
+
+
+Instructions:
+1. Please execute the ser_init file first.
+2. Then please execute the sci/sce file using exec function or directly clicking on 'exec' in file menu.
+3. Open scicos and load the cos file. 
+4. Make your adjustments to the values and run the experiment.
+
+PLEASE NOTE:
+The code has expressions for Kc and tau_i given by both direct synthesis and ziegler nichols. In this code, I have described exactly which one is which, using comment statements. Please comment('//') whichever part is not being used. 
+
+
+Plots
+Three Plots are generated. The first shows the set point temperature and the actual temperature. The second shows the control effort, the heater input. The third shows the fan input.

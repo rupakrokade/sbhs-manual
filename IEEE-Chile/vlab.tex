@@ -1,0 +1,75 @@
+\documentclass[a4paper, 10pt, conference]{ieeeconf}
+
+\usepackage{cite}
+\usepackage{latexsym,amsfonts,amssymb,graphicx,amsmath}
+\usepackage{url}
+% Read the url.sty source comments for usage information. Basically,
+% \url{my_url_here}.
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\bibliographystyle{./IEEEtran}
+\IEEEoverridecommandlockouts
+
+\title{\LARGE \bf
+A low cost, scalable, \\ virtual control laboratory
+}
+
+\author{Inderpreet Arora, Kannan M. Moudgalya, Kaushik Venkata, Victor
+  Chakraborty, Rupak Rokade and Rakhi R.%
+\thanks{Inderpreet Arora is a former student of Systems and Control
+  Engineering, IIT Bombay, Mumbai, India. She is currently with the
+  Eaton India Engineering Center, Eaton Corporation, Pune, India. 
+        {\tt\small inderpreet.arora@iitb.ac.in}}
+\thanks{Kannan M. Moudgalya is a Core Faculty member with Department
+  of Chemical Engineering and an Associate Faculty member with Systems
+  and Control Engineering, IIT Bombay, Mumbai, India. 
+        {\tt\small kannan@iitb.ac.in}}%
+\thanks{Kaushik Venkata is a student of Systems and Control
+  Engineering, IIT Bombay, Mumbai, India. 
+        {\tt\small kaushik8989@iitb.ac.in}}
+\thanks{Victor Chakrabory is a student of Department of Computer
+  Science Engineering, IIT Bombay, Mumbai, India. 
+        {\tt\small victor@cse.iitb.ac.in}}
+\thanks{Rupak Rokade and Rakhi R. are Research Associates with
+  Department of Chemical Engineering, IIT Bombay, Mumbai, India. 
+        {\tt\small rupakrokade@iitb.ac.in, rakhi@iitb.ac.in}}%
+}
+%
+
+\newcommand{\figref}[1]{Fig.~\ref{#1}}
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+\input{abstract}
+\input{intro}
+\input{LitSurvey}
+\input{sbhs}
+\input{vlabarch}
+\input{expt}
+\input{2dof}
+\input{relay}
+%\input{realtime}
+\input{conc}
+
+\bibliography{ref1}
+
+% conference papers do not normally have an appendix
+
+
+% use section* for acknowledgement
+\section*{Acknowledgments}
+The authors gratefully acknowledge the funding support from the
+National Mission on Education through Information and Communication
+Technologies \cite{kmm010}.
+
+The authors would like to thank Ankit Bahuguna, Harsh Yadav, Piyush
+Joshi, Kushal Thakkar, Swanand Kulkarni, Aditya Sengupta, Sushanth
+Poojary, Tanuj Bhojwani and Sitesh Patel for their inputs for a few
+software modules.  
+
+\end{document}

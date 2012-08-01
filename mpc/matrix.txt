@@ -1,0 +1,3 @@
+s=poly(0,'s'); 
+TFcont=syslin('c',[kp*(1-0.5*D)/(tau*s+1)/(1+0.5*D)]);
+SScont=tf2ss(TFcont);

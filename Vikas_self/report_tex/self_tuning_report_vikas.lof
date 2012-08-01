@@ -1,0 +1,48 @@
+\select@language {USenglish}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Single Board Heater System}}{7}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Closed Loop Circuit}}{9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Tangent Approach to Ziegler Nichols Tuning}}{11}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Step Responce for Heater Reading 10 to 15}}{12}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Step Response for Heater reading 10 to 15 in terms of Deviation}}{13}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Step Responce for Heater Reading 20 to 25}}{13}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Step Response for Heater reading 20 to 25 in terms of Deviation}}{14}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Step Responce for Heater Reading 30 to 35}}{14}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Step Response for Heater reading 30 to 35 in terms of Deviation}}{15}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Variation of $K_p$ with temperature}}{16}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Variation of $\tau _p$ with temperature}}{17}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Scicos Diagram for PI Controller}}{18}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Scicos Diagram for PID Controller}}{19}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Scicos Diagram for Self Tuning Controller}}{21}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Result for Self Tuning Controller designed using Direct Synthesis for Set Point going from 32$^0$C to 37$^0$C}}{23}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Result for Self Tuning Controller designed using Direct Synthesis for Set Point going from 35$^0$C to 45$^0$C }}{23}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Result for Conventional Controller designed using Direct Synthesis for Set Point going from 32$^0$C to 37$^0$C }}{24}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Result for Conventional Controller designed using Direct Synthesis for Set Point going from 35$^0$C to 45$^0$C }}{24}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Result for Self Tuning Controller designed using Ziegler Nichols Tuning for Set Point going from 32$^0$C to 37$^0$C}}{25}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Result for Self Tuning Controller designed using Ziegler Nichols Tuning for Set Point going from 35$^0$C to 45$^0$C}}{25}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Result for Self Tuning Controller designed using Ziegler Nichols Tuning for Set Point going from 40$^0$C to 45$^0$C}}{26}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Result for Conventional Controller designed using Ziegler Nichols Tuning for Set Point going from 32$^0$C to 37$^0$C }}{26}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Result for Conventional Controller designed using Ziegler Nichols Tuning for Set Point going from 35$^0$C to 45$^0$C }}{27}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Result for Conventional Controller designed using Ziegler Nichols Tuning for Set Point going from 40$^0$C to 45$^0$C }}{27}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Result for Self Tuning PID Controller designed using Ziegler Nichols Tuning for Set Point going from 32$^0$C to 37$^0$C}}{28}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Result for Self Tuning PID Controller designed using Ziegler Nichols Tuning for Set Point going from 32$^0$C to 46$^0$C}}{28}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Result for Conventional PID Controller designed using Ziegler Nichols Tuning for Set Point going from 32$^0$C to 37$^0$C }}{29}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Result for Conventional PID Controller designed using Ziegler Nichols Tuning for Set Point going from 31$^0$C to 45$^0$C }}{29}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Results for Fan Input Change from 50 to 100 for Self Tuning PI Controller designed using Direct Synthesis}}{32}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Results for Fan Input Change from 100 to 50 for Self Tuning PI Controller designed using Direct Synthesis}}{33}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Results for the Fan input change from 50 to 100 to Conventional PI Controller designed using Direct Synthesis}}{34}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Results for the Fan input change from 100 to 50 to Conventional PI Controller designed using Direct Synthesis}}{34}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Results for Fan Input change from 50 to 100 given to Self Tuning PI Controller designed using Ziegler Nichols Method}}{35}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Results for Fan Input change from 100 to 50 given to Self Tuning PI Controller designed using Ziegler Nichols Method}}{36}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Results for the Fan input change from 50 to 100 to Conventional PI Controller designed using Ziegler Nichols Tuning}}{37}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Results for the Fan input change from 100 to 50 to Conventional PI Controller designed using Ziegler Nichols Tuning}}{37}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Results for Fan Input change from 50 to 100 given to Self Tuning PID Controller designed using Ziegler Nichols Method}}{38}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Results for Fan Input change from 100 to 50 given to Self Tuning PID Controller designed using Ziegler Nichols Method}}{39}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Results for the Fan input change from 50 to 100 to Conventional PID Controller designed using Ziegler Nichols Tuning}}{40}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Results for the Fan input change from 100 to 50 to Conventional PID Controller designed using Ziegler Nichols Tuning}}{40}
+\addvspace {10\p@ }

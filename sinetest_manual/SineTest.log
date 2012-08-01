@@ -1,0 +1,27 @@
+This is pdfTeX, Version 3.1415926-1.40.9 (MiKTeX 2.7) (preloaded format=pdflatex 2010.10.25)  20 JAN 2011 17:44
+entering extended mode
+**SineTest.tex
+(SineTest.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
+! Undefined control sequence.
+l.1 \chapter
+            {Frequency Response Analysis of a Single Board Heater System by ...
+
+? 
+! Emergency stop.
+l.1 \chapter
+            {Frequency Response Analysis of a Single Board Heater System by ...
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 6 strings out of 95304
+ 91 string characters out of 1183031
+ 45021 words of memory out of 1500000
+ 3306 multiletter control sequences out of 110000
+ 3640 words of font info for 14 fonts, out of 3000000 for 5000
+ 14 hyphenation exceptions out of 8191
+ 5i,0n,1p,117b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
