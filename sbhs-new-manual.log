@@ -1,9 +1,17 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.3.29)  10 APR 2012 14:59
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.11.3)  5 NOV 2012 17:43
 entering extended mode
  %&-line parsing enabled.
-**\nonstopmode \input{"/home/backup/ttt/SBHS/SBHS-manual/new-manual/sbhs-new-ma
-nual.tex"}
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/sbhs-new-manual.tex
+**sbhs-new-manual.tex
+(./sbhs-new-manual.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size12.clo
@@ -145,7 +153,7 @@ File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count138
 ))
 \Gin@req@height=\dimen103
@@ -238,34 +246,45 @@ Package: theorem 1995/11/23 v2.2c Theorem extension package (FMi)
 
 (/usr/share/texmf-texlive/tex/latex/tools/thp.sty
 File: thp.sty 1995/11/23 v2.2c Theorem extension package (FMi)
-))
-(/usr/share/texmf-texlive/tex/latex/algorithms/algorithmic.sty
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+)) (./algorithmic.sty
+Package: algorithmic 2005/07/05
 
+Document Style `algorithmic' - environment
 (/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@ALC@unique=\count151
-\c@ALC@line=\count152
-\c@ALC@rem=\count153
-\c@ALC@depth=\count154
-\ALC@tlm=\skip74
-\algorithmicindent=\skip75
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count151
+\calc@Bcount=\count152
+\calc@Adimen=\dimen116
+\calc@Bdimen=\dimen117
+\calc@Askip=\skip74
+\calc@Bskip=\skip75
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count153
+\calc@Cskip=\skip76
 )
-(/usr/share/texmf-texlive/tex/latex/algorithms/algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
+\c@ALC@line=\count154
+\c@ALC@rem=\count155
+\c@ALC@depth=\count156
+\ALC@tlm=\skip77
+\algorithmicindent=\skip78
+) (./algorithm.sty
+Package: algorithm 
 
+Document Style `algorithm' - floating environment
 (/usr/share/texmf-texlive/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count155
+\c@float@type=\count157
 \float@exts=\toks24
 \float@box=\box29
 \@float@everytoks=\toks25
 \@floatcapt=\box30
 )
 \@float@every@algorithm=\toks26
-\c@algorithm=\count156
+\c@algorithm=\count158
 )
 (/usr/share/texmf-texlive/tex/latex/pxfonts/pxfonts.sty
 Package: pxfonts 2008/01/22 v1.1.1
@@ -457,15 +476,15 @@ LaTeX Info: Redefining \textsquare on input line 1063.
 LaTeX Info: Redefining \openbox on input line 1064.
 )
 (/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip76
-\f@ncyO@elh=\skip77
-\f@ncyO@erh=\skip78
-\f@ncyO@olh=\skip79
-\f@ncyO@orh=\skip80
-\f@ncyO@elf=\skip81
-\f@ncyO@erf=\skip82
-\f@ncyO@olf=\skip83
-\f@ncyO@orf=\skip84
+\fancy@headwidth=\skip79
+\f@ncyO@elh=\skip80
+\f@ncyO@erh=\skip81
+\f@ncyO@olh=\skip82
+\f@ncyO@orh=\skip83
+\f@ncyO@elf=\skip84
+\f@ncyO@erf=\skip85
+\f@ncyO@olf=\skip86
+\f@ncyO@orf=\skip87
 )
 (/usr/share/texmf-texlive/tex/latex/ltxmisc/boxedminipage.sty)
 (/usr/share/texmf-texlive/tex/latex/jknapltx/mathrsfs.sty
@@ -478,19 +497,6 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks28
 \verbatim@in@stream=\read1
 )
-(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count157
-\calc@Bcount=\count158
-\calc@Adimen=\dimen116
-\calc@Bdimen=\dimen117
-\calc@Askip=\skip85
-\calc@Bskip=\skip86
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count159
-\calc@Cskip=\skip87
-)
 (/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip88
@@ -499,10 +505,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip90
 \subfigcapmargin=\dimen119
 \subfiglabelskip=\skip91
-\c@subfigure=\count160
-\c@lofdepth=\count161
-\c@subtable=\count162
-\c@lotdepth=\count163
+\c@subfigure=\count159
+\c@lofdepth=\count160
+\c@subtable=\count161
+\c@lotdepth=\count162
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -513,7 +519,7 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 )
 (/usr/share/texmf-texlive/tex/latex/tools/varioref.sty
 Package: varioref 2009/09/13 v1.4w package for extended references (FMi)
-\c@vrcnt=\count164
+\c@vrcnt=\count163
 )
 (/usr/share/texmf-texlive/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
@@ -524,23 +530,23 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 Package color Info: Driver file: pdftex.def on input line 130.
 )
 (/usr/share/texmf-texlive/tex/latex/listings/listings.sty
-\lst@mode=\count165
+\lst@mode=\count164
 \lst@gtempboxa=\box31
 \lst@token=\toks29
-\lst@length=\count166
+\lst@length=\count165
 \lst@currlwidth=\dimen120
-\lst@column=\count167
-\lst@pos=\count168
+\lst@column=\count166
+\lst@pos=\count167
 \lst@lostspace=\dimen121
 \lst@width=\dimen122
-\lst@newlines=\count169
-\lst@lineno=\count170
+\lst@newlines=\count168
+\lst@lineno=\count169
 \lst@maxwidth=\dimen123
 
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count171
-\lst@skipnumbers=\count172
+\c@lstnumber=\count170
+\lst@skipnumbers=\count171
 \lst@framebox=\box32
 )
 (/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
@@ -624,17 +630,25 @@ Package: pgfpict2e 2004/11/28 ver 0.01
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks30
 )
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box33
+
+(/usr/share/texmf-texlive/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2008/02/20 v2.00 (rcs-revision 1.21)
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
 ))
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2008/02/07 v2.00 (rcs-revision 1.31)
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks31
 \pgfkeys@temptoks=\toks32
-)
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
 \pgf@x=\dimen124
 \pgf@y=\dimen125
 \pgf@xa=\dimen126
@@ -643,26 +657,28 @@ Package: pgfsys 2008/02/07 v2.00 (rcs-revision 1.31)
 \pgf@yb=\dimen129
 \pgf@xc=\dimen130
 \pgf@yc=\dimen131
-\c@pgf@counta=\count173
-\c@pgf@countb=\count174
-\c@pgf@countc=\count175
-\c@pgf@countd=\count176
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count172
+\c@pgf@countb=\count173
+\c@pgf@countc=\count174
+\c@pgf@countd=\count175
 
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2008/01/13  (rcs-revision 1.6)
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 885.
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
 
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2007/12/20  (rcs-revision 1.20)
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
 
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2007/12/17  (rcs-revision 1.8)
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )))
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2008/01/23  (rcs-revision 1.6)
-\pgfsyssoftpath@smallbuffer@items=\count177
-\pgfsyssoftpath@bigbuffer@items=\count178
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count176
+\pgfsyssoftpath@bigbuffer@items=\count177
 )
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -686,26 +702,32 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2008/01/15 v2.00 (rcs-revision 1.6)
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 
 (/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex
-\pgfmath@box=\box33
-)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@stack=\toks33
-\c@pgfmath@parsecounta=\count179
-\c@pgfmath@parsecountb=\count180
-\c@pgfmath@parsecountc=\count181
-\pgfmath@parsex=\dimen132
+\pgfmath@dimen=\dimen132
+\pgfmath@count=\count178
+\pgfmath@box=\box34
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
 )
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathoperations.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathtrig.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathrnd.code.tex))
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathbase.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count179
+))
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2008/02/03  (rcs-revision 1.13)
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
 \pgf@picminx=\dimen133
 \pgf@picmaxx=\dimen134
 \pgf@picminy=\dimen135
@@ -722,95 +744,100 @@ File: pgfcorepoints.code.tex 2008/02/03  (rcs-revision 1.13)
 \pgf@zy=\dimen146
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2008/02/13  (rcs-revision 1.14)
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
 \pgf@path@lastx=\dimen147
 \pgf@path@lasty=\dimen148
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2008/01/23  (rcs-revision 1.11)
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
 \pgf@shorten@end@additional=\dimen149
 \pgf@shorten@start@additional=\dimen150
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2008/01/15  (rcs-revision 1.26)
-\pgfpic=\box34
-\pgf@hbox=\box35
-\pgf@layerbox@main=\box36
-\pgf@picture@serial@count=\count182
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box35
+\pgf@hbox=\box36
+\pgf@layerbox@main=\box37
+\pgf@picture@serial@count=\count180
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2007/12/12  (rcs-revision 1.8)
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
 \pgflinewidth=\dimen151
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2008/02/04  (rcs-revision 1.10)
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
 \pgf@pt@x=\dimen152
 \pgf@pt@y=\dimen153
 \pgf@pt@temp=\dimen154
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2006/10/11  (rcs-revision 1.2)
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2008/01/23  (rcs-revision 1.7)
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2007/06/07  (rcs-revision 1.8)
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2007/12/10  (rcs-revision 1.9)
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
 \pgf@max=\dimen155
-\pgf@sys@shading@range@num=\count183
+\pgf@sys@shading@range@num=\count181
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2008/01/15  (rcs-revision 1.1)
-\pgfexternal@startupbox=\box37
-)
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box38
+))
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2008/01/15  (rcs-revision 1.1)
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2008/01/15  (rcs-revision 1.1)
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 ))))
 (/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
-Package: pgf 2008/01/15 v2.00 (rcs-revision 1.12)
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
 
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2008/02/13  (rcs-revision 1.4)
-\pgfnodeparttextbox=\box38
-\toks@savedmacro=\toks34
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box39
 )
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2008/01/15  (rcs-revision 1.1)
-\pgf@plotwrite=\write3
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
 (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v2.00 (rcs-revision 1.7)
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen156
 \pgf@nodesepend=\dimen157
 )
 (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v2.00 (rcs-revision 1.1)
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 ))
 (/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
 (/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2007/11/07 v2.00 (rcs-revision 1.8)
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
 \pgffor@iter=\dimen158
 \pgffor@skip=\dimen159
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
 ))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2008/02/13 v2.00 (rcs-revision 1.27)
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2007/03/09 v2.00 (rcs-revision 1.9)
-\pgf@plot@mark@count=\count184
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count182
 \pgfplotmarksize=\dimen160
 )
 \tikz@lastx=\dimen161
@@ -819,28 +846,28 @@ File: pgflibraryplothandlers.code.tex 2007/03/09 v2.00 (rcs-revision 1.9)
 \tikz@lastysaved=\dimen164
 \tikzleveldistance=\dimen165
 \tikzsiblingdistance=\dimen166
-\tikz@figbox=\box39
-\tikz@tempbox=\box40
-\tikztreelevel=\count185
-\tikznumberofchildren=\count186
-\tikznumberofcurrentchild=\count187
-\tikz@fig@count=\count188
+\tikz@figbox=\box40
+\tikz@tempbox=\box41
+\tikztreelevel=\count183
+\tikznumberofchildren=\count184
+\tikznumberofcurrentchild=\count185
+\tikz@fig@count=\count186
 
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2008/01/15  (rcs-revision 1.1)
-\pgfmatrixcurrentrow=\count189
-\pgfmatrixcurrentcolumn=\count190
-\pgf@matrix@numberofcolumns=\count191
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count187
+\pgfmatrixcurrentcolumn=\count188
+\pgf@matrix@numberofcolumns=\count189
 )
-\tikz@expandcount=\count192
+\tikz@expandcount=\count190
 
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
 hs.code.tex
-File: tikzlibrarytopaths.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 ))) (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks35
-\inpenc@posthook=\toks36
+\inpenc@prehook=\toks39
+\inpenc@posthook=\toks40
 
 (/usr/share/texmf-texlive/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -1137,7 +1164,7 @@ Language: english 2005/03/30 v3.3o English support from the babel system
 
 (/usr/share/texmf-texlive/tex/generic/babel/babel.def
 File: babel.def 2008/07/06 v3.8l Babel common definitions
-\babel@savecnt=\count193
+\babel@savecnt=\count191
 \U@D=\dimen167
 )
 \l@canadian = a dialect from \language\l@american 
@@ -1149,69 +1176,88 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
 s.code.tex
-File: tikzlibraryshapes.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+File: tikzlibraryshapes.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
 s.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2008/02/01 v2.00 (rcs-revision 1.22)
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.c
+ode.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
 ))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
 s.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2008/02/12 v2.00 (rcs-revision 1.10)
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.t
+ex
+File: pgflibraryshapes.misc.code.tex 2008/10/07 v2.10 (rcs-revision 1.3)
 ))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
 s.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.symbols.code.tex
-File: pgflibraryshapes.symbols.code.tex 2008/01/30 v2.00 (rcs-revision 1.13)
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.cod
+e.tex
+File: pgflibraryshapes.symbols.code.tex 2009/10/27 v2.10 (rcs-revision 1.3)
 ))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
 s.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.arrows.code.tex
-File: pgflibraryshapes.arrows.code.tex 2007/11/10 v2.00 (rcs-revision 1.3)
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code
+.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
 ))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
 s.callouts.code.tex
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.callouts.code.tex)
-)
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.co
+de.tex))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
 s.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2008/01/15 v2.00 (rcs-revision 1.7)
-\pgfnodepartlowerbox=\box41
-\pgfnodepartsecondbox=\box42
-\pgfnodepartthirdbox=\box43
-\pgfnodepartfourthbox=\box44
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.c
+ode.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box42
+\pgfnodeparttwobox=\box43
+\pgfnodepartthreebox=\box44
+\pgfnodepartfourbox=\box45
+\pgfnodeparttwentybox=\box46
+\pgfnodepartnineteenbox=\box47
+\pgfnodeparteighteenbox=\box48
+\pgfnodepartseventeenbox=\box49
+\pgfnodepartsixteenbox=\box50
+\pgfnodepartfifteenbox=\box51
+\pgfnodepartfourteenbox=\box52
+\pgfnodepartthirteenbox=\box53
+\pgfnodeparttwelvebox=\box54
+\pgfnodepartelevenbox=\box55
+\pgfnodeparttenbox=\box56
+\pgfnodepartninebox=\box57
+\pgfnodeparteightbox=\box58
+\pgfnodepartsevenbox=\box59
+\pgfnodepartsixbox=\box60
+\pgfnodepartfivebox=\box61
 )))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrow
 s.code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2007/06/07 v2.00 (rcs-revision 1.7)
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen168
 ))
-\c@codemass=\count194
+\c@codemass=\count192
 
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/sbhs-new-manual.aux
+(./sbhs-new-manual.aux
 
 LaTeX Warning: Label `ziegler' multiply defined.
 
 
 LaTeX Warning: Label `fig:step31to45' multiply defined.
-
-
-LaTeX Warning: Label `mpccode' multiply defined.
 
 )
 \openout1 = `sbhs-new-manual.aux'.
@@ -1265,23 +1311,25 @@ File: ot1txr.fd 2000/12/15 v3.1
 
 Package layouts Warning: Layout scale set to 0.5 on input line 80.
 
-(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count195
-\scratchdimen=\dimen168
-\scratchbox=\box45
-\nofMPsegments=\count196
-\nofMParguments=\count197
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count198
-\MPscratchDim=\dimen169
-\MPnumerator=\count199
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count193
+\scratchdimen=\dimen169
+\scratchbox=\box62
+\nofMPsegments=\count194
+\nofMParguments=\count195
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count196
+\MPscratchDim=\dimen170
+\MPnumerator=\count197
+\everyMPtoPDFconversion=\toks42
 )
-\c@lstlisting=\count200
+\c@lstlisting=\count198
+ ABD: EveryShipout initializing macros
 LaTeX Font Info:    Try loading font information for U+txsya on input line 105.
 
- (/usr/share/texmf-texlive/tex/latex/txfonts/utxsya.fd
+
+(/usr/share/texmf-texlive/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsyb on input line 105.
@@ -1316,9 +1364,8 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 File: iitblogo.pdf Graphic file (type pdf)
  <use iitblogo.pdf> [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/backup/ttt/SBHS/SBHS
--manual/new-manual/iitblogo.pdf>]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/sbhs-new-manual.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./iitblogo.pdf>]
+(./sbhs-new-manual.toc
 Overfull \hbox (76.84799pt too wide) detected at line 2
 \OT1/txr/bx/n/12 List of Scilab Code 
  []
@@ -1337,21 +1384,19 @@ Overfull \hbox (0.70741pt too wide) in paragraph at lines 85--85
 trol ap-proach [][]  
  []
 
-[3] [4] [5])
+[3] [4])
 \tf@toc=\write4
 \openout4 = `sbhs-new-manual.toc'.
 
- [6]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/sbhs-new-manual.cod [7
+ [5] (./sbhs-new-manual.cod [6
 
-] [8])
+] [7])
 \tf@cod=\write5
 \openout5 = `sbhs-new-manual.cod'.
 
-
-[9]
+ [8]
 Chapter 1.
-<blkdiag.jpg, id=46, 602.25pt x 333.49594pt>
+<blkdiag.jpg, id=43, 602.25pt x 333.49594pt>
 File: blkdiag.jpg Graphic file (type jpg)
  <use blkdiag.jpg>
 LaTeX Font Info:    Try loading font information for TS1+txr on input line 115.
@@ -1359,42 +1404,36 @@ LaTeX Font Info:    Try loading font information for TS1+txr on input line 115.
 
 (/usr/share/texmf-texlive/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) [10
+) [9
 
-] [11 </home/backup/ttt/SBHS/SBHS-manual/new-manual/blkdiag.jpg>]
-<pwm.PNG, id=54, 513.92pt x 426.59375pt>
+] [10 <./blkdiag.jpg>] <pwm.PNG, id=51, 513.92pt x 426.59375pt>
 File: pwm.PNG Graphic file (type png)
- <use pwm.PNG> [12 </home/backup/ttt/SBHS/SBHS-manual/new-manual/pwm.PNG (PNG c
-opy)>]
-<Inst_Amp.jpg, id=59, 460.72125pt x 245.718pt>
+ <use pwm.PNG> [11 <./pwm.PNG (PNG copy)>] <Inst_Amp.jpg, id=55, 460.72125pt x 
+245.718pt>
 File: Inst_Amp.jpg Graphic file (type jpg)
- <use Inst_Amp.jpg> [13]
-<c.jpg, id=66, 489.027pt x 361.35pt>
+ <use Inst_Amp.jpg> [12]
+<c.jpg, id=63, 489.027pt x 361.35pt>
 File: c.jpg Graphic file (type jpg)
- <use c.jpg> [14 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Inst_Amp.jpg> </
-home/backup/ttt/SBHS/SBHS-manual/new-manual/c.jpg>] <RS232cable.jpg, id=70, 481
-.8pt x 361.35pt>
+ <use c.jpg> [13 <./Inst_Amp.jpg> <./c.jpg>] <RS232cable.jpg, id=67, 481.8pt x 
+361.35pt>
 File: RS232cable.jpg Graphic file (type jpg)
  <use RS232cable.jpg>
-<Serialport.jpg, id=71, 416.757pt x 361.35pt>
+<Serialport.jpg, id=68, 416.757pt x 361.35pt>
 File: Serialport.jpg Graphic file (type jpg)
  <use Serialport.jpg>
-<usbc.jpg, id=72, 481.8pt x 361.35pt>
+<usbc.jpg, id=69, 481.8pt x 361.35pt>
 File: usbc.jpg Graphic file (type jpg)
  <use usbc.jpg>
-<usbp.jpg, id=73, 481.8pt x 370.38374pt>
+<usbp.jpg, id=70, 481.8pt x 370.38374pt>
 File: usbp.jpg Graphic file (type jpg)
  <use usbp.jpg>
-<display.jpg, id=74, 642.4pt x 481.8pt>
+<display.jpg, id=71, 642.4pt x 481.8pt>
 File: display.jpg Graphic file (type jpg)
- <use display.jpg> [15 </home/backup/ttt/SBHS/SBHS-manual/new-manual/RS232cable
-.jpg>] [16 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Serialport.jpg> </home
-/backup/ttt/SBHS/SBHS-manual/new-manual/usbc.jpg>] <r.jpg, id=81, 481.8pt x 328
-.8285pt>
+ <use display.jpg> [14 <./RS232cable.jpg>] [15 <./Serialport.jpg> <./usbc.jpg>]
+ <r.jpg, id=78, 481.8pt x 328.8285pt>
 File: r.jpg Graphic file (type jpg)
- <use r.jpg> [17 </home/backup/ttt/SBHS/SBHS-manual/new-manual/usbp.jpg> </home
-/backup/ttt/SBHS/SBHS-manual/new-manual/display.jpg>] [18 </home/backup/ttt/SBH
-S/SBHS-manual/new-manual/r.jpg>]
+
+<use r.jpg> [16 <./usbp.jpg> <./display.jpg>] [17 <./r.jpg>]
 Chapter 2.
 
 Overfull \hbox (1.65599pt too wide) in paragraph at lines 221--222
@@ -1412,7 +1451,7 @@ Overfull \hbox (0.29822pt too wide) in paragraph at lines 228--230
 /Drivers/VCP.htm\OT1/txr/m/n/12 ) 
  []
 
-[19
+[18
 
 ]
 Overfull \hbox (1.47542pt too wide) in paragraph at lines 236--237
@@ -1420,36 +1459,35 @@ Overfull \hbox (1.47542pt too wide) in paragraph at lines 236--237
 ck the but-ton \OT1/txtt/m/n/12 Include
  []
 
-<COM.jpg, id=93, 597.73312pt x 435.12563pt>
+<COM.jpg, id=90, 597.73312pt x 435.12563pt>
 File: COM.jpg Graphic file (type jpg)
  <use COM.jpg>
-<port2.jpg, id=94, 489.32813pt x 346.29375pt>
+<port2.jpg, id=91, 489.32813pt x 346.29375pt>
 File: port2.jpg Graphic file (type jpg)
- <use port2.jpg> [20] [21 </home/backup/ttt/SBHS/SBHS-manual/new-manual/COM.jpg
->]
-<console.png, id=101, 472.01344pt x 485.56406pt>
+ <use port2.jpg> [19] [20 <./COM.jpg>] <console.png, id=98, 472.01344pt x 485.5
+6406pt>
 File: console.png Graphic file (type png)
  <use console.png>
-<scilab1.jpg, id=103, 490.08093pt x 414.79968pt>
+<scilab1.jpg, id=100, 490.08093pt x 414.79968pt>
 File: scilab1.jpg Graphic file (type jpg)
  <use scilab1.jpg>
-<xcos.png, id=104, 451.6875pt x 376.40625pt>
+<xcos.png, id=101, 451.6875pt x 376.40625pt>
 File: xcos.png Graphic file (type png)
  <use xcos.png>
-<xcos_block.png, id=105, 451.6875pt x 377.15906pt>
+<xcos_block.png, id=102, 451.6875pt x 377.15906pt>
 File: xcos_block.png Graphic file (type png)
  <use xcos_block.png>
-<plot.png, id=106, 472.76625pt x 447.17062pt>
+<plot.png, id=103, 472.76625pt x 447.17062pt>
 File: plot.png Graphic file (type png)
  <use plot.png>
 Overfull \hbox (6.90398pt too wide) in paragraph at lines 297--297
 []\OT1/txr/bx/n/17.28 Accessing Sin-gle Board Heater sys-tem on a Linux
  []
 
-<lstty.png, id=107, 659.46375pt x 436.63126pt>
+<lstty.png, id=104, 659.46375pt x 436.63126pt>
 File: lstty.png Graphic file (type png)
  <use lstty.png>
-<tailusb.png, id=108, 836.12375pt x 487.8225pt>
+<tailusb.png, id=105, 836.12375pt x 487.8225pt>
 File: tailusb.png Graphic file (type png)
  <use tailusb.png>
 Overfull \hbox (27.65894pt too wide) in paragraph at lines 301--314
@@ -1457,91 +1495,75 @@ Overfull \hbox (27.65894pt too wide) in paragraph at lines 301--314
 12 tail -f /var/log/messages|grep
  []
 
-[22 </home/backup/ttt/SBHS/SBHS-manual/new-manual/port2.jpg>] [23 </home/backup
-/ttt/SBHS/SBHS-manual/new-manual/console.png>] [24 </home/backup/ttt/SBHS/SBHS-
-manual/new-manual/scilab1.jpg> </home/backup/ttt/SBHS/SBHS-manual/new-manual/xc
-os.png>] <linuxserial.png, id=121, 642.4pt x 522.95375pt>
+[21 <./port2.jpg>] [22 <./console.png>] [23 <./scilab1.jpg> <./xcos.png>]
+<linuxserial.png, id=117, 642.4pt x 522.95375pt>
 File: linuxserial.png Graphic file (type png)
-
-<use linuxserial.png> <SSscilab.png, id=122, 757.83125pt x 531.9875pt>
+ <use linuxserial.png>
+<SSscilab.png, id=118, 757.83125pt x 531.9875pt>
 File: SSscilab.png Graphic file (type png)
-
-<use SSscilab.png> [25 </home/backup/ttt/SBHS/SBHS-manual/new-manual/xcos_block
-.png>] [26 </home/backup/ttt/SBHS/SBHS-manual/new-manual/plot.png> </home/backu
-p/ttt/SBHS/SBHS-manual/new-manual/lstty.png>] [27 </home/backup/ttt/SBHS/SBHS-m
-anual/new-manual/tailusb.png> </home/backup/ttt/SBHS/SBHS-manual/new-manual/lin
-uxserial.png>] (/home/backup/ttt/SBHS/SBHS-manual/new-manual/vlabs/vlabs.tex
-[28 </home/backup/ttt/SBHS/SBHS-manual/new-manual/SSscilab.png>]
+ <use SSscilab.png> [24 <./xcos_block.png>] [25 <./plot.png> <./lstty.png>] [26
+ <./tailusb.png> <./linuxserial.png>] (./vlabs/vlabs.tex [27 <./SSscilab.png>]
 Chapter 3.
-[29
+[28
 
-] (/home/backup/ttt/SBHS/SBHS-manual/new-manual/IEEE-Chile/vlabarch.tex
-<IEEE-Chile/figures/vlab-1.png, id=145, 716.6775pt x 378.41376pt>
+] (./IEEE-Chile/vlabarch.tex
+<IEEE-Chile/figures/vlab-1.png, id=142, 716.6775pt x 378.41376pt>
 File: IEEE-Chile/figures/vlab-1.png Graphic file (type png)
 
-<use IEEE-Chile/figures/vlab-1.png> [30 </home/backup/ttt/SBHS/SBHS-manual/new-
-manual/IEEE-Chile/figures/vlab-1.png>]
-<IEEE-Chile/figures/vlab-2.png, id=151, 716.6775pt x 370.38374pt>
+<use IEEE-Chile/figures/vlab-1.png> [29 <./IEEE-Chile/figures/vlab-1.png>]
+<IEEE-Chile/figures/vlab-2.png, id=147, 716.6775pt x 370.38374pt>
 File: IEEE-Chile/figures/vlab-2.png Graphic file (type png)
 
 <use IEEE-Chile/figures/vlab-2.png>
-<IEEE-Chile/figures/vlab-3.png, id=152, 896.34875pt x 392.46625pt>
+<IEEE-Chile/figures/vlab-3.png, id=148, 896.34875pt x 392.46625pt>
 File: IEEE-Chile/figures/vlab-3.png Graphic file (type png)
 
-<use IEEE-Chile/figures/vlab-3.png> [31 </home/backup/ttt/SBHS/SBHS-manual/new-
-manual/IEEE-Chile/figures/vlab-2.png>] [32 </home/backup/ttt/SBHS/SBHS-manual/n
-ew-manual/IEEE-Chile/figures/vlab-3.png>]
-<IEEE-Chile/figures/vlab-arch.png, id=161, 875.27pt x 481.8pt>
+<use IEEE-Chile/figures/vlab-3.png> [30 <./IEEE-Chile/figures/vlab-2.png>]
+[31 <./IEEE-Chile/figures/vlab-3.png>]
+<IEEE-Chile/figures/vlab-arch.png, id=158, 875.27pt x 481.8pt>
 File: IEEE-Chile/figures/vlab-arch.png Graphic file (type png)
 
-<use IEEE-Chile/figures/vlab-arch.png> [33 </home/backup/ttt/SBHS/SBHS-manual/n
-ew-manual/IEEE-Chile/figures/vlab-arch.png>]
-<IEEE-Chile/figures/webpage.png, id=166, 1445.4pt x 828.09375pt>
+<use IEEE-Chile/figures/vlab-arch.png> [32 <./IEEE-Chile/figures/vlab-arch.png>
+] <IEEE-Chile/figures/webpage.png, id=163, 1445.4pt x 828.09375pt>
 File: IEEE-Chile/figures/webpage.png Graphic file (type png)
 
 <use IEEE-Chile/figures/webpage.png>
-<IEEE-Chile/figures/blk-dig.pdf, id=167, 778.91pt x 424.58624pt>
+<IEEE-Chile/figures/blk-dig.pdf, id=164, 778.91pt x 424.58624pt>
 File: IEEE-Chile/figures/blk-dig.pdf Graphic file (type pdf)
 
-<use IEEE-Chile/figures/blk-dig.pdf> [34 </home/backup/ttt/SBHS/SBHS-manual/new
--manual/IEEE-Chile/figures/webpage.png (PNG copy)>]
-<IEEE-Chile/figures/slot-book.png, id=171, 759.83875pt x 562.1pt>
+<use IEEE-Chile/figures/blk-dig.pdf> [33 <./IEEE-Chile/figures/webpage.png (PNG
+ copy)>] <IEEE-Chile/figures/slot-book.png, id=168, 759.83875pt x 562.1pt>
 File: IEEE-Chile/figures/slot-book.png Graphic file (type png)
 
-<use IEEE-Chile/figures/slot-book.png> [35 </home/backup/ttt/SBHS/SBHS-manual/n
-ew-manual/IEEE-Chile/figures/blk-dig.pdf>] [36 </home/backup/ttt/SBHS/SBHS-manu
-al/new-manual/IEEE-Chile/figures/slot-book.png (PNG copy)>]
-<IEEE-Chile/figures/display.jpg, id=184, 642.4pt x 481.8pt>
+<use IEEE-Chile/figures/slot-book.png> [34 <./IEEE-Chile/figures/blk-dig.pdf>]
+[35 <./IEEE-Chile/figures/slot-book.png (PNG copy)>]
+<IEEE-Chile/figures/display.jpg, id=180, 642.4pt x 481.8pt>
 File: IEEE-Chile/figures/display.jpg Graphic file (type jpg)
 
-<use IEEE-Chile/figures/display.jpg> [37] [38 </home/backup/ttt/SBHS/SBHS-manua
-l/new-manual/IEEE-Chile/figures/display.jpg>] [39]
-<IEEE-Chile/figures/fossee-2.png, id=194, 615.80063pt x 523.9575pt>
+<use IEEE-Chile/figures/display.jpg> [36] [37 <./IEEE-Chile/figures/display.jpg
+>] [38] <IEEE-Chile/figures/fossee-2.png, id=191, 615.80063pt x 523.9575pt>
 File: IEEE-Chile/figures/fossee-2.png Graphic file (type png)
 
-<use IEEE-Chile/figures/fossee-2.png>) [40] [41 </home/backup/ttt/SBHS/SBHS-man
-ual/new-manual/IEEE-Chile/figures/fossee-2.png (PNG copy)>] [42])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Step-test_manual/StepTest.tex
-[43]
+<use IEEE-Chile/figures/fossee-2.png>) [39] [40 <./IEEE-Chile/figures/fossee-2.
+png (PNG copy)>] [41]) (./Step-test_manual/StepTest.tex [42]
 Chapter 4.
-<Step-test_manual/step.png, id=208, 451.6875pt x 376.40625pt>
+<Step-test_manual/step.png, id=205, 451.6875pt x 376.40625pt>
 File: Step-test_manual/step.png Graphic file (type png)
 
 <use Step-test_manual/step.png>
-<Step-test_manual/step_graph.png, id=209, 472.76625pt x 447.17062pt>
+<Step-test_manual/step_graph.png, id=206, 472.76625pt x 447.17062pt>
 File: Step-test_manual/step_graph.png Graphic file (type png)
 
-<use Step-test_manual/step_graph.png> [44
+<use Step-test_manual/step_graph.png> [43
 
-] [45 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Step-test_manual/step.png>]
- [46 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Step-test_manual/step_graph.
-png>] [47]
-<Step-test_manual/forder_fit.png, id=224, 612.2875pt x 461.725pt>
+] [44 <./Step-test_manual/step.png>]
+[45 <./Step-test_manual/step_graph.png>] [46]
+<Step-test_manual/forder_fit.png, id=221, 612.2875pt x 461.725pt>
 File: Step-test_manual/forder_fit.png Graphic file (type png)
 
-<use Step-test_manual/forder_fit.png> [48] [49 </home/backup/ttt/SBHS/SBHS-manu
-al/new-manual/Step-test_manual/forder_fit.png (PNG copy)>]
-<Step-test_manual/forder_console.png, id=232, 390.70969pt x 462.22687pt>
+<use Step-test_manual/forder_fit.png> [47] [48 <./Step-test_manual/forder_fit.p
+ng (PNG copy)>]
+<Step-test_manual/forder_console.png, id=229, 390.70969pt x 462.22687pt>
 File: Step-test_manual/forder_console.png Graphic file (type png)
 
 <use Step-test_manual/forder_console.png>
@@ -1550,56 +1572,40 @@ Overfull \hbox (4.33185pt too wide) in paragraph at lines 113--115
 older \OT1/txtt/m/n/12 Kp-tau-order2\OT1/txr/m/n/12 .
  []
 
-[50] [51 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Step-test_manual/forder_
-console.png>]
-<Step-test_manual/Sorder_fit.png, id=240, 472.76625pt x 447.17062pt>
+[49] [50 <./Step-test_manual/forder_console.png>]
+<Step-test_manual/Sorder_fit.png, id=237, 472.76625pt x 447.17062pt>
 File: Step-test_manual/Sorder_fit.png Graphic file (type png)
 
-<use Step-test_manual/Sorder_fit.png> [52] [53 </home/backup/ttt/SBHS/SBHS-manu
-al/new-manual/Step-test_manual/Sorder_fit.png>]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Step_Analysis/Kp-tau
--order1/label.sci)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Step_Analysis/Kp-tau
--order1/costf_1.sci [54])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Step_Analysis/Kp-tau
--order1/firstorder.sce
+<use Step-test_manual/Sorder_fit.png> [51] [52 <./Step-test_manual/Sorder_fit.p
+ng>] (./Scilab/local/Step_Analysis/Kp-tau-order1/label.sci)
+(./Scilab/local/Step_Analysis/Kp-tau-order1/costf_1.sci [53])
+(./Scilab/local/Step_Analysis/Kp-tau-order1/firstorder.sce
 LaTeX Font Info:    Try loading font information for OML+txr on input line 22.
- (/usr/share/texmf-texlive/tex/latex/txfonts/omltxr.fd
+
+(/usr/share/texmf-texlive/tex/latex/txfonts/omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <12> not available
 (Font)              Font shape `OML/txmi/m/it' tried instead on input line 22.
-
-[55])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Step_Analysis/Kp-tau
--order2/costf_2.sci [56])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Step_Analysis/Kp-tau
--order2/order_2_heater.sci)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Step_Analysis/Kp-tau
--order2/secondorder.sce [57])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Step_test/ser_init.s
-ce [58])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Step_test/step_test.
-sci [59])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/StepTest/stepc.sce
-) [60]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/StepTest/steptest.
-sci [61])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Step_Analysis/Kp-t
-au-order1/firstorder_virtual.sce [62])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Step_Analysis/Kp-t
-au-order2/secondorder_virtual.sce [63]))
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Ramp-test_manual/RampTest.tex
-[64]
+ [54])
+(./Scilab/local/Step_Analysis/Kp-tau-order2/costf_2.sci [55])
+(./Scilab/local/Step_Analysis/Kp-tau-order2/order_2_heater.sci)
+(./Scilab/local/Step_Analysis/Kp-tau-order2/secondorder.sce [56])
+(./Scilab/local/Step_test/ser_init.sce [57])
+(./Scilab/local/Step_test/step_test.sci [58])
+(./Scilab/virtual/StepTest/stepc.sce [59])
+(./Scilab/virtual/StepTest/steptest.sci [60] [61]) [62]
+(./Scilab/virtual/Step_Analysis/Kp-tau-order1/firstorder_virtual.sce [63])
+(./Scilab/virtual/Step_Analysis/Kp-tau-order2/secondorder_virtual.sce [64]))
+(./Ramp-test_manual/RampTest.tex [65]
 Chapter 5.
-<Ramp-test_manual/ramp_xcos.jpg, id=283, 578.16pt x 462.22687pt>
+<Ramp-test_manual/ramp_xcos.jpg, id=286, 578.16pt x 462.22687pt>
 File: Ramp-test_manual/ramp_xcos.jpg Graphic file (type jpg)
 
-<use Ramp-test_manual/ramp_xcos.jpg> [65
+<use Ramp-test_manual/ramp_xcos.jpg> [66
 
-] [66 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Ramp-test_manual/ramp_xcos.
-jpg (PNG copy)>]
-<Ramp-test_manual/ramp_plot.jpg, id=292, 612.2875pt x 461.725pt>
+] [67 <./Ramp-test_manual/ramp_xcos.jpg (PNG copy)>] <Ramp-test_manual/ramp_plo
+t.jpg, id=295, 612.2875pt x 461.725pt>
 File: Ramp-test_manual/ramp_plot.jpg Graphic file (type jpg)
 
 <use Ramp-test_manual/ramp_plot.jpg>
@@ -1607,123 +1613,100 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--57
 
  []
 
-<Ramp-test_manual/fit_curve_ramp.jpg, id=293, 612.2875pt x 461.725pt>
+<Ramp-test_manual/fit_curve_ramp.jpg, id=296, 612.2875pt x 461.725pt>
 File: Ramp-test_manual/fit_curve_ramp.jpg Graphic file (type jpg)
 
-<use Ramp-test_manual/fit_curve_ramp.jpg> [67] [68 </home/backup/ttt/SBHS/SBHS-
-manual/new-manual/Ramp-test_manual/ramp_plot.jpg>] [69 </home/backup/ttt/SBHS/S
-BHS-manual/new-manual/Ramp-test_manual/fit_curve_ramp.jpg>]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Ramp_Test/ramp_test.
-sci [70])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Ramp_Analysis/label.
-sci) [71]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Ramp_Analysis/cost.s
-ci)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Ramp_Analysis/cost_a
-pprox.sci)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/RampTest/ramptest.
-sci [72] [73])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/RampTest/ramptest.
-sce [74])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Ramp_Analysis/ramp
-_virtual.sce [75]))
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/sinetest_manual/SineTest.tex
-[76]
+<use Ramp-test_manual/fit_curve_ramp.jpg> [68] [69 <./Ramp-test_manual/ramp_plo
+t.jpg>] [70 <./Ramp-test_manual/fit_curve_ramp.jpg>]
+(./Scilab/local/Ramp_Test/ramp_test.sci [71] [72])
+(./Scilab/local/Ramp_Analysis/label.sci [73])
+(./Scilab/local/Ramp_Analysis/cost.sci)
+(./Scilab/local/Ramp_Analysis/cost_approx.sci [74])
+(./Scilab/virtual/RampTest/ramptest.sci [75] [76])
+(./Scilab/virtual/RampTest/ramptest.sce [77])
+(./Scilab/virtual/Ramp_Analysis/ramp_virtual.sce [78] [79]))
+(./sinetest_manual/SineTest.tex [80]
 Chapter 6.
-<sinetest_manual/sinetest_xcos.png, id=325, 451.6875pt x 376.40625pt>
+<sinetest_manual/sinetest_xcos.png, id=338, 451.6875pt x 376.40625pt>
 File: sinetest_manual/sinetest_xcos.png Graphic file (type png)
 
-<use sinetest_manual/sinetest_xcos.png> [77
+<use sinetest_manual/sinetest_xcos.png> [81
 
-] [78 </home/backup/ttt/SBHS/SBHS-manual/new-manual/sinetest_manual/sinetest_xc
-os.png>] [79]
+] [82 <./sinetest_manual/sinetest_xcos.png>] [83]
 Overfull \hbox (20.09961pt too wide) in paragraph at lines 40--41
 \OT1/txr/m/n/12 the code \OT1/txtt/m/n/12 ser[]init.sce \OT1/txr/m/n/12 and \OT
 1/txtt/m/n/12 sine[]test.sci\OT1/txr/m/n/12 . Open the Xcos code \OT1/txtt/m/n/
 12 sine[]test.xcos\OT1/txr/m/n/12 .
  []
 
-<sinetest_manual/sine_resp.png, id=337, 612.2875pt x 461.725pt>
+<sinetest_manual/sine_resp.png, id=349, 612.2875pt x 461.725pt>
 File: sinetest_manual/sine_resp.png Graphic file (type png)
 
 <use sinetest_manual/sine_resp.png>
-<sinetest_manual/bode_calc.png, id=338, 338.76563pt x 331.99031pt>
+<sinetest_manual/bode_calc.png, id=350, 338.76563pt x 331.99031pt>
 File: sinetest_manual/bode_calc.png Graphic file (type png)
 
 <use sinetest_manual/bode_calc.png>
-<sinetest_manual/bode_resp.png, id=339, 612.2875pt x 461.725pt>
+<sinetest_manual/bode_resp.png, id=351, 612.2875pt x 461.725pt>
 File: sinetest_manual/bode_resp.png Graphic file (type png)
 
 <use sinetest_manual/bode_resp.png>
-<sinetest_manual/bodeplot.PNG, id=340, 612.2875pt x 461.725pt>
+<sinetest_manual/bodeplot.PNG, id=352, 612.2875pt x 461.725pt>
 File: sinetest_manual/bodeplot.PNG Graphic file (type png)
 
-<use sinetest_manual/bodeplot.PNG> [80] [81 </home/backup/ttt/SBHS/SBHS-manual/
-new-manual/sinetest_manual/sine_resp.png (PNG copy)>] [82 </home/backup/ttt/SBH
-S/SBHS-manual/new-manual/sinetest_manual/bode_calc.png>] [83 </home/backup/ttt/
-SBHS/SBHS-manual/new-manual/sinetest_manual/bode_resp.png (PNG copy)>]
-<sinetest_manual/plant_bode_tf.png, id=354, 612.2875pt x 461.725pt>
+<use sinetest_manual/bodeplot.PNG> [84] [85 <./sinetest_manual/sine_resp.png (P
+NG copy)>] [86 <./sinetest_manual/bode_calc.png>] [87 <./sinetest_manual/bode_r
+esp.png (PNG copy)>]
+<sinetest_manual/plant_bode_tf.png, id=367, 612.2875pt x 461.725pt>
 File: sinetest_manual/plant_bode_tf.png Graphic file (type png)
 
 <use sinetest_manual/plant_bode_tf.png>
-<sinetest_manual/bode_comparison.png, id=355, 612.2875pt x 461.725pt>
+<sinetest_manual/bode_comparison.png, id=368, 612.2875pt x 461.725pt>
 File: sinetest_manual/bode_comparison.png Graphic file (type png)
 
-<use sinetest_manual/bode_comparison.png> [84 </home/backup/ttt/SBHS/SBHS-manua
-l/new-manual/sinetest_manual/bodeplot.PNG (PNG copy)>] [85 </home/backup/ttt/SB
-HS/SBHS-manual/new-manual/sinetest_manual/plant_bode_tf.png (PNG copy)>]
-[86 </home/backup/ttt/SBHS/SBHS-manual/new-manual/sinetest_manual/bode_comparis
-on.png (PNG copy)>]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Sine_Test/sine_test.
-sci [87])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/SineTest/sinetest.
-sce)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/SineTest/sinetest.
-sci [88] [89])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Sine_Analysis/sine2.
-sce [90])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Sine_Analysis/label.
-sci) [91]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Sine_Analysis/bodepl
-ot.sce)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Sine_Analysis/labelb
-ode.sci [92])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Sine_Analysis/TFbode
-.sce)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Sine_Analysis/compar
-ison.sce [93]
+<use sinetest_manual/bode_comparison.png> [88 <./sinetest_manual/bodeplot.PNG (
+PNG copy)>] [89 <./sinetest_manual/plant_bode_tf.png (PNG copy)>] [90 <./sinete
+st_manual/bode_comparison.png (PNG copy)>]
+(./Scilab/local/Sine_Test/sine_test.sci [91])
+(./Scilab/virtual/SineTest/sinetest.sce)
+(./Scilab/virtual/SineTest/sinetest.sci [92] [93])
+(./Scilab/local/Sine_Analysis/sine2.sce [94])
+(./Scilab/local/Sine_Analysis/label.sci) [95]
+(./Scilab/local/Sine_Analysis/bodeplot.sce)
+(./Scilab/local/Sine_Analysis/labelbode.sci [96])
+(./Scilab/local/Sine_Analysis/TFbode.sce)
+(./Scilab/local/Sine_Analysis/comparison.sce [97]
 LaTeX Font Info:    Try loading font information for OMS+txr on input line 17.
- (/usr/share/texmf-texlive/tex/latex/txfonts/omstxr.fd
+
+(/usr/share/texmf-texlive/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 17.
 )
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Sine_Analysis/sine
-2_virtual.sce [94]))
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/pid_manual/PID.tex [95]
+(./Scilab/virtual/Sine_Analysis/sine2_virtual.sce [98])) (./pid_manual/PID.tex
+[99]
 Chapter 7.
-<pid_manual/pid_xcos.jpg, id=394, 451.6875pt x 376.40625pt>
+<pid_manual/pid_xcos.jpg, id=407, 451.6875pt x 376.40625pt>
 File: pid_manual/pid_xcos.jpg Graphic file (type jpg)
 
-<use pid_manual/pid_xcos.jpg> [96
+<use pid_manual/pid_xcos.jpg> [100
 
-] [97 </home/backup/ttt/SBHS/SBHS-manual/new-manual/pid_manual/pid_xcos.jpg>]
+] [101 <./pid_manual/pid_xcos.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 42--45
 
  []
 
-[98]
+[102]
 Overfull \hbox (0.23285pt too wide) in paragraph at lines 60--60
 []\OT1/txr/bx/n/17.28 Ziegler-Nichols Rule for Tun-ing PID Con-trollers 
  []
 
-<pid_manual/ReacCurve.PNG, id=405, 722.7pt x 451.6875pt>
+<pid_manual/ReacCurve.PNG, id=418, 722.7pt x 451.6875pt>
 File: pid_manual/ReacCurve.PNG Graphic file (type png)
 
-<use pid_manual/ReacCurve.PNG> [99] [100 </home/backup/ttt/SBHS/SBHS-manual/new
--manual/pid_manual/ReacCurve.PNG (PNG copy)>]
-<pid_manual/PIDUGtune.PNG, id=412, 722.7pt x 421.575pt>
+<use pid_manual/ReacCurve.PNG> [103] [104 <./pid_manual/ReacCurve.PNG (PNG copy
+)>] <pid_manual/PIDUGtune.PNG, id=425, 722.7pt x 421.575pt>
 File: pid_manual/PIDUGtune.PNG Graphic file (type png)
 
 <use pid_manual/PIDUGtune.PNG>
@@ -1741,8 +1724,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--124
 
  []
 
-[101] [102 </home/backup/ttt/SBHS/SBHS-manual/new-manual/pid_manual/PIDUGtune.P
-NG (PNG copy)>] <pid_manual/forder_fit.png, id=420, 612.2875pt x 461.725pt>
+[105] [106 <./pid_manual/PIDUGtune.PNG (PNG copy)>]
+<pid_manual/forder_fit.png, id=432, 612.2875pt x 461.725pt>
 File: pid_manual/forder_fit.png Graphic file (type png)
 
 <use pid_manual/forder_fit.png>
@@ -1750,13 +1733,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--144
 
  []
 
-<pid_manual/pi_xcos.png, id=421, 451.6875pt x 376.40625pt>
+<pid_manual/pi_xcos.png, id=433, 451.6875pt x 376.40625pt>
 File: pid_manual/pi_xcos.png Graphic file (type png)
 
-<use pid_manual/pi_xcos.png> [103 </home/backup/ttt/SBHS/SBHS-manual/new-manual
-/pid_manual/forder_fit.png (PNG copy)>] [104 </home/backup/ttt/SBHS/SBHS-manual
-/new-manual/pid_manual/pi_xcos.png>]
-<pid_manual/pi_ta.png, id=429, 612.2875pt x 461.725pt>
+<use pid_manual/pi_xcos.png> [107 <./pid_manual/forder_fit.png (PNG copy)>]
+[108 <./pid_manual/pi_xcos.png>]
+<pid_manual/pi_ta.png, id=442, 612.2875pt x 461.725pt>
 File: pid_manual/pi_ta.png Graphic file (type png)
 
 <use pid_manual/pi_ta.png>
@@ -1764,328 +1746,209 @@ Overfull \hbox (2.89401pt too wide) in paragraph at lines 182--182
 []\OT1/txr/bx/n/17.28 Implementing PI con-troller us-ing Back-ward Dif-
  []
 
-[105] [106 </home/backup/ttt/SBHS/SBHS-manual/new-manual/pid_manual/pi_ta.png (
-PNG copy)>] <pid_manual/pi_bda.jpg, id=436, 612.2875pt x 461.725pt>
+[109] [110 <./pid_manual/pi_ta.png (PNG copy)>]
+<pid_manual/pi_bda.jpg, id=449, 612.2875pt x 461.725pt>
 File: pid_manual/pi_bda.jpg Graphic file (type jpg)
 
-<use pid_manual/pi_bda.jpg> [107 </home/backup/ttt/SBHS/SBHS-manual/new-manual/
-pid_manual/pi_bda.jpg>] [108]
-<pid_manual/pi_fda.png, id=444, 612.2875pt x 461.725pt>
+<use pid_manual/pi_bda.jpg> [111 <./pid_manual/pi_bda.jpg>] [112]
+<pid_manual/pi_fda.png, id=456, 612.2875pt x 461.725pt>
 File: pid_manual/pi_fda.png Graphic file (type png)
 
-<use pid_manual/pi_fda.png> [109 </home/backup/ttt/SBHS/SBHS-manual/new-manual/
-pid_manual/pi_fda.png (PNG copy)>]
-<pid_manual/pid_bda_xcos.jpg, id=448, 451.6875pt x 376.40625pt>
+<use pid_manual/pi_fda.png> [113 <./pid_manual/pi_fda.png (PNG copy)>]
+<pid_manual/pid_bda_xcos.jpg, id=460, 451.6875pt x 376.40625pt>
 File: pid_manual/pid_bda_xcos.jpg Graphic file (type jpg)
 
-<use pid_manual/pid_bda_xcos.jpg> [110 </home/backup/ttt/SBHS/SBHS-manual/new-m
-anual/pid_manual/pid_bda_xcos.jpg>]
-<pid_manual/pid_bda_graph.jpg, id=452, 612.2875pt x 461.725pt>
+<use pid_manual/pid_bda_xcos.jpg> [114 <./pid_manual/pid_bda_xcos.jpg>]
+<pid_manual/pid_bda_graph.jpg, id=465, 612.2875pt x 461.725pt>
 File: pid_manual/pid_bda_graph.jpg Graphic file (type jpg)
 
-<use pid_manual/pid_bda_graph.jpg> [111]
+<use pid_manual/pid_bda_graph.jpg> [115]
 Overfull \hbox (5.24516pt too wide) in paragraph at lines 283--283
 \OT1/txr/bx/n/17.28 dif-fer-ence ap-prox-i-ma-tion for the deriva-tive mode 
  []
 
-[112 </home/backup/ttt/SBHS/SBHS-manual/new-manual/pid_manual/pid_bda_graph.jpg
->] <pid_manual/pid_ta_bda_graph.jpg, id=459, 352.31625pt x 363.60844pt>
+[116 <./pid_manual/pid_bda_graph.jpg>]
+<pid_manual/pid_ta_bda_graph.jpg, id=472, 352.31625pt x 363.60844pt>
 File: pid_manual/pid_ta_bda_graph.jpg Graphic file (type jpg)
 
-<use pid_manual/pid_ta_bda_graph.jpg> [113]
-<pid_manual/pidN.jpg, id=463, 465.23813pt x 420.82219pt>
+<use pid_manual/pid_ta_bda_graph.jpg> [117]
+<pid_manual/pidN.jpg, id=476, 465.23813pt x 420.82219pt>
 File: pid_manual/pidN.jpg Graphic file (type jpg)
 
-<use pid_manual/pidN.jpg> [114 </home/backup/ttt/SBHS/SBHS-manual/new-manual/pi
-d_manual/pid_ta_bda_graph.jpg>] [115 </home/backup/ttt/SBHS/SBHS-manual/new-man
-ual/pid_manual/pidN.jpg>]
-<pid_manual/pid_filter.jpg, id=471, 612.2875pt x 461.725pt>
+<use pid_manual/pidN.jpg> [118 <./pid_manual/pid_ta_bda_graph.jpg>] [119 <./pid
+_manual/pidN.jpg>] <pid_manual/pid_filter.jpg, id=483, 612.2875pt x 461.725pt>
 File: pid_manual/pid_filter.jpg Graphic file (type jpg)
 
-<use pid_manual/pid_filter.jpg> [116]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/pid_controller/ser_i
-nit.sce [117 </home/backup/ttt/SBHS/SBHS-manual/new-manual/pid_manual/pid_filte
-r.jpg>])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/pid_controller/pi_ta
-.sci [118])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/pid_controller/pi_bd
-a.sci [119] [120])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/pid_controller/pi_fd
-a.sci [121])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/pid_controller/pid_b
-da.sci [122])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/pid_controller/pid_t
-a_bda.sci [123] [124])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/pid_controller/pid_f
-ilter.sci [125])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/pid_controller/pid
-_bda_virtual.sce [126])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/pid_controller/pid
-_bda_virtual.sci [127] [128]))
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2-DOF.tex [129]
+<use pid_manual/pid_filter.jpg> [120]
+(./Scilab/local/pid_controller/ser_init.sce [121 <./pid_manual/pid_filter.jpg>]
+) (./Scilab/local/pid_controller/pi_ta.sci [122])
+(./Scilab/local/pid_controller/pi_bda.sci [123] [124] [125] [126])
+(./Scilab/local/pid_controller/pi_fda.sci [127])
+(./Scilab/local/pid_controller/pid_bda.sci [128])
+(./Scilab/local/pid_controller/pid_ta_bda.sci [129]) [130]
+(./Scilab/local/pid_controller/pid_filter.sci [131])
+(./Scilab/virtual/pid_controller/pid_bda_virtual.sce [132])
+(./Scilab/virtual/pid_controller/pid_bda_virtual.sci [133] [134]))
+(./2-DOF_manual/2-DOF.tex [135]
 Chapter 8.
-<2-DOF_manual/2dof_xcos.png, id=516, 451.6875pt x 376.40625pt>
+<2-DOF_manual/2dof_xcos.png, id=535, 451.6875pt x 376.40625pt>
 File: 2-DOF_manual/2dof_xcos.png Graphic file (type png)
 
-<use 2-DOF_manual/2dof_xcos.png>
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/fb.tex) [130
+<use 2-DOF_manual/2dof_xcos.png> (./2-DOF_manual/fb.tex) [136
 
-]
-[131 </home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof_xcos.png>]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2doffig.tex)
-[132] [133]
+] [137 <./2-DOF_manual/2dof_xcos.png>] (./2-DOF_manual/2doffig.tex) [138] [139]
+
 Overfull \hbox (7.69786pt too wide) in paragraph at lines 60--60
 []\OT1/txr/bx/n/17.28 Designing 2-DOF con-troller us-ing pole place-ment
  []
 
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dofpp.tex) [134]
-[135] [136]
+(./2-DOF_manual/2dofpp.tex) [140] [141] [142]
 Overfull \hbox (4.54802pt too wide) in paragraph at lines 104--105
 \OT1/txr/m/n/12 We ob-tain a first or-der trans-fer func-tion of the plant us-i
 ng the step test ap-proach.The
  []
 
-[137] [138] <2-DOF_manual/2dof_console.png, id=547, 398.99063pt x 628.59843pt>
+[143] [144] <2-DOF_manual/2dof_console.png, id=566, 398.99063pt x 628.59843pt>
 File: 2-DOF_manual/2dof_console.png Graphic file (type png)
 
 <use 2-DOF_manual/2dof_console.png>
-<2-DOF_manual/2dof_resp.png, id=548, 612.2875pt x 461.725pt>
+<2-DOF_manual/2dof_resp.png, id=567, 612.2875pt x 461.725pt>
 File: 2-DOF_manual/2dof_resp.png Graphic file (type png)
 
-<use 2-DOF_manual/2dof_resp.png> [139]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/c2d.sce
+<use 2-DOF_manual/2dof_resp.png> [145] (./2-DOF_manual/2dof/c2d.sce
 Overfull \vbox (0.36003pt too high) has occurred while \output is active []
 
 
-[140] [141 </home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof_cons
-ole.png>] [142 </home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof_
-resp.png (PNG copy)>])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/2-DOF_para.sce
-[143]) (/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/2dof.sci
-[144] [145])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/cindep.sci
-[146])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/clcoef.sci
-[147])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/clcoef.sci)
-[148]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/cosfil_ip.sci)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/desired.sci)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/indep.sci
-[149])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/left_prm.sci
-[150] [151] [152])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/makezero.sci
-[153]
+[146] [147 <./2-DOF_manual/2dof_console.png>] [148 <./2-DOF_manual/2dof_resp.pn
+g (PNG copy)>]) (./2-DOF_manual/2dof/2-DOF_para.sce [149])
+(./2-DOF_manual/2dof/2dof.sci [150] [151]) (./2-DOF_manual/2dof/cindep.sci
+[152]) (./2-DOF_manual/2dof/clcoef.sci [153]) (./2-DOF_manual/2dof/clcoef.sci)
+[154] (./2-DOF_manual/2dof/cosfil_ip.sci) (./2-DOF_manual/2dof/desired.sci)
+(./2-DOF_manual/2dof/indep.sci [155]) (./2-DOF_manual/2dof/left_prm.sci
+[156] [157] [158]) (./2-DOF_manual/2dof/makezero.sci [159]
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <8> not available
 (Font)              Font shape `OML/txmi/m/it' tried instead on input line 13.
 )
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/move_sci.sci
-[154])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/polmul.sci
-[155])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/polsize.sci)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/polsplit3.sci
+(./2-DOF_manual/2dof/move_sci.sci [160]) (./2-DOF_manual/2dof/polmul.sci
+[161]) (./2-DOF_manual/2dof/polsize.sci) (./2-DOF_manual/2dof/polsplit3.sci
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <8> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 4.
 
-[156])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/polyno.sci
-[157])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/pp_im.sci
-[158])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/rowjoin.sci
-[159])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/seshft.sci
-[160])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/t1calc.sci
-[161])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/xdync.sci
-[162])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/2-DOF_manual/2dof/zpowk.sci
-[163])) (/home/backup/ttt/SBHS/SBHS-manual/new-manual/IMC/imc.tex [164]
+[162]) (./2-DOF_manual/2dof/polyno.sci [163]) (./2-DOF_manual/2dof/pp_im.sci
+[164]) (./2-DOF_manual/2dof/rowjoin.sci [165]) (./2-DOF_manual/2dof/seshft.sci
+[166]) (./2-DOF_manual/2dof/t1calc.sci [167]) (./2-DOF_manual/2dof/xdync.sci
+[168]) (./2-DOF_manual/2dof/zpowk.sci [169])) (./IMC/imc.tex [170]
 Chapter 9.
-<IMC/imc_xcos.png, id=632, 451.6875pt x 376.40625pt>
+<IMC/imc_xcos.png, id=651, 451.6875pt x 376.40625pt>
 File: IMC/imc_xcos.png Graphic file (type png)
  <use IMC/imc_xcos.png>
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/IMC/imcfb.tex) [165
+(./IMC/imcfb.tex) (./IMC/equistdimc.tex) [171
 
-] [166 </home/backup/ttt/SBHS/SBHS-manual/new-manual/IMC/imc_xcos.png>]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/IMC/equistdimc.tex) [167]
-Overfull \hbox (1.13916pt too wide) in paragraph at lines 54--56
-\OT1/txr/m/n/12 For im-ple-ment-ing above IMC con-troller, scilab code is given
- in \OT1/txtt/m/n/12 imc.sci \OT1/txr/m/n/12 file,listed
- []
-
-[168] <IMC/imc_092_resp.png, id=647, 612.2875pt x 461.725pt>
+] [172 <./IMC/imc_xcos.png>]
+[173] <IMC/imc_092_resp.png, id=662, 612.2875pt x 461.725pt>
 File: IMC/imc_092_resp.png Graphic file (type png)
 
 <use IMC/imc_092_resp.png>
-<IMC/imc_085_resp.png, id=648, 612.2875pt x 461.725pt>
+<IMC/imc_085_resp.png, id=663, 612.2875pt x 461.725pt>
 File: IMC/imc_085_resp.png Graphic file (type png)
 
-<use IMC/imc_085_resp.png> [169 </home/backup/ttt/SBHS/SBHS-manual/new-manual/I
-MC/imc_092_resp.png (PNG copy)>] [170 </home/backup/ttt/SBHS/SBHS-manual/new-ma
-nual/IMC/imc_085_resp.png (PNG copy)>]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/imc_controller/ser_i
-nit.sce)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/imc_controller/imc.s
-ci [171] [172])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/imc_controller/imc
-_virtual.sce) [173]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/imc_controller/imc
-_virtual.sci [174]))
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/self_tuning
-_report_vikas.tex [175]
+<use IMC/imc_085_resp.png> [174] [175 <./IMC/imc_092_resp.png (PNG copy)>]
+[176 <./IMC/imc_085_resp.png (PNG copy)>]
+(./Scilab/local/imc_controller/ser_init.sce)
+(./Scilab/local/imc_controller/imc.sci [177] [178])
+(./Scilab/virtual/imc_controller/imc_virtual.sce [179])
+(./Scilab/virtual/imc_controller/imc_virtual.sci [180]))
+(./Vikas_self/report_tex/self_tuning_report_vikas.tex [181]
 Chapter 10.
-[176
+[182
 
-] <Vikas_self/report_tex/sbsh.jpg, id=674, 455.45157pt x 250.68657pt>
-File: Vikas_self/report_tex/sbsh.jpg Graphic file (type jpg)
-
-<use Vikas_self/report_tex/sbsh.jpg>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+]
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-[177] [178 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/
-sbsh.jpg>]
 
 LaTeX Warning: File `Vikas_self/report_tex/Closed Loop Circuit.jpg' not found o
-n input line 67.
+n input line 48.
 
 
-<Vikas_self/report_tex/Closed Loop Circuit.jpg, id=681, 453.94594pt x 140.02313
+<Vikas_self/report_tex/Closed Loop Circuit.jpg, id=693, 453.94594pt x 140.02313
 pt>
 File: Vikas_self/report_tex/Closed Loop Circuit.jpg Graphic file (type jpg)
- <use Vikas_self/report_tex/Closed Loop Circuit.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+ <use Vikas_self/report_tex/Closed Loop Circuit.jpg> [183]
+Underfull \hbox (badness 10000) in paragraph at lines 56--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 56--61
 
  []
 
-[179 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/Closed
- Loop Circuit.jpg>] [180]
-<Vikas_self/report_tex/ziegler.jpg, id=689, 168.63pt x 98.61844pt>
+
+Overfull \hbox (191.90002pt too wide) in paragraph at lines 76--80
+[] 
+ []
+
+[184 <./Vikas_self/report_tex/Closed Loop Circuit.jpg>]
+<Vikas_self/report_tex/ziegler.jpg, id=700, 168.63pt x 98.61844pt>
 File: Vikas_self/report_tex/ziegler.jpg Graphic file (type jpg)
 
-<use Vikas_self/report_tex/ziegler.jpg> [181 </home/backup/ttt/SBHS/SBHS-manual
-/new-manual/Vikas_self/report_tex/ziegler.jpg>]
-<Vikas_self/report_tex/parameter_estimation/10to15.jpg, id=693, 438.13687pt x 1
-97.98969pt>
-File: Vikas_self/report_tex/parameter_estimation/10to15.jpg Graphic file (type 
-jpg)
- <use Vikas_self/report_tex/parameter_estimation/10to15.jpg>
-<Vikas_self/report_tex/parameter_estimation/optimized10to15.jpg, id=694, 455.45
-157pt x 336.50719pt>
-File: Vikas_self/report_tex/parameter_estimation/optimized10to15.jpg Graphic fi
-le (type jpg)
-
-<use Vikas_self/report_tex/parameter_estimation/optimized10to15.jpg>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[182 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/parame
-ter_estimation/10to15.jpg>]
-<Vikas_self/report_tex/parameter_estimation/20to25.jpg, id=698, 455.45157pt x 2
-01.00093pt>
-File: Vikas_self/report_tex/parameter_estimation/20to25.jpg Graphic file (type 
-jpg)
- <use Vikas_self/report_tex/parameter_estimation/20to25.jpg>
-<Vikas_self/report_tex/parameter_estimation/optimized20to25.jpg, id=699, 456.20
-438pt x 344.78813pt>
-File: Vikas_self/report_tex/parameter_estimation/optimized20to25.jpg Graphic fi
-le (type jpg)
-
-<use Vikas_self/report_tex/parameter_estimation/optimized20to25.jpg>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[183 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/parame
-ter_estimation/optimized10to15.jpg> </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/Vikas_self/report_tex/parameter_estimation/20to25.jpg>]
-<Vikas_self/report_tex/parameter_estimation/30to35.jpg, id=703, 456.20438pt x 1
-97.98969pt>
-File: Vikas_self/report_tex/parameter_estimation/30to35.jpg Graphic file (type 
-jpg)
- <use Vikas_self/report_tex/parameter_estimation/30to35.jpg>
-<Vikas_self/report_tex/parameter_estimation/optimized30to35.jpg, id=704, 456.20
-438pt x 345.54094pt>
-File: Vikas_self/report_tex/parameter_estimation/optimized30to35.jpg Graphic fi
-le (type jpg)
-
-<use Vikas_self/report_tex/parameter_estimation/optimized30to35.jpg>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[184 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/parame
-ter_estimation/optimized20to25.jpg> </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/Vikas_self/report_tex/parameter_estimation/30to35.jpg>]
-Overfull \hbox (50.83203pt too wide) in paragraph at lines 193--200
+<use Vikas_self/report_tex/ziegler.jpg> [185 <./Vikas_self/report_tex/ziegler.j
+pg>]
+Overfull \hbox (50.83203pt too wide) in paragraph at lines 123--130
 [][] 
  []
 
-[185 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/parame
-ter_estimation/optimized30to35.jpg>]
-<Vikas_self/report_tex/parameter_estimation/kp.jpg, id=711, 357.58594pt x 205.5
+[186]
+<Vikas_self/report_tex/parameter_estimation/kp.jpg, id=708, 357.58594pt x 205.5
 178pt>
 File: Vikas_self/report_tex/parameter_estimation/kp.jpg Graphic file (type jpg)
 
  <use Vikas_self/report_tex/parameter_estimation/kp.jpg>
-<Vikas_self/report_tex/parameter_estimation/taup.jpg, id=712, 420.82219pt x 205
+<Vikas_self/report_tex/parameter_estimation/taup.jpg, id=709, 420.82219pt x 205
 .5178pt>
 File: Vikas_self/report_tex/parameter_estimation/taup.jpg Graphic file (type jp
 g)
- <use Vikas_self/report_tex/parameter_estimation/taup.jpg> [186 </home/backup/t
-tt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/parameter_estimation/kp.jp
-g>]
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+ <use Vikas_self/report_tex/parameter_estimation/taup.jpg> [187 <./Vikas_self/r
+eport_tex/parameter_estimation/kp.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--261
+Underfull \hbox (badness 10000) in paragraph at lines 185--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--271
+Underfull \hbox (badness 10000) in paragraph at lines 194--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--276
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
-[187 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/parame
-ter_estimation/taup.jpg>]
-<Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg, id=720, 451.6875pt x 37
+[188 <./Vikas_self/report_tex/parameter_estimation/taup.jpg>]
+<Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg, id=716, 451.6875pt x 37
 6.40625pt>
 File: Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg Graphic file (type 
 jpg)
- <use Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg> [188 </home/backup
-/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/implementation/Pi_dist_x
-cos.jpg>]
-<Vikas_self/report_tex/implementation/pid_dist.png, id=724, 451.6875pt x 376.40
+ <use Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg> [189 <./Vikas_self
+/report_tex/implementation/Pi_dist_xcos.jpg>]
+<Vikas_self/report_tex/implementation/pid_dist.png, id=720, 451.6875pt x 376.40
 625pt>
 File: Vikas_self/report_tex/implementation/pid_dist.png Graphic file (type png)
 
@@ -2093,71 +1956,68 @@ File: Vikas_self/report_tex/implementation/pid_dist.png Graphic file (type png)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[189] [190 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/
-implementation/pid_dist.png>]
-<Vikas_self/report_tex/implementation/pi_dist_self.png, id=732, 451.6875pt x 37
+[190]
+<Vikas_self/report_tex/implementation/pi_dist_self.png, id=724, 451.6875pt x 37
 6.40625pt>
 File: Vikas_self/report_tex/implementation/pi_dist_self.png Graphic file (type 
 png)
- <use Vikas_self/report_tex/implementation/pi_dist_self.png>
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+ <use Vikas_self/report_tex/implementation/pi_dist_self.png> [191 <./Vikas_self
+/report_tex/implementation/pid_dist.png>] [192 <./Vikas_self/report_tex/impleme
+ntation/pi_dist_self.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
-[191 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/implem
-entation/pi_dist_self.png>] [192]
+[193]
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSynthes
-is/step32to37.jpg, id=741, 587.94656pt x 247.67531pt>
+is/step32to37.jpg, id=737, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSy
 nthesis/step32to37.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSyn
 thesis/step32to37.jpg>
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSynthes
-is/step35to45.jpg, id=742, 587.94656pt x 247.67531pt>
+is/step35to45.jpg, id=738, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSy
 nthesis/step35to45.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSyn
 thesis/step35to45.jpg>
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direct_Sy
-nthesis/step32to37.jpg, id=743, 587.94656pt x 247.67531pt>
+nthesis/step32to37.jpg, id=739, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Dire
 ct_Synthesis/step32to37.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direc
-t_Synthesis/step32to37.jpg> [193 </home/backup/ttt/SBHS/SBHS-manual/new-manual/
-Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSynthesi
-s/step32to37.jpg> </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/repo
-rt_tex/PID_results/self_tuning/NewSetpoint_change/DirectSynthesis/step35to45.jp
-g>]
+t_Synthesis/step32to37.jpg> [194 <./Vikas_self/report_tex/PID_results/self_tuni
+ng/NewSetpoint_change/DirectSynthesis/step32to37.jpg> <./Vikas_self/report_tex/
+PID_results/self_tuning/NewSetpoint_change/DirectSynthesis/step35to45.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direct_Sy
-nthesis/step35to45.jpg, id=747, 587.94656pt x 250.68657pt>
+nthesis/step35to45.jpg, id=743, 587.94656pt x 250.68657pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Dire
 ct_Synthesis/step35to45.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direc
-t_Synthesis/step35to45.jpg> [194 </home/backup/ttt/SBHS/SBHS-manual/new-manual/
-Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direct_Syn
-thesis/step32to37.jpg> </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self
-/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direct_Synthesis/ste
-p35to45.jpg>]
+t_Synthesis/step35to45.jpg> [195 <./Vikas_self/report_tex/PID_results/Conventio
+nal_Tuning/Setpointchange/Direct_Synthesis/step32to37.jpg> <./Vikas_self/report
+_tex/PID_results/Conventional_Tuning/Setpointchange/Direct_Synthesis/step35to45
+.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step32to37
-.jpg, id=751, 597.73312pt x 247.67531pt>
+.jpg, id=747, 597.73312pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step3
 2to37.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step32
 to37.jpg>
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step35to45
-.jpg, id=752, 592.46344pt x 247.67531pt>
+.jpg, id=748, 592.46344pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step3
 5to45.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step35
 to45.jpg>
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step40to45
-.jpg, id=753, 587.94656pt x 247.67531pt>
+.jpg, id=749, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step4
 0to45.jpg Graphic file (type jpg)
 
@@ -2166,53 +2026,50 @@ to45.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[195 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_re
-sults/self_tuning/NewSetpoint_change/PI/step32to37.jpg> </home/backup/ttt/SBHS/
-SBHS-manual/new-manual/Vikas_self/report_tex/PID_results/self_tuning/NewSetpoin
-t_change/PI/step35to45.jpg>]
+[196 <./Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/ste
+p32to37.jpg> <./Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_chang
+e/PI/step35to45.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step32
-to37.jpg, id=757, 596.98032pt x 247.67531pt>
+to37.jpg, id=753, 596.98032pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/s
 tep32to37.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/st
-ep32to37.jpg> [196 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/rep
-ort_tex/PID_results/self_tuning/NewSetpoint_change/PI/step40to45.jpg> </home/ba
-ckup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_results/Conventi
-onal_Tuning/Setpointchange/PI/step32to37.jpg>]
+ep32to37.jpg> [197 <./Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint
+_change/PI/step40to45.jpg> <./Vikas_self/report_tex/PID_results/Conventional_Tu
+ning/Setpointchange/PI/step32to37.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step35
-to45.jpg, id=761, 710.655pt x 249.18094pt>
+to45.jpg, id=757, 710.655pt x 249.18094pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/s
 tep35to45.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/st
 ep35to45.jpg>
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step40
-to45.jpg, id=762, 710.655pt x 241.65282pt>
+to45.jpg, id=758, 710.655pt x 241.65282pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/s
 tep40to45.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/st
-ep40to45.jpg> [197 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/rep
-ort_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step35to45.jpg> </hom
-e/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_results/Conv
-entional_Tuning/Setpointchange/PI/step40to45.jpg>]
+ep40to45.jpg> [198 <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Set
+pointchange/PI/step35to45.jpg> <./Vikas_self/report_tex/PID_results/Conventiona
+l_Tuning/Setpointchange/PI/step40to45.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step32to3
-7.jpg, id=766, 587.94656pt x 247.67531pt>
+7.jpg, id=763, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step
 32to37.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step3
 2to37.jpg>
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step32to4
-6.jpg, id=767, 587.94656pt x 247.67531pt>
+6.jpg, id=764, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step
 32to46.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step3
 2to46.jpg>
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/step3
-2to37.jpg, id=768, 635.37375pt x 247.67531pt>
+2to37.jpg, id=765, 635.37375pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/
 step32to37.jpg Graphic file (type jpg)
 
@@ -2223,7 +2080,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/step3
-1to45.jpg, id=769, 587.94656pt x 247.67531pt>
+1to45.jpg, id=766, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/
 step31to45.jpg Graphic file (type jpg)
 
@@ -2232,64 +2089,65 @@ tep31to45.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[198 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_re
-sults/self_tuning/NewSetpoint_change/PID/step32to37.jpg> </home/backup/ttt/SBHS
-/SBHS-manual/new-manual/Vikas_self/report_tex/PID_results/self_tuning/NewSetpoi
-nt_change/PID/step32to46.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 515--516
+[199 <./Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/st
+ep32to37.jpg> <./Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_chan
+ge/PID/step32to46.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
-[199 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_re
-sults/Conventional_Tuning/Setpointchange/PID/step32to37.jpg> </home/backup/ttt/
-SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_results/Conventional_Tuni
-ng/Setpointchange/PID/step31to45.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 521--522
+[200 <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI
+D/step32to37.jpg> <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Setp
+ointchange/PID/step31to45.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--524
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
-[200]
+
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthesis/s
-tep50to100.jpg, id=780, 710.655pt x 401.24907pt>
+tep50to100.jpg, id=773, 710.655pt x 401.24907pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthe
 sis/step50to100.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthes
-is/step50to100.jpg> [201 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_se
-lf/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthesis/step50to10
-0.jpg>]
+is/step50to100.jpg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[201] [202 <./Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/Dire
+ctSynthesis/step50to100.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthesis/s
-tep100to50.jpg, id=784, 710.655pt x 401.24907pt>
+tep100to50.jpg, id=780, 710.655pt x 401.24907pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthe
 sis/step100to50.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthes
 is/step100to50.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 561--562
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
-[202 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_re
-sults/self_tuning/FanDisturbance/DirectSynthesis/step100to50.jpg>]
+[203 <./Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynt
+hesis/step100to50.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Direct_S
-ysthesis/step50to100.jpg, id=788, 587.94656pt x 350.05782pt>
+ysthesis/step50to100.jpg, id=784, 587.94656pt x 350.05782pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Dir
 ect_Systhesis/step50to100.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Dire
 ct_Systhesis/step50to100.jpg>
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Direct_S
-ysthesis/step100to50.jpg, id=789, 587.94656pt x 353.06906pt>
+ysthesis/step100to50.jpg, id=785, 587.94656pt x 353.06906pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Dir
 ect_Systhesis/step100to50.jpg Graphic file (type jpg)
 
@@ -2298,10 +2156,10 @@ ct_Systhesis/step100to50.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[203 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_re
-sults/Conventional_Tuning/Fan_disturbance/Direct_Systhesis/step50to100.jpg>]
+[204 <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/D
+irect_Systhesis/step50to100.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step50to100fin
-al.jpg, id=793, 710.655pt x 446.41782pt>
+al.jpg, id=790, 710.655pt x 446.41782pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step50to1
 00final.jpg Graphic file (type jpg)
 
@@ -2310,10 +2168,10 @@ File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step50to1
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[204 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_re
-sults/Conventional_Tuning/Fan_disturbance/Direct_Systhesis/step100to50.jpg>]
+[205 <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/D
+irect_Systhesis/step100to50.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step100to50.jp
-g, id=798, 710.655pt x 401.24907pt>
+g, id=794, 710.655pt x 401.24907pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step100to
 50.jpg Graphic file (type jpg)
 
@@ -2323,14 +2181,14 @@ File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step100to
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--600
+Underfull \hbox (badness 10000) in paragraph at lines 530--532
 
  []
 
-[205 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_re
-sults/self_tuning/FanDisturbance/PI/step50to100final.jpg>]
+[206 <./Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step50t
+o100final.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/step5
-0to100.jpg, id=802, 587.94656pt x 354.57469pt>
+0to100.jpg, id=798, 587.94656pt x 354.57469pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/
 step50to100.jpg Graphic file (type jpg)
 
@@ -2341,7 +2199,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/step1
-00to50.jpg, id=803, 587.94656pt x 356.83313pt>
+00to50.jpg, id=799, 587.94656pt x 356.83313pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/
 step100to50.jpg Graphic file (type jpg)
 
@@ -2350,10 +2208,10 @@ tep100to50.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[206 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_re
-sults/self_tuning/FanDisturbance/PI/step100to50.jpg>]
+[207 <./Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step100
+to50.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step50to100.j
-pg, id=807, 710.655pt x 445.665pt>
+pg, id=803, 710.655pt x 445.665pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step50to
 100.jpg Graphic file (type jpg)
 
@@ -2362,10 +2220,10 @@ File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step50to
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[207 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_re
-sults/Conventional_Tuning/Fan_disturbance/PI/step50to100.jpg>]
+[208 <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/P
+I/step50to100.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step100to50.j
-pg, id=811, 710.655pt x 476.53032pt>
+pg, id=807, 710.655pt x 476.53032pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step100t
 o50.jpg Graphic file (type jpg)
 
@@ -2374,10 +2232,10 @@ o50.jpg Graphic file (type jpg)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[208 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_re
-sults/Conventional_Tuning/Fan_disturbance/PI/step100to50.jpg>]
+[209 <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/P
+I/step100to50.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID/step
-50to100.jpg, id=815, 587.94656pt x 349.305pt>
+50to100.jpg, id=811, 587.94656pt x 349.305pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID
 /step50to100.jpg Graphic file (type jpg)
 
@@ -2388,7 +2246,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID/step
-100to50.jpg, id=816, 587.94656pt x 355.3275pt>
+100to50.jpg, id=812, 587.94656pt x 355.3275pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID
 /step100to50.jpg Graphic file (type jpg)
 
@@ -2397,430 +2255,374 @@ step100to50.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[209 </home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_re
-sults/self_tuning/FanDisturbance/PID/step50to100.jpg>]
-Overfull \hbox (8.4235pt too wide) in paragraph at lines 668--669
+[210 <./Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step50
+to100.jpg>]
+Overfull \hbox (8.4235pt too wide) in paragraph at lines 601--602
 \OT1/txtt/m/n/12 SelfTuning[]Vikas\OT1/txr/m/n/12 . You will find this file in 
 the \OT1/txtt/m/n/12 PIControllerFandisturbance
  []
 
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/ser_init.sce [210 </ho
-me/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_results/sel
-f_tuning/FanDisturbance/PID/step100to50.jpg>])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Self_tuning_controll
-er/ConventionalTuning_Vikas/PIControllerFandisturbance/pi_bda_dist.sci [211 </h
-ome/backup/ttt/SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_results/Co
-nventional_Tuning/Fan_disturbance/PID/step50to100.jpg>] [212 </home/backup/ttt/
-SBHS/SBHS-manual/new-manual/Vikas_self/report_tex/PID_results/Conventional_Tuni
-ng/Fan_disturbance/PID/step100to50.jpg>])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Self_tuning_controll
-er/ConventionalTuning_Vikas/PIControllersetpointchange/pi_bda.sci [213])
-[214]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Self_tuning_controll
-er/ConventionalTuning_Vikas/PIDControllerFandisturbance/pid_bda_dist.sci
-[215])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Self_tuning_controll
-er/ConventionalTuning_Vikas/PIDControllersetpointchange/pid_bda.sci [216])
-[217]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Self_tuning_controll
-er/SelfTuning_Vikas/PIControllerFandisturbance/pi_bda_tuned_dist.sci [218])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Self_tuning_controll
-er/SelfTuning_Vikas/PIControllersetpointchange/pi_bda_tuned.sci [219] [220])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Self_tuning_controll
-er/SelfTuning_Vikas/PIDControllerFandisturbance/pid_bda_tuned_dist.sci [221]
-[222])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/Self_tuning_controll
-er/SelfTuning_Vikas/PIDControllersetpointchange/pid_bda_tuned.sci [223])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Self_tuning_contro
-ller/ConventionalTuning_Vikas/PIControllerFandisturbance/pi_bda_dist_virtual.sc
-i [224] [225])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Self_tuning_contro
-ller/ConventionalTuning_Vikas/PIControllersetpointchange/pi_bda_virtual.sci
-[226] [227])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Self_tuning_contro
-ller/ConventionalTuning_Vikas/PIDControllerFandisturbance/pid_bda_dist_virtual.
-sci [228] [229])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Self_tuning_contro
-ller/ConventionalTuning_Vikas/PIDControllersetpointchange/pid_bda_virtual.sci
-[230] [231])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Self_tuning_contro
-ller/SelfTuning_Vikas/PIControllerFandisturbance/pi_bda_tuned_dist_virtual.sci
-[232] [233])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Self_tuning_contro
-ller/SelfTuning_Vikas/PIControllersetpointchange/pi_bda_tuned_virtual.sci
-[234] [235] [236])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Self_tuning_contro
-ller/SelfTuning_Vikas/PIDControllerFandisturbance/pid_bda_tuned_dist_virtual.sc
-i [237] [238])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/Self_tuning_contro
-ller/SelfTuning_Vikas/PIDControllersetpointchange/pid_bda_tuned_virtual.sci
-[239] [240])) (/home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/mpc.tex
-[241]
+(./Vikas_self/ser_init.sce [211 <./Vikas_self/report_tex/PID_results/self_tunin
+g/FanDisturbance/PID/step100to50.jpg>])
+(./Scilab/local/Self_tuning_controller/ConventionalTuning_Vikas/PIControllerFan
+disturbance/pi_bda_dist.sci [212 <./Vikas_self/report_tex/PID_results/Conventio
+nal_Tuning/Fan_disturbance/PID/step50to100.jpg>] [213 <./Vikas_self/report_tex/
+PID_results/Conventional_Tuning/Fan_disturbance/PID/step100to50.jpg>])
+(./Scilab/local/Self_tuning_controller/ConventionalTuning_Vikas/PIControllerset
+pointchange/pi_bda.sci [214] [215])
+(./Scilab/local/Self_tuning_controller/ConventionalTuning_Vikas/PIDControllerFa
+ndisturbance/pid_bda_dist.sci [216])
+(./Scilab/local/Self_tuning_controller/ConventionalTuning_Vikas/PIDControllerse
+tpointchange/pid_bda.sci [217]) [218]
+(./Scilab/local/Self_tuning_controller/SelfTuning_Vikas/PIControllerFandisturba
+nce/pi_bda_tuned_dist.sci [219])
+(./Scilab/local/Self_tuning_controller/SelfTuning_Vikas/PIControllersetpointcha
+nge/pi_bda_tuned.sci [220] [221])
+(./Scilab/local/Self_tuning_controller/SelfTuning_Vikas/PIDControllerFandisturb
+ance/pid_bda_tuned_dist.sci [222] [223])
+(./Scilab/local/Self_tuning_controller/SelfTuning_Vikas/PIDControllersetpointch
+ange/pid_bda_tuned.sci [224])
+(./Scilab/virtual/Self_tuning_controller/ConventionalTuning_Vikas/PIControllerF
+andisturbance/pi_bda_dist_virtual.sci [225] [226])
+(./Scilab/virtual/Self_tuning_controller/ConventionalTuning_Vikas/PIControllers
+etpointchange/pi_bda_virtual.sci [227] [228])
+(./Scilab/virtual/Self_tuning_controller/ConventionalTuning_Vikas/PIDController
+Fandisturbance/pid_bda_dist_virtual.sci [229] [230])
+(./Scilab/virtual/Self_tuning_controller/ConventionalTuning_Vikas/PIDController
+setpointchange/pid_bda_virtual.sci [231] [232])
+(./Scilab/virtual/Self_tuning_controller/SelfTuning_Vikas/PIControllerFandistur
+bance/pi_bda_tuned_dist_virtual.sci [233] [234])
+(./Scilab/virtual/Self_tuning_controller/SelfTuning_Vikas/PIControllersetpointc
+hange/pi_bda_tuned_virtual.sci [235] [236] [237])
+(./Scilab/virtual/Self_tuning_controller/SelfTuning_Vikas/PIDControllerFandistu
+rbance/pid_bda_tuned_dist_virtual.sci [238] [239])
+(./Scilab/virtual/Self_tuning_controller/SelfTuning_Vikas/PIDControllersetpoint
+change/pid_bda_tuned_virtual.sci [240] [241])) (./mpc/mpc.tex [242]
 Chapter 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--12
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--12
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-[242
+[243
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--23
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--23
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-[243] [244] <mpc/mpc_xcos.png, id=931, 506.89375pt x 432.61626pt>
+<mpc/mpc_xcos.png, id=921, 506.89375pt x 432.61626pt>
 File: mpc/mpc_xcos.png Graphic file (type png)
-
-<use mpc/mpc_xcos.png> [245]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/mpc_run.sci [246 </home/backu
-p/ttt/SBHS/SBHS-manual/new-manual/mpc/mpc_xcos.png>] [247] [248]) [249]
-Underfull \hbox (badness 10000) in paragraph at lines 99--103
+ <use mpc/mpc_xcos.png>
+[244] [245 <./mpc/mpc_xcos.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 73--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--103
+Underfull \hbox (badness 10000) in paragraph at lines 73--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--103
+Underfull \hbox (badness 10000) in paragraph at lines 73--76
 
  []
 
-<mpc/table_normal.png, id=950, 484.05844pt x 341.02406pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--76
+
+ []
+
+<mpc/table_normal.png, id=929, 484.05844pt x 341.02406pt>
 File: mpc/table_normal.png Graphic file (type png)
 
 <use mpc/table_normal.png>
-Underfull \hbox (badness 10000) in paragraph at lines 108--114
+Underfull \hbox (badness 10000) in paragraph at lines 77--83
 
  []
 
-[250] <mpc/1_1.png, id=954, 399.74344pt x 467.49657pt>
+[246] <mpc/1_1.png, id=934, 399.74344pt x 467.49657pt>
 File: mpc/1_1.png Graphic file (type png)
  <use mpc/1_1.png>
-Underfull \hbox (badness 10000) in paragraph at lines 119--124
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--124
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
 
  []
 
-<mpc/1_1_heater_final.png, id=955, 393.72093pt x 463.7325pt>
+[247 <./mpc/table_normal.png>]
+<mpc/1_1_heater_final.png, id=939, 393.72093pt x 463.7325pt>
 File: mpc/1_1_heater_final.png Graphic file (type png)
 
-<use mpc/1_1_heater_final.png> [251 </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/mpc/table_normal.png>] [252 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mp
-c/1_1.png>] <mpc/2_1.PNG, id=965, 394.47375pt x 470.50781pt>
+<use mpc/1_1_heater_final.png> [248 <./mpc/1_1.png>]
+<mpc/2_1.PNG, id=944, 394.47375pt x 470.50781pt>
 File: mpc/2_1.PNG Graphic file (type png)
  <use mpc/2_1.PNG>
-Underfull \hbox (badness 10000) in paragraph at lines 133--138
+Underfull \hbox (badness 10000) in paragraph at lines 102--107
 
  []
 
-[253 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/1_1_heater_final.png>]
-<mpc/2_1_heater_final.png, id=970, 397.485pt x 464.4853pt>
+[249 <./mpc/1_1_heater_final.png>]
+<mpc/2_1_heater_final.png, id=949, 397.485pt x 464.4853pt>
 File: mpc/2_1_heater_final.png Graphic file (type png)
 
-<use mpc/2_1_heater_final.png> [254] [255 </home/backup/ttt/SBHS/SBHS-manual/ne
-w-manual/mpc/2_1.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+<use mpc/2_1_heater_final.png> [250] [251 <./mpc/2_1.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
-[256 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/2_1_heater_final.png>]
+[252 <./mpc/2_1_heater_final.png>]
 File: mpc/1_1.png Graphic file (type png)
-
-<use mpc/1_1.png> [257]
+ <use mpc/1_1.png> [253]
 File: mpc/1_1_heater_final.png Graphic file (type png)
- <use mpc/1_1_heater_final.png> [258] [259] [260]
-<mpc/1_2.png, id=995, 411.03563pt x 469.00218pt>
+
+<use mpc/1_1_heater_final.png> [254] [255] [256]
+<mpc/1_2.png, id=974, 411.03563pt x 469.00218pt>
 File: mpc/1_2.png Graphic file (type png)
  <use mpc/1_2.png>
-<mpc/1_2_heater_final.png, id=996, 401.24907pt x 462.97969pt>
+<mpc/1_2_heater_final.png, id=975, 401.24907pt x 462.97969pt>
 File: mpc/1_2_heater_final.png Graphic file (type png)
 
-<use mpc/1_2_heater_final.png> [261 </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/mpc/1_2.png>] [262] <mpc/1_3.PNG, id=1004, 401.24907pt x 465.99094pt>
+<use mpc/1_2_heater_final.png> [257 <./mpc/1_2.png>] [258]
+<mpc/1_3.PNG, id=984, 401.24907pt x 465.99094pt>
 File: mpc/1_3.PNG Graphic file (type png)
-
-<use mpc/1_3.PNG>
-<mpc/1_3_heater_final.png, id=1005, 402.00188pt x 464.4853pt>
+ <use mpc/1_3.PNG>
+<mpc/1_3_heater_final.png, id=985, 402.00188pt x 464.4853pt>
 File: mpc/1_3_heater_final.png Graphic file (type png)
 
-<use mpc/1_3_heater_final.png> [263 </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/mpc/1_2_heater_final.png>] [264 </home/backup/ttt/SBHS/SBHS-manual/new-manua
-l/mpc/1_3.PNG>]
+<use mpc/1_3_heater_final.png> [259 <./mpc/1_2_heater_final.png>] [260 <./mpc/1
+_3.PNG>]
 File: mpc/2_1.PNG Graphic file (type png)
- <use mpc/2_1.PNG> [265 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/1_3_h
-eater_final.png>]
+ <use mpc/2_1.PNG> [261 <./mpc/1_3_heater_final.png>]
 File: mpc/2_1_heater_final.png Graphic file (type png)
- <use mpc/2_1_heater_final.png> [266]
-Overfull \hbox (1.49232pt too wide) in paragraph at lines 204--204
+
+<use mpc/2_1_heater_final.png> [262]
+Overfull \hbox (1.49232pt too wide) in paragraph at lines 173--173
 []\OT1/txr/bx/n/14.4 Negative Step Change and (We, Wu)=(10,10) (Expt 2.2) 
  []
 
-<mpc/2_2.PNG, id=1022, 402.00188pt x 467.49657pt>
+<mpc/2_2.PNG, id=1001, 402.00188pt x 467.49657pt>
 File: mpc/2_2.PNG Graphic file (type png)
  <use mpc/2_2.PNG>
-<mpc/2_2_heater_final.png, id=1023, 392.96812pt x 464.4853pt>
+<mpc/2_2_heater_final.png, id=1002, 392.96812pt x 464.4853pt>
 File: mpc/2_2_heater_final.png Graphic file (type png)
 
-<use mpc/2_2_heater_final.png> [267] [268 </home/backup/ttt/SBHS/SBHS-manual/ne
-w-manual/mpc/2_2.PNG>]
-Overfull \hbox (1.49232pt too wide) in paragraph at lines 215--215
+<use mpc/2_2_heater_final.png> [263] [264 <./mpc/2_2.PNG>]
+Overfull \hbox (1.49232pt too wide) in paragraph at lines 184--184
 []\OT1/txr/bx/n/14.4 Negative Step Change and (We, Wu)=(40,40) (Expt 2.3) 
  []
 
-<mpc/2_3.PNG, id=1031, 398.23781pt x 469.755pt>
+<mpc/2_3.PNG, id=1011, 398.23781pt x 469.755pt>
 File: mpc/2_3.PNG Graphic file (type png)
  <use mpc/2_3.PNG>
-<mpc/2_3_heater_final.png, id=1032, 399.74344pt x 469.755pt>
+<mpc/2_3_heater_final.png, id=1012, 399.74344pt x 469.755pt>
 File: mpc/2_3_heater_final.png Graphic file (type png)
 
-<use mpc/2_3_heater_final.png> [269 </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/mpc/2_2_heater_final.png>] [270 </home/backup/ttt/SBHS/SBHS-manual/new-manua
-l/mpc/2_3.PNG>] <mpc/5_1.PNG, id=1042, 415.5525pt x 465.99094pt>
+<use mpc/2_3_heater_final.png> [265 <./mpc/2_2_heater_final.png>] [266 <./mpc/2
+_3.PNG>] <mpc/5_1.PNG, id=1021, 415.5525pt x 465.99094pt>
 File: mpc/5_1.PNG Graphic file (type png)
-
-<use mpc/5_1.PNG> [271 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/2_3_he
-ater_final.png>]
-<mpc/5_1_heater_final.png, id=1047, 395.97937pt x 459.21562pt>
+ <use mpc/5_1.PNG>
+[267 <./mpc/2_3_heater_final.png>]
+<mpc/5_1_heater_final.png, id=1026, 395.97937pt x 459.21562pt>
 File: mpc/5_1_heater_final.png Graphic file (type png)
 
-<use mpc/5_1_heater_final.png> [272 </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/mpc/5_1.PNG>] <mpc/5_2.PNG, id=1052, 398.99063pt x 467.49657pt>
+<use mpc/5_1_heater_final.png> [268 <./mpc/5_1.PNG>]
+<mpc/5_2.PNG, id=1031, 398.99063pt x 467.49657pt>
 File: mpc/5_2.PNG Graphic file (type png)
-
-<use mpc/5_2.PNG> [273 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/5_1_he
-ater_final.png>]
-<mpc/5_2_heater_final.png, id=1057, 406.51875pt x 461.47406pt>
+ <use mpc/5_2.PNG> [269 <./mpc/5_1_heater_final.png>]
+<mpc/5_2_heater_final.png, id=1036, 406.51875pt x 461.47406pt>
 File: mpc/5_2_heater_final.png Graphic file (type png)
 
 <use mpc/5_2_heater_final.png>
-Overfull \hbox (16.51775pt too wide) in paragraph at lines 248--249
+Overfull \hbox (16.51775pt too wide) in paragraph at lines 217--218
 [][] 
  []
 
-[274 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/5_2.PNG>]
-<mpc/5_3.PNG, id=1062, 398.99063pt x 466.74374pt>
+[270 <./mpc/5_2.PNG>] <mpc/5_3.PNG, id=1042, 398.99063pt x 466.74374pt>
 File: mpc/5_3.PNG Graphic file (type png)
- <use mpc/5_3.PNG> [275 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/5_2_h
-eater_final.png>]
-<mpc/5_3_heater_final.png, id=1067, 393.72093pt x 464.4853pt>
+
+<use mpc/5_3.PNG> [271 <./mpc/5_2_heater_final.png>]
+<mpc/5_3_heater_final.png, id=1047, 393.72093pt x 464.4853pt>
 File: mpc/5_3_heater_final.png Graphic file (type png)
 
 <use mpc/5_3_heater_final.png>
-Overfull \hbox (0.92082pt too wide) in paragraph at lines 259--263
+Overfull \hbox (0.92082pt too wide) in paragraph at lines 228--232
 []\OT1/txr/m/n/12 We ob-serve that this ex-per-i-ments per-forms bet-ter than i
 n the last sec-tion (where
  []
 
-[276 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/5_3.PNG>]
-<mpc/5_4.PNG, id=1073, 386.19281pt x 465.99094pt>
+[272 <./mpc/5_3.PNG>] <mpc/5_4.PNG, id=1052, 386.19281pt x 465.99094pt>
 File: mpc/5_4.PNG Graphic file (type png)
- <use mpc/5_4.PNG> [277 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/5_3_h
-eater_final.png>]
-<mpc/5_4_heater_final.png, id=1078, 396.7322pt x 465.23813pt>
+
+<use mpc/5_4.PNG> [273 <./mpc/5_3_heater_final.png>]
+<mpc/5_4_heater_final.png, id=1057, 396.7322pt x 465.23813pt>
 File: mpc/5_4_heater_final.png Graphic file (type png)
 
 <use mpc/5_4_heater_final.png>
-Overfull \hbox (6.73122pt too wide) in paragraph at lines 274--275
+Overfull \hbox (6.73122pt too wide) in paragraph at lines 243--244
 [][] 
  []
 
-[278 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/5_4.PNG>] [279 </home/ba
-ckup/ttt/SBHS/SBHS-manual/new-manual/mpc/5_4_heater_final.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 297--299
+[274 <./mpc/5_4.PNG>] [275 <./mpc/5_4_heater_final.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
 
  []
 
-[280] <mpc/3_1.PNG, id=1090, 402.00188pt x 467.49657pt>
+[276] <mpc/3_1.PNG, id=1070, 402.00188pt x 467.49657pt>
 File: mpc/3_1.PNG Graphic file (type png)
  <use mpc/3_1.PNG>
-<mpc/3_1_heater_final.png, id=1091, 405.76593pt x 462.22687pt>
+<mpc/3_1_heater_final.png, id=1071, 405.76593pt x 462.22687pt>
 File: mpc/3_1_heater_final.png Graphic file (type png)
 
-<use mpc/3_1_heater_final.png> [281] [282 </home/backup/ttt/SBHS/SBHS-manual/ne
-w-manual/mpc/3_1.PNG>] <mpc/3_2.PNG, id=1100, 394.47375pt x 465.99094pt>
+<use mpc/3_1_heater_final.png> [277] [278 <./mpc/3_1.PNG>]
+<mpc/3_2.PNG, id=1079, 394.47375pt x 465.99094pt>
 File: mpc/3_2.PNG Graphic file (type png)
-
-<use mpc/3_2.PNG>
-<mpc/3_2_heater_final.png, id=1101, 398.99063pt x 469.00218pt>
+ <use mpc/3_2.PNG>
+<mpc/3_2_heater_final.png, id=1080, 398.99063pt x 469.00218pt>
 File: mpc/3_2_heater_final.png Graphic file (type png)
 
-<use mpc/3_2_heater_final.png> [283 </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/mpc/3_1_heater_final.png>] [284 </home/backup/ttt/SBHS/SBHS-manual/new-manua
-l/mpc/3_2.PNG>] <mpc/3_3.PNG, id=1110, 411.03563pt x 469.00218pt>
+<use mpc/3_2_heater_final.png> [279 <./mpc/3_1_heater_final.png>] [280 <./mpc/3
+_2.PNG>] <mpc/3_3.PNG, id=1089, 411.03563pt x 469.00218pt>
 File: mpc/3_3.PNG Graphic file (type png)
-
-<use mpc/3_3.PNG>
-<mpc/3_3_heater_final.png, id=1111, 401.24907pt x 462.97969pt>
+ <use mpc/3_3.PNG>
+<mpc/3_3_heater_final.png, id=1090, 401.24907pt x 462.97969pt>
 File: mpc/3_3_heater_final.png Graphic file (type png)
 
-<use mpc/3_3_heater_final.png> [285 </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/mpc/3_2_heater_final.png>] [286 </home/backup/ttt/SBHS/SBHS-manual/new-manua
-l/mpc/3_3.PNG>] <mpc/4_1.PNG, id=1120, 399.74344pt x 469.00218pt>
+<use mpc/3_3_heater_final.png> [281 <./mpc/3_2_heater_final.png>] [282 <./mpc/3
+_3.PNG>] <mpc/4_1.PNG, id=1100, 399.74344pt x 469.00218pt>
 File: mpc/4_1.PNG Graphic file (type png)
-
-<use mpc/4_1.PNG>
-<mpc/4_1_heater_final.png, id=1121, 403.5075pt x 462.97969pt>
+ <use mpc/4_1.PNG>
+<mpc/4_1_heater_final.png, id=1101, 403.5075pt x 462.97969pt>
 File: mpc/4_1_heater_final.png Graphic file (type png)
 
-<use mpc/4_1_heater_final.png> [287 </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/mpc/3_3_heater_final.png>] [288 </home/backup/ttt/SBHS/SBHS-manual/new-manua
-l/mpc/4_1.PNG>] <mpc/4_2.PNG, id=1131, 395.97937pt x 469.00218pt>
+<use mpc/4_1_heater_final.png> [283 <./mpc/3_3_heater_final.png>] [284 <./mpc/4
+_1.PNG>] <mpc/4_2.PNG, id=1110, 395.97937pt x 469.00218pt>
 File: mpc/4_2.PNG Graphic file (type png)
-
-<use mpc/4_2.PNG>
-<mpc/4_2_heater_final.png, id=1132, 402.75468pt x 462.97969pt>
+ <use mpc/4_2.PNG>
+<mpc/4_2_heater_final.png, id=1111, 402.75468pt x 462.97969pt>
 File: mpc/4_2_heater_final.png Graphic file (type png)
 
-<use mpc/4_2_heater_final.png> [289 </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/mpc/4_1_heater_final.png>] [290 </home/backup/ttt/SBHS/SBHS-manual/new-manua
-l/mpc/4_2.PNG>] <mpc/4_3.PNG, id=1141, 402.00188pt x 467.49657pt>
+<use mpc/4_2_heater_final.png> [285 <./mpc/4_1_heater_final.png>] [286 <./mpc/4
+_2.PNG>] <mpc/4_3.PNG, id=1120, 402.00188pt x 467.49657pt>
 File: mpc/4_3.PNG Graphic file (type png)
-
-<use mpc/4_3.PNG>
-<mpc/4_3_heater_final.png, id=1142, 392.96812pt x 464.4853pt>
+ <use mpc/4_3.PNG>
+<mpc/4_3_heater_final.png, id=1121, 392.96812pt x 464.4853pt>
 File: mpc/4_3_heater_final.png Graphic file (type png)
 
-<use mpc/4_3_heater_final.png> [291 </home/backup/ttt/SBHS/SBHS-manual/new-manu
-al/mpc/4_2_heater_final.png>] [292 </home/backup/ttt/SBHS/SBHS-manual/new-manua
-l/mpc/4_3.PNG>] [293 </home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/4_3_heat
-er_final.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 384--390
+<use mpc/4_3_heater_final.png> [287 <./mpc/4_2_heater_final.png>] [288 <./mpc/4
+_3.PNG>] [289 <./mpc/4_3_heater_final.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 351--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--390
+Underfull \hbox (badness 10000) in paragraph at lines 351--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--390
+Underfull \hbox (badness 10000) in paragraph at lines 351--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--390
+Underfull \hbox (badness 10000) in paragraph at lines 351--357
 
  []
 
-[294]
-Underfull \hbox (badness 10000) in paragraph at lines 392--396
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 392--396
+[290]
+Underfull \hbox (badness 10000) in paragraph at lines 359--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--396
+Underfull \hbox (badness 10000) in paragraph at lines 359--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--404
+Underfull \hbox (badness 10000) in paragraph at lines 359--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--404
-
- []
-
-[295]
-Underfull \hbox (badness 10000) in paragraph at lines 406--408
+Underfull \hbox (badness 10000) in paragraph at lines 366--371
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--408
+Underfull \hbox (badness 10000) in paragraph at lines 366--371
+
+ []
+
+[291]
+Underfull \hbox (badness 10000) in paragraph at lines 373--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--416
-
- []
-
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/mpc/matrix.txt [296])
-Underfull \hbox (badness 10000) in paragraph at lines 417--420
+Underfull \hbox (badness 10000) in paragraph at lines 373--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 432--434
+Underfull \hbox (badness 10000) in paragraph at lines 379--383
+
+ []
+
+(./mpc/matrix.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 384--387
+
+ []
+
+[292]
+Underfull \hbox (badness 10000) in paragraph at lines 399--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--448
+Underfull \hbox (badness 10000) in paragraph at lines 413--415
 
  []
 
-[297]
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/mpc/mpc_init.sce
-[298] [299])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/virtual/mpc/mpc.sci
-[300])
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/mpc/mpc_init_local.s
-ce)
-(/home/backup/ttt/SBHS/SBHS-manual/new-manual/Scilab/local/mpc/mpc_local.sci
-[301])) (/home/backup/ttt/SBHS/SBHS-manual/new-manual/sbhs-new-manual.bbl
-[302]
+[293] (./mpc/mpc_run.sci [294] [295] [296]) (./Scilab/virtual/mpc/mpc_init.sce
+[297]) (./Scilab/virtual/mpc/mpc.sci [298])
+(./Scilab/local/mpc/mpc_init_local.sce [299]) (./Scilab/local/mpc/mpc_local.sci
+[300])) (./sbhs-new-manual.bbl [301]
 Underfull \hbox (badness 2726) in paragraph at lines 46--50
 []\OT1/txr/m/n/12 Virtual labs project.  Sin-gle board heater sys-tem.  http://
 www.co-
  []
 
-) [303
+) [302
 
-] (/home/backup/ttt/SBHS/SBHS-manual/new-manual/sbhs-new-manual.aux)
+] (./sbhs-new-manual.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17224 strings out of 493848
- 312645 string characters out of 1152823
- 466373 words of memory out of 3000000
- 19562 multiletter control sequences out of 15000+50000
+ 19462 strings out of 493848
+ 359039 string characters out of 1152823
+ 523778 words of memory out of 3000000
+ 21828 multiletter control sequences out of 15000+50000
  55606 words of font info for 143 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 42i,13n,60p,1684b,2338s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,13n,60p,1616b,2338s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texmf-texlive/fonts/type1/p
 ublic/txfonts/rtxb.pfb></usr/share/texmf-texlive/fonts/type1/public/txfonts/rtx
@@ -2832,9 +2634,9 @@ b></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-
 texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on sbhs-new-manual.pdf (304 pages, 5838147 bytes).
+Output written on sbhs-new-manual.pdf (303 pages, 5486330 bytes).
 PDF statistics:
- 1237 PDF objects out of 1440 (max. 8388607)
+ 1227 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 708 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 673 words of extra memory for PDF output out of 10000 (max. 10000000)
 
