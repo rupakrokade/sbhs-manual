@@ -1,14 +1,24 @@
 
-\chapter{Model Predictive Control in Single Board Heater System}
+\chapter{Model Predictive Control in Single Board Heater System using\\ SCILAB}
 This chapter presents Model Predictive Control in Single Board Heater System done by Mr. Pratik Behera.\footnote {Copyright: Mr.Pratik Behera}
 \section{Objective}
 \begin{itemize}
 \item To implement Model Predictive Control (MPC) in Single Board Heater System using Scilab and perform experiments using it
 \item To perform experiments for various values of tuning parameters and study its effect on the system 
 \end{itemize}
+\section{Single Board Heater System}
+It is a single heater system, where in, 5cm x 2cm stainless steel blade acts as a plant, which is heated by a heating coil and cooled by a fan. \\ \\
+For Single Board Heater System (SBHS): \\
+\begin{itemize}
+\item Control variable: temperature
+\item Manipulated variable: heater
+\item Disturbance variable: fan
+\end{itemize}
+The heater element consists of Nichrome wire - of 0.7mm diameter, wound with 20 equally spaced helical turns into a coil of 5mm x 11mm. The heater element is kept at a distance of 3.5 mm from the steel blade. \\ \\
+Cooling is done by a computer fan, which is placed below the stainless steel blade.
 
 \section{Model Predictive Control}
-An equivalent quadratic programming (QP) formulation for constrained DMC  is given as follows
+An equivalent quadratic programming (QP) formulation for constrained DMC (as given in LQG\_MPC\_notes by Prof Sachin Patwardhan) is given as follows
 \\ \\
 \begin{align}
 min_{U_{f}}\frac{1}{2}U_{f}(k)^{T}HU_{f}(k)+F^{T}U_{f}(k)\label{eqn1}   
@@ -38,9 +48,27 @@ y(k)= Cx(k) + v(k) \\
 \end{align}
 $\phi$ is represented by matrix A in the code, $\Gamma$ is represented as matrix B and C is represented as C matrix in the code.
 
+\section{ Implementing MPC}
+As mentioned earlier, MPC experiments were performed on SBHS 12 remotely. For this, the scilab codes uploaded on Moodle for Process Control SBHS assignments were used. The folder containing the codes, which was used to perform MPC experiments, have been included in the attached zip file in a folder named \emph{codes}.
 
 \section{Working of codes}
 There are three main codes, which are being used for this experiment. \emph{mpc\_init.sce} is the code which opens the xcos window, wherein, we have step block for the set-point for temperature and the fan speed. Once the values have been entered into the xcos window and the simulation is started, the \emph{scifunc} block of xcos calls the function \emph{mpc.sci} after every sampling time. The \emph{mpc.sci} in turn calls \emph{mpc\_run.sci} every time it is called by  \emph{scifunc} block. The \emph{mpc\_run.sci} code optimizes manipulated variable (heater) over control horizon and returns only the first manipulated variable (heater) value. This new heater value is then sent to the heater of the SBHS to control the temperature at the set point.
+
+\section{Procedure to implement MPC on SBHS}
+\begin{enumerate}
+%\item Download the folder named \emph{codes} attached with the mail.
+%\item Copy the empty files (clientwrite and clientread files) from \emph{Empty-files} folder to \emph{Step-test-codes} folder.
+\item Open the folder named \emph{Client-Java-latest10032011} and open VirtualLabClient.
+\item After entering the details and connecting to the alloted SBHS, open Scilab 5.3.1
+\item Change the current directory to this folder, where mpc codes are present.
+\item Open \emph{mpc\_init.sce} and \emph{load in scilab}
+\item The xcos window opens. Description of xcos window is mentioned below in the next section.
+\item Enter the required step change values, if any, in the Temperature set point and/or fan block.
+\item Enter the sampling time in the clock block as 1 second
+\item Start the simulation from the xcos
+\item After the experiment is over, the data files can be downloaded from the Java client.
+\end{enumerate}
+
 \section{Description of xcos}
 When \emph{mpc\_init.sce} is executed in scilab, an xcos window opens up. The xcos window has two step input blocks. The first step input block on the left side, is for the Temperature set point and the second step input block is for the fan (disturbance variable). Also the sampling time can be entered via clock block present on the xcos. \\
 For all the experiments done for this project, sampling time of 1 second was used (entered via clock block of xcos). \\
@@ -52,28 +80,31 @@ Refer to the figure below for a clear picture of the xcos.
 \end{figure}
 After entering the values in the input step block, the simulation can be started. This opens up a graph, which shows the values of Temperature-set-point, fan and the actual temperature at each time instant during the simulation.
 
+\section{Code for MPC (\emph{mpc\_run.sci})}
+The MPC code, implemented by me has been mentioned below.
+\lstinputlisting{mpc/mpc_run.sci}
 
-\section{Procedure to implement MPC on SBHS}
-\subsection{Locally}
-
-Change the working directory of scilab to the folder where the local mpc code are kept. Run the {\tt ser\_init.sce} file with the appropriate com port number. Then execute the file {\tt mpc\_init}. Launch xcos and execute the file {\tt mpc.xcos}. The code is listed in Section \ref{mpccodes}
-\subsection{Virtually}
-The step by step procedure for conducting an experiment virtually is explained in section \ref{vlabsexpt}. The required .sce file is {\tt mpc\_init.sce}.  You will find this file in the {\tt mpc} directory under {\tt virtual} folder. The necessary codes are listed in the section \ref{mpccodes}
-
-
-
-
-
-
-
+\section{Other codes used}\label{mpccode}
+Other codes that were used for conducting this experiment are \emph{mpc\_init.sce} and \emph{mpc.sci}. Both these codes were originally taken from Moodle (Process controls course for SBHS assignment). Please note that, both these codes were slightly modified to work with our MPC. \\
+The only changes done in the original codes are: 
+\begin{itemize}
+\item addition of global variables p,q and xk\_old (p is the prediction horizon, q is the control horizon, xk\_old represents the last value of an internal state)
+\item initialization of p, q and xk\_old
+\item removal of some unnecessary lines (ie, lines not relevant to MPC implementation)
+\end{itemize}
 
 
 
 \section{Experiments conducted to implement MPC}
-Experiments were performed as shown in table above for implementation of MPC. Experiments were carried out in which both positive and negative step changes were given to the Set point and Fan (disturbance variable) and the output response was obtained by the application of MPC. Several experiments were also performed to study the effect of change in the values of q (control horizon) and tuning parameters - error and manipulated variable weighting factors. \\ \\
+Experiments were performed as shown in table above for implementation of MPC. We carried out experiments in which both positive and negative step changes were given to Set point and Fan (disturbance variable) and the output response was obtained by application of MPC. We also have performed several experiments to study the effect of change in the values of q (control horizon) and tuning parameters - error and manipulated variable weighting factors. \\ \\
 The details of the experiments mentioned in this report has been tabulated in the table given in the next page. The first column of the table represents the experiment version (or number). For all the outputs and their figures, we have mentioned only their experiment version (or number) to tag them. Also note that the data files for these experiments are also named as per their experiment version number. \\ \\
 p and q mentioned in the table represents the prediction and control horizon respectively. \\ \\
-
+Please note: For all the above experiments and graphs, we adhered to: 
+\begin{itemize}
+\item Scilab Version: 5.2.2
+\item SBHS number: 12 (remotely accessed)
+\item Sampling time: 1 second
+\end{itemize}
 \textbf{For graphs:} Until and unless mentioned, Graphic 1 represents the Temperature set point, Graphic 2 represents the Fan and Graphic 3 represents the Temperature. \\ \\
 Also, please note that there are two types of graphs. The first graph, containing Graphic 1, Graphic 2 and Graphic 3 were directly obtained via mscope of xcos. The graph following this in all the experiments is the temperature and heater value graphs, which were obtained from the data (from the text file downloaded from the server after each experiment).
 \begin{figure}[H]
@@ -83,7 +114,7 @@ Also, please note that there are two types of graphs. The first graph, containin
 \end{figure}
 All the experiments mentioned in this report has been labeled as shown in this table. This table is just a summary of all the parameters that was used for the corresponding experiment. Details on the inputs and a description of the output observed for each case has been mentioned in the corresponding section of each experiment.
 
-
+\section{Sample run to implement MPC}
 \section{Positive Step Change to Set Point and Fan}
 Let us consider experiment 1.1, wherein, a positive step change of 5$^\circ$ C (from 35$^\circ$ C to 40$^\circ$ C) was provided to set point at time t=250 s and a step change to fan was provided at t = 500 s, from 100 to 150. \\ \\
 The graph obtained has been attached below:\\
@@ -345,7 +376,9 @@ Both positive and negative step change experiments for temperature set point and
 \item Ideally, the value of q is to be maintained at 3 or 4.
 \end{itemize}
 
+\section{Implementing Model Predictive controller on SBHS, locally}
 
+Change the working directory of scilab to the folder where the local mpc code are kept. Run the {\tt ser\_init.sce} file with the appropriate com port number. Then execute the file {\tt mpc\_init}. Launch xcos and execute the file {\tt mpc.xcos}. The code is listed in Section \ref{mpccode}
 
 \section{Conclusion for MPC project}
 The objective of this project, ie, implementing Model Predictive Control in Single Board Heater System using Scilab was successfully achieved. Several experiments were successfully performed using the developed SCILAB MPC algorithm for both positive and negative step changes in both temperature-set-point and the disturbance variable (fan). 
@@ -434,11 +467,7 @@ Pratik Behera (07002054) \\
 pratik\_behera@iitb.ac.in \\
 +91 99871 54061
 
-\section{Scilab Code}\label{mpccodes}
-\section{Code for MPC (\emph{mpc\_run.sci})}
-The MPC code, implemented by me has been mentioned below.
-\lstinputlisting{mpc/mpc_run.sci}
-
+\section{Scilab Code}\label{mpccode}
 \begin{code}
 \ccaption{mpc\_init.sce}{\ttfamily mpc\_init.sce}
 \lstinputlisting{Scilab/virtual/mpc/mpc_init.sce}

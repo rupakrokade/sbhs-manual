@@ -1,6 +1,6 @@
 mode(0);
-function [y,stop] = sinetest(heat,fan)
-global fdfh fdt fncr fncw m err_count stop
+function [stop] = sinetest(heat,fan)
+global fdfh fdt fncr fncw m err_count stop q heatdisp fandisp tempdisp limits m x sampling_time
 
 
 fncr = 'scilabread.sce';          //file to be read - temperature
@@ -32,9 +32,49 @@ if a~= []
   file('last', fdfh)
   write(fdfh,A,'(7(e11.5,1x))');
   file('close', fdfh);
-  m = m+1;
+  x=ceil(1/sampling_time);
+  if (modulo(m,x) == 1|sampling_time >= 1)
+
+              
+
+              heatdisp=[heatdisp;heat];
+
+              subplot(311);
+
+              xtitle("Sine Test","Time(seconds)","Heat in percentage")
+
+              plot2d(heatdisp,rect=[0,0,1000,100],style=1)
+
+             
+
+              fandisp=[fandisp;fan];
+
+              subplot(312);
+
+              xtitle("","Time(seconds)","Fan in percentage")
+
+              plot2d(fandisp,rect=[0,0,1000,100],style=2)
+
+             
+
+              tempdisp=[tempdisp;y];
+
+              subplot(313)
+
+              xtitle("","Time(seconds)","Temperature (deg celcius)")
+
+              plot2d(tempdisp,rect=[0,20,1000,70],style=5)
+
+        
+
+        end
+
+        m = m+1;
 
   else 
+
+      m = m+1;
+
     y = 0; 
     err_count = err_count + 1; //counts the no of times network error occurs
     if err_count > 300

@@ -23,6 +23,7 @@ if python_ver[1] < 6:
     exit(1)
 
 import urllib2, urllib, cookielib, socket
+import hashlib
 from time import time, sleep
 from os import path
 from json import loads
@@ -34,7 +35,7 @@ from ConfigParser import ConfigParser
 scilabreadf = ''
 scilabwritef = ''
 logf = ''
-current_client_version = '1'
+current_client_version = '2'
 exp_end_time = 0
 user_timeout = 10
 
@@ -115,7 +116,7 @@ def checkconnection():
             print('Data corruption error in connection check!')
             return False
     except:
-        print('Connection error ! Please check your internet connection and/or proxy settings.')
+        print('Connection error ! Please check yo	ur internet connection and/or proxy settings1.')
         return False
 
 def clientversion():
@@ -147,6 +148,7 @@ def authenticate():
         user_password = getpass()
     url_auth = base_url + 'startexp'
     try:
+        user_password = hashlib.md5(user_password).hexdigest()
         postdata = urllib.urlencode({'rollno' : user_rollno, 'password' : user_password})
         req = urllib2.Request(url_auth)
         res = urllib2.urlopen(req, postdata)

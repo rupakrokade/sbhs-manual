@@ -28,15 +28,15 @@ if a~= []
   
   A = [m,heat,fan,m];
   
-  x=ceil(1/sampling_time);
+
   
       fdfh = file('open','scilabwrite.sce','unknown');
       file('last', fdfh)
       write(fdfh,A,'(7(e11.5,1x))');
       file('close', fdfh);
       
-      
-      if (modulo(m,x) == 1)
+        x=ceil(1/sampling_time);
+      if (modulo(m,x) == 1|sampling_time >= 1)
               
               heatdisp=[heatdisp;heat];
               subplot(311);

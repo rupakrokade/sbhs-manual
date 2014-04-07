@@ -5,12 +5,12 @@ mode(0);
 //Range of Fan input :20 to 252
 //Temperature is read
 
-function [temp,heat,e_new,stop] = pi_ta_virtual(setpoint,disturbance,K,Ti)
+function [stop] = pi_ta_virtual(setpoint,disturbance,K,Ti)
 
-global temp heat fan C0 u_old u_new e_old e_new fdfh fdt fncr fncw m err_count stop
+global temp heat fan C0 u_old u_new e_old e_new fdfh fdt fncr fncw m err_count stop q heatdisp fandisp tempdisp setpointdisp limits m x sampling_time
 
-fncr = 'clientread.sce';          //file to be read - temperature
-fncw = 'clientwrite.sce';        //file to be written - heater, fan
+fncr = 'scilabread.sce';          //file to be read - temperature
+fncw = 'scilabwrite.sce';        //file to be written - heater, fan
 
 a = mgetl(fdt,1);
 b = evstr(a);
@@ -18,41 +18,69 @@ byte = mtell(fdt);
 mseek(byte,fdt,'set');
 
 if a~= []
-    temp = b(1,$); heats = b(1,$-2);
-    fans = b(1,$-1); y = temp;
+    temps = b(1,4); heats = b(1,2);
+    fans = b(1,3); y = temps;
 
-e_new = setpoint - temp;
+e_new = setpoint - y;
 
-Ts=1;
+Ts=sampling_time;
 S0=K(1+Ts/(2*Ti));
 S1=K*(-1+(Ts/(2*Ti)));
 u_new = u_old+(S0*e_new)+(S1*e_old);
 
-
-if u_new> 39
-  u_new = 39;
-end;
-
-if u_new< 0
-  u_new = 0;
-end;
-
 heat=u_new;
 fan = disturbance;
+
+if heat>100
+      heat = 100;
+    elseif heat<0
+      heat = 0;
+    end;
+  
+       if fan>100
+      fan = 100;
+    elseif fan<0
+      fan = 0;
+    end;
+
+
 u_old = u_new;
 e_old = e_new;
 
 
 
-A = [m,m,heat,fan];
-  fdfh = file('open','clientwrite.sce','unknown');
+A = [m,heat,fan,m];
+  fdfh = file('open','scilabwrite.sce','unknown');
   file('last', fdfh)
   write(fdfh,A,'(7(e11.5,1x))');
   file('close', fdfh);
-  m = m+1;
-
-  else 
+  
+  x=ceil(1/sampling_time);
+      if (modulo(m,x) == 1|sampling_time >= 1)
+              
+              heatdisp=[heatdisp;heat];
+              subplot(311);
+              xtitle("Step Test","Time(seconds)","Heat in percentage")
+              plot2d(heatdisp,rect=[0,0,1000,100],style=1)
+             
+              fandisp=[fandisp;fan];
+              subplot(312);
+              xtitle("","Time(seconds)","Fan in percentage")
+              plot2d(fandisp,rect=[0,0,1000,100],style=2)
+             
+              tempdisp=[tempdisp;y];
+              setpointdisp=[setpointdisp;setpoint];
+              subplot(313)
+              xtitle("","Time(seconds)","Temperature (deg celcius)")
+              plot2d(tempdisp,rect=[0,20,1000,70],style=5)
+              plot2d(setpointdisp,rect=[0,20,1000,70],style=1)
+        
+        end
+        m = m+1;
+  else 
+      m = m+1;
     y = 0; 
+  
     err_count = err_count + 1; //counts the no of times network error occurs
     if err_count > 300
       disp("NO NETWORK COMMUNICATION!");

@@ -1,7 +1,6 @@
 mode(0);
 function [stop] = ramptest(heat,fan)
-global fdfh fdt fncr fncw m err_count stop heatdisp fandisp tempdisp limits m x sampling_time
-
+global fdfh fdt fncr fncw m err_count stop heatdisp fandisp tempdisp limits m x sampling_time 
 
 fncr = 'scilabread.sce';          //file to be read - temperature
 fncw = 'scilabwrite.sce';        //file to be written - heater, fan
@@ -32,9 +31,10 @@ if a~= []
   file('last', fdfh)
   write(fdfh,A,'(7(e11.5,1x))');
   file('close', fdfh);
+
   
   x=ceil(1/sampling_time);
-      if (modulo(m,x) == 1)
+      if (modulo(m,x) == 1|sampling_time >= 1)
               
               heatdisp=[heatdisp;heat];
               subplot(311);
@@ -50,7 +50,8 @@ if a~= []
               subplot(313)
               xtitle("","Time(seconds)","Temperature (deg celcius)")
               plot2d(tempdisp,rect=[0,20,1000,70],style=5)
-        
+              
+       
         end
         m = m+1;
   else 

@@ -1,7 +1,11 @@
 mode(0);
 // For scilab 5.1.1 or lower version users, use scicos command to open scicos diagrams instead of xcos
 
-global fdfh fdt fncr fncw m err_count y
+global fdfh fdt fncr fncw m err_count y limits sampling_time
+
+//**********************
+sampling_time=1.5;   //In seconds. Fractions are allowed
+//**********************//
 
 fncr =  'scilabread.sce'; 
 fdt = mopen(fncr);

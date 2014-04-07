@@ -6,6 +6,8 @@ data7=data6(2:$,:);
 exec('labelbode.sci');
 T = data7(:,5); fan = data7(:,3);//T is time, fan is fan speed
 u = data7(:,2)-data7(1,2); y = data7(:,4)-data7(1,4); // u is current, y is temperature
+
+
 period=ceil(1/f);
 p=length(u);
 sampling = T(3)-T(2);//sampling time
@@ -22,7 +24,10 @@ Amplitude_ratio_dB = 20*log10(y(pointer2)/u(pointer1))//To find gain in dB
 Phase_difference = 360*f*(pointer1-pointer2)*sampling// phase difference in degrees
 //Phase_difference = -((pointer1-pointer2)/(1/f))*360
 
-plot2d(T,[u y]);
+
+del_T = T-T(1);
+del_T = del_T/1000;
+plot2d(del_T,[u y]);
 label('Plot of sine input in heater and the corresponding temperature profile',4,'Time (s)','Change in temperature and heater',4);
 //legend(['Heater';'Temperature']);
 

@@ -4,7 +4,7 @@ mode(0);
 global fdfh fdt fncr fncw m err_count y limits sampling_time
 
 //**********************
-sampling_time=0.4;   //In seconds. Fractions are allowed
+sampling_time=1.5;   //In seconds. Fractions are allowed
 //**********************//
 
 

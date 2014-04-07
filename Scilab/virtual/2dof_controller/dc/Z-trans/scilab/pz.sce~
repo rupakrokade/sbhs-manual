@@ -1,0 +1,17 @@
+// Updated (13-12-06)
+// 4.3
+// Pole-zero plot using plzr
+// plzr has legends, by default, which are overlapped
+// opt = "?" provides the option of placing the legend above the default one
+
+clear;clc;
+getd('/home/inderpreet/scilab');
+zero = [0 5/12];
+num = poly(zero,'z',"roots");
+pole = [1/2 1/3];
+den = poly(pole,'z',"roots");
+h = syslin('d',num./den);
+xbasc();
+plzr(h);
+label('Pole-Zero Plot',4,'Real(z)','Imaginary(z)',4); 
+legends(['Zeros';'Poles'],[-9;-2],opt = "?");
