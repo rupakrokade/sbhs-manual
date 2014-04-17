@@ -2,7 +2,7 @@ mode(0)
 global temp heat fan sampling_time m heatdisp fandisp tempdisp x name
 
 //**Sampling Time**//
-sampling_time = 0.5;
+sampling_time = 1;
 ///////****/////////
 
 //m = 1;
@@ -56,7 +56,7 @@ x=ceil(1/sampling_time);
 
               xtitle("Step Test","Time(seconds)","Heat in percentage")
 
-              plot2d(heatdisp,rect=[0,0,1000,100],style=1)
+              plot2d(heatdisp,rect=[0,20,1000,50],style=1)
 
              
 
@@ -76,7 +76,7 @@ x=ceil(1/sampling_time);
 
               xtitle("","Time(seconds)","Temperature (deg celcius)")
 
-              plot2d(tempdisp,rect=[0,20,1000,70],style=5)
+              plot2d(tempdisp,rect=[0,25,1000,35],style=5)
               
               m=m+1;      
               

@@ -1,6 +1,6 @@
 mode(-1);
 
-filename = "ramp_data";  //complete path of the saved data file
+filename = "2014-4-17-17-13-35.txt";  //complete path of the saved data file
 slope = 0.1; // change this to the slope that you have used in the experiment
 ind1=3;
 //Ramp Analysis
@@ -45,21 +45,27 @@ global('y_approx','t_approx');
 [f_approx,xopt_approx] = optim(cost_approx,x0);
 kp_approx = xopt_approx(1)/slope;
 tau_approx = xopt_approx(2);
+lsterr = sqrt(f);
+lsterr_approx=sqrt(f_approx);
 
 //Display and Plot
-disp('kp = ');
-disp(kp);
-disp('tau = ');
-disp(tau);
-disp('kp_approx = ');
-disp(kp_approx);
-disp('tau_approx = ');
-disp(tau_approx);
+//disp('kp = ');
+//disp(kp);
+//disp('tau = ');
+//disp(tau);
+//disp('kp_approx = ');
+//disp(kp_approx);
+//disp('tau_approx = ');
+//disp(tau_approx);
 
 y_p = kp*slope*(t + tau*(exp(-t/tau) - 1));
 y_p_approx = kp_approx*slope*(t_approx - tau_approx);
 y_p_approx = y_p_approx';
 plot2d(t,[y_p,T]);
-label('Showing First Order Model and Experimental Results for kp and tau',4,'Time (s)','Change in Temperature (Predicted,Actual)',4);
+
+title=('First order model with tau = '+string(tau)+', Kp = '+string(kp)+', tauApprox = '+string(tau_approx)+', KpApprox = '+string(kp_approx)+', Error = '+string(lsterr));
+label(title,4,'time (s)','Change in temperature (K)',4);
+
+//label('Showing First Order Model and Experimental Results for kp and tau',4,'Time (s)','Change in Temperature (Predicted,Actual)',4);
 legend(['Predicted';'Actual']);
 

@@ -1,6 +1,6 @@
 mode(0)
 funcprot(0)
-filename = "step_data"
+filename = "2014-4-17-13-31-57.txt"
 clf
 exec('costf_2.sci');
 exec('label.sci');
@@ -33,6 +33,7 @@ F = fan(step_instant:len);
 T = temp(step_instant:len);
 T = T - T(1);
 
-limits = [0,0,1000,10]; no=10000; // first step
+//limits = [0,0,1000,10]; no=10000; // first step
 // limits = [400,0,900,26]; no=5000;//second step
-lsterr = order_2(t,H,T,limits,no)
+//lsterr = order_2(t,H,T,limits,no)
+lsterr = order_2(t,H,T)
