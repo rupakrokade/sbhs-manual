@@ -226,6 +226,7 @@ def startexperiment():
                 if not scilabwritestr.endswith('\n'):
                     scilabwritef.seek(cur_scilabwrite_pos)
                     retry_read = True
+		    sleep(0.02)
                 else:
                     retry_read = False
 
