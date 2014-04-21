@@ -1,6 +1,8 @@
 mode(-1);
 
 filename = "2014-4-17-17-13-35.txt";  //complete path of the saved data file
+
+
 slope = 0.1; // change this to the slope that you have used in the experiment
 ind1=3;
 //Ramp Analysis

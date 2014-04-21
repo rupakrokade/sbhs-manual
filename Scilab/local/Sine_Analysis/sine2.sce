@@ -1,6 +1,9 @@
 mode(0);
-filename= 'sine001';//Enter the data file name in single quotes
-f=0.001;// Enter the frequency 
+//filename= 'sine001';//Enter the data file name in single quotes
+
+filename= '2014-4-21-16-25-47.txt';//Enter the data file name in single quotes
+
+f=0.006;// Enter the frequency 
 data7=fscanfMat(filename);
 exec('labelbode.sci');
 T = data7(:,1); fan = data7(:,3);//T is time, fan is fan speed

@@ -1,7 +1,13 @@
 // To load the serial toolbox and open the serial port
 exec loader.sce
 
-handl = openserial(6,"9600,n,8")
+
+///***Linux Users***///
+handl = openserial("/dev/ttyUSB0","9600,n,8,0")//Linux users should use this line and comment the below windows line
+
+///***Windows Users***///
+//handl = openserial(2,"9600,n,8")//Windows users should use this line and comment the above linux line
+
 
 //the order is : port number,"baud,parity,databits,stopbits"
 // here 9 is the port number

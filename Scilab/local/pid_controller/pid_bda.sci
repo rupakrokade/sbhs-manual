@@ -6,7 +6,7 @@ clear heatdisp fandisp tempdisp setpointdisp
 
 
 //**Sampling Time**//
-sampling_time = 0.5;
+sampling_time = 1;
 ///////****/////////
 
 //m = 1;
@@ -83,7 +83,7 @@ x=ceil(1/sampling_time);
 
               subplot(311);
 
-              xtitle("Step Test","Time(seconds)","Heat in percentage")
+              xtitle("PID Controller","Time(seconds)","Heat in percentage")
 
               plot2d(heatdisp,rect=[0,0,1000,100],style=1)
 

@@ -1,6 +1,7 @@
 mode(0)
 funcprot(0)
-filename = "2014-4-17-13-31-57.txt";
+//filename = "2014-4-17-13-31-57.txt";
+filename = "2014-4-21-15-36-26.txt";
 clf
 exec('costf_1.sci');
 exec('label.sci');
@@ -47,7 +48,7 @@ plot2d(t,y);
 
 
 title = 'First Order model with tau = ';
-title = title+string(tau),;
+title = title+string(tau);
 title = title+', K='+string(kp);
 title = title+', Error='+string(lsterr)+'';
 label(title,4,'time (s)','Change in temperature (K)',4);

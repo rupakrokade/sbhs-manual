@@ -1,6 +1,7 @@
 mode(0)
 funcprot(0)
 filename = "2014-4-17-13-31-57.txt";
+
 clf
 exec('costf_1.sci');
 exec('label.sci');

@@ -5,7 +5,7 @@ global temp heat fan sampling_time m heatdisp fandisp tempdisp x name
 sampling_time = 1;
 ///////****/////////
 
-//m = 1;
+m = 1;
 
 dt = getdate();
 year = dt(1);

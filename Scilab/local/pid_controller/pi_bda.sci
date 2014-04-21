@@ -1,22 +1,28 @@
-mode(0);
-//PI Controller using backward difference formula
-//Heater input is passed as input argument to introduce control effort u(n)
-//Fan input is passed as input argument which is kept at constant level
-//Range of Fan input :20 to 252
-//Temperature is read
+mode(0)
+global temp heat fan sampling_time m heatdisp fandisp tempdisp x name Ts
 
-global temp heat fan m x sampling_time heatdisp e_newdisp tempdisp n setpointdisp
+//**Sampling Time**//
+sampling_time = 1;
+///////****/////////
 
-//###################
-sampling_time=0.5;//Enter Smpling time
+m = 1;
 Ts=sampling_time;
-m=1;
-n=1;
-//##################
-function [temp,heat_in,e_new] = pi_bda(setpoint,disturbance,K,Ti)
 
-global temp heat_in fan_in C0 u_old u_new e_old e_new m x sampling_time heatdisp e_newdisp tempdisp n setpointdisp
+dt = getdate();
+year = dt(1);
+month = dt(2);
+day = dt(6);
+hour = dt(7);
+minutes = dt(8);
+seconds = dt(9);
 
+file1 = strcat(string([year month day hour minutes seconds]),'-');
+string txt;
+filename = strcat([file1, "txt"],'.');
+
+function temp = pi_bda(setpoint,fan,K,Ti)
+    global heatdisp fandisp tempdisp setpointdisp sampling_time m name temp heat_in fan_in C0 u_old u_new e_old e_new
+    
 
 e_new = setpoint - temp;
 
@@ -32,81 +38,82 @@ u_new = u_old+ S0*e_new+ S1*e_old;
 u_old = u_new;
 e_old = e_new;
 
-heat_in = u_new;
-fan_in = disturbance;
+heat = u_new;
 
-  if heat_in  >100
-      heat_in = 100;
-    elseif heat_in < 0
-      heat_in = 0;
-    end;
-    
-    if fan_in  >100
-      fan_in = 100;
-    elseif fan_in < 0
-      fan_in = 0;
-    end;
 
-writeserial(handl,ascii(254)); //heater
-writeserial(handl,ascii(heat_in));
-writeserial(handl,ascii(253));
-writeserial(handl,ascii(fan_in));
-writeserial(handl,ascii(255));
-sleep(1);
-temp = ascii(readserial(handl,2));
-temp = temp(1) + 0.1*temp(2);
+if heat>100
+    heat =100;
+elseif heat<0
+    heat = 0;
+end
+
+if fan>100
+    fan = 100;
+elseif fan <0
+    fan = 0;
+end
+
+writeserial(handl,ascii(254)); //Input Heater, writeserial accepts                                       strings; so convert 254 into its                                        string equivalent 
+writeserial(handl,ascii(heat));
+writeserial(handl,ascii(253)); //Input Fan
+writeserial(handl,ascii(fan));
+writeserial(handl,ascii(255)); //To read Temp
+sleep(100);
+
+temp = ascii(readserial(handl)); // Read serial returns a string, so                                       convert it to its integer(ascii)                                      equivalent
+temp = temp(1) + 0.1*temp(2); // convert to temp with decimal points                                     eg: 40.7
+
+A = [m,heat,fan,temp];
+
+fdfh = file('open',filename,'unknown');
+
+file('last', fdfh)
+
+write(fdfh,A,'(7(e11.5,1x))');
+
+file('close', fdfh);
+
+
 x=ceil(1/sampling_time);
 
- //disp('not plotting')
+      if (modulo(m,x) == 1|sampling_time >= 1)
 
- //disp(modulo(m,x))
 
- //disp(x,'x=',m,'m=')
+              heatdisp=[heatdisp;heat];
 
-      if (modulo(m,x) == 1)
+              subplot(311);
 
-              //disp('plotting') 
-              
-              tempdisp=[tempdisp;temp];
-              setpointdisp=[setpointdisp;setpoint];
+              xtitle("PI Controller","Time(seconds)","Heat in percentage")
 
-              subplot(311)
-
-              xtitle("PI BDA controller","Time(seconds)","Temperature (deg celcius)")
-
-              plot2d([setpointdisp],rect=[0,20,1000,60],style=9)
-              
-              plot2d([tempdisp],rect=[0,20,1000,60],style=5)
-              
-
-                           
-
-              heatdisp=[heatdisp;heat_in];
-
-              subplot(312);
-
-              xtitle("","Time(seconds)","Heat in percentage")
-//disp('1st plot')
               plot2d(heatdisp,rect=[0,0,1000,100],style=1)
 
              
 
-              e_newdisp=[e_newdisp;e_new];
+              fandisp=[fandisp;fan];
 
-              subplot(313);
+              subplot(312);
 
               xtitle("","Time(seconds)","Fan in percentage")
-//disp('2nd plot]')
-              plot2d(e_newdisp,rect=[0,0,1000,100],style=2)
+
+              plot2d(fandisp,rect=[0,0,1000,100],style=2)
 
              
 
+              tempdisp=[tempdisp;temp];
+              setpointdisp=[setpointdisp;setpoint];
+
+              subplot(313)
+
+              xtitle("","Time(seconds)","Temperature (deg celcius)")
+
+              plot2d(tempdisp,rect=[0,25,1000,40],style=5)
+              plot2d(setpointdisp,rect=[0,25,1000,40],style=1)
               
-        n=n+1;
+              m=m+1;      
+              
+          else
+              m = m+1;
+        end
 
-    end
-
-    m=m+1;
-endfunction;
-
-
+        
+endfunction
