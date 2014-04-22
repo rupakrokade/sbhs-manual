@@ -9,7 +9,7 @@ clear heatdisp fandisp tempdisp setpointdisp
 sampling_time = 1;
 ///////****/////////
 
-//m = 1;
+m = 1;
 
 dt = getdate();
 year = dt(1);
