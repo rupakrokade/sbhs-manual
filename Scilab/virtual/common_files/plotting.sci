@@ -1,6 +1,6 @@
 function [] = plotting(var)
     
-    global heatdisp fandisp tempdisp setpointdisp sampling_time
+    global heatdisp fandisp tempdisp setpointdisp sampling_time m
     
     timeTitle = "No. of samples with sampling time = "+string(sampling_time)
     

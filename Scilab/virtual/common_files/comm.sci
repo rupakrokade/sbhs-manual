@@ -2,7 +2,7 @@ mode(0);
 
 function [stop,temp] = comm(heat,fan)
 
-global fdfh fdt fncr fncw m err_count stop m
+global fdfh fdt fncr fncw m err_count stop m temp
 
 fncr = 'scilabread.sce';          //file to be read - temperature
 fncw = 'scilabwrite.sce';        //file to be written - heater, fan
@@ -40,7 +40,7 @@ if a~= []
       
   else 
       m = m+1;
-    temp = 0; //This variable will make temp plot go to zero whenever there is a packet loss
+    //temp = 0; //This variable will make temp plot go to zero whenever there is a packet loss
     err_count = err_count + 1; //counts the no of times network error occurs
     if err_count > 200
       disp("NO NETWORK COMMUNICATION!");
