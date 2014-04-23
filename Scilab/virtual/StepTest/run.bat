@@ -1,3 +1,3 @@
-python sbhsclient.py
+sbhsclient.exe
 @ECHO OFF
 pause
