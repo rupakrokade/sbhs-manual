@@ -15,7 +15,7 @@ mseek(0);
 err_count = 0; // initialising error count for network error
 m =1;
 exec ("steptest.sci");
-//exec("label.sci")
+exec("plotting.sci")
    A = [0.1,0,100,m];
    fdfh = file('open','scilabwrite.sce','unknown');
    write(fdfh,A,'(7(e11.5,1x))');

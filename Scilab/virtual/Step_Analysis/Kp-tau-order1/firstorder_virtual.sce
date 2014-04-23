@@ -1,5 +1,5 @@
 mode(0)
-filename = "27Jan2012_20_13_32.txt"
+filename = "23Apr2014_21_36_03.txt"
 clf
 exec('costf_1.sci');
 exec('label.sci');
@@ -36,11 +36,16 @@ global('y','t');
 x0 = [.3 40];
 //[f,xopt,gopt] = optim(costf_1,'b',[0.1 0.1],[5 100],x0,'ar')
 [f, xopt] = optim(costf_1,x0);
+lsterr=sqrt(f);
 kp = xopt(1);
 tau = xopt(2);
 y_prediction = kp * ( 1 - exp(-t/tau) );
 plot2d(t,y_prediction);
 plot2d(t,y);
-label('Showing First Order Model and Experimental Results',4,'Time (s)','Change in temperature (K)',4);
+title = 'First Order model with tau = ';
+title = title+string(tau);
+title = title+', K='+string(kp);
+title = title+', Error='+string(lsterr)+'';
+label(title,4,'time (s)','Change in temperature (K)',4);
 kp = kp/delta_u
 tau

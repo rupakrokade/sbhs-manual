@@ -1,5 +1,5 @@
 mode(0)
-filename = "27Jan2012_20_13_32.txt"
+filename = "23Apr2014_21_36_03.txt";
 clf
 exec('costf_2.sci');
 exec('label.sci');
@@ -7,7 +7,7 @@ exec ('order_2_heater.sci');
 
 
 data = fscanfMat(filename);
-time = data(:, 5);
+time = data(:,5);
 heater = int(data(:, 2));
 fan = int(data(:, 3));
 temp = data(:, 4);
@@ -32,6 +32,6 @@ F = fan(step_instant:len);
 T = temp(step_instant:len);
 T = T - T(1);
 
-limits = [0,0,500,10]; no=10000; // first step
+//limits = [0,0,500,10]; no=10000; // first step
 // limits = [400,0,900,26]; no=5000;//second step
-lsterr = order_2(t,H,T,limits,no)
+lsterr = order_2(t,H,T,)

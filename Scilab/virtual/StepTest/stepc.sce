@@ -4,7 +4,7 @@ mode(0);
 global fdfh fdt fncr fncw m err_count y limits sampling_time
 
 //**********************
-sampling_time=1.5;   //In seconds. Fractions are allowed
+sampling_time=1;   //In seconds. Fractions are allowed
 //**********************//
 
 
@@ -15,7 +15,7 @@ mseek(0);
 err_count = 0; // initialising error count for network error
 m =1;
 exec ("steptest.sci");
-//exec("label.sci")
+
    A = [0.1,0,100,m];
    fdfh = file('open','scilabwrite.sce','unknown');
    write(fdfh,A,'(7(e11.5,1x))');
