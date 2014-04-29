@@ -24,7 +24,7 @@ function [] = plotting(var)
           xtitle("",timeTitle,"Temperature (deg celcius)")
           plot2d(tempdisp,rect=[0,20,1000,90],style=5)
           
-          m=m+1;
+          
       elseif length(var) == 4
           
           heat = var(1);
@@ -48,6 +48,6 @@ function [] = plotting(var)
           xtitle("",timeTitle,"Temperature (deg celcius)")
           plot2d(tempdisp,rect=[0,20,1000,90],style=5)
           plot2d(setpointdisp,rect=[0,20,1000,90],style=1)
-          m=m+1;
+          
     end
 endfunction
