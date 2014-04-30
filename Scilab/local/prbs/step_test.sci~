@@ -1,0 +1,81 @@
+mode(0)
+global temp heat fan sampling_time m heatdisp fandisp tempdisp x
+
+//**Sampling Time**//
+sampling_time = 0.5;
+///////****/////////
+
+//m = 1;
+
+function [temp] = step_test(heat,fan)
+    global heatdisp fandisp tempdisp sampling_time m
+    
+
+writeserial(handl,ascii(254)); //Input Heater, writeserial accepts                                       strings; so convert 254 into its                                        string equivalent 
+writeserial(handl,ascii(heat));
+writeserial(handl,ascii(253)); //Input Fan
+writeserial(handl,ascii(fan));
+writeserial(handl,ascii(255)); //To read Temp
+sleep(100);
+
+temp = ascii(readserial(handl)); // Read serial returns a string, so                                       convert it to its integer(ascii)                                      equivalent
+temp = temp(1) + 0.1*temp(2); // convert to temp with decimal points                                     eg: 40.7
+A = [m,heat,fan,temp];
+A = [A;A];
+   fdfh = file('open','data.sce','unknown');
+   write(fdfh,A,'(7(e11.5,1x))');
+   file('close', fdfh);
+   
+   fncr =  'data.sce'; 
+   fdt = mopen(fncr);
+   a = mgetl(fdt,1);
+
+   b = evstr(a);
+
+   byte = mtell(fdt);
+
+   mseek(byte,fdt,'set');
+   
+x=ceil(1/sampling_time);
+
+      if (modulo(m,x) == 1|sampling_time >= 1)
+
+              disp(modulo(m,x))
+              disp('plotting')
+
+              heatdisp=[heatdisp;heat];
+
+              subplot(311);
+
+              xtitle("Step Test","Time(seconds)","Heat in percentage")
+
+              plot2d(heatdisp,rect=[0,0,1000,100],style=1)
+
+             
+
+              fandisp=[fandisp;fan];
+
+              subplot(312);
+
+              xtitle("","Time(seconds)","Fan in percentage")
+
+              plot2d(fandisp,rect=[0,0,1000,100],style=2)
+
+             
+
+              tempdisp=[tempdisp;temp];
+
+              subplot(313)
+
+              xtitle("","Time(seconds)","Temperature (deg celcius)")
+
+              plot2d(tempdisp,rect=[0,20,1000,70],style=5)
+              
+              m=m+1;      
+              
+          else
+              m = m+1;
+        end
+
+        
+endfunction
