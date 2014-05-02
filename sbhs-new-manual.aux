@@ -45,6 +45,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Changing Com port number}}{15}}
 \newlabel{com_change}{{2.2}{15}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Accessing Single Board Heater system on a Linux System}{15}}
+\newlabel{linux_scilab}{{2.2}{15}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Expected responses seen on the console}}{16}}
 \newlabel{loader}{{2.3}{16}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Executing script files}}{17}}
@@ -66,22 +67,26 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}PRBS modelling and implementation of pole-placement controller}{22}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}PRBS testing}{22}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces A Pseudo Random Binary Sequence}}{23}}
-\newlabel{prbs-fig}{{3.1}{23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Xcos for PRBS testing experiment}}{23}}
-\newlabel{prbs-xcos}{{3.2}{23}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Implementing IMC controller on SBHS, virtually}{24}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Scilab Code}{24}}
-\newlabel{imccodes}{{3.2}{24}}
-\@writefile{cod}{\contentsline {section}{\numberline {3.1}ser\_init.sce}{24}}
-\@writefile{lol}{\contentsline {lstlisting}{Scilab/local/imc\textunderscore controller/ser\textunderscore init.sce}{25}}
-\@writefile{cod}{\contentsline {section}{\numberline {3.2}imc.sci}{25}}
-\@writefile{lol}{\contentsline {lstlisting}{Scilab/local/imc\textunderscore controller/imc.sci}{25}}
-\@writefile{cod}{\contentsline {section}{\numberline {3.3}imc\_virtual.sce}{29}}
-\@writefile{lol}{\contentsline {lstlisting}{Scilab/virtual/imc\textunderscore controller/imc\textunderscore virtual.sce}{29}}
-\@writefile{cod}{\contentsline {section}{\numberline {3.4}imc\_virtual.sci}{30}}
-\@writefile{lol}{\contentsline {lstlisting}{Scilab/virtual/imc\textunderscore controller/imc\textunderscore virtual.sci}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Xcos for PRBS testing experiment}}{23}}
+\newlabel{prbs-xcos}{{3.1}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Issues with step testing and alternate approach}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces PRBS testing input and output \textit  {{[}Image source: CL 686 Advanced Process Control, Spring 2013-14 lecture slides. Prof. S. C. Patwardhan, IIT Bombay{]}}}}{25}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Step by step procedure to do PRBS testing}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces A Pseudo Random Binary Sequence}}{26}}
+\newlabel{prbs-fig}{{3.3}{26}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Determination of discrete time transfer function}{26}}
+\newlabel{DTF}{{3.1}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Performing PRBS testing on SBHS, virtually}{27}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Scilab Code}{27}}
+\newlabel{prbscodes}{{3.4}{27}}
+\@writefile{cod}{\contentsline {section}{\numberline {3.1}ser\_init.sce}{27}}
+\@writefile{lol}{\contentsline {lstlisting}{Scilab/local/imc\textunderscore controller/ser\textunderscore init.sce}{27}}
+\@writefile{cod}{\contentsline {section}{\numberline {3.2}imc.sci}{28}}
+\@writefile{lol}{\contentsline {lstlisting}{Scilab/local/imc\textunderscore controller/imc.sci}{28}}
+\@writefile{cod}{\contentsline {section}{\numberline {3.3}imc\_virtual.sce}{32}}
+\@writefile{lol}{\contentsline {lstlisting}{Scilab/virtual/imc\textunderscore controller/imc\textunderscore virtual.sce}{32}}
+\@writefile{cod}{\contentsline {section}{\numberline {3.4}imc\_virtual.sci}{32}}
+\@writefile{lol}{\contentsline {lstlisting}{Scilab/virtual/imc\textunderscore controller/imc\textunderscore virtual.sci}{32}}
 \bibdata{commonbib}
 \bibcite{moodle}{1}
 \bibcite{spoken-sci}{2}

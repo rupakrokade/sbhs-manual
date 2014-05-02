@@ -15,6 +15,8 @@
 \contentsline {subsection}{\numberline {2.1.2}Configuring Scilab}{14}
 \contentsline {section}{\numberline {2.2}Accessing Single Board Heater system on a Linux System}{15}
 \contentsline {chapter}{\numberline {3}PRBS modelling and implementation of pole-placement controller}{22}
-\contentsline {section}{\numberline {3.1}PRBS testing}{22}
-\contentsline {subsection}{\numberline {3.1.1}Implementing IMC controller on SBHS, virtually}{24}
-\contentsline {section}{\numberline {3.2}Scilab Code}{24}
+\contentsline {section}{\numberline {3.1}Issues with step testing and alternate approach}{24}
+\contentsline {section}{\numberline {3.2}Step by step procedure to do PRBS testing}{25}
+\contentsline {section}{\numberline {3.3}Determination of discrete time transfer function}{26}
+\contentsline {subsection}{\numberline {3.3.1}Performing PRBS testing on SBHS, virtually}{27}
+\contentsline {section}{\numberline {3.4}Scilab Code}{27}
