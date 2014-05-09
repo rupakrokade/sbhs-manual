@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  2 MAY 2014 16:02
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  5 MAY 2014 18:07
 entering extended mode
  %&-line parsing enabled.
 **sbhs-new-manual.tex
@@ -1497,34 +1497,45 @@ File: prbs/prbs-xcos.png Graphic file (type png)
 File: prbs/PRBS.jpg Graphic file (type jpg)
  <use prbs/PRBS.jpg> [24]
 
-LaTeX Warning: Reference `chap1' on page 25 undefined on input line 38.
+LaTeX Warning: Reference `chap1' on page 25 undefined on input line 35.
 
 
-LaTeX Warning: Reference `chap2' on page 25 undefined on input line 38.
+LaTeX Warning: Reference `chap2' on page 25 undefined on input line 35.
 
 <prbs/prbs-illustration.png, id=132, 1311.90125pt x 639.38875pt>
 File: prbs/prbs-illustration.png Graphic file (type png)
 
-<use prbs/prbs-illustration.png> [25 <./prbs/PRBS.jpg>] [26 <./prbs/prbs-illust
-ration.png (PNG copy)>]
-Overfull \hbox (4.2568pt too wide) in paragraph at lines 76--77
+<use prbs/prbs-illustration.png>
+<prbs/prbs-expt.png, id=133, 622.325pt x 406.51875pt>
+File: prbs/prbs-expt.png Graphic file (type png)
+ <use prbs/prbs-expt.png>
+[25 <./prbs/PRBS.jpg>] [26 <./prbs/prbs-illustration.png (PNG copy)> <./prbs/pr
+bs-expt.png (PNG copy)>]
+Overfull \hbox (4.2568pt too wide) in paragraph at lines 80--81
 []\OT1/txr/m/n/12 The op-ti-miza-tion is per-formed us-ing the op-ti-miza-tion 
 rou-tine \op-tim" of Scilab.
  []
 
+[27] <prbs/prbs-fit.png, id=143, 622.325pt x 406.51875pt>
+File: prbs/prbs-fit.png Graphic file (type png)
 
-LaTeX Warning: Reference `vlabsexpt' on page 27 undefined on input line 83.
+<use prbs/prbs-fit.png> <prbs/prbs-model.png, id=144, 658.46pt x 717.68124pt>
+File: prbs/prbs-model.png Graphic file (type png)
 
-(./Scilab/local/imc_controller/ser_init.sce [27])
-(./Scilab/local/imc_controller/imc.sci [28]
+<use prbs/prbs-model.png>
+
+LaTeX Warning: Reference `vlabsexpt' on page 28 undefined on input line 104.
+
+(./Scilab/local/imc_controller/ser_init.sce [28 <./prbs/prbs-fit.png (PNG copy)
+>] [29 <./prbs/prbs-model.png>]) (./Scilab/local/imc_controller/imc.sci
+[30]
 LaTeX Font Info:    Try loading font information for OML+txr on input line 44.
-
-(/usr/share/texmf-texlive/tex/latex/txfonts/omltxr.fd
+ (/usr/share/texmf-texlive/tex/latex/txfonts/omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <12> not available
 (Font)              Font shape `OML/txmi/m/it' tried instead on input line 44.
- [29]
+ [31] [32]
 LaTeX Font Info:    Try loading font information for OMS+txr on input line 74.
 
 (/usr/share/texmf-texlive/tex/latex/txfonts/omstxr.fd
@@ -1532,16 +1543,16 @@ File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 74.
- [30]) [31]
-(./Scilab/virtual/imc_controller/imc_virtual.sce)
-(./Scilab/virtual/imc_controller/imc_virtual.sci [32] [33]))
-(./sbhs-new-manual.bbl [34]
+ [33])
+(./Scilab/virtual/imc_controller/imc_virtual.sce [34])
+(./Scilab/virtual/imc_controller/imc_virtual.sci [35])) (./sbhs-new-manual.bbl
+[36]
 Underfull \hbox (badness 2726) in paragraph at lines 46--50
 []\OT1/txr/m/n/12 Virtual labs project.  Sin-gle board heater sys-tem.  http://
 www.co-
  []
 
-) [35
+) [37
 
 ] (./sbhs-new-manual.aux)
 
@@ -1549,13 +1560,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17974 strings out of 493848
- 317814 string characters out of 1152823
- 473493 words of memory out of 3000000
- 20766 multiletter control sequences out of 15000+50000
+ 17994 strings out of 493848
+ 318178 string characters out of 1152823
+ 472548 words of memory out of 3000000
+ 20783 multiletter control sequences out of 15000+50000
  49655 words of font info for 134 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 49i,10n,56p,1581b,2807s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,10n,56p,1581b,2801s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texmf-texlive/fonts/type1/p
 ublic/txfonts/rtxmi.pfb></usr/share/texmf-texlive/fonts/type1/public/txfonts/rt
@@ -1564,9 +1575,9 @@ e/texmf-texlive/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-texlive/f
 onts/type1/public/txfonts/txtt.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
 mes/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sbhs-new-manual.pdf (36 pages, 1032094 bytes).
+Output written on sbhs-new-manual.pdf (38 pages, 1096791 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
+ 210 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

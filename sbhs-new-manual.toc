@@ -17,6 +17,6 @@
 \contentsline {chapter}{\numberline {3}PRBS modelling and implementation of pole-placement controller}{22}
 \contentsline {section}{\numberline {3.1}Issues with step testing and alternate approach}{24}
 \contentsline {section}{\numberline {3.2}Step by step procedure to do PRBS testing}{25}
-\contentsline {section}{\numberline {3.3}Determination of discrete time transfer function}{26}
-\contentsline {subsection}{\numberline {3.3.1}Performing PRBS testing on SBHS, virtually}{27}
-\contentsline {section}{\numberline {3.4}Scilab Code}{27}
+\contentsline {section}{\numberline {3.3}Determination of discrete time transfer function}{27}
+\contentsline {subsection}{\numberline {3.3.1}Performing PRBS testing on SBHS, virtually}{28}
+\contentsline {section}{\numberline {3.4}Scilab Code}{28}

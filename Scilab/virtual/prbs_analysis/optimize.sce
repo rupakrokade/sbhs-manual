@@ -1,6 +1,4 @@
 mode(0);
-//filename = "prbs.txt"; // Change filename here
-//filename = "29Apr2014_17_03_57.txt";
 filename = "30Apr2014_12_30_50.txt";
 clf
 
