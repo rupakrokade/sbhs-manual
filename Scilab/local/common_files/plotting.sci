@@ -1,6 +1,6 @@
 function [] = plotting(var,low_lim,high_lim)
     
-    global heatdisp fandisp tempdisp setpointdisp sampling_time m low_lim high_lim
+    global heatdisp fandisp tempdisp setpointdisp sampling_time m
     
     timeTitle = "No. of samples with sampling time = "+string(sampling_time)
     if low_lim~=[] & high_lim~=[]

@@ -1,5 +1,6 @@
+global filename m
 function status = init(port)
-    global handl
+    global handl filename
     
     OS = getos();
     
@@ -16,4 +17,19 @@ if (ascii(handl) ~= [])
 else
     status = string('ERROR: Check port number or USB connection')
 end
+
+m = 1;
+
+dt = getdate();
+year = dt(1);
+month = dt(2);
+day = dt(6);
+hour = dt(7);
+minutes = dt(8);
+seconds = dt(9);
+
+file1 = strcat(string([year month day hour minutes seconds]),'-');
+string txt;
+filename = strcat([file1, "txt"],'.');
+
 endfunction
