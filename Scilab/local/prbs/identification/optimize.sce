@@ -1,6 +1,6 @@
 mode(0);
  // Change filename here
-filename = "2014-5-5-18-40-25.txt";
+filename = "30Apr2014_12_30_50.txt";
 clf
 
 
