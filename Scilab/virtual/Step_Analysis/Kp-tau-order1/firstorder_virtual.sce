@@ -1,5 +1,6 @@
 mode(0)
 filename = "23Apr2014_21_36_03.txt"
+
 clf
 exec('costf_1.sci');
 exec('label.sci');

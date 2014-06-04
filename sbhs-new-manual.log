@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  5 MAY 2014 18:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  28 MAY 2014 16:44
 entering extended mode
  %&-line parsing enabled.
 **sbhs-new-manual.tex
@@ -1378,195 +1378,148 @@ Overfull \hbox (76.84799pt too wide) detected at line 2
 
 ]
 Chapter 1.
-<blkdiag.jpg, id=22, 602.25pt x 333.49594pt>
+[3
+
+]
+Chapter 2.
+<blkdiag.jpg, id=25, 602.25pt x 333.49594pt>
 File: blkdiag.jpg Graphic file (type jpg)
  <use blkdiag.jpg>
-LaTeX Font Info:    Try loading font information for TS1+txr on input line 115.
+LaTeX Font Info:    Try loading font information for TS1+txr on input line 120.
 
 
 (/usr/share/texmf-texlive/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) [3
+) [4
 
-] [4 <./blkdiag.jpg>]
-<pwm.PNG, id=31, 513.92pt x 426.59375pt>
+] [5 <./blkdiag.jpg>]
+<pwm.PNG, id=34, 513.92pt x 426.59375pt>
 File: pwm.PNG Graphic file (type png)
- <use pwm.PNG> [5 <./pwm.PNG (PNG copy)>] <Inst_Amp.jpg, id=36, 460.72125pt x 2
+ <use pwm.PNG> [6 <./pwm.PNG (PNG copy)>] <Inst_Amp.jpg, id=40, 460.72125pt x 2
 45.718pt>
 File: Inst_Amp.jpg Graphic file (type jpg)
- <use Inst_Amp.jpg> [6]
-<c.jpg, id=44, 489.027pt x 361.35pt>
+ <use Inst_Amp.jpg> [7]
+<c.jpg, id=47, 489.027pt x 361.35pt>
 File: c.jpg Graphic file (type jpg)
- <use c.jpg> [7 <./Inst_Amp.jpg> <./c.jpg>] <RS232cable.jpg, id=48, 481.8pt x 3
+ <use c.jpg> [8 <./Inst_Amp.jpg> <./c.jpg>] <RS232cable.jpg, id=51, 481.8pt x 3
 61.35pt>
 File: RS232cable.jpg Graphic file (type jpg)
  <use RS232cable.jpg>
-<Serialport.jpg, id=49, 416.757pt x 361.35pt>
+<Serialport.jpg, id=52, 416.757pt x 361.35pt>
 File: Serialport.jpg Graphic file (type jpg)
  <use Serialport.jpg>
-<usbc.jpg, id=50, 481.8pt x 361.35pt>
+<usbc.jpg, id=53, 481.8pt x 361.35pt>
 File: usbc.jpg Graphic file (type jpg)
  <use usbc.jpg>
-<usbp.jpg, id=51, 481.8pt x 370.38374pt>
+<usbp.jpg, id=54, 481.8pt x 370.38374pt>
 File: usbp.jpg Graphic file (type jpg)
  <use usbp.jpg>
-<display.jpg, id=52, 642.4pt x 481.8pt>
+<display.jpg, id=55, 642.4pt x 481.8pt>
 File: display.jpg Graphic file (type jpg)
- <use display.jpg> [8 <./RS232cable.jpg>] [9 <./Serialport.jpg> <./usbc.jpg>] <
-r.jpg, id=59, 481.8pt x 328.8285pt>
+ <use display.jpg>
+<r.jpg, id=56, 481.8pt x 328.8285pt>
 File: r.jpg Graphic file (type jpg)
-
-<use r.jpg> [10 <./usbp.jpg> <./display.jpg>] [11 <./r.jpg>]
-Chapter 2.
-
-Overfull \hbox (1.65599pt too wide) in paragraph at lines 221--222
-\OT1/txr/m/n/12 This sec-tion ex-plains the pro-ce-dure to use Sin-gle Board He
-ater Sys-tem with Scilab.
- []
-
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 227
-.
+ <use r.jpg> [9 <./RS232cable.jpg>]
+[10 <./Serialport.jpg> <./usbc.jpg>] (./using-sbhs/using-sbhs.tex [11 <./usbp.j
+pg> <./display.jpg>] [12 <./r.jpg>]
+Chapter 3.
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 8.
 (/usr/share/texmf-texlive/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )
-Overfull \hbox (0.29822pt too wide) in paragraph at lines 228--230
-\OT1/txr/m/n/12 may down-load it from: \OT1/txtt/m/n/12 http://www.ftdichip.com
-/Drivers/VCP.htm\OT1/txr/m/n/12 ) 
+Overfull \hbox (8.49458pt too wide) in paragraph at lines 11--12
+[]\OT1/txr/m/n/12 Example StepTest code. Scilab code can be down-loaded from \O
+T1/txtt/m/n/12 sbhs website 
  []
 
-[12
+[13
 
-]
-Overfull \hbox (1.47542pt too wide) in paragraph at lines 236--237
-\OT1/txtt/m/n/12 Search for best driver in these locations\OT1/txr/m/n/12 . Che
-ck the but-ton \OT1/txtt/m/n/12 Include
+] <using-sbhs/COM.jpg, id=74, 597.73312pt x 435.12563pt>
+File: using-sbhs/COM.jpg Graphic file (type jpg)
+
+<use using-sbhs/COM.jpg> [14]
+<using-sbhs/port2.jpg, id=78, 489.32813pt x 346.29375pt>
+File: using-sbhs/port2.jpg Graphic file (type jpg)
+
+<use using-sbhs/port2.jpg>
+LaTeX Font Info:    Try loading font information for OMS+txtt on input line 40.
+
+LaTeX Font Info:    No file OMStxtt.fd. on input line 40.
+
+
+LaTeX Font Warning: Font shape `OMS/txtt/m/n' undefined
+(Font)              using `OMS/txsy/m/n' instead
+(Font)              for symbol `textbackslash' on input line 40.
+
+[15 <./using-sbhs/COM.jpg>] [16 <./using-sbhs/port2.jpg>]
+<using-sbhs/console.png, id=85, 472.01344pt x 485.56406pt>
+File: using-sbhs/console.png Graphic file (type png)
+
+<use using-sbhs/console.png>
+<using-sbhs/scilab1.jpg, id=87, 490.08093pt x 414.79968pt>
+File: using-sbhs/scilab1.jpg Graphic file (type jpg)
+
+<use using-sbhs/scilab1.jpg> [17 <./using-sbhs/console.png>]
+<using-sbhs/xcos.png, id=92, 451.6875pt x 376.40625pt>
+File: using-sbhs/xcos.png Graphic file (type png)
+
+<use using-sbhs/xcos.png>
+<using-sbhs/xcos_block.png, id=93, 451.6875pt x 377.15906pt>
+File: using-sbhs/xcos_block.png Graphic file (type png)
+
+<use using-sbhs/xcos_block.png>
+<using-sbhs/plot.png, id=94, 472.76625pt x 447.17062pt>
+File: using-sbhs/plot.png Graphic file (type png)
+
+<use using-sbhs/plot.png>
+Overfull \hbox (9.78973pt too wide) in paragraph at lines 91--91
+[]\OT1/txr/bx/n/17.28 Accessing Sin-gle Board Heater Sys-tem on a Linux
  []
 
-<COM.jpg, id=71, 597.73312pt x 435.12563pt>
-File: COM.jpg Graphic file (type jpg)
- <use COM.jpg>
-<port2.jpg, id=72, 489.32813pt x 346.29375pt>
-File: port2.jpg Graphic file (type jpg)
- <use port2.jpg> [13] [14 <./COM.jpg>] <console.png, id=79, 472.01344pt x 485.5
-6406pt>
-File: console.png Graphic file (type png)
- <use console.png>
-<scilab1.jpg, id=81, 490.08093pt x 414.79968pt>
-File: scilab1.jpg Graphic file (type jpg)
- <use scilab1.jpg>
-<xcos.png, id=82, 451.6875pt x 376.40625pt>
-File: xcos.png Graphic file (type png)
- <use xcos.png>
-<xcos_block.png, id=83, 451.6875pt x 377.15906pt>
-File: xcos_block.png Graphic file (type png)
- <use xcos_block.png>
-<plot.png, id=84, 472.76625pt x 447.17062pt>
-File: plot.png Graphic file (type png)
- <use plot.png>
-Overfull \hbox (6.90398pt too wide) in paragraph at lines 297--297
-[]\OT1/txr/bx/n/17.28 Accessing Sin-gle Board Heater sys-tem on a Linux
+[18 <./using-sbhs/scilab1.jpg>] [19 <./using-sbhs/xcos.png> <./using-sbhs/xcos_
+block.png>] [20 <./using-sbhs/plot.png>]
+<using-sbhs/lstty.png, id=108, 659.46375pt x 436.63126pt>
+File: using-sbhs/lstty.png Graphic file (type png)
+
+<use using-sbhs/lstty.png>
+<using-sbhs/tailusb.png, id=109, 836.12375pt x 487.8225pt>
+File: using-sbhs/tailusb.png Graphic file (type png)
+
+<use using-sbhs/tailusb.png>
+Overfull \hbox (20.71094pt too wide) in paragraph at lines 95--108
+\OT1/txr/m/n/12 con-nect more than one USB de-vices, then type \OT1/txtt/m/n/12
+ tail -f /var/log/messages|grep
  []
 
-<lstty.png, id=85, 659.46375pt x 436.63126pt>
-File: lstty.png Graphic file (type png)
- <use lstty.png>
-<tailusb.png, id=86, 836.12375pt x 487.8225pt>
-File: tailusb.png Graphic file (type png)
- <use tailusb.png>
-Overfull \hbox (27.65894pt too wide) in paragraph at lines 301--314
-\OT1/txr/m/n/12 to con-nect more than one USB de-vice, then type \OT1/txtt/m/n/
-12 tail -f /var/log/messages|grep
- []
+<using-sbhs/linuxserial.png, id=110, 642.4pt x 522.95375pt>
+File: using-sbhs/linuxserial.png Graphic file (type png)
 
-[15 <./port2.jpg>] [16 <./console.png>] [17 <./scilab1.jpg> <./xcos.png>]
-<linuxserial.png, id=98, 642.4pt x 522.95375pt>
-File: linuxserial.png Graphic file (type png)
- <use linuxserial.png>
-<SSscilab.png, id=99, 757.83125pt x 531.9875pt>
-File: SSscilab.png Graphic file (type png)
- <use SSscilab.png> [18 <./xcos_block.png>] [19 <./plot.png> <./lstty.png>] [20
- <./tailusb.png> <./linuxserial.png>] (./prbs/prbs.tex [21 <./SSscilab.png>]
-Chapter 3.
-<prbs/prbs-xcos.png, id=119, 684.5575pt x 631.35875pt>
-File: prbs/prbs-xcos.png Graphic file (type png)
+<use using-sbhs/linuxserial.png> [21 <./using-sbhs/lstty.png>]
+<using-sbhs/SSscilab.png, id=115, 757.83125pt x 531.9875pt>
+File: using-sbhs/SSscilab.png Graphic file (type png)
 
-<use prbs/prbs-xcos.png> [22
-
-] [23 <./prbs/prbs-xcos.png>]
-<prbs/PRBS.jpg, id=127, 408.52625pt x 343.2825pt>
-File: prbs/PRBS.jpg Graphic file (type jpg)
- <use prbs/PRBS.jpg> [24]
-
-LaTeX Warning: Reference `chap1' on page 25 undefined on input line 35.
-
-
-LaTeX Warning: Reference `chap2' on page 25 undefined on input line 35.
-
-<prbs/prbs-illustration.png, id=132, 1311.90125pt x 639.38875pt>
-File: prbs/prbs-illustration.png Graphic file (type png)
-
-<use prbs/prbs-illustration.png>
-<prbs/prbs-expt.png, id=133, 622.325pt x 406.51875pt>
-File: prbs/prbs-expt.png Graphic file (type png)
- <use prbs/prbs-expt.png>
-[25 <./prbs/PRBS.jpg>] [26 <./prbs/prbs-illustration.png (PNG copy)> <./prbs/pr
-bs-expt.png (PNG copy)>]
-Overfull \hbox (4.2568pt too wide) in paragraph at lines 80--81
-[]\OT1/txr/m/n/12 The op-ti-miza-tion is per-formed us-ing the op-ti-miza-tion 
-rou-tine \op-tim" of Scilab.
- []
-
-[27] <prbs/prbs-fit.png, id=143, 622.325pt x 406.51875pt>
-File: prbs/prbs-fit.png Graphic file (type png)
-
-<use prbs/prbs-fit.png> <prbs/prbs-model.png, id=144, 658.46pt x 717.68124pt>
-File: prbs/prbs-model.png Graphic file (type png)
-
-<use prbs/prbs-model.png>
-
-LaTeX Warning: Reference `vlabsexpt' on page 28 undefined on input line 104.
-
-(./Scilab/local/imc_controller/ser_init.sce [28 <./prbs/prbs-fit.png (PNG copy)
->] [29 <./prbs/prbs-model.png>]) (./Scilab/local/imc_controller/imc.sci
-[30]
-LaTeX Font Info:    Try loading font information for OML+txr on input line 44.
- (/usr/share/texmf-texlive/tex/latex/txfonts/omltxr.fd
-File: omltxr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `OML/txr/m/n' in size <12> not available
-(Font)              Font shape `OML/txmi/m/it' tried instead on input line 44.
- [31] [32]
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 74.
-
-(/usr/share/texmf-texlive/tex/latex/txfonts/omstxr.fd
-File: omstxr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 74.
- [33])
-(./Scilab/virtual/imc_controller/imc_virtual.sce [34])
-(./Scilab/virtual/imc_controller/imc_virtual.sci [35])) (./sbhs-new-manual.bbl
-[36]
+<use using-sbhs/SSscilab.png>) (./sbhs-new-manual.bbl [22 <./using-sbhs/tailusb
+.png>] [23 <./using-sbhs/linuxserial.png>] [24 <./using-sbhs/SSscilab.png>]
 Underfull \hbox (badness 2726) in paragraph at lines 46--50
 []\OT1/txr/m/n/12 Virtual labs project.  Sin-gle board heater sys-tem.  http://
 www.co-
  []
 
-) [37
+) [25
 
 ] (./sbhs-new-manual.aux)
 
-LaTeX Warning: There were undefined references.
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17994 strings out of 493848
- 318178 string characters out of 1152823
- 472548 words of memory out of 3000000
- 20783 multiletter control sequences out of 15000+50000
- 49655 words of font info for 134 fonts, out of 3000000 for 9000
+ 16384 strings out of 493848
+ 300308 string characters out of 1152823
+ 405473 words of memory out of 3000000
+ 19202 multiletter control sequences out of 15000+50000
+ 44099 words of font info for 118 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 49i,10n,56p,1581b,2801s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,10n,56p,2965b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texmf-texlive/fonts/type1/p
 ublic/txfonts/rtxmi.pfb></usr/share/texmf-texlive/fonts/type1/public/txfonts/rt
@@ -1575,9 +1528,9 @@ e/texmf-texlive/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-texlive/f
 onts/type1/public/txfonts/txtt.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
 mes/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sbhs-new-manual.pdf (38 pages, 1096791 bytes).
+Output written on sbhs-new-manual.pdf (26 pages, 922595 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
+ 162 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

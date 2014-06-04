@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBHS Vlabs client</title>
+    <style>
+    * {
+        font-family: 'Ubuntu Light', 'Segoe UI', sans-serif;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        overflow: hidden;
+    }
+    .header {
+        background: #EFEFEF;
+        padding: 10px 10px;
+        border-bottom: 1px solid #E0E0E0;
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+        text-shadow: 0 1px 0 #F1F1F1;
+        color: #777777;
+        z-index: 3;
+        display: block;
+    }
+    .space {
+        background: #BBB;
+        height: 1em;
+        z-index: 0;
+        display: block;
+        margin-top: 1px;
+    }
+    .main {
+        background: #EFEFEF;
+        border-top: 1px solid #F2F2F2;
+        min-height: 600px;
+        padding: 10px 10px;
+    }
+    .marker {
+        width: 24px;
+        height: 24px;
+        border-radius: 24px;
+        display: inline-block;
+    }
+    .marker.red {
+        background: -webkit-gradient(linear,0 0,0 100%,from(#ee5f5b),to(#bd362f));
+    }
+    .marker.green {
+        background: -webkit-gradient(linear,0 0,0 100%,from(#62c462),to(#51a351));
+    }
+    .status {
+        vertical-align: middle;
+        height: 48px;
+    }
+    .status .marker {
+        float: right;
+    }
+    .state {
+        position: absolute;
+        bottom: 10px;
+    }
+    input:not([type=submit]) {
+        width: 39%;
+        height: 24px;
+        display: inline-block;
+        margin-top: 1px;
+    }
+    #alert {
+        color: blue;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SBHS Vlabs client</h1>
+    </div>
+    <div class="space">&nbsp;</div>
+    <div class="main">
+        <div class="status" id="connection">
+            SBHS connection
+            <div class="marker red"></div>
+        </div>
+        <div class="status" id="version">
+            Client version
+            <div class="marker red"></div>
+        </div>
+        <div class="status" id="login">
+            User login
+            <div class="marker red"></div>
+        </div>
+        <div class="status" id="login_wrap">
+            <form id="login_form">
+            <input type="text" name="username" id="username" placeholder="Username">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="submit" value="Login">
+            </form>
+        </div>
+        <div class="status" id="expt">
+            Experiment status
+            <div class="marker red"></div>
+        </div>
+        <br>
+        <h4 id="alert">Please wait</h4>
+        <div class="state">
+        <h3 id="iter">Current iteration: 0</h3>
+        <h3 id="heat">Current heat: 0 %</h3>
+        <h3 id="fan">Current fan: 0 %</h3>
+        <h3 id="temp">Current temperature: 0 &deg;C</h3>
+        <h3 id="time">Time remaining: 0 seconds</h3>
+        <br><br>
+        Log file for this experiment: <b id="logfile">#N/A</b>
+        </div>
+    </div>
+    <script>
+        window.alert1 = function(msg) {
+            document.getElementById("alert").innerHTML = msg;
+        }
+        var experiment = function() {
+            var data = SBHSClient.get_data();
+            output = JSON.parse(data);
+
+            if (output.error != "") {
+                alert1(output.error);
+                document.getElementById("expt").children[0].classList.remove("green");
+                document.getElementById("expt").children[0].classList.add("red");
+            }
+            else {
+                document.getElementById("iter").innerHTML = "Current iteration: " + output.iter;
+                document.getElementById("heat").innerHTML = "Current heat: " + output.heat + " %";
+                document.getElementById("fan").innerHTML = "Current fan: " + output.fan + " %";
+                document.getElementById("temp").innerHTML = "Current temperature: " + output.temp + " &deg;C";
+                var min = Math.floor(parseInt(output.time)/60);
+                var sec = parseInt(output.time) % 60;
+                var time_rem = (min>9 ? "" : "0") + min + ":" + (sec>9 ? "" : "0") + sec;
+                document.getElementById("time").innerHTML = "Time remaining: " + time_rem + " minutes";
+                alert1("Experiment running");
+            }
+        }
+        var run = function() {
+            var check = SBHSClient.check_connection();
+            if (check == "TESTOK") {
+                document.getElementById("connection").children[0].classList.remove("red");
+                document.getElementById("connection").children[0].classList.add("green");
+            }
+            else {
+                alert1("Unable to connect to SBHS server");
+                return;
+            }
+
+            var version = SBHSClient.client_version();
+            if (version == true) {
+                document.getElementById("version").children[0].classList.remove("red");
+                document.getElementById("version").children[0].classList.add("green");
+                alert1("Please login to continue.")
+            }
+            else {
+                alert1("Client outdated. Please download new client from SBHS website.");
+                return;
+            }
+
+            document.getElementById("login_form").onsubmit = function(e) {
+                e.preventDefault();
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                var auth = SBHSClient.authenticate(username, password);
+                if (auth == "TRUE") {
+                    document.getElementById("login").children[0].classList.remove("red");
+                    document.getElementById("login").children[0].classList.add("green");
+                    document.getElementById("expt").children[0].classList.remove("red");
+                    document.getElementById("expt").children[0].classList.add("green");
+
+                    var login_wrap = document.getElementById("login_wrap");
+                    login_wrap.parentNode.removeChild(login_wrap);
+                    alert1("Login successful. You can run your scilab code now.");
+                }
+                else {
+                    alert1(auth);
+                }
+                setInterval(experiment, 1000);
+                return false;
+            };
+        };
+
+        setTimeout(run, 1000);
+    </script>
+</body>
+</html>

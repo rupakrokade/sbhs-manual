@@ -1,22 +1,17 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {List of Scilab\ Code}}{2}
-\contentsline {chapter}{\numberline {1}Block diagram explanation of Single Board Heater System}{3}
-\contentsline {section}{\numberline {1.1}Microcontroller}{3}
-\contentsline {subsection}{\numberline {1.1.1}PWM for heat and speed control}{4}
-\contentsline {subsection}{\numberline {1.1.2}Analog to Digital conversion}{6}
-\contentsline {section}{\numberline {1.2}Instrumentation amplifier}{6}
-\contentsline {section}{\numberline {1.3}Communication}{7}
-\contentsline {subsection}{\numberline {1.3.1}Serial port communication}{8}
-\contentsline {subsection}{\numberline {1.3.2}Using USB for Communication}{8}
-\contentsline {section}{\numberline {1.4}Display and Resetting the setup}{10}
-\contentsline {chapter}{\numberline {2}Using Scilab with Single Board Heater System}{12}
-\contentsline {section}{\numberline {2.1}Accessing Single Board Heater system on a Windows System}{13}
-\contentsline {subsection}{\numberline {2.1.1}Installing necessary driver and COM Port Settings}{13}
-\contentsline {subsection}{\numberline {2.1.2}Configuring Scilab}{14}
-\contentsline {section}{\numberline {2.2}Accessing Single Board Heater system on a Linux System}{15}
-\contentsline {chapter}{\numberline {3}PRBS modelling and implementation of pole-placement controller}{22}
-\contentsline {section}{\numberline {3.1}Issues with step testing and alternate approach}{24}
-\contentsline {section}{\numberline {3.2}Step by step procedure to do PRBS testing}{25}
-\contentsline {section}{\numberline {3.3}Determination of discrete time transfer function}{27}
-\contentsline {subsection}{\numberline {3.3.1}Performing PRBS testing on SBHS, virtually}{28}
-\contentsline {section}{\numberline {3.4}Scilab Code}{28}
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {chapter}{\numberline {2}Block diagram explanation of Single Board Heater System}{4}
+\contentsline {section}{\numberline {2.1}Microcontroller}{4}
+\contentsline {subsection}{\numberline {2.1.1}PWM for heat and speed control}{5}
+\contentsline {subsection}{\numberline {2.1.2}Analog to Digital conversion}{7}
+\contentsline {section}{\numberline {2.2}Instrumentation amplifier}{7}
+\contentsline {section}{\numberline {2.3}Communication}{8}
+\contentsline {subsection}{\numberline {2.3.1}Serial port communication}{9}
+\contentsline {subsection}{\numberline {2.3.2}Using USB for Communication}{9}
+\contentsline {section}{\numberline {2.4}Display and Resetting the setup}{9}
+\contentsline {chapter}{\numberline {3}Using Scilab with Single Board Heater System}{13}
+\contentsline {section}{\numberline {3.1}Accessing Single Board Heater system on a Windows System}{14}
+\contentsline {subsection}{\numberline {3.1.1}Installing necessary driver and COM Port Settings}{14}
+\contentsline {subsection}{\numberline {3.1.2}Configuring Scilab}{15}
+\contentsline {section}{\numberline {3.2}Accessing Single Board Heater System on a Linux System}{21}

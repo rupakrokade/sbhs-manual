@@ -1,7 +1,7 @@
 mode(-1);
 
-filename = "20Apr2012_15_10_35.txt";  //complete path of the saved data file
-//filename ="29Apr2014_14_32_06.txt";
+//filename = "20Apr2012_15_10_35.txt";  //complete path of the saved data file
+filename ="29Apr2014_14_32_06.txt";
 slope = 0.1; // change this to the slope that you have used in the experiment
 ind1=3;
 //Ramp Analysis
