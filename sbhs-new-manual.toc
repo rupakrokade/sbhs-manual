@@ -10,8 +10,8 @@
 \contentsline {subsection}{\numberline {2.3.1}Serial port communication}{9}
 \contentsline {subsection}{\numberline {2.3.2}Using USB for Communication}{9}
 \contentsline {section}{\numberline {2.4}Display and Resetting the setup}{9}
-\contentsline {chapter}{\numberline {3}Using Scilab with Single Board Heater System}{13}
-\contentsline {section}{\numberline {3.1}Accessing Single Board Heater system on a Windows System}{14}
-\contentsline {subsection}{\numberline {3.1.1}Installing necessary driver and COM Port Settings}{14}
-\contentsline {subsection}{\numberline {3.1.2}Configuring Scilab}{15}
-\contentsline {section}{\numberline {3.2}Accessing Single Board Heater System on a Linux System}{21}
+\contentsline {chapter}{\numberline {3}Performing a Local Experiment on Single Board Heater System}{13}
+\contentsline {section}{\numberline {3.1}Using SBHS on a Windows OS}{13}
+\contentsline {subsection}{\numberline {3.1.1}Installing Drivers and Configuring COM Port}{14}
+\contentsline {subsection}{\numberline {3.1.2}Steps to Perform a Local Experiment}{16}
+\contentsline {section}{\numberline {3.2}Accessing Single Board Heater System on a Linux System}{20}

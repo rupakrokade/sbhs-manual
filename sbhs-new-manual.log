@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  28 MAY 2014 16:44
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  10 JUN 2014 17:39
 entering extended mode
  %&-line parsing enabled.
 **sbhs-new-manual.tex
@@ -1426,75 +1426,80 @@ Chapter 3.
 LaTeX Font Info:    Try loading font information for OT1+txtt on input line 8.
 (/usr/share/texmf-texlive/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
-)
-Overfull \hbox (8.49458pt too wide) in paragraph at lines 11--12
-[]\OT1/txr/m/n/12 Example StepTest code. Scilab code can be down-loaded from \O
-T1/txtt/m/n/12 sbhs website 
- []
+) [13
 
-[13
-
-] <using-sbhs/COM.jpg, id=74, 597.73312pt x 435.12563pt>
+]
+<using-sbhs/COM.jpg, id=74, 597.73312pt x 435.12563pt>
 File: using-sbhs/COM.jpg Graphic file (type jpg)
 
-<use using-sbhs/COM.jpg> [14]
-<using-sbhs/port2.jpg, id=78, 489.32813pt x 346.29375pt>
+<use using-sbhs/COM.jpg>
+<using-sbhs/port2.jpg, id=75, 489.32813pt x 346.29375pt>
 File: using-sbhs/port2.jpg Graphic file (type jpg)
 
-<use using-sbhs/port2.jpg>
-LaTeX Font Info:    Try loading font information for OMS+txtt on input line 40.
+<use using-sbhs/port2.jpg> [14] [15 <./using-sbhs/COM.jpg> <./using-sbhs/port2.
+jpg>]
+Overfull \hbox (10.53455pt too wide) in paragraph at lines 41--42
+\OT1/txr/m/n/12 "Change di-rec-tory". This can also be per-formed by typ-ing \O
+T1/txtt/m/n/12 cd<space>folder
+ []
 
-LaTeX Font Info:    No file OMStxtt.fd. on input line 40.
+LaTeX Font Info:    Try loading font information for OMS+txtt on input line 42.
 
+LaTeX Font Info:    No file OMStxtt.fd. on input line 42.
 
 LaTeX Font Warning: Font shape `OMS/txtt/m/n' undefined
 (Font)              using `OMS/txsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 40.
+(Font)              for symbol `textbackslash' on input line 42.
 
-[15 <./using-sbhs/COM.jpg>] [16 <./using-sbhs/port2.jpg>]
-<using-sbhs/console.png, id=85, 472.01344pt x 485.56406pt>
+
+Overfull \hbox (0.5263pt too wide) in paragraph at lines 42--43
+\OT1/txtt/m/n/12 getd<space>folder path\OT1/txr/m/n/12 . The \OT1/txtt/m/n/12 f
+older path \OT1/txr/m/n/12 ar-gu-ment will be the com-
+ []
+
+[16] <using-sbhs/console.png, id=85, 472.01344pt x 485.56406pt>
 File: using-sbhs/console.png Graphic file (type png)
 
 <use using-sbhs/console.png>
 <using-sbhs/scilab1.jpg, id=87, 490.08093pt x 414.79968pt>
 File: using-sbhs/scilab1.jpg Graphic file (type jpg)
 
-<use using-sbhs/scilab1.jpg> [17 <./using-sbhs/console.png>]
-<using-sbhs/xcos.png, id=92, 451.6875pt x 376.40625pt>
+<use using-sbhs/scilab1.jpg>
+<using-sbhs/xcos.png, id=88, 451.6875pt x 376.40625pt>
 File: using-sbhs/xcos.png Graphic file (type png)
 
 <use using-sbhs/xcos.png>
-<using-sbhs/xcos_block.png, id=93, 451.6875pt x 377.15906pt>
+<using-sbhs/xcos_block.png, id=89, 451.6875pt x 377.15906pt>
 File: using-sbhs/xcos_block.png Graphic file (type png)
 
 <use using-sbhs/xcos_block.png>
-<using-sbhs/plot.png, id=94, 472.76625pt x 447.17062pt>
+<using-sbhs/plot.png, id=90, 472.76625pt x 447.17062pt>
 File: using-sbhs/plot.png Graphic file (type png)
 
 <use using-sbhs/plot.png>
-Overfull \hbox (9.78973pt too wide) in paragraph at lines 91--91
+Overfull \hbox (9.78973pt too wide) in paragraph at lines 98--98
 []\OT1/txr/bx/n/17.28 Accessing Sin-gle Board Heater Sys-tem on a Linux
  []
 
-[18 <./using-sbhs/scilab1.jpg>] [19 <./using-sbhs/xcos.png> <./using-sbhs/xcos_
-block.png>] [20 <./using-sbhs/plot.png>]
-<using-sbhs/lstty.png, id=108, 659.46375pt x 436.63126pt>
+[17] [18 <./using-sbhs/console.png>] [19 <./using-sbhs/scilab1.jpg> <./using-sb
+hs/xcos.png>] <using-sbhs/lstty.png, id=103, 659.46375pt x 436.63126pt>
 File: using-sbhs/lstty.png Graphic file (type png)
 
 <use using-sbhs/lstty.png>
-<using-sbhs/tailusb.png, id=109, 836.12375pt x 487.8225pt>
+<using-sbhs/tailusb.png, id=104, 836.12375pt x 487.8225pt>
 File: using-sbhs/tailusb.png Graphic file (type png)
 
 <use using-sbhs/tailusb.png>
-Overfull \hbox (20.71094pt too wide) in paragraph at lines 95--108
+Overfull \hbox (20.71094pt too wide) in paragraph at lines 102--115
 \OT1/txr/m/n/12 con-nect more than one USB de-vices, then type \OT1/txtt/m/n/12
  tail -f /var/log/messages|grep
  []
 
-<using-sbhs/linuxserial.png, id=110, 642.4pt x 522.95375pt>
+<using-sbhs/linuxserial.png, id=105, 642.4pt x 522.95375pt>
 File: using-sbhs/linuxserial.png Graphic file (type png)
 
-<use using-sbhs/linuxserial.png> [21 <./using-sbhs/lstty.png>]
+<use using-sbhs/linuxserial.png> [20 <./using-sbhs/xcos_block.png>] [21 <./usin
+g-sbhs/plot.png> <./using-sbhs/lstty.png>]
 <using-sbhs/SSscilab.png, id=115, 757.83125pt x 531.9875pt>
 File: using-sbhs/SSscilab.png Graphic file (type png)
 
@@ -1515,11 +1520,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  16384 strings out of 493848
  300308 string characters out of 1152823
- 405473 words of memory out of 3000000
+ 404473 words of memory out of 3000000
  19202 multiletter control sequences out of 15000+50000
  44099 words of font info for 118 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 49i,10n,56p,2965b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,10n,56p,956b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texmf-texlive/fonts/type1/p
 ublic/txfonts/rtxmi.pfb></usr/share/texmf-texlive/fonts/type1/public/txfonts/rt
@@ -1528,7 +1533,7 @@ e/texmf-texlive/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-texlive/f
 onts/type1/public/txfonts/txtt.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
 mes/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sbhs-new-manual.pdf (26 pages, 922595 bytes).
+Output written on sbhs-new-manual.pdf (26 pages, 922150 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
