@@ -2,15 +2,15 @@
 \begin{center}
 \begin{tikzpicture}[auto,node distance=2cm]
 \node[input](input){};
-\node[block,right of=input](tcbyrc){$\gamma \frac{T_c(z)}{R_c(z)}$};
+\node[block,right of=input](tcbyrc){$\gamma \dfrac{T_c(z)}{R_c(z)}$};
 \draw[->](input)--node{$r$}(tcbyrc);
 \node[sum,right of=tcbyrc,node distance=2cm](sum1){};
 \draw[->](tcbyrc)--node{}(sum1);
-\node[block,right of=sum1](plant){$G=z^{-k}\frac{B(z)}{A(z)}$};
+\node[block,right of=sum1](plant){$G=z^{-k}\dfrac{B(z)}{A(z)}$};
 \draw[->](sum1)--node{$u$}(plant);
 \node[output,right of=plant](output){};
 \draw[->](plant)--node[name=y]{$y$}(output);
-\node[block,below of=plant](scbyrc){$\frac{S_c}{R_c}$};
+\node[block,below of=plant](scbyrc){$\dfrac{S_c(z)}{R_c(z)}$};
 \draw[->](y)|-node{}(scbyrc);
 \draw[->](scbyrc)-|node[pos=0.99]{$-$}(sum1);
 \end{tikzpicture}

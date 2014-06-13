@@ -1,7 +1,0 @@
-\contentsline {section}{\numberline {List of Scilab\ Code}}{1}
-\contentsline {chapter}{\numberline {1}Implementing \textquoteleft Two Degrees of Freedom\textquoteright Controller for First order systems on a Single Board Heater System}{3}
-\contentsline {section}{\numberline {1.1}About this Experiment}{3}
-\contentsline {section}{\numberline {1.2}Theory}{3}
-\contentsline {section}{\numberline {1.3}Designing 2-DOF controller using pole placement control approach}{7}
-\contentsline {section}{\numberline {1.4}Step by step procedure to design and implement a 2-DOF controller}{10}
-\contentsline {section}{\numberline {1.5}Scilab Codes}{14}
