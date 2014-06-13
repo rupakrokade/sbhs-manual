@@ -2,24 +2,132 @@
 \section{Introduction to Virtual Labs at \\IIT Bombay}
 The concept of virtual laboratory is a brilliant step towards strengthening the education system of an university/college, a metropolitan area or even an entire nation. The idea is to use the ICT i.e. Information and Communications Technology, mainly the Internet for imparting education or exchange of educational information. Virtual Laboratory mainly focuses on providing the laboratory facility, virtually. Various experimental set-ups are hooked up to the internet and made available to use for the external world. Hence, anybody can connect to that equipment over the internet and carry out various experiments pertaining to it. The beauty of this idea is that a college who cannot afford to have some experimental equipments can still provide laboratory support to their students through virtual lab, and all that will cost it is a fair Internet connection! Moreover, the laboratory work does not ends with the college hours, one can always use the virtual lab at any time and at any place assuming the availability of an internet connection. 
 
-A virtual laboratory for SBHS is launched at IIT Bombay. Here is the url to access it: {\bf http://www.co-learn.in/web\_sbhs/}. A set of 15 SBHS are made available to use over the internet 24$\times$ 7. These individual kits are made available to the users on hourly basis. We have a slot booking mechanism to achieve this. Since there are 15 SBHS connected with an hours slot for 24 hrs a day, we have 360 one hour slots a day. This means that 360 individual users can access the SBHS in a day for an hour. This also means that up to 2520 users can use the SBHS for an hour in a week and more than 10,000 in a month! A web page is hosted which is the first interface to the user. The user registers/logs in himself/herself here. The user is also supposed to book a slot for accessing the SBHS. A database server maintains a record of the data generated through the web interface. A python script is hosted on the server side and it helps in connecting the user with the corresponding SBHS placed remotely. The client is also suppose to run a java client on his computer. A free and open source scientific computing Software, Scilab, is used by the user for implementing the experiment on SBHS, in terms of simple Scilab coding. 
-%\input{../../Copy_of_SingleBoard_book/latex/IEEE-Chile/vlabarch}
+A virtual laboratory for SBHS is launched at IIT Bombay. Here is the url to access it: {\bf vlabs.iitb.ac.in/sbhs/}. A set of 36 SBHS are made available to use over the internet 24$\times$ 7. These individual kits are made available to the users on hourly basis. We have a slot booking mechanism to achieve this. Since there are 36 SBHS connected with an hours slot for 24 hrs a day, we have 864 one hour slots a day. This means that 864 individual users can access the SBHS in a day for an hour. This also means that up to 6048 users can use the SBHS for an hour in a week and 181440 in a month! A web page is hosted which is the first interface to the user. The user registers/logs in himself/herself here. The user is also supposed to book a slot for accessing the SBHS. A database server maintains a record of the data generated through the web interface. A python script is hosted on the server side and it helps in connecting the user with the corresponding SBHS placed remotely. A free and open source scientific computing Software, Scilab, is used by the user for implementing the experiment on SBHS, in terms of simple Scilab coding. 
 
-\input{IEEE-Chile/vlabarch}
+\section{Evolution of SBHS virtual labs}
+In \cite{vlabs-kmm}, 
+the control algorithm is implemented at the server end and the remote
+student just keys in the parameters, as shown in Figure
+\ref{fig:initial}. 
+\begin{figure}
+\includegraphics[width=\linewidth]{IEEE-Chile/figures/vlab-1.png}
+\caption{SBHS virtual laboratory with remote access using LabVIEW}
+\label{fig:initial}
+\end{figure}
+LabVIEW was used for the implementation of the same. The
+server end consisted of a computer connected with an SBHS with a full
+blown copy of LabVIEW installed on it. The client has a LabVIEW run
+time engine available for free download from the National Instruments
+website.  A few
+LabVIEW algorithms/experiments were hosted on the server. The client
+accesses these algorithm/experiment over the Internet using a web
+browser by entering appropriate parameters.
+
+It was realized that the learning experience is not complete for this
+structure. This is because the server hosts some pre-built LabVIEW
+algorithms and a user can only access these few algorithms. The user
+can in no way change the program and can only input experimental
+parameters. 
+Hence, we came up with a new architecture
+as shown in the Figure \ref{fig:second} that used full blown copies of
+LabVIEW at both server and client ends.  
+\begin{figure}
+\includegraphics[width=\linewidth]{IEEE-Chile/figures/vlab-2.png}
+\caption{SBHS virtual laboratory with remote access and live data sharing using LabVIEW}
+\label{fig:second}
+\end{figure}
+ 
+ This idea uses the DataSocket technology of LabVIEW. Since now the
+ client is having a complete LabVIEW installation on his/her computer
+ she can now implement her own algorithms.  Thus this architecture did
+ provide a complete learning experience to the students.  There are
+ some shortcomings as well:
+
+\begin{itemize}
+\item LabVIEW is expensive and students may not be able to afford to
+  buy it.  It is also prohibitively expensive for the Government to
+  distribute it.
+
+\item We used the LabVIEW version 8.04, which had restricted scripting
+  language.  It was tedious to create new control algorithms in it.
+\end{itemize}
+\begin{figure}
+\includegraphics[width=\linewidth]{IEEE-Chile/figures/vlab-3.png}
+\caption{SBHS virtual laboratory using open source software}
+\label{fig:third}
+\end{figure}
+This made us shift to free and open source (FOSS) software. We
+replaced LabVIEW with Java and Scilab as shown in Figure
+\ref{fig:third}. Scilab at the server end is used for communicating
+with SBHS. Scilab at the client end is used for implementing the
+algorithms. Java is used at both the server as well as client end for
+communication over the Internet thereby connecting the client with the
+server. 
+
+For the above solution, we need a dedicated copy of scilab running at
+the server end for every SBHS. One way to do this is to host it on
+multiple computers with unique IPs. Hence the number of SBHS we want
+to host requires as many computer's and public IPs thereby making
+it expensive. Moreover, it also limits its scalability. The other way
+to do this is to host multiple java and scilab servers on the same
+computer.  Hosting many copies of Scilab simultaneously requires a
+powerful computer for the server.
+
+For these reasons  we decided to take scilab off the server computer
+and to use java alone to communicate with the SBHS directly.  Java
+also 
+communicates with the client computer.  We connected seven SBHS
+systems to a USB port through a serial port hub.  This architecture
+was 
+implemented on a Windows Operating System.  We faced the following
+difficulties in this solution.
+\begin{itemize}
+\item When we connected more than one serial hub to a PC, the port ID
+  could not be retrieved correctly.  Port ID information is required
+  if we want a student to use the same SBHS for all their experiments
+  during different sessions.
+\item The experiments required time stamping of the data communicated
+  to and from the server. But this time stamping was not linear and
+  suffered instability.  
+\end{itemize}
+This made us to completely switch to FOSS with Ubuntu Linux as the OS
+and is the current structure of the Virtual lab as shown in Figure
+\ref{fig:detail-arch} 
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{IEEE-Chile/figures/vlab-arch}
+\caption{Virtual control lab hardware architecture}
+\label{fig:hw-arch}
+\end{figure}
+
+\section{Current Hardware Architecture}
+The current hardware architecture of the virtual single-board heater system lab involves 36 single-board heater systems connected to the server via multiple 7 and 10-port USB hubs. The server computer is connected to a high speed internetwork and has enough processing capability to host data acquisition, database, and web servers. 
+It has been successfully tested for the undergraduate Process Control course and the graduate Digital Control and Embedded systems courses conducted at IIT Bombay as well as few workshops over the internet. Currently, this architecture is integrated with a cameras on each SBHS to facilitate live video streaming. This gives the user a feel of remote hands-on. 
+
+\section{Current Software Architecture} \label{sec:vlabarchi}
+The current software architecture of this virtual SBHS control lab is shown in Figure \ref{fig:detail-arch}. The server computer runs Ubuntu Linux 12.04.2 OS. It hosts a Apache-MySQL server. The SBHS server is based on Python-Django framework and is linked to Apache server using Apache's WSGI module. The MySQL database server has the details of all the registered users, their slot details, authentication keys to allow remote access, etc. As shown in Figure \ref{fig:sbhs-website}, the Python-Django server has pages for registration, login, slot booking etc. \cite{vl010}.  On the client end, control algorithms are running in Scilab and a python based client application communicates with virtual labs server over the Internet.
+
+
+
+\begin{figure}
+\includegraphics[width=\linewidth]{IEEE-Chile/figures/webpage}
+\caption{Home page of SBHS V Labs}
+\label{fig:sbhs-website}
+\end{figure}
+The steps to be performed before and during each experiment are explained next.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{IEEE-Chile/figures/new-server-arch.pdf}
+\caption{Current Architecture of SBHS Virtual Labs}
+\label{fig:detail-arch}
+\end{figure}
 
 \section{Conducting experiments using the Virtual lab}\label{vlabsexpt}
 In this section we will see the steps involved in conducting experiments using virtual lab.
-%In this section we will see the details of the building blocks of virtual lab. Figure \ref{block_dig} shows the block diagram for the same. A virtual lab is similar to a remote lab where in communication takes place between two computers over the internet. The server computer consists of a web server, a data base server and a java application sever. The client computer should contain a web browser, Scilab Software and a java client. A web server is hosted using apache software. The web pages are written in php language and are hosted on this server. Some of these php pages are necessarily linked to a data base server. The Database Server is hosted using mysql. It keeps a record of the information generated during a person registers and books a slot. The java server communicates with the SBHS connected to the computer on a USB port. It also accesses the data base and communicates with the java client. 
-%
-%
-%%\begin{figure}
-%%\centering
-%%\includegraphics[width=\linewidth]{vlabs/block_dig.pdf}
-%%\caption{Block diagram of the Virtual lab setup}
-%%\label{block_dig}
-%%\end{figure}
-%On the client side, the web browser is any internet browser available. The user visits the specified web page, logs in/ registers and book/view/delete a slot(s) using the web brwser available to him. The java client is a simple java application provided by us. The user keys in the information provided on the web page pertaining to the booked slot in to this java client. The interface also provides an option to view a live streaming of the display of the SBHS to which he has connected to. This facility is however limitied to one SBHS for now and an elegent method is currently under development to accomodate all of the SBHS. The Scilab software must be installed by the client on his computer. Here, he will write the experiment he wants to conduct on the SBHS in simple scilab language. A primary scilab code will be provided and the process of modification of the code will be explained. 
-This section assumes that the necessary files and software are available on the users computer. Files can be downloaded from the vlabs home page {\bf http://www.co-learn.in/web\_sbhs/} as shown in fig \ref{fig:sbhs-website}
+
+This section assumes that the necessary files and software are available on the users computer. Files can be downloaded from the website {\bf sbhs.os-hardware.in/downloads} as shown in fig \ref{fig:sbhs-website}
 \begin{enumerate}
 \item The user goes to the vlabs home page and if he is a first time visitor, he registers himself and follows the information provided there, else he directly logs in.
 \item After logging in, the user will book a slot.

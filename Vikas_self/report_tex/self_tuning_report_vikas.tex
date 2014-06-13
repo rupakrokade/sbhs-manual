@@ -7,25 +7,7 @@ When a plant is wired in a close loop with a PID controller, the parameters, $K_
 
 \subsection{Ojective}%\label{umlauts}
 The objective of the present study was to design and implement an algorithm that would dynamically update the values of the controller parameters that are used to control the temperature in the Single Board Heater System (SBHS).
-\subsection{Apparatus}%\label{references}
 
-\begin{enumerate}
-	\item Fig \ref{sbsh} shows the single board heater system on which this experiment will be performed.
-	\item The setup consists of a heater assembly, fan, temperature sensor, microcontroller and associated circuitry.
-	\item Heater assembly consists of an iron plate placed at a distance of about 3.5 mm from the nichrome coil.
-	\item A 12 V computer fan positioned below this heater assembly is meant for cooling the assembly.
-	\item The temperature sensed by the temperature sensor, AD 590, after suitable processing, is fed to the microcontroller.
-	\item The microcontroller ATmega16 is the heart of the setup. It provides an interface between the process and the computer.
-	\item The LCD display mounted above the microcontroller displays the heated plate temperature, heater and fan inputs and also the commands communicated via serial port.
-	\item The setup is powered by 12 V, 8 A SMPS.
-	
-\end{enumerate}
-\begin{figure}[h]
-	\centering
-		\includegraphics[scale = 20, width = \linewidth]{Vikas_self/report_tex/sbsh.jpg}
-	\caption{Single Board Heater System}
-	\label{sbsh}
-\end{figure}
 
 
 \section{Theory}
@@ -654,14 +636,6 @@ For comparison, correspoding results are also shown for Conventional PID Control
 \subsection{Conclusion}
 We see that the self tuning controller manages to keep the temperature close to the set point temperature, even when the change in fan input is encountered. This shows that it can reject the disturbances quite nicely.
 
-\section{Reproducing the Results}
-The following steps can be used for conducting the experiments:
-\begin{enumerate}
-	\item Open and run the program for serial communication in scilab. This opens the comm port.
-	\item Open and execute the sci file corresponding to the experiment that is being done.
-	\item Load the scicos diagram, ensure that the parameters are correct and run the experiment.
-\end{enumerate}
-The various codes used for conventional and self tuning controllers are shown in Section \ref{convcode_local} and \ref{selfcode_local}
 
 
 \subsection{Implementing Self Tuning controller on SBHS, virtually}

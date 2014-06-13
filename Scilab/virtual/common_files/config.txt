@@ -1,0 +1,7 @@
+base_link: None
+use_proxy: No
+proxy_type: http
+proxy_host: proxy.host.name
+proxy_port: 80
+proxy_username: username
+proxy_password: password

@@ -87,8 +87,7 @@ difficulties in this solution.
 This made us to completely switch to FOSS with Ubuntu Linux as the OS
 and is the current structure of the Virtual lab as shown in Figure
 \ref{fig:detail-arch} 
-\section{Current Architecture}
-\label{sec:vlabarchi}
+
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{IEEE-Chile/figures/vlab-arch}
@@ -96,30 +95,14 @@ and is the current structure of the Virtual lab as shown in Figure
 \label{fig:hw-arch}
 \end{figure}
 
-\subsection{Hardware}
-The architecture of the virtual single-board heater system lab as
-shown in Figure \ref{fig:hw-arch} involves 7 single-board heater
-systems connected to the server via a 7-port USB hub. The server
-computer is connected to a high speed internetwork and has enough
-processing capability to host data acquisition, database, and web
-servers. The internetwork connected client computer needs only the
-Java runtime engine and Scilab installation.  
+\section{Current Hardware Architecture}
+The current hardware architecture of the virtual single-board heater system lab involves 36 single-board heater systems connected to the server via multiple 7 and 10-port USB hubs. The server computer is connected to a high speed internetwork and has enough processing capability to host data acquisition, database, and web servers. 
+It has been successfully tested for the undergraduate Process Control course and the graduate Digital Control and Embedded systems courses conducted at IIT Bombay as well as few workshops over the internet. Currently, this architecture is integrated with a cameras on each SBHS to facilitate live video streaming. This gives the user a feel of remote hands-on. 
 
-A similar architecture but replacing Java with python and with 15 units connected to the server via two 7-port hubs has been successfully tested on intranet for the undergraduate Process Control course and the graduate Digital Control
-and Embedded systems courses conducted at IIT Bombay as well as few workshops over the internet. Currently, this architecture is integrated with a cameras on each SBHS to facilitate live video streaming. This facility will be extended to all the units in future. This gives the user a feel of remote hands-on. Work on this camera facility is in progress.
+\section{Current Software Architecture} \label{sec:vlabarchi}
+The current software architecture of this virtual SBHS control lab is shown in Figure \ref{fig:detail-arch}. The server computer runs Ubuntu Linux 12.04.2 OS. It hosts a Apache-MySQL server. The SBHS server is based on Python-Django framework and is linked to Apache server using Apache's WSGI module. The MySQL database server has the details of all the registered users, their slot details, authentication keys to allow remote access, etc. As shown in Figure \ref{fig:sbhs-website}, the Python-Django server has pages for registration, login, slot booking etc. \cite{vl010}.  On the client end, control algorithms are running in Scilab and a python based client application communicates with virtual labs server over the Internet.
 
 
-\subsection{Software}
-The current software architecture of this virtual control lab is shown
-in Figure \ref{fig:detail-arch}. The server computer runs on Ubuntu
-Linux 10.04 OS. It hosts a LAMP (Linux-Apache-MySQL-PHP) server. The
-MySQL-based database server has the details of all the registered
-users, their slot details, authentication keys to allow remote access,
-etc. It also hosts a PHP based web server shown in Figure
-\ref{fig:sbhs-website} that has pages for registration, login and slot
-booking \cite{vl010}.  For communication with the device, Django - a Python based web framework is used on the Server side. On the client end has control
-algorithms running in Scilab and communicates over the Internet
-through the python client.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{IEEE-Chile/figures/webpage}
@@ -130,117 +113,19 @@ The steps to be performed before and during each experiment are explained next.
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{IEEE-Chile/figures/blk-dig.pdf}
+\includegraphics[width=\linewidth]{IEEE-Chile/figures/new-server-arch.pdf}
 \caption{Current Architecture of SBHS Virtual Labs}
 \label{fig:detail-arch}
 \end{figure}
 
 
 
-\subsubsection{Registration}
-A client willing to perform the experiments needs to register with us
-by entering the personal details on the Registration page. This sends
-an account activation link to the client’s mailbox. Upon clicking the
-link, the account gets activated.
-\subsubsection {Slot booking} The client can now login and book slots
-to perform the experiments. Each slot lasts for an hour with 55
-minutes for experimentation and 5 mins for resetting the setup. A
-client can book up to 2 slots, per day, in advance. Besides this, if
-the current slot is empty, it can be booked as a free slot. For each
-slot being booked, the client gets a port number and an access
-key. The interface depicting this is shown in Figure
-\ref{fig:slot-booking}.
-\begin{figure}
-\includegraphics[width=\linewidth]{IEEE-Chile/figures/slot-book.png}
-\caption{Screenshot of Slot Booking Page}
-\label{fig:slot-booking}
-\end{figure}
-\subsubsection {Port number} In order to maintain consistency in
-performing the experiments, each client is alloted the same setup
-every time s/he requests for the slot. To facilitate this, each setup
-has been alloted a machine I.D. For example, if the machine I.D. of
-the unit is 5, it is displayed as {\tt SBHS Number: 5}. This
-eliminates time and effort spent in plant modelling, each time, due to
-change in the setup.
-
-\subsubsection { Starting the Python client} On windows, after installing python, it will not be readily recognized by the OS. To make windows interpret python as a command, do the following steps.
-\begin{enumerate}
-\item Right click on My Computer and click on properties
-\item Click on the Advanced tab.Now click on the Environment Variables button
-In the system variable section, locate and click on “path”.
-\item Click the edit button below it. You should see a “Edit system variable” window.
-\item In the “Variable value” field, take the cursor to the last.
-Type a semicolon and type C:$\backslash$Python27
-\end{enumerate}
-The experiment folder has a run.bat file, settings.txt file and a sbhsclient.py file. Open the settings.txt file and make the required changes. Beware not to make any unneccesary changes to this file. The example settings are anyways given in the end of this file. Linux users should bypass the terminal proxy settings, if any, by executing the command {\tt export http\_proxy=''}. Be informed that this is just a temporay disable of proxy and it should be done everytime you open a fresh terminal. Windows users simply double click on the run.bat file. It will open up a command prompt. Linux users instead of executing the run.bat file will type the following command on the terminal {\tt python sbhsclient.py}. This activity will ask you for the username and password. If the settings are not proper in the settings.txt file, you will get a {\tt Connection error message}. Contact the system administrator of your network to get the correct values of the parameters. Once you are done typing your username and password, you will get a Login Successfull message. In case if you are logging in at a time other that your booked slot, it will tell you that No slot is found. Else, it will notify that you have booked a slot and can now run the scilab code. It will also create {\tt scilabread.sce, scilabwrite.sce} and a log file in the experiment folder. The log file name will be in the format {\tt date\_month\_year\_hrs\_mins\_seconds.txt}. This unique file name will help you track the log file of you choice in the future. 
-\begin{figure}
-  \centering
-\includegraphics[width=0.7\linewidth]{IEEE-Chile/figures/display.jpg}
-\caption{Screenshot of Video Stream}
-\label{video}
-\end{figure}
-\subsubsection { Video streaming} At present, the facility to provide video streaming for all users is in progress. The video
-streaming of the capture display will be something as shown in Figure \ref{video}. The clients with lesser bandwidth will have an option to refrain from video streaming. This facility will be available for logged in users on the website.
-
-\subsubsection { Executing the Scilab code} The client needs to
-download the scilab code from the SBHS home page. This is available
-under {\tt Downloads}. Various other experiments are also available on {\tt fossee.in/moodle} The client can modify this code to implement
-his/her own algorithm. S/he should not edit the part of the code which
-is used for communicating with python. This part is clearly marked in
-the code. Refer the chapter specific to which experiment you want to run. It will explain you which codes and in what order they should be executed.
-
-\subsubsection { File handling} This subsection explains the
-significance of scilabread and scilabwrite files. During the
-experiment, the client writes heater and fan inputs to the
-scilabwrite.sce file. These values are read by the Python client. It writes iteration and client departure time stamp and send it over the network. Python server at the other end reads these values, puts a server arrival time stamp and gives them to the SBHS through its data acquisition
-interface. After feeding the values, it reads the temperature of the
-heated plate, puts a server departure time stamp and sends it to the Python client. The Python client puts a client arrival time stamp and then writes all these values i.e. heater, fan and temperature along with the
-timestamps to the scilabread.sce file. Scilab client reads the latest
-temperature value and does the calculation of heater and fan inputs in
-accordance to the logic developed for the experiment. The live data
-streaming involves heater and fan inputs being sent by the client and
-temperature response in turn being sent by the server. The timestamp accompanying the data could be used for real-time
-control of the setup.
-
-\subsubsection { Concluding the experiment} Once the client is done
-with the experiment, s/he can use the log file created in the experiment folder for analysis purpose. If you happen to lose the log file, you can download it from the website, after you login, by clicking on {\tt Download} link.
-%\end{enumerate}
-
-\subsection{Other Implementation Issues}
-%\begin{enumerate}
-\subsubsection { Mapping of machine id with the USB port number}
-Whenever a SBHS unit is plugged in to a USB port, the dev id (/dev/ttyUSB*) assigned to it by OS is different. A script is run which creates a table of the mapping between the machine I.D. and the USB dev id. This is done to ensure that the client gets the same machine I.D. i.e. the same SBHS each time. 
-
-\subsubsection { Auto log off problem}
-In some ISPs, the network gets disconnected if it is inactive for some time. To handle this situation, we are running a shell script which checks for internet connectivity by pingging google periodically. If the network is down then it will try to reconnect.  
 
 
 %\end{enumerate}
 
 
-\subsection{Support}
-The SBHS support activities are being funded by National Mission on Education through Information and Communication Technology \cite{kmm010}.  The major support activities include conducting workshops in several colleges across the country, active discussion through Fossee moodle and spoken tutorials for self-learning.
 
-\subsubsection{Workshops}
-The SBHS team has been conducting workshops to popularise the utility of SBHS.  The course content is around local and remote access of the SBHS. More than 50 college teachers from several Engineering colleges of the country have attended the workshops and have started using the setup for the relevant courses running in their colleges.
-
-\subsubsection{Fossee moodle}
-
-
-Fossee moodle is a web interface that allows discussions, post queries, upload files, upload grades, etc.  Also, there is a facility to provide e-mail notification whenever there is a post on the course website. Thus, such an interface allows to address common problems of many users at the same time. It also provides a platform for the users at different locations to share their experiences during the experiments.  The codes and manuals for about 8 experiments are available at \cite{moodle}.
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.75\linewidth]{IEEE-Chile/figures/fossee-2}
-\caption{Fossee moodle webpage to support SBHS activities}
-\label{fig:fossee-sup}
-\end{figure}
-
-
-
-\subsubsection{Spoken tutorials}
-A Spoken tutorial is a screen capture along with the audio that could be used to teach any computer application.  Currently, the spoken tutorials for various Free and Open source softwares are available in different Indian languages at \cite{spoken-sci}.  The scripts and tutorials for SBHS are in pipeline.
 
 
 

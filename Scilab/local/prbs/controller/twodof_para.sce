@@ -8,12 +8,12 @@ z=%z;
 Ts = sampling_time;
 
 //Transfer function 
-A = [1 -1.87 0.87];
-B= [0.0020 -0.0015];
-k = 3;
+A = [1 -0.9279 0.92];
+B= [0.0020 -0.0018];
+k = 5;
 
 
-rise = 10;
+rise = 60;
 epsilon = 0.1;
 Nr = rise/Ts;
 

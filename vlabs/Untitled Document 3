@@ -1,0 +1,89 @@
+Let us start with the required installations
+Scilab 5.3.3 should be installed on your computer
+Scilab 5.3.3 can be downloaded from 
+sbhs.os-hardware.in/downloads
+Please note that Scilab needs internet connection during installation
+The reason for the requirement of Scilab 5.3.3 is because all experiment Scilab codes are written in  Scilab 5.3.3
+If one chooses to use a later version of Scilab then the same code cannot be used for a lower version of Scilab.
+This is because a software is always backward-compatible, not forward-compatible.
+
+I have already installed Scilab 5.3.3.
+Now the next step is to download the experiment scilab code.
+Open a web browser.
+In the address bar, type the url os-hardware.in
+Click on the project SBHS
+On the left hand side, click on Downloads
+Click on the download link for SBHS client for Windows
+It will download the scilab code.
+Save it on the Desktop
+The file downloaded will be in zip format.
+Extract its content on the Desktop
+To do so, right click on it and choose Extract here
+The contents inside this folder will be discussed at a later part of this tutorial
+Now let us see the sbhs vlabs website.
+Switch to the web browser.
+On the left hand side, click on the link Virtual Labs
+This is the interface from where one can gain access to do remote experiments on SBHS
+A first time user needs to register by clicking Login/Register option.
+After a form has to be filled and submitted.
+An activation link is mailed to the user after the form is submitted successfully
+The link received in email should be used to complete the registration process.
+Note that the activation process may not be immediate.
+It may take a few minutes
+I will now login with an already registered account information
+After a successful login, a user has access to  “Book Slot”, “View/Delete Slot” etc.
+A slot is the time duration in which you can perform an experiment
+In our case, a slot lasts for 55minutes of every hour
+After clicking on the book slot option the client may have two choices
+One can either book Current Slot or a Future Slot
+“Book Now” option will appear only if the current slot is vacant while “Book future slot” option will always be available.
+It will allow two non consecutive slots to be booked each day
+I will click on Book Current Slot
+You will be acknowledged with your booking details
+The slot booking part is over. 
+Let us now run a simple Step Test experiment, downloaded from the website
+Open the folder you downloaded and saved on the Desktop
+Open this folder. 
+You can see that there are two folders StepTest and common_files 
+Do not move any of the folder from its location. 
+If the directory structure is changed, the experiment will not execute.
+If you want one experiment to be copied elsewhere, make sure you copy the common_files folder too.
+However, make sure the common_files folder is always outside the experiment folder
+
+Open the StepTest folder
+Locate and open the file run.vbs
+It will open the SBHS client.
+It will show various parameters of the experiment like SBHS Connection, Client Version, User login and Experiment status
+It will also give you an option to login
+Type your username and password.
+Take care you login at the booked date and time with correct login details.
+Expect the message Ready to execute scilab code
+Switch to the StepTest folder which has the experiment files.
+Double click on the “stepc.sce” file
+This should open Scilab automatically and the file in Scilab editor.
+Switch to the scilab console
+Type getd ../common_files and press Enter key
+Switch to scilab the editor.
+Click on execute and then click on file with echo
+If the network is working properly it will open an Xcos diagram else it will show error on the Scilab console
+Once the step test Xocs diagram opens up we can set the experiment parameters such as Heat and Fan 
+I will set the step to vary from 60% to 75% after 250 seconds 
+Similarly i will set the fan to be constant at 50%
+So now let us save and execute the xcos diagram.
+If there is no error, it will open a plot window.
+It will consist of three graphs, Heat, Fan and Temperature from top to bottom 
+Switch to the SBHS client.
+You can see that it shows the values of current iteration, heat, fan, temperature and time left for experimentation
+It shows the log file name it has created for this experiment.
+
+This is a real experiment and will take some time to complete.
+I will pause this recording for some time and then resume again.
+After sufficient time of experiment the graph obtained is as shown
+I will stop the simulation by clicking on the stop button on Xcos window. 
+Close the SBHS client after the experiment is over.
+Now, switch to the experiment folder and open the logs folder. 
+It will have a folder named after your username.
+Open this folder and locate your log file.
+Read the log file name as date_month_year_hrs_mins_seconds.txt
+Use this log file for further analysis. 
+

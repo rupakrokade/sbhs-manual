@@ -50,7 +50,7 @@ The steps to be followed to conduct PRBS test experiment remains same as explain
 \end{figure}
 
 
-\section{Determination of discrete time transfer function}
+\section{Determination of discrete time transfer function}\label{prbs-model}
 
 System identification is carried out to identify the transfer function between the input signal to the system and output from the system. Firstly a transfer function with unknown parameters is assumed. The system is given a known input and its response is obtained and then the values of the unknown parameters is chosen such that the sum of squares of the errors is minimized. Here, the error is the difference between the actual output and the output predicted by the transfer function model assumed.
 
@@ -81,7 +81,8 @@ The optimization is performed using the optimization routine “optim” of Scil
 
 \begin{align}\label{model}
 G(z)=\frac{0.0022266 - 0.0017656 z^{-1}}{1-1.912876z^{-1}+0.9162750z^{-2}}z^{-d}
-\end{align}
+\end{align}\label{model}
+
 
 
 \begin{figure}
@@ -100,9 +101,25 @@ G(z)=\frac{0.0022266 - 0.0017656 z^{-1}}{1-1.912876z^{-1}+0.9162750z^{-2}}z^{-d}
 
 
 
-\subsection{Performing PRBS testing on SBHS, virtually}
+\section{Performing PRBS testing on SBHS, virtually}
 The step by step procedure for conducting an experiment virtually is explained in section \ref{vlabsexpt}. The required .sce file is {\tt prbstest.sce}.  You will find this file in the {\tt prbs} directory under {\tt virtual} folder. The necessary codes are listed in the section \ref{prbscodes}
 
+\section{Implementing 2DOF pole-placement controller using PRBS model}
+
+For deriving the Two degrees of freedom control law, please refer to the chapter \ref{2dof}
+
+We identified the PRBS model in section \ref{prbs-model} as shown in equation \ref{model}. The parameters for the 2-DOF pole-placement controller obtained for this model are shown here
+\begin{align*}
+R_c&=R_{c1}+R_{c2}z^{-1}+R_{c3}z^{-2}\\
+&=0.0116304-0.0229175z^{-1}+0.0112871z^{-2}\\
+S_c&=S_{c1}+S_{c2}z^{-1}\\
+&=0.0004641-0.0004512z^{-1}\\
+T_c&=T_{c1}+T_{c2}z^{-1}\\
+&=1-0.9723z^{-1}\\
+\gamma&=0.0004641
+\end{align*}
+
+These paramenters are computed by the file {\tt twodof\_para.sce}. 
 
 \section{Scilab Code}\label{prbscodes}
 \begin{code}
