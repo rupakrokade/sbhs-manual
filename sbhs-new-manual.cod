@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {4.2}imc.sci}{45}
 \contentsline {section}{\numberline {4.3}imc\_virtual.sce}{45}
 \contentsline {section}{\numberline {4.4}imc\_virtual.sci}{46}
-\contentsline {section}{\numberline {5.1}ser\_init.sce}{81}
+\contentsline {section}{\numberline {5.1}ser\_init.sce}{82}
 \contentsline {section}{\numberline {5.2}pi\_bda\_dist.sci}{83}
 \contentsline {section}{\numberline {5.3}pi\_bda.sci}{84}
 \contentsline {section}{\numberline {5.4}pid\_bda\_dist.sci}{85}
@@ -12,10 +12,10 @@
 \contentsline {section}{\numberline {5.8}pid\_bda\_tuned\_dist.sci}{89}
 \contentsline {section}{\numberline {5.9}pid\_bda\_tuned.sci}{91}
 \contentsline {section}{\numberline {5.10}pi\_bda\_dist.sci}{92}
-\contentsline {section}{\numberline {5.11}pi\_bda.sci}{94}
-\contentsline {section}{\numberline {5.12}pid\_bda\_dist.sci}{96}
-\contentsline {section}{\numberline {5.13}pid\_bda.sci}{98}
-\contentsline {section}{\numberline {5.14}pi\_bda\_tuned\_dist.sci}{100}
-\contentsline {section}{\numberline {5.15}pi\_bda\_tuned.sci}{102}
-\contentsline {section}{\numberline {5.16}pid\_bda\_tuned\_dist.sci}{104}
-\contentsline {section}{\numberline {5.17}pid\_bda\_tuned.sci}{106}
+\contentsline {section}{\numberline {5.11}pi\_bda.sci}{92}
+\contentsline {section}{\numberline {5.12}pid\_bda\_dist.sci}{94}
+\contentsline {section}{\numberline {5.13}pid\_bda.sci}{94}
+\contentsline {section}{\numberline {5.14}pi\_bda\_tuned\_dist.sci}{95}
+\contentsline {section}{\numberline {5.15}pi\_bda\_tuned.sci}{96}
+\contentsline {section}{\numberline {5.16}pid\_bda\_tuned\_dist.sci}{97}
+\contentsline {section}{\numberline {5.17}pid\_bda\_tuned.sci}{98}

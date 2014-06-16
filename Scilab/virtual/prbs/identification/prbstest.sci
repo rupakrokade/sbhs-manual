@@ -1,6 +1,6 @@
 function [stop] = prbstest(heat,fan)
     
     [stop,temp] = comm(heat,fan);//Never edit this line
-    plotting([heat fan temp]);
+    plotting([heat fan temp],[0 0 25 0],[100 100 50 2500]);
     
 endfunction

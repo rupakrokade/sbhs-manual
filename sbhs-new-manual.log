@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  13 JUN 2014 17:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  14 JUN 2014 18:18
 entering extended mode
  %&-line parsing enabled.
 **sbhs-new-manual.tex
@@ -1736,24 +1736,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--258
  []
 
 
-<Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg, id=270, 451.6875pt x 37
-6.40625pt>
+<Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg, id=270, 624.3325pt x 50
+6.89375pt>
 File: Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg Graphic file (type 
 jpg)
  <use Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[59 <./Vikas_self/report_tex/parameter_estimation/taup.jpg>] [60 <./Vikas_self/
-report_tex/implementation/Pi_dist_xcos.jpg>]
-<Vikas_self/report_tex/implementation/pid_dist.png, id=278, 451.6875pt x 376.40
-625pt>
+[59 <./Vikas_self/report_tex/parameter_estimation/taup.jpg>]
+<Vikas_self/report_tex/implementation/pid_dist.png, id=274, 644.4075pt x 547.04
+375pt>
 File: Vikas_self/report_tex/implementation/pid_dist.png Graphic file (type png)
 
- <use Vikas_self/report_tex/implementation/pid_dist.png> [61 <./Vikas_self/repo
-rt_tex/implementation/pid_dist.png>] [62]
-<Vikas_self/report_tex/implementation/pi_dist_self.png, id=286, 451.6875pt x 37
-6.40625pt>
+ <use Vikas_self/report_tex/implementation/pid_dist.png> [60 <./Vikas_self/repo
+rt_tex/implementation/Pi_dist_xcos.jpg>] [61 <./Vikas_self/report_tex/implement
+ation/pid_dist.png>] [62]
+<Vikas_self/report_tex/implementation/pi_dist_self.png, id=287, 587.19376pt x 4
+15.5525pt>
 File: Vikas_self/report_tex/implementation/pi_dist_self.png Graphic file (type 
 png)
  <use Vikas_self/report_tex/implementation/pi_dist_self.png>
@@ -1763,21 +1763,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
 [63 <./Vikas_self/report_tex/implementation/pi_dist_self.png>] [64]
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSynthes
-is/step32to37.jpg, id=294, 587.94656pt x 247.67531pt>
+is/step32to37.jpg, id=295, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSy
 nthesis/step32to37.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSyn
 thesis/step32to37.jpg>
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSynthes
-is/step35to45.jpg, id=295, 587.94656pt x 247.67531pt>
+is/step35to45.jpg, id=296, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSy
 nthesis/step35to45.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSyn
 thesis/step35to45.jpg>
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direct_Sy
-nthesis/step32to37.jpg, id=296, 587.94656pt x 247.67531pt>
+nthesis/step32to37.jpg, id=297, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Dire
 ct_Synthesis/step32to37.jpg Graphic file (type jpg)
 
@@ -1786,7 +1786,7 @@ t_Synthesis/step32to37.jpg> [65 <./Vikas_self/report_tex/PID_results/self_tunin
 g/NewSetpoint_change/DirectSynthesis/step32to37.jpg> <./Vikas_self/report_tex/P
 ID_results/self_tuning/NewSetpoint_change/DirectSynthesis/step35to45.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direct_Sy
-nthesis/step35to45.jpg, id=300, 587.94656pt x 250.68657pt>
+nthesis/step35to45.jpg, id=301, 587.94656pt x 250.68657pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Dire
 ct_Synthesis/step35to45.jpg Graphic file (type jpg)
 
@@ -1796,21 +1796,21 @@ al_Tuning/Setpointchange/Direct_Synthesis/step32to37.jpg> <./Vikas_self/report_
 tex/PID_results/Conventional_Tuning/Setpointchange/Direct_Synthesis/step35to45.
 jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step32to37
-.jpg, id=305, 597.73312pt x 247.67531pt>
+.jpg, id=306, 597.73312pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step3
 2to37.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step32
 to37.jpg>
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step35to45
-.jpg, id=306, 592.46344pt x 247.67531pt>
+.jpg, id=307, 592.46344pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step3
 5to45.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step35
 to45.jpg>
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step40to45
-.jpg, id=307, 587.94656pt x 247.67531pt>
+.jpg, id=308, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step4
 0to45.jpg Graphic file (type jpg)
 
@@ -1823,7 +1823,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 32to37.jpg> <./Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change
 /PI/step35to45.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step32
-to37.jpg, id=311, 596.98032pt x 247.67531pt>
+to37.jpg, id=312, 596.98032pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/s
 tep32to37.jpg Graphic file (type jpg)
 
@@ -1832,14 +1832,14 @@ ep32to37.jpg> [68 <./Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_
 change/PI/step40to45.jpg> <./Vikas_self/report_tex/PID_results/Conventional_Tun
 ing/Setpointchange/PI/step32to37.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step35
-to45.jpg, id=315, 710.655pt x 249.18094pt>
+to45.jpg, id=316, 710.655pt x 249.18094pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/s
 tep35to45.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/st
 ep35to45.jpg>
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step40
-to45.jpg, id=316, 710.655pt x 241.65282pt>
+to45.jpg, id=317, 710.655pt x 241.65282pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/s
 tep40to45.jpg Graphic file (type jpg)
 
@@ -1848,21 +1848,21 @@ ep40to45.jpg> [69 <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Setp
 ointchange/PI/step35to45.jpg> <./Vikas_self/report_tex/PID_results/Conventional
 _Tuning/Setpointchange/PI/step40to45.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step32to3
-7.jpg, id=320, 587.94656pt x 247.67531pt>
+7.jpg, id=321, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step
 32to37.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step3
 2to37.jpg>
 <Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step32to4
-6.jpg, id=321, 587.94656pt x 247.67531pt>
+6.jpg, id=322, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step
 32to46.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step3
 2to46.jpg>
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/step3
-2to37.jpg, id=322, 635.37375pt x 247.67531pt>
+2to37.jpg, id=323, 635.37375pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/
 step32to37.jpg Graphic file (type jpg)
 
@@ -1873,7 +1873,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/step3
-1to45.jpg, id=323, 587.94656pt x 247.67531pt>
+1to45.jpg, id=324, 587.94656pt x 247.67531pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/
 step31to45.jpg Graphic file (type jpg)
 
@@ -1903,7 +1903,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 505--506
 
 
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthesis/s
-tep50to100.jpg, id=330, 710.655pt x 401.24907pt>
+tep50to100.jpg, id=331, 710.655pt x 401.24907pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthe
 sis/step50to100.jpg Graphic file (type jpg)
 
@@ -1911,7 +1911,7 @@ sis/step50to100.jpg Graphic file (type jpg)
 is/step50to100.jpg> [72] [73 <./Vikas_self/report_tex/PID_results/self_tuning/F
 anDisturbance/DirectSynthesis/step50to100.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthesis/s
-tep100to50.jpg, id=338, 710.655pt x 401.24907pt>
+tep100to50.jpg, id=339, 710.655pt x 401.24907pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthe
 sis/step100to50.jpg Graphic file (type jpg)
 
@@ -1929,14 +1929,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 543--544
 [74 <./Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynth
 esis/step100to50.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Direct_S
-ysthesis/step50to100.jpg, id=342, 587.94656pt x 350.05782pt>
+ysthesis/step50to100.jpg, id=343, 587.94656pt x 350.05782pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Dir
 ect_Systhesis/step50to100.jpg Graphic file (type jpg)
 
 <use Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Dire
 ct_Systhesis/step50to100.jpg>
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Direct_S
-ysthesis/step100to50.jpg, id=343, 587.94656pt x 353.06906pt>
+ysthesis/step100to50.jpg, id=344, 587.94656pt x 353.06906pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Dir
 ect_Systhesis/step100to50.jpg Graphic file (type jpg)
 
@@ -1948,7 +1948,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [75 <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Di
 rect_Systhesis/step50to100.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step50to100fin
-al.jpg, id=347, 710.655pt x 446.41782pt>
+al.jpg, id=348, 710.655pt x 446.41782pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step50to1
 00final.jpg Graphic file (type jpg)
 
@@ -1960,7 +1960,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [76 <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Di
 rect_Systhesis/step100to50.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step100to50.jp
-g, id=351, 710.655pt x 401.24907pt>
+g, id=352, 710.655pt x 401.24907pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step100to
 50.jpg Graphic file (type jpg)
 
@@ -1977,7 +1977,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 580--582
 [77 <./Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step50to
 100final.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/step5
-0to100.jpg, id=355, 587.94656pt x 354.57469pt>
+0to100.jpg, id=356, 587.94656pt x 354.57469pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/
 step50to100.jpg Graphic file (type jpg)
 
@@ -1988,7 +1988,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/step1
-00to50.jpg, id=356, 587.94656pt x 356.83313pt>
+00to50.jpg, id=357, 587.94656pt x 356.83313pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/
 step100to50.jpg Graphic file (type jpg)
 
@@ -2000,7 +2000,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [78 <./Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step100t
 o50.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step50to100.j
-pg, id=361, 710.655pt x 445.665pt>
+pg, id=362, 710.655pt x 445.665pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step50to
 100.jpg Graphic file (type jpg)
 
@@ -2012,7 +2012,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [79 <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI
 /step50to100.jpg>]
 <Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step100to50.j
-pg, id=365, 710.655pt x 476.53032pt>
+pg, id=366, 710.655pt x 476.53032pt>
 File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step100t
 o50.jpg Graphic file (type jpg)
 
@@ -2024,7 +2024,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [80 <./Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI
 /step100to50.jpg>]
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID/step
-50to100.jpg, id=369, 587.94656pt x 349.305pt>
+50to100.jpg, id=370, 587.94656pt x 349.305pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID
 /step50to100.jpg Graphic file (type jpg)
 
@@ -2035,7 +2035,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID/step
-100to50.jpg, id=370, 587.94656pt x 355.3275pt>
+100to50.jpg, id=371, 587.94656pt x 355.3275pt>
 File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID
 /step100to50.jpg Graphic file (type jpg)
 
@@ -2050,8 +2050,8 @@ Overfull \hbox (8.4235pt too wide) in paragraph at lines 642--643
 the \OT1/txtt/m/n/12 PIControllerFandisturbance
  []
 
-(./Vikas_self/ser_init.sce [81 <./Vikas_self/report_tex/PID_results/self_tuning
-/FanDisturbance/PID/step50to100.jpg>]) [82 <./Vikas_self/report_tex/PID_results
+[81 <./Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step50t
+o100.jpg>] (./Vikas_self/ser_init.sce) [82 <./Vikas_self/report_tex/PID_results
 /self_tuning/FanDisturbance/PID/step100to50.jpg>]
 (./Scilab/local/Self_tuning_controller/ConventionalTuning_Vikas/PIControllerFan
 disturbance/pi_bda_dist.sci [83 <./Vikas_self/report_tex/PID_results/Convention
@@ -2072,27 +2072,27 @@ ance/pid_bda_tuned_dist.sci [89]) [90]
 (./Scilab/local/Self_tuning_controller/SelfTuning_Vikas/PIDControllersetpointch
 ange/pid_bda_tuned.sci [91])
 (./Scilab/virtual/Self_tuning_controller/ConventionalTuning_Vikas/PIControllerF
-andisturbance/pi_bda_dist_virtual.sci [92] [93])
+andisturbance/pi_bda_dist_virtual.sci)
 (./Scilab/virtual/Self_tuning_controller/ConventionalTuning_Vikas/PIControllers
-etpointchange/pi_bda_virtual.sci [94] [95])
+etpointchange/pi_bda_virtual.sci [92]) [93]
 (./Scilab/virtual/Self_tuning_controller/ConventionalTuning_Vikas/PIDController
-Fandisturbance/pid_bda_dist_virtual.sci [96] [97])
+Fandisturbance/pid_bda_dist_virtual.sci)
 (./Scilab/virtual/Self_tuning_controller/ConventionalTuning_Vikas/PIDController
-setpointchange/pid_bda_virtual.sci [98] [99])
+setpointchange/pid_bda_virtual.sci [94])
 (./Scilab/virtual/Self_tuning_controller/SelfTuning_Vikas/PIControllerFandistur
-bance/pi_bda_tuned_dist_virtual.sci [100] [101])
+bance/pi_bda_tuned_dist_virtual.sci [95])
 (./Scilab/virtual/Self_tuning_controller/SelfTuning_Vikas/PIControllersetpointc
-hange/pi_bda_tuned_virtual.sci [102] [103])
+hange/pi_bda_tuned_virtual.sci [96])
 (./Scilab/virtual/Self_tuning_controller/SelfTuning_Vikas/PIDControllerFandistu
-rbance/pid_bda_tuned_dist_virtual.sci [104] [105])
+rbance/pid_bda_tuned_dist_virtual.sci [97])
 (./Scilab/virtual/Self_tuning_controller/SelfTuning_Vikas/PIDControllersetpoint
-change/pid_bda_tuned_virtual.sci [106] [107])) (./sbhs-new-manual.bbl [108]
+change/pid_bda_tuned_virtual.sci [98])) (./sbhs-new-manual.bbl [99]
 Underfull \hbox (badness 2726) in paragraph at lines 46--50
 []\OT1/txr/m/n/12 Virtual labs project.  Sin-gle board heater sys-tem.  http://
 www.co-
  []
 
-) [109
+) [100
 
 ] (./sbhs-new-manual.aux)
 
@@ -2106,10 +2106,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18346 strings out of 493848
- 339166 string characters out of 1152823
- 480029 words of memory out of 3000000
- 21010 multiletter control sequences out of 15000+50000
+ 18343 strings out of 493848
+ 339135 string characters out of 1152823
+ 480026 words of memory out of 3000000
+ 21007 multiletter control sequences out of 15000+50000
  53663 words of font info for 140 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  49i,12n,56p,1507b,2331s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2122,9 +2122,9 @@ onts/type1/public/txfonts/txsy.pfb></usr/share/texmf-texlive/fonts/type1/public
 /txfonts/txtt.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texl
 ive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sbhs-new-manual.pdf (110 pages, 4215635 bytes).
+Output written on sbhs-new-manual.pdf (101 pages, 4053338 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
+ 471 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  383 words of extra memory for PDF output out of 10000 (max. 10000000)
 

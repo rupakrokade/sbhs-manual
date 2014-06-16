@@ -19,7 +19,7 @@ phi = desired(Ts,rise,epsilon);
 
 // Controller design
 Delta = [1 -1];
-[Rc,Sc,Tc,gamm] = pp_im(B,A,k,phi);//with integral
+[Rc,Sc,Tc,gamm] = pp_im(B,A,k,phi,Delta);//with integral
 
 // initial values 
 u_old_old = 0;

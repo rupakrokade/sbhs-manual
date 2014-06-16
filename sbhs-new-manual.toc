@@ -50,7 +50,7 @@
 \contentsline {subsection}{\numberline {5.5.1}PI Controller}{59}
 \contentsline {subsection}{\numberline {5.5.2}PID Controller}{61}
 \contentsline {subsection}{\numberline {5.5.3}Self Tuning Controller}{63}
-\contentsline {section}{\numberline {5.6}Set Point Tracking}{64}
+\contentsline {section}{\numberline {5.6}Set Point Tracking}{63}
 \contentsline {subsection}{\numberline {5.6.1}PI Controller designed by Direct Synthesis}{65}
 \contentsline {subsection}{\numberline {5.6.2}PI Controller using Ziegler Nichols Tuning}{67}
 \contentsline {subsection}{\numberline {5.6.3}PID Controller using Ziegler Nichols Tuning}{70}
@@ -60,25 +60,25 @@
 \contentsline {subsection}{\numberline {5.7.2}PI Controller using Ziegler Nichols Tuning}{76}
 \contentsline {subsection}{\numberline {5.7.3}PID Controller using Ziegler Nichols Tuning}{79}
 \contentsline {subsection}{\numberline {5.7.4}Conclusion}{81}
-\contentsline {subsection}{\numberline {5.7.5}Implementing Self Tuning controller on SBHS, virtually}{81}
-\contentsline {subsection}{\numberline {5.7.6}Serial Communication}{81}
-\contentsline {subsection}{\numberline {5.7.7}Conventional Controller, local}{83}
-\contentsline {subsection}{\numberline {5.7.8}Fan Disturbance in PI Controller}{83}
-\contentsline {subsubsection}{\numberline {5.7.8.1}Set Point Change in PI Controller}{84}
-\contentsline {subsubsection}{\numberline {5.7.8.2}Fan Disturbance to PID Controller}{85}
-\contentsline {subsubsection}{\numberline {5.7.8.3}Set Point Change in PID Controller}{86}
-\contentsline {subsection}{\numberline {5.7.9}Self Tuning Controller, local}{87}
-\contentsline {subsubsection}{\numberline {5.7.9.1}Fan Discturbance to PI Controller}{87}
-\contentsline {subsubsection}{\numberline {5.7.9.2}Set Point Change to PI Controller}{88}
-\contentsline {subsubsection}{\numberline {5.7.9.3}Fan Disturbance to PID Controller}{89}
-\contentsline {subsubsection}{\numberline {5.7.9.4}Set Point Change to PID Controller}{91}
-\contentsline {subsection}{\numberline {5.7.10}Conventional Controller, virtual}{92}
-\contentsline {subsection}{\numberline {5.7.11}Fan Disturbance in PI Controller}{92}
-\contentsline {subsubsection}{\numberline {5.7.11.1}Set Point Change in PI Controller}{94}
-\contentsline {subsubsection}{\numberline {5.7.11.2}Fan Disturbance to PID Controller}{96}
-\contentsline {subsubsection}{\numberline {5.7.11.3}Set Point Change in PID Controller}{98}
-\contentsline {subsection}{\numberline {5.7.12}Self Tuning Controller, local}{100}
-\contentsline {subsubsection}{\numberline {5.7.12.1}Fan Discturbance to PI Controller}{100}
-\contentsline {subsubsection}{\numberline {5.7.12.2}Set Point Change to PI Controller}{102}
-\contentsline {subsubsection}{\numberline {5.7.12.3}Fan Disturbance to PID Controller}{104}
-\contentsline {subsubsection}{\numberline {5.7.12.4}Set Point Change to PID Controller}{106}
+\contentsline {section}{\numberline {5.8}Implementing Self Tuning controller on SBHS, virtually}{81}
+\contentsline {subsection}{\numberline {5.8.1}Serial Communication}{82}
+\contentsline {subsection}{\numberline {5.8.2}Conventional Controller, local}{83}
+\contentsline {subsection}{\numberline {5.8.3}Fan Disturbance in PI Controller}{83}
+\contentsline {subsubsection}{\numberline {5.8.3.1}Set Point Change in PI Controller}{84}
+\contentsline {subsubsection}{\numberline {5.8.3.2}Fan Disturbance to PID Controller}{85}
+\contentsline {subsubsection}{\numberline {5.8.3.3}Set Point Change in PID Controller}{86}
+\contentsline {subsection}{\numberline {5.8.4}Self Tuning Controller, local}{87}
+\contentsline {subsubsection}{\numberline {5.8.4.1}Fan Discturbance to PI Controller}{87}
+\contentsline {subsubsection}{\numberline {5.8.4.2}Set Point Change to PI Controller}{88}
+\contentsline {subsubsection}{\numberline {5.8.4.3}Fan Disturbance to PID Controller}{89}
+\contentsline {subsubsection}{\numberline {5.8.4.4}Set Point Change to PID Controller}{91}
+\contentsline {subsection}{\numberline {5.8.5}Conventional Controller, virtual}{92}
+\contentsline {subsection}{\numberline {5.8.6}Fan Disturbance in PI Controller}{92}
+\contentsline {subsubsection}{\numberline {5.8.6.1}Set Point Change in PI Controller}{92}
+\contentsline {subsubsection}{\numberline {5.8.6.2}Fan Disturbance to PID Controller}{94}
+\contentsline {subsubsection}{\numberline {5.8.6.3}Set Point Change in PID Controller}{94}
+\contentsline {subsection}{\numberline {5.8.7}Self Tuning Controller, local}{95}
+\contentsline {subsubsection}{\numberline {5.8.7.1}Fan Discturbance to PI Controller}{95}
+\contentsline {subsubsection}{\numberline {5.8.7.2}Set Point Change to PI Controller}{96}
+\contentsline {subsubsection}{\numberline {5.8.7.3}Fan Disturbance to PID Controller}{97}
+\contentsline {subsubsection}{\numberline {5.8.7.4}Set Point Change to PID Controller}{98}
