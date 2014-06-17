@@ -1,1 +1,0 @@
-ln -s /home/kannan/projects/polynomial/unix_mfiles/$1 $1
