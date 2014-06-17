@@ -8,7 +8,7 @@ getd "dc/scilab"
 //**********************
 sampling_time=1;   //In seconds. Fractions are allowed
 //**********************//
-exec ("prbstest-virtual.sci");
+exec ("prbscontrol-virtual.sci");
 exec ("twodof_para.sce");
 //exec ("sbhs_control.sci");
 
@@ -19,7 +19,7 @@ exec ("twodof_para.sce");
 ok = init();    
 
    if ok~= []  // open xcos only if communication is through (ie reply has come from server)
-      xcos('prbstest-virtual.xcos');
+      xcos('prbscontrol-virtual.xcos');
      else
      disp("NO NETWORK CONNECTION!");
      return

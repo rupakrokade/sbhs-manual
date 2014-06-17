@@ -5,21 +5,9 @@ mode(0);
 //Range of Fan input :20 to 252
 //Temperature is read
 
-function [temp,heat,e_new,stop] = pid_bda_virtual(setpoint,disturbance,K,Ti,Td)
+function [stop] = pid_bda_virtual(setpoint,fan,K,Ti,Td)
 
-global temp heat fan C0 u_old u_new e_old e_new e_old_old fdfh fdt fncr fncw m err_count stop
-
-fncr = 'scilabread.sce';          //file to be read - temperature
-fncw = 'scilabwrite.sce';        //file to be written - heater, fan
-
-a = mgetl(fdt,1);
-b = evstr(a);
-byte = mtell(fdt);
-mseek(byte,fdt,'set');
-
-if a~= []
-    temp = b(1,4); heats = b(1,2);
-    fans = b(1,3); y = temp;
+global temp heat C0 u_old u_new e_old e_new fdfh fdt fncr fncw m err_count stop q heatdisp fandisp tempdisp setpointdisp limits m x sampling_time e_old_old
 
 e_new = setpoint - temp;
 
@@ -31,49 +19,15 @@ S2=K*(Td/Ts);
 
 u_new = u_old + S0*e_new + S1*e_old + S2*e_old_old;
 
-
-
-if u_new> 100
-  u_new = 100;
-end;
-
-if u_new< 0
-  u_new = 0;
-end;
-
-
 heat=u_new;
-fan = disturbance;
-
-if fan> 100
-  fan = 100;
-end;
-
-if fan< 0
-  fan = 0;
-end;
 
 u_old = u_new;
 e_old_old = e_old;
 e_old = e_new;
 
-A = [m,heat,fan,m];
-  fdfh = file('open','scilabwrite.sce','unknown');
-  file('last', fdfh)
-  write(fdfh,A,'(7(e11.5,1x))');
-  file('close', fdfh);
-  m = m+1;
+    [stop,temp] = comm(heat,fan);//Never edit this line
+    plotting([heat fan temp setpoint],[0 0 30 0],[100 100 50 1000])
 
-  else 
-    y = 0; 
-    err_count = err_count + 1; //counts the no of times network error occurs
-    if err_count > 300
-      disp("NO NETWORK COMMUNICATION!");
-     stop = 1;  // status set for stopping simulation
-     end
-  end
-
-return
 endfunction
 
 

@@ -18,7 +18,7 @@ plot2d(t,y_prediction);
 
 title = 'Second Order model with tau1='
 title = title+string(tau1)+', tau2='+string(tau2)
-title = title+', K='+string(kp)
+title = title+', K='+string(kp/delta_u)
 title = title+', Error='+string(lsterr)+''
 label(title,4,'time (s)','Change in temperature (K)',4);
 endfunction;

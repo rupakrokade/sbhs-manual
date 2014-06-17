@@ -1,5 +1,5 @@
 mode(0);
-filename= '16Feb2012_17_28_57.txt';//Enter the data file name in single quotes
+filename= '29Apr2014_14_03_40.txt';//Enter the data file name in single quotes
 f=0.01;// Enter the frequency 
 data6=fscanfMat(filename);
 data7=data6(2:$,:);

@@ -1,0 +1,145 @@
+\chapter{Identification of Transfer Function of a Single Board Heater System through Ramp Response Experiment}\label{chap2}
+The aim of this experiment is to perform ramp test on the Single Board Heater System and to identify the 
+system transfer function using ramp response data. The target group is anyone who has basic knowledge of control engineering.
+\section{About this experiment}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{Ramp-test_manual/ramp_xcos.jpg}
+\caption{Xcos for ramp test experiment}
+\label{Xcos_rt}
+\end{figure} 
+We have used Scilab 5.3.3 and Xcos for sending and receiving data. This interface is shown in figure \ref{Xcos_rt}. 
+Heater current and fan speed are the two inputs to the SBHS system. They are given in percentage of maximum output. 
+These inputs can be varied through the Xcos interface by setting the properties of the input blocks in Xcos. 
+The data acquired in the process is stored in the local drive and is available to the user for further analysis.
+\section{Theory}
+Identification of the transfer function of a system is important as it helps us model the physical system 
+mathematically. Once the transfer function is obtained, one can find out the response of the system to various inputs
+without actually applying them to the system.\\
+Consider the standard first order transfer function given below
+\begin{align}
+G(s) &= \frac{ C(s)}{ R(s)}\\ 
+G(s)&=\frac K{\tau s+1}\\               
+\intertext{Combining the previous two equations, we get}
+C(s)  &= K \left\{\frac {R(s)}{\tau s + 1}\right\}\label{fotf}
+\intertext{Let us consider the case of giving a ramp input to this first order system. 
+The Laplace transform of a ramp function with slope = $\upsilonup$ is $ \frac \upsilonup {s^2}$. 
+Substituting $ R(s) = \frac \upsilonup {s^2}$ in equation \ref{fotf}, we obtain}
+C(s) & =  \frac K{\tau s + 1}\frac \upsilonup {s^2}\\
+&= \frac A{s} + \frac B{s^2} +\frac C{\tau s + 1}\\
+\intertext{Solving $C(s)$ using Heaviside expansion approach, we get}
+C(s) &= K\upsilonup \left\{\frac1{s^2} -  \frac \tau s + \frac {\tau^2}{\tau s + 1}\right\}\label{Heaviside}\\
+\intertext{Taking the Inverse Laplace transform of the above equation, we get}
+c(t)&= K\upsilonup \left\{t -\tau   + \tau e^{\frac {-t}\tau }\right\}\label{ct} \\
+\intertext{The difference between the reference and output signal is the error signal $e(t)$. Therefore,}
+e(t)&= r(t) - c(t)\\
+e(t)&= K\upsilonup t - K\upsilonup t + K\upsilonup \tau  - K\upsilonup \tau e^\frac {-t}\tau   \\
+e(t)&= K\upsilonup \tau (1 - e^{\frac {-t}\tau})\label{et}\\
+\intertext{Normalizing equation \ref{et} for $t>>\tau$, we get}
+e(t) &= \tau
+\end{align}
+This means that the error in following the ramp input is equal to $\tau$ for 
+large value of $t$ \cite{ogt05}. Hence, smaller the time constant $\tau$, smaller the steady state error.
+\section{Procedure to perform Ramp Test}
+The procedure to perform a step test is explained in section \ref{scilab_sbhs}.
+\begin{enumerate}
+ \item Change the Scilab working directory to {\tt Ramp\_Test} folder.
+ \item Execute the code {\tt ser\_init.sce} and {\tt ramp\_test.sci}. 
+ \item Open the Xcos code {\tt ramp\_test.xcos}. Give a ramp input to the system with some value for slope. For this 
+ experiment, we have chosen slope = $0.1$.
+ \item Double click on the ramp input block labled as ``Heater input''. Change the following values in the respective 
+ fields- slope = 0.1, start time = 200, initial output = 20.
+\item Keep the fan constant at 100.
+\end{enumerate}
+Note that the value of heater current will not exceed 40 PWM units due to the use of limit blocks. The Xcos code, on execution,
+may warn you with a message saying ``No continuous-time states. Thresholds are ignored''. Ignore the message by clicking on OK 
+button.
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Ramp-test_manual/ramp_plot.jpg}
+\caption{Screen shot of ramp test experiment}
+\end{figure}
+
+\begin{table}
+\begin{verbatim}
+ 0.000E+00  0.100E+02  0.100E+03  0.216E+02
+ 0.100E+00  0.100E+02  0.100E+03  0.216E+02
+.
+.
+ 0.251E+03  0.300E+02  0.100E+03  0.291E+02
+ 0.251E+03  0.300E+02  0.100E+03  0.291E+02
+\end{verbatim}
+\caption{Ramp data obtained after performing the ramp test}
+\label{Rampdata}
+\end{table}
+The first column of table \ref{Rampdata} denotes time in seconds. 
+The second column denotes heater current. The third column denotes the fan speed. 
+It has been held constant at 100 units. The last column denotes the plate temperature.
+
+\section{Ramp Analysis}
+After completing the ramp test experiment, let us do the analysis. 
+Change the directory to {\tt Ramp\_Analysis}. Execute the file {\tt ramp.sce}. 
+On executing this file, you get the values of Kp, tau and Kp approx and tau approx on the Scilab console window. 
+You will also get a plot of the ramp response calculated using the equation \ref{ct} for Kp and tau values.
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=\linewidth]{Ramp-test_manual/fit_curve_ramp.jpg}
+	\caption{Ramp response for Kp and tau}
+	\label{fig:fit_curve_ramp}
+\end{figure}
+
+\section{Discussion}
+We summarize our findings now. The experiment has been performed by varying the heater current and keeping the fan 
+speed constant. However, the user is encouraged to experiment using different combinations of fan speed 
+and heater current. Negative ramp can also be used to make the experiment more informative. 
+It is not necessary to keep a particular input constant. For example, you can try giving a step input to the 
+disturbance signal, i.e., the fan input. The system can also be treated as a second order system. This consideration 
+is necessary since it increases the accuracy of the acquired transfer function \cite{kmm09}.
+\section{Conducting ramp test on SBHS, virtually}
+The step by step procedure for conducting an experiment virtually is explained in section \ref{vlabsexpt}. 
+The required .sce file is {\tt ramptest.sce}.  You will find this file in the {\tt RampTest} directory under 
+{\tt virtual} folder. Please note that the analysis code of ramp test data obtained by a virtual experiment
+is slightly different. The procedure to use the analysis code however remains the same as explained earlier. 
+To do a first order analysis, one has to use the file {\tt firstorder\_virtual.sce}. These files are available 
+in the {\tt Ramp\_Analysis} folder under the {\tt virtual} folder. The necessary codes are listed in the 
+section \ref{rampcodes}.
+
+\section{Scilab Code}\label{rampcodes}
+\begin{code}
+\ccaption{ramp\_test.sci}{\ttfamily ramp\_test.sci}
+\lstinputlisting{Scilab/local/Ramp_Test/ramp_test.sci}
+\end{code}
+
+\begin{code}
+\ccaption{label.sci}{\ttfamily label.sci}
+\lstinputlisting{Scilab/local/Ramp_Analysis/label.sci}
+\end{code}
+
+\begin{code}
+\ccaption{cost.sci}{\ttfamily cost.sci}
+\lstinputlisting{Scilab/local/Ramp_Analysis/cost.sci}
+\end{code}
+
+\begin{code}
+\ccaption{cost\_approx.sci}{\ttfamily cost\_approx.sci}
+\lstinputlisting{Scilab/local/Ramp_Analysis/cost_approx.sci}
+\end{code}
+
+\begin{code}
+\ccaption{ramptest.sci}{\ttfamily ramptest.sci}
+\lstinputlisting{Scilab/virtual/RampTest/ramptest.sci}
+\end{code}
+
+\begin{code}
+\ccaption{ramptest.sce}{\ttfamily ramptest.sce}
+\lstinputlisting{Scilab/virtual/RampTest/ramptest.sce}
+\end{code}
+
+\begin{code}
+\ccaption{ramp\_virtual.sce}{\ttfamily ramp\_virtual.sce}
+\lstinputlisting{Scilab/virtual/Ramp_Analysis/ramp_virtual.sce}
+\end{code}
+
+
+%\bibliography{New} % Adding References

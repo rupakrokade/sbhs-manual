@@ -17,3 +17,4 @@ u = PRBSu;
 global PRBSu PRBScount;
 end
 endfunction
+

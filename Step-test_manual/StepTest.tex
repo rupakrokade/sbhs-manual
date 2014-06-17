@@ -1,103 +1,145 @@
-\chapter{Identification of transfer function of a Single Board Heater System through step response experiments}\label{chap1}
-The Aim of this experiment is to perform step test on a single board heater system and to identify system transfer function using step response data. The target group is anyone who has basic knowledge of Control Engineering.
+\chapter{Identification of Transfer Function of a Single Board Heater System through Step Response Experiment}\label{chap1}
+The aim of this experiment is to perform step test on a Single Board Heater System and to identify system transfer 
+function using step response data. The target group is anyone who has basic knowledge of control engineering.
+
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{Step-test_manual/step.png}
+\includegraphics[width=\linewidth]{Step-test_manual/step_xcos.jpg}
 \caption{Xcos for this experiment}
 \label{xcos_st}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{Step-test_manual/step_graph.png}
-\caption{Graph shows Heater current , Fan speed and Output Temperature}
+\includegraphics[width=\linewidth]{Step-test_manual/plot}
+\caption{Graph shows heater current, fan speed and output temperature}
 \label{fig:scope_st}
 \end{figure}
-We have used Scilab and Xcos as an interface for sending and receiving data. Xcos diagram is shown in Figure \ref{xcos_st}. Heater current and fan speed are the two inputs for this system. They are given in percentage of maximum. These inputs can be varied by the setting the properties of input block's properties in Xcos. The plots of their amplitude versus no. of collected samples are also available on the scope windows. The output temperature profile, as read by the sensor, is also plotted. The data acquired in the process is stored on the local drive and is available to the user for further calculations.
 
-\section{Step by step procedure to perform Step Test}
-The procedure to perform a step test is exactly the same as explained in Chapter \ref{sercomm}. In the {\tt step\_test.xcos} file, a block named {\tt write to output file} is used to make a log of the data generated during the experiment. Open the block's parameters to change the name of the file generated. Apply a step change of say 5 percent to the heater at operating point of 30 percent of heater after 300 seconds. This means that the block parameters of the step input block will have {\tt Step time = 300}, {\tt Initial value = 30} and {\tt Final value = 35}. Keep the fan input constant at 50 percent. Start the experiment and let it continue until you see the temperature almost reaching the steady state. 
+We have used Scilab and Xcos as an interface for sending and receiving data. 
+Xcos diagram is shown in figure \ref{xcos_st}. Heater current and fan speed are the two inputs for this system. 
+They are given in percentage of maximum. These inputs can be varied by setting the properties of the input block's properties 
+in Xcos. The plots of their amplitude versus number of collected samples are also available on the scope windows. 
+The output temperature profile, as read by the sensor, is also plotted. The data acquired in the process is stored on the 
+local drive and is available to the user for further calculations.
+
+\section{Procedure to perform Step Test}
+The procedure to perform a step test is explained in section \ref{scilab_sbhs}.\\ In the 
+{\tt step\_test.xcos} file, open the heater block's parameters to apply a step change of 
+say 5 percent to the heater at operating point of 30 percent of heater after 200 seconds. The block 
+parameters of the step input block will have {\tt Step time = 200}, {\tt Initial value = 30} and {\tt Final value = 35}. 
+Keep the fan input constant at 50 percent. Start the experiment and let it continue until you see the temperature 
+reach the steady state. 
+
 \begin{table}
 \begin{verbatim}
- 0.100E+00  0.300E+02  0.100E+03  0.195E+02
- 0.200E+00  0.300E+02  0.100E+03  0.195E+02
+ 0.100E+00  0.300E+02  0.50E+03  0.195E+02
+ 0.200E+00  0.300E+02  0.50E+03  0.195E+02
 .
 .
- 0.704E+03  0.350E+02  0.100E+03  0.318E+02
- 0.704E+03  0.350E+02  0.100E+03  0.318E+02
+ 0.700E+03  0.350E+02  0.50E+03  0.318E+02
+ 0.800E+03  0.350E+02  0.50E+03  0.318E+02
 \end{verbatim}
 \caption{Step data obtained after performing the Step Test}
 \label{stepdata}
 \end{table}
-Referring to data file thus obtained as shown in Tabel \ref{stepdata}, the first column in this table denotes time. The second column in this table denotes heater current. It start at 30 and increases with a step size of 5 units. The third column denotes the fan speed. It has been held constant at 50 percent. The fourth column refers to the value of temperature.
+
+The step test data file is saved in {\tt Step\_test} folder. The name of the file will be the date and time at which the 
+experiment was conducted. Referring to the data file thus obtained as shown in table \ref{stepdata}, the first column in this 
+table denotes samples. The second column in this table denotes heater in percentage. It starts at 30 and increases with a step size 
+of 5 units. The third column denotes the fan in percentage. It has been held constant at 50 percent. The fourth column refers to the 
+value of temperature.
 
 
-\section{Determination of First order transfer function}
-Identification of the transfer function of a system is quite important since it helps us to represent the physical system, mathematically. Once the transfer function is obtained one can acquire the response of the system for various inputs without actually applying them to the system.
+\section{Determination of First Order Transfer Function}
+Identification of the transfer function of a system is important as it helps us to 
+represent the physical system mathematically. Once the transfer function is obtained, one can acquire 
+the response of the system for various inputs without actually applying them to the system.
 
 Consider the standard first order transfer function given below
 \begin{align}
 G(s) &= \frac{ C(s)}{ R(s)}\label{1}\\
 G(s)&=\frac 1{\tau s+1}\label{std_fo}                           
-\intertext{Rewriting the Equation, we get}
+\intertext{Rewriting the equation, we get}
 C(s)  &= \frac {R(s)}{\tau s + 1}\label{rw_std_fo}
-\intertext{A step is given as an input to the first order system. The Laplace Transform of a step function is$ \frac 1{s}$. Hence, substituting $ R(s) = \frac 1{s}$ in equation \ref{rw_std_fo}, we obtain}
+\intertext{A step is given as input to the first order system. The Laplace 
+transform of a step function is$ \frac {1}{s}$. Hence, substituting $ R(s) = \frac {1}{s}$ in equation \ref{rw_std_fo}, 
+we obtain}
 C(s) & = \frac 1{\tau s + 1}\frac 1{s}\label{sub_rs}\\
 \intertext{Solving $C(s)$ using partial fraction expansion, we get}
 C(s) &= \frac1{s} - \frac {1}{s + \frac1 \tau}\label{pf}
 \intertext{Taking the Inverse Laplace transform of equation \ref{pf}, we get}
 c(t)&= 1 - e^{\frac {-t}\tau }\label{lti} 
 \end{align}
-from the above equation it is clear that for t=0 the value of c(t) is zero. For t= $\infty$, c(t) approaches unity. Also as the value of \textquoteleft t\textquoteright becomes equal to $\tau$, the value of c(t) becomes 0.632. The $\tau$ is called as the time constant and represents the speed of response of the system. But it should be noted that, the smaller the time constant, the faster the system response.\\
+From the above equation it is clear that for t=0, the value of c(t) is zero. For t= $\infty$, c(t) 
+approaches unity. Also, as the value of \textquoteleft t \textquoteright  becomes equal to $\tau$, 
+the value of c(t) becomes 0.632. $\tau$ is called the time constant and represents the speed of 
+response of the system. But it should be noted that, smaller the time constant- faster the system response.
 By getting the value of $\tau$, one can identify the transfer function of the system. 
 
 Consider the system to be first order. We try to fit a first order transfer function of the form
 \begin{align}       
 G(s) &= \frac K{\tau s + 1}\label{7}
-\intertext{to single board heater system.  Because the transfer function approach uses deviation variables,$ G(s)$ denotes the Laplace transform, of the gain of the system between the change in heater current and the change in the system temperature. Let the change in the heater current be denoted by $\Delta u$.  We denote both the time domain and the Laplace transform variable by the same lower case variable. Let the change in temperature be denoted by $y$.Suppose that the current changes by a step of size $u$.Then, we obtain the following relation between the current and the temperature.} 
+\intertext{to the Single Board Heater System. Because the transfer function approach uses deviation 
+variables, $ G(s)$ denotes the Laplace transform of the gain of the system between the change in heater 
+current and the change in the system temperature. Let the change in the heater current be denoted by $\Delta u$.  
+We denote both the time domain and the Laplace transform variable by the same lower case variable. Let the change 
+in temperature be denoted by $y$. Let the current change by a step of size $u$. Then, we obtain the following 
+relation between the current and the temperature.} 
 y(s) &= G(s)u(s)\\ 
 y(s)&= \frac K{\tau s + 1}{\frac  {\Delta u}{{s}}}
 \intertext {Note that $\Delta$ u is the height of the step and hence is a constant. On inversion, we obtain}
 y(s)&= K[1 - e^{\frac{-t}\tau}]\Delta u
 \end{align}
-Copy the step test data file to the folder {\tt Kp-tau-order1}. Change the scilab working directory to {\tt Kp-tau-order1} folder under {\tt Step\_Analysis} folder. Open the file {\ttfamily firstorder.sce} and put the name of the data file (with extention) in the filename field. Save and run this code and obtain the plot as shown in figure \ref{firstorder_output}. This code uses the routines {\ttfamily label.sci} and {\ttfamily costf\_1.sci}
-\begin{figure}
+\subsection{Procedure}
+\begin{enumerate}
+ \item Copy the step test data file to the folder {\tt Kp-tau-order1}.
+ \item Change the Scilab working directory to {\tt Kp-tau-order1} folder under {\tt Step\_Analysis} folder.
+ \item Open the file {\ttfamily firstorder.sce} and place the name of the data file 
+with extention in the filename field. 
+\item Save and run this code and obtain the plot as shown in figure \ref{firstorder_output}. 
+\end{enumerate}
+This code uses the routines {\ttfamily label.sci} and {\ttfamily costf\_1.sci}
+
+\begin{figure} 
 \centering
-\includegraphics[width=\linewidth]{Step-test_manual/forder_fit.png}
-\caption{Output of the scilab code \ttfamily firstorder.sce}
+\includegraphics[width=\linewidth]{Step-test_manual/step_first_order.jpg}
+\caption{Output of the Scilab code \ttfamily firstorder.sce}
 \label{firstorder_output}
-\end{figure}
+\end{figure} \label{firstorderplot}
 
 \begin{align}
-\intertext{The plot thus obtained is reasonably good. See the Scilab console to get the values of $\tau$ and $K$. The figure \ref {console} shows a screen shot of the same. We obtain $\tau$ = 35.61087, K = 0.4201. The transfer function obtained here is at the operating point of 30 pwm of heat. If the experiment is repeated at a different operating point, the transfer function obtained will be different. The gain will correspondingly be more at a higher operating point. This means that the plant is faster at higher temperature. Thus the transfer function of the plant varies with the operating point.
-Let the transfer function we obtain in this experiment be denoted as $G_s$.We obtain}
-G_s(s) =  \frac{0.4201}{35.61s+1} \label{12}
+\intertext{The plot thus obtained is reasonably good. See the Scilab plot to get the values of $\tau$ and $K$. 
+The figure \ref{firstorder_output} shows a screen shot of the same. We obtain $\tau$ = 45.739234, K = 1.7326851. The transfer function 
+obtained here is at the operating point of 30 percentage of heat. If the experiment is repeated at a different operating point, 
+the transfer function obtained will be different. The gain will correspondingly be more at a higher operating point. 
+This means that the plant is faster at higher temperature. Thus the transfer function of the plant varies with the operating 
+point. Let the transfer function we obtain in this experiment be denoted as $G_s$. We obtain}
+G_s(s) =  \frac{1.7326851}{45.739234s+1} \label{12}
 \end{align}
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth]{Step-test_manual/forder_console.png}
-\caption{The value of time constant and gain as shown on the console by firstorder.sce}
-\label{console}
-\end{figure}
+% \begin{figure}
+% \centering
+% \includegraphics[width=\linewidth]{Step-test_manual/forder_console.png}
+% \caption{The value of time constant and gain as shown on the console by \ttfamily firstorder.sce}
+% \label{console}
+% \end{figure}
 
 
-\section{Determination of second order transfer function}
+\section{Determination of Second Order Transfer Function}
 In this section, we explore the efficacy of a second order model of the form
 \begin{align}
 G(s) & = \frac K{(\tau_1s+1)(\tau_2s+1)} \label{eq:step-1100} 
-\intertext{The response of the system to a step input of height
-  $\Delta u$ is given by}
+\intertext{The response of the system to a step input of height $\Delta u$ is given by}
 y(s) & = \frac K{(\tau_1s+1)(\tau_2s+1)} \frac{\Delta u}s 
 \label{eq:step-1200} 
 \end{align}
 
-Splitting this into partial fraction expansion, we obtain
+Splitting into partial fraction expansion, we obtain
 \begin{align*}
 y(s) & = \frac K{\tau_1\tau_2} \frac 1
 {\left(s+\dfrac 1{\tau_1}\right)\left(s+\dfrac 1{\tau_2}\right)} =
 \frac A s + \frac B{s+\dfrac 1{\tau_1}} + \frac C{s+\dfrac 1{\tau_2}}
-\intertext{Through heaviside expansion method, we determine the
-  coefficients:}
+\intertext{Through Heaviside expansion method, we determine the coefficients:}
 A & = K \\
 B & = -\frac{K\tau_1}{\tau_1-\tau_2} \\
 C & = \frac{K\tau_2}{\tau_1-\tau_2}
@@ -110,8 +152,19 @@ y(t) & = K\left[ 1 - \frac 1{\tau_1-\tau_2}
 \right] \label{eq:step-1300}
 \end{align}
 
-We have to determine three parameters, $K$, $\tau_1$ and $\tau_2$
-through optimization.  Once again, we follow a procedure identical to the first order model.  The only difference is that we now have to determine three parameters. Scilab code \\{\tt secondorder.sce} does these calculations and outputs a the gain and two time constants. Again change the scilab working diectory to the folder {\tt Kp-tau-order2}. Copy the step test data file in this folder. Run the code {\tt secondorder.sce} with the appropriate data file name. The plot shown in \ref{sorder} is obtained.  It corresponds to the following transfer function with the parameters written at the top of the plot.
+We have to determine three parameters $K$, $\tau_1$ and $\tau_2$
+through optimization. Once again, we follow a procedure identical to the first order model.  
+The only difference is that we now have to determine three parameters. Scilab code \\{\tt secondorder.sce} calculates
+the gain and two time constants. 
+\subsection {Procedure}
+\begin{enumerate}
+ \item Change the Scilab working diectory to the folder {\tt Kp-tau-order2}.
+ \item Copy the step test data file to this folder. 
+ \item Run the code {\tt secondorder.sce} with the appropriate data file name. 
+\end{enumerate}
+The plot shown in figure \ref{sorder} is obtained.  It corresponds to the following transfer function with the 
+parameters written at the top of the plot.
+
 \begin{align}
 G_{s}(s) & = \frac {0.420}{(34.4s+1)(1s+1)}
 \label{eq:step-1400}
@@ -120,7 +173,7 @@ G_{s}(s) & = \frac {0.420}{(34.4s+1)(1s+1)}
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{Step-test_manual/Sorder_fit.png}
-\caption{Output of the scilab code \ttfamily secondorder.sce}
+\caption{Output of the Scilab code \ttfamily secondorder.sce}
 \label{sorder}
 \end{figure}
 
@@ -129,10 +182,23 @@ order transfer function.
 
 
 \section{Discussion}
-We summarize our findings now. For the firstorder analysis the gain is 0.4201 and the time constant $\tau$ is 35.61 sec. For the second order analysis, the initial inflexion is well captured with the two time constants $\tau_1$=34.4, $\tau_2$= 1 and gain = 0.420. Negative steps can also be introduced to make the experiment more informative. One can even need not keep a particular input constant. By varying both the inputs, one can imagine it to be like a step varying disturbance signal.
+We summarize our findings now. For the first order analysis, the gain is 1.7326851 and the 
+time constant $\tau$ is 45.739234 seconds. For the second order analysis, the initial inflexion is 
+well captured with the two time constants $\tau_1$=34.4, $\tau_2$= 1 and gain = 0.420. Negative steps 
+can also be introduced to make the experiment more informative. One need not keep a particular 
+input constant. By varying both the inputs, one can imagine it to be like a step varying disturbance signal.
  
 \section{Conducting Step Test on SBHS, virtually}
-The step by step procedure for conducting an experiment virtually is explained in section \ref{vlabsexpt}. The required .sce file is {\tt stepc.sce}.  You will find this file in the {\tt StepTest} directory under {\tt virtual} folder. Please note that the analysis code of step test data obtained by a virtual experiment is slightly different. The procedure to use the analysis code however remains the same as explained earlier. To do a first order analysis, one has to use the file {\tt firstorder\_virtual.sce}. Similarly, {\tt secondorder\_virtual.sce} for second order analysis. You will find this file in the {\tt StepTest} directory under {\tt virtual} folder. The necessary codes are listed in the section \ref{stepcodes}.
+The step by step procedure for conducting an experiment virtually is explained in 
+section \ref{vlabsexpt}. 
+\begin{enumerate}
+ \item Go to {\tt virtual} folder and then {\tt StepTest} directory.
+ \item Perform the experiment using {\tt stepc.sce}
+ \item Perform first order analysis using {\tt firstorder\_virtual.sce}
+ \item Perform second order analysis using {\tt secondorder\_virtual.sce}
+\end{enumerate}
+
+The necessary codes are listed in the section \ref{stepcodes}.
 
 
 \section{Scilab Code}\label{stepcodes}

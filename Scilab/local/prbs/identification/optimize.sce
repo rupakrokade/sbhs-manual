@@ -1,6 +1,6 @@
 mode(0);
  // Change filename here
-filename = "2014-6-13-12-41-43.txt";
+filename = "30Apr2014_12_30_50.txt";
 clf
 
 
@@ -47,7 +47,7 @@ t = time;
 y = temp;
 u = heater;
 
-x0 = [0.1 0.1 0.1 0.1]; // Change initial guess here
+x0 = [0.2 0.2 0.5 0.5]; // Change initial guess here
 delay = 5;      // Change delay here
 global delay;
 [f, xopt] = optim(costfunction, x0);

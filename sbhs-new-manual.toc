@@ -1,84 +1,200 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {List of Scilab\ Code}}{4}
-\contentsline {chapter}{\numberline {1}Block diagram explanation of Single Board Heater System}{5}
-\contentsline {section}{\numberline {1.1}Microcontroller}{5}
-\contentsline {subsection}{\numberline {1.1.1}PWM for heat and speed control}{6}
-\contentsline {subsection}{\numberline {1.1.2}Analog to Digital conversion}{8}
-\contentsline {section}{\numberline {1.2}Instrumentation amplifier}{8}
-\contentsline {section}{\numberline {1.3}Communication}{9}
-\contentsline {subsection}{\numberline {1.3.1}Serial port communication}{10}
-\contentsline {subsection}{\numberline {1.3.2}Using USB for Communication}{10}
-\contentsline {section}{\numberline {1.4}Display and Resetting the setup}{10}
-\contentsline {chapter}{\numberline {2}Performing a Local Experiment on Single Board Heater System}{14}
-\contentsline {section}{\numberline {2.1}Using SBHS on a Windows OS}{15}
-\contentsline {subsection}{\numberline {2.1.1}Installing Drivers and Configuring COM Port}{15}
-\contentsline {subsection}{\numberline {2.1.2}Steps to Perform a Local Experiment}{16}
-\contentsline {section}{\numberline {2.2}Using Single Board Heater System on a Linux System}{19}
-\contentsline {chapter}{\numberline {3}Using Single Board Heater System, Virtually!}{23}
-\contentsline {section}{\numberline {3.1}Introduction to Virtual Labs at \\IIT Bombay}{23}
-\contentsline {section}{\numberline {3.2}Evolution of SBHS virtual labs}{24}
-\contentsline {section}{\numberline {3.3}Current Hardware Architecture}{27}
-\contentsline {section}{\numberline {3.4}Current Software Architecture}{28}
-\contentsline {section}{\numberline {3.5}Conducting experiments using the Virtual lab}{28}
-\contentsline {subsection}{\numberline {3.5.1}Registration, Login and Slot Booking}{30}
-\contentsline {subsection}{\numberline {3.5.2}Configuring proxy settings and executing python based client}{31}
-\contentsline {subsection}{\numberline {3.5.3}Executing scilab code}{32}
-\contentsline {chapter}{\numberline {4}PRBS modelling and implementation of pole-placement controller}{36}
-\contentsline {section}{\numberline {4.1}Issues with step testing and alternate approach}{38}
-\contentsline {section}{\numberline {4.2}Step by step procedure to do PRBS testing}{39}
-\contentsline {section}{\numberline {4.3}Determination of discrete time transfer function}{41}
-\contentsline {section}{\numberline {4.4}Performing PRBS testing on SBHS, virtually}{42}
-\contentsline {section}{\numberline {4.5}Implementing 2DOF pole-placement controller using PRBS model}{44}
-\contentsline {section}{\numberline {4.6}Scilab Code}{44}
-\contentsline {chapter}{\numberline {5}Design and Implementation of Self Tuning PI and PID Controllers on Single Board Heater System}{49}
-\contentsline {section}{\numberline {5.1}Introduction}{49}
-\contentsline {subsection}{\numberline {5.1.1}Ojective}{49}
-\contentsline {section}{\numberline {5.2}Theory}{50}
-\contentsline {subsection}{\numberline {5.2.1}Why a Self Tuning Controller?}{50}
-\contentsline {subsection}{\numberline {5.2.2}The Approach Followed}{51}
-\contentsline {subsection}{\numberline {5.2.3}Direct synthesis}{51}
-\contentsline {section}{\numberline {5.3}Ziegler Nichols Tuning}{53}
-\contentsline {section}{\numberline {5.4}Step Test Experiments and Parmeter Estimation}{53}
-\contentsline {subsection}{\numberline {5.4.1}Step Test Experiments}{54}
-\contentsline {subsubsection}{\numberline {5.4.1.1}Step Change in Heater Reading from 10 to 15}{54}
-\contentsline {subsubsection}{\numberline {5.4.1.2}Step Change in Heater Reading from 20 to 25}{55}
-\contentsline {subsubsection}{\numberline {5.4.1.3}Step Change in Heater Reading from 30 to 35}{56}
-\contentsline {subsubsection}{\numberline {5.4.1.4}The Open Loop Parameters}{57}
-\contentsline {subsection}{\numberline {5.4.2}Conventional Controller Design}{57}
-\contentsline {subsection}{\numberline {5.4.3}Self Tuning Controller Design}{57}
-\contentsline {section}{\numberline {5.5}Implementation}{59}
-\contentsline {subsection}{\numberline {5.5.1}PI Controller}{59}
-\contentsline {subsection}{\numberline {5.5.2}PID Controller}{61}
-\contentsline {subsection}{\numberline {5.5.3}Self Tuning Controller}{63}
-\contentsline {section}{\numberline {5.6}Set Point Tracking}{63}
-\contentsline {subsection}{\numberline {5.6.1}PI Controller designed by Direct Synthesis}{65}
-\contentsline {subsection}{\numberline {5.6.2}PI Controller using Ziegler Nichols Tuning}{67}
-\contentsline {subsection}{\numberline {5.6.3}PID Controller using Ziegler Nichols Tuning}{70}
-\contentsline {subsection}{\numberline {5.6.4}Conclusion}{71}
-\contentsline {section}{\numberline {5.7}Disturbance Rejection}{72}
-\contentsline {subsection}{\numberline {5.7.1}PI Controller designed by Direct Synthesis}{72}
-\contentsline {subsection}{\numberline {5.7.2}PI Controller using Ziegler Nichols Tuning}{76}
-\contentsline {subsection}{\numberline {5.7.3}PID Controller using Ziegler Nichols Tuning}{79}
-\contentsline {subsection}{\numberline {5.7.4}Conclusion}{81}
-\contentsline {section}{\numberline {5.8}Implementing Self Tuning controller on SBHS, virtually}{81}
-\contentsline {subsection}{\numberline {5.8.1}Serial Communication}{82}
-\contentsline {subsection}{\numberline {5.8.2}Conventional Controller, local}{83}
-\contentsline {subsection}{\numberline {5.8.3}Fan Disturbance in PI Controller}{83}
-\contentsline {subsubsection}{\numberline {5.8.3.1}Set Point Change in PI Controller}{84}
-\contentsline {subsubsection}{\numberline {5.8.3.2}Fan Disturbance to PID Controller}{85}
-\contentsline {subsubsection}{\numberline {5.8.3.3}Set Point Change in PID Controller}{86}
-\contentsline {subsection}{\numberline {5.8.4}Self Tuning Controller, local}{87}
-\contentsline {subsubsection}{\numberline {5.8.4.1}Fan Discturbance to PI Controller}{87}
-\contentsline {subsubsection}{\numberline {5.8.4.2}Set Point Change to PI Controller}{88}
-\contentsline {subsubsection}{\numberline {5.8.4.3}Fan Disturbance to PID Controller}{89}
-\contentsline {subsubsection}{\numberline {5.8.4.4}Set Point Change to PID Controller}{91}
-\contentsline {subsection}{\numberline {5.8.5}Conventional Controller, virtual}{92}
-\contentsline {subsection}{\numberline {5.8.6}Fan Disturbance in PI Controller}{92}
-\contentsline {subsubsection}{\numberline {5.8.6.1}Set Point Change in PI Controller}{92}
-\contentsline {subsubsection}{\numberline {5.8.6.2}Fan Disturbance to PID Controller}{94}
-\contentsline {subsubsection}{\numberline {5.8.6.3}Set Point Change in PID Controller}{94}
-\contentsline {subsection}{\numberline {5.8.7}Self Tuning Controller, local}{95}
-\contentsline {subsubsection}{\numberline {5.8.7.1}Fan Discturbance to PI Controller}{95}
-\contentsline {subsubsection}{\numberline {5.8.7.2}Set Point Change to PI Controller}{96}
-\contentsline {subsubsection}{\numberline {5.8.7.3}Fan Disturbance to PID Controller}{97}
-\contentsline {subsubsection}{\numberline {5.8.7.4}Set Point Change to PID Controller}{98}
+\contentsline {chapter}{\numberline {List of Scilab\ Code}}{7}
+\contentsline {chapter}{\numberline {1}Block diagram explanation of Single Board Heater System}{11}
+\contentsline {section}{\numberline {1.1}Microcontroller}{11}
+\contentsline {subsection}{\numberline {1.1.1}PWM for heat and speed control}{12}
+\contentsline {subsection}{\numberline {1.1.2}Analog to Digital conversion}{14}
+\contentsline {section}{\numberline {1.2}Instrumentation amplifier}{14}
+\contentsline {section}{\numberline {1.3}Communication}{15}
+\contentsline {subsection}{\numberline {1.3.1}Serial port communication}{16}
+\contentsline {subsection}{\numberline {1.3.2}Using USB for Communication}{16}
+\contentsline {section}{\numberline {1.4}Display and Resetting the setup}{16}
+\contentsline {chapter}{\numberline {2}Performing a Local Experiment on Single Board Heater System}{20}
+\contentsline {section}{\numberline {2.1}Using SBHS on a Windows OS}{21}
+\contentsline {subsection}{\numberline {2.1.1}Installing Drivers and Configuring COM Port}{21}
+\contentsline {subsection}{\numberline {2.1.2}Steps to Perform a Local Experiment}{22}
+\contentsline {section}{\numberline {2.2}Using Single Board Heater System on a Linux System}{25}
+\contentsline {chapter}{\numberline {3}Using Single Board Heater System, Virtually!}{29}
+\contentsline {section}{\numberline {3.1}Introduction to Virtual Labs at \\IIT Bombay}{29}
+\contentsline {section}{\numberline {3.2}Evolution of SBHS virtual labs}{30}
+\contentsline {section}{\numberline {3.3}Current Hardware Architecture}{33}
+\contentsline {section}{\numberline {3.4}Current Software Architecture}{34}
+\contentsline {section}{\numberline {3.5}Conducting experiments using the Virtual lab}{34}
+\contentsline {subsection}{\numberline {3.5.1}Registration, Login and Slot Booking}{36}
+\contentsline {subsection}{\numberline {3.5.2}Configuring proxy settings and executing python based client}{37}
+\contentsline {subsection}{\numberline {3.5.3}Executing scilab code}{38}
+\contentsline {chapter}{\numberline {4}Identification of Transfer Function of a Single Board Heater System through Step Response Experiment}{42}
+\contentsline {section}{\numberline {4.1}Procedure to perform Step Test}{42}
+\contentsline {section}{\numberline {4.2}Determination of First Order Transfer Function}{45}
+\contentsline {subsection}{\numberline {4.2.1}Procedure}{47}
+\contentsline {section}{\numberline {4.3}Determination of Second Order Transfer Function}{48}
+\contentsline {subsection}{\numberline {4.3.1}Procedure}{49}
+\contentsline {section}{\numberline {4.4}Discussion}{49}
+\contentsline {section}{\numberline {4.5}Conducting Step Test on SBHS, virtually}{51}
+\contentsline {section}{\numberline {4.6}Scilab Code}{51}
+\contentsline {chapter}{\numberline {5}Identification of Transfer Function of a Single Board Heater System through Ramp Response Experiment}{64}
+\contentsline {section}{\numberline {5.1}About this experiment}{64}
+\contentsline {section}{\numberline {5.2}Theory}{64}
+\contentsline {section}{\numberline {5.3}Procedure to perform Ramp Test}{66}
+\contentsline {section}{\numberline {5.4}Ramp Test Analysis}{68}
+\contentsline {section}{\numberline {5.5}Discussion}{68}
+\contentsline {section}{\numberline {5.6}Conducting ramp test on SBHS, virtually}{69}
+\contentsline {section}{\numberline {5.7}Scilab Code}{69}
+\contentsline {chapter}{\numberline {6}Frequency Response Analysis of a Single Board Heater System by the Application of Sine Wave}{75}
+\contentsline {section}{\numberline {6.1}Theory}{75}
+\contentsline {section}{\numberline {6.2}Procedure to perform Sine Test}{78}
+\contentsline {section}{\numberline {6.3}Sine Test Analysis}{79}
+\contentsline {section}{\numberline {6.4}Conducting Sine Test on SBHS, virtually}{82}
+\contentsline {section}{\numberline {6.5}Scilab Code}{85}
+\contentsline {chapter}{\numberline {7}Controlling Single Board Heater System using PID controller}{92}
+\contentsline {section}{\numberline {7.1}Theory}{92}
+\contentsline {subsection}{\numberline {7.1.1}Proportional Control Action}{93}
+\contentsline {subsection}{\numberline {7.1.2}Integral Control Action}{94}
+\contentsline {subsection}{\numberline {7.1.3}Derivative Control Action}{94}
+\contentsline {section}{\numberline {7.2}Ziegler-Nichols Rule for Tuning PID Controllers}{95}
+\contentsline {subsection}{\numberline {7.2.1}First Method}{95}
+\contentsline {subsection}{\numberline {7.2.2}Second Method}{97}
+\contentsline {section}{\numberline {7.3}Implementing PI Controller using Trapezoidal Approximation}{99}
+\contentsline {subsection}{\numberline {7.3.1}Implementing PI controller using Trapezoidal Approximation on SBHS, virtually}{101}
+\contentsline {section}{\numberline {7.4}Implementing PI Controller using Backward Difference Approximation}{102}
+\contentsline {subsection}{\numberline {7.4.1}Implementing PI Controller using Backward Difference Approximation on SBHS, virtually}{103}
+\contentsline {section}{\numberline {7.5}Implementing PI Controller using Forward Difference Approximation}{104}
+\contentsline {subsection}{\numberline {7.5.1}Implementing PI Controller using Forward Difference Approximation on SBHS, virtually}{105}
+\contentsline {section}{\numberline {7.6}Implementing PID Controller using Backward Difference Approximation}{106}
+\contentsline {subsection}{\numberline {7.6.1}Implementing PID Controller using Backward Difference Approximation on SBHS, virtually}{108}
+\contentsline {section}{\numberline {7.7}Implementing PID Controller using Trapezoidal Approximation for Integral Mode and Backward Difference Approximation for the Derivative Mode}{108}
+\contentsline {subsection}{\numberline {7.7.1}Implementing PID Controller using Trapezoidal Approximation for Integral Mode and Backward Difference Approximation for the Derivative Mode on SBHS, virtually}{110}
+\contentsline {section}{\numberline {7.8}Implementing PID Controller with Filtering using Backward Difference Approximation}{111}
+\contentsline {subsection}{\numberline {7.8.1}Implementing PID Controller with Filtering using Backward Difference Approximation on SBHS, virtually}{113}
+\contentsline {section}{\numberline {7.9}Scilab Code}{114}
+\contentsline {subsection}{\numberline {7.9.1}Scilab code for serial communication}{114}
+\contentsline {subsection}{\numberline {7.9.2}Scilab code for PI controller}{114}
+\contentsline {subsection}{\numberline {7.9.3}Scilab code for PID controller}{117}
+\contentsline {chapter}{\numberline {8}Two Degrees of Freedom (2-DOF) Controller}{122}
+\contentsline {section}{\numberline {8.1}Introduction to 2-DOF Controller}{122}
+\contentsline {section}{\numberline {8.2}2-DOF Controller Design using the Pole Placement Method \cite {kmmdc09}}{125}
+\contentsline {section}{\numberline {8.3}2-DOF Pole Placement Controller Design and Implementation using SBHS}{128}
+\contentsline {subsection}{\numberline {8.3.1}Procedure to use the Scilab/Xcos Code for a Local Experiment }{130}
+\contentsline {subsection}{\numberline {8.3.2}Implementing 2-DOF Controller on SBHS, Virtually}{132}
+\contentsline {section}{\numberline {8.4}Scilab Code for Local Experiment}{132}
+\contentsline {section}{\numberline {8.5}Scilab Code for Virtual Experiment}{152}
+\contentsline {section}{\numberline {8.6}Scilab Codes Common for both Local and Virtual Experiments}{155}
+\contentsline {chapter}{\numberline {9}PRBS Modeling and Implementation of Pole Placement Controller}{161}
+\contentsline {section}{\numberline {9.1}Issues with Step Test and an Alternate Approach}{163}
+\contentsline {section}{\numberline {9.2}Step by step procedure to do PRBS testing}{164}
+\contentsline {section}{\numberline {9.3}Determination of Discrete Time Transfer Function}{165}
+\contentsline {section}{\numberline {9.4}Performing PRBS testing on SBHS, locally}{167}
+\contentsline {section}{\numberline {9.5}Implementing 2DOF pole-placement controller using PRBS model, virtually}{167}
+\contentsline {section}{\numberline {9.6}Implementing 2DOF pole-placement controller using PRBS model, locally}{170}
+\contentsline {section}{\numberline {9.7}Scilab Local codes}{170}
+\contentsline {subsection}{\numberline {9.7.1}Identification codes}{170}
+\contentsline {subsection}{\numberline {9.7.2}Controller codes}{175}
+\contentsline {section}{\numberline {9.8}Scilab Virtual codes}{179}
+\contentsline {subsection}{\numberline {9.8.1}Identification codes}{179}
+\contentsline {subsection}{\numberline {9.8.2}Controller codes}{184}
+\contentsline {chapter}{\numberline {10}Implementing Internal Model Controller for First Order System on a Single Board Heater System}{189}
+\contentsline {section}{\numberline {10.1}IMC Design for Single Board Heater System}{189}
+\contentsline {section}{\numberline {10.2}Step for Designing IMC for Stable Plant}{191}
+\contentsline {section}{\numberline {10.3}Experimental Results}{193}
+\contentsline {subsection}{\numberline {10.3.1}Implementing IMC on SBHS, virtually}{193}
+\contentsline {section}{\numberline {10.4}Scilab Code}{196}
+\contentsline {chapter}{\numberline {11}Design and Implementation of Self Tuning PI and PID Controllers on Single Board Heater System}{199}
+\contentsline {section}{\numberline {11.1}Introduction}{199}
+\contentsline {subsection}{\numberline {11.1.1}Objective}{199}
+\contentsline {section}{\numberline {11.2}Theory}{200}
+\contentsline {subsection}{\numberline {11.2.1}Why a Self Tuning Controller?}{200}
+\contentsline {subsection}{\numberline {11.2.2}The Approach Followed}{201}
+\contentsline {subsection}{\numberline {11.2.3}Direct synthesis}{201}
+\contentsline {section}{\numberline {11.3}Ziegler Nichols Tuning}{203}
+\contentsline {section}{\numberline {11.4}Step Test Experiments and Parmeter Estimation}{204}
+\contentsline {subsection}{\numberline {11.4.1}Step Test Experiment}{204}
+\contentsline {subsubsection}{\numberline {11.4.1.1}Step change in heater reading from 10 to 15}{204}
+\contentsline {subsubsection}{\numberline {11.4.1.2}Step Change in Heater Reading from 20 to 25}{205}
+\contentsline {subsubsection}{\numberline {11.4.1.3}Step Change in Heater Reading from 30 to 35}{206}
+\contentsline {subsubsection}{\numberline {11.4.1.4}The Open Loop Parameters}{207}
+\contentsline {subsection}{\numberline {11.4.2}Conventional Controller Design}{207}
+\contentsline {subsection}{\numberline {11.4.3}Self Tuning Controller Design}{208}
+\contentsline {section}{\numberline {11.5}Implementation}{210}
+\contentsline {subsection}{\numberline {11.5.1}PI Controller}{210}
+\contentsline {subsection}{\numberline {11.5.2}PID Controller}{211}
+\contentsline {subsection}{\numberline {11.5.3}Self Tuning Controller}{214}
+\contentsline {section}{\numberline {11.6}Set Point Tracking}{214}
+\contentsline {subsection}{\numberline {11.6.1}PI Controller Designed by Direct Synthesis}{216}
+\contentsline {subsection}{\numberline {11.6.2}PI Controller using Ziegler Nichols Tuning}{218}
+\contentsline {subsection}{\numberline {11.6.3}PID Controller using Ziegler Nichols Tuning}{221}
+\contentsline {subsection}{\numberline {11.6.4}Conclusion}{222}
+\contentsline {section}{\numberline {11.7}Disturbance Rejection}{223}
+\contentsline {subsection}{\numberline {11.7.1}PI Controller Designed by Direct Synthesis}{223}
+\contentsline {subsection}{\numberline {11.7.2}PI Controller using Ziegler Nichols Tuning}{226}
+\contentsline {subsection}{\numberline {11.7.3}PID Controller using Ziegler Nichols Tuning}{229}
+\contentsline {subsection}{\numberline {11.7.4}Conclusion}{231}
+\contentsline {section}{\numberline {11.8}Implementing Self Tuning controller on SBHS, virtually}{232}
+\contentsline {subsection}{\numberline {11.8.1}Serial Communication}{232}
+\contentsline {subsection}{\numberline {11.8.2}Conventional Controller, local}{234}
+\contentsline {subsection}{\numberline {11.8.3}Fan Disturbance in PI Controller}{234}
+\contentsline {subsubsection}{\numberline {11.8.3.1}Set Point Change in PI Controller}{235}
+\contentsline {subsubsection}{\numberline {11.8.3.2}Fan Disturbance to PID Controller}{236}
+\contentsline {subsubsection}{\numberline {11.8.3.3}Set Point Change in PID Controller}{237}
+\contentsline {subsection}{\numberline {11.8.4}Self Tuning Controller, local}{238}
+\contentsline {subsubsection}{\numberline {11.8.4.1}Fan Discturbance to PI Controller}{238}
+\contentsline {subsubsection}{\numberline {11.8.4.2}Set Point Change to PI Controller}{239}
+\contentsline {subsubsection}{\numberline {11.8.4.3}Fan Disturbance to PID Controller}{240}
+\contentsline {subsubsection}{\numberline {11.8.4.4}Set Point Change to PID Controller}{241}
+\contentsline {subsection}{\numberline {11.8.5}Conventional Controller, virtual}{242}
+\contentsline {subsection}{\numberline {11.8.6}Fan Disturbance in PI Controller}{242}
+\contentsline {subsubsection}{\numberline {11.8.6.1}Set Point Change in PI Controller}{244}
+\contentsline {subsubsection}{\numberline {11.8.6.2}Fan Disturbance to PID Controller}{246}
+\contentsline {subsubsection}{\numberline {11.8.6.3}Set Point Change in PID Controller}{248}
+\contentsline {subsection}{\numberline {11.8.7}Self Tuning Controller, local}{250}
+\contentsline {subsubsection}{\numberline {11.8.7.1}Fan Discturbance to PI Controller}{250}
+\contentsline {subsubsection}{\numberline {11.8.7.2}Set Point Change to PI Controller}{252}
+\contentsline {subsubsection}{\numberline {11.8.7.3}Fan Disturbance to PID Controller}{255}
+\contentsline {subsubsection}{\numberline {11.8.7.4}Set Point Change to PID Controller}{257}
+\contentsline {section}{\numberline {11.9}Proceedure to perform experiments}{259}
+\contentsline {subsection}{\numberline {11.9.1}}{259}
+\contentsline {chapter}{\numberline {12}Model Predictive Control in Single Board Heater System using\\ SCILAB}{260}
+\contentsline {section}{\numberline {12.1}Objective}{260}
+\contentsline {section}{\numberline {12.2}Single Board Heater System}{260}
+\contentsline {section}{\numberline {12.3}Model Predictive Control}{261}
+\contentsline {section}{\numberline {12.4} Implementing MPC}{262}
+\contentsline {section}{\numberline {12.5}Working of codes}{262}
+\contentsline {section}{\numberline {12.6}Procedure to implement MPC on SBHS}{262}
+\contentsline {section}{\numberline {12.7}Description of xcos}{263}
+\contentsline {section}{\numberline {12.8}Code for MPC (\emph {mpc\_run.sci})}{264}
+\contentsline {section}{\numberline {12.9}Other codes used}{267}
+\contentsline {section}{\numberline {12.10}Experiments conducted to implement MPC}{268}
+\contentsline {section}{\numberline {12.11}Sample run to implement MPC}{269}
+\contentsline {section}{\numberline {12.12}Positive Step Change to Set Point and Fan}{269}
+\contentsline {section}{\numberline {12.13}Negative Step Change to Set Point and Fan}{272}
+\contentsline {section}{\numberline {12.14}Effect of Tuning parameters: Weighting factors, We and Wu}{275}
+\contentsline {section}{\numberline {12.15}For same factor of We and Wu}{276}
+\contentsline {subsection}{\numberline {12.15.1}Positive Step Change and (We, Wu)=(1,1) (Expt 1.1)}{276}
+\contentsline {subsection}{\numberline {12.15.2}Positive Step Change and (We, Wu)=(10,10) (Expt 1.2)}{279}
+\contentsline {subsection}{\numberline {12.15.3}Positive Step Change and (We, Wu)=(40,40) (Expt 1.3)}{282}
+\contentsline {subsection}{\numberline {12.15.4}Negative Step Change and (We,Wu)=(1,1) (Expt 2.1) }{284}
+\contentsline {subsection}{\numberline {12.15.5}Negative Step Change and (We, Wu)=(10,10) (Expt 2.2) }{286}
+\contentsline {subsection}{\numberline {12.15.6}Negative Step Change and (We, Wu)=(40,40) (Expt 2.3)}{288}
+\contentsline {section}{\numberline {12.16}For different We and Wu factors}{289}
+\contentsline {subsection}{\numberline {12.16.1}We =100 and Wu = 2 (Expt 5.1) }{290}
+\contentsline {subsection}{\numberline {12.16.2}We =2 and Wu = 100 (Expt 5.2) }{292}
+\contentsline {subsection}{\numberline {12.16.3}We =10 and Wu = 100 (Expt 5.3)}{294}
+\contentsline {subsection}{\numberline {12.16.4}We =100 and Wu = 10 (Expt 5.4)}{296}
+\contentsline {section}{\numberline {12.17}Conclusion on Weighting factor experiments}{298}
+\contentsline {section}{\numberline {12.18}Effect of Control Horizon Paramter, q}{298}
+\contentsline {section}{\numberline {12.19}For positive step change in Set point and Fan speed }{300}
+\contentsline {subsection}{\numberline {12.19.1}For q =2 (Expt 3.1) }{300}
+\contentsline {subsection}{\numberline {12.19.2}For q =3 (Expt 3.2) }{302}
+\contentsline {subsection}{\numberline {12.19.3}For q =4 (Expt 3.3) }{304}
+\contentsline {section}{\numberline {12.20}For negative step change in Set point and Fan speed }{306}
+\contentsline {subsection}{\numberline {12.20.1}For q =2 (Expt 4.1) }{306}
+\contentsline {subsection}{\numberline {12.20.2}For q =3 (Expt 4.2) }{308}
+\contentsline {subsection}{\numberline {12.20.3}For q =4 (Expt 4.3) }{310}
+\contentsline {section}{\numberline {12.21}Conclusion on the effect of Control Horizon parameter }{311}
+\contentsline {section}{\numberline {12.22}Implementing Model Predictive controller on SBHS, locally}{312}
+\contentsline {section}{\numberline {12.23}Conclusion for MPC project}{312}
+\contentsline {section}{\numberline {12.24}Acknowledgement }{313}
+\contentsline {section}{\numberline {12.25}Appendix}{314}
+\contentsline {section}{\numberline {12.26}Appendix 1: General Information on Experiments for this Project}{314}
+\contentsline {section}{\numberline {12.27}Appendix 2: Values of State Space matrices}{314}
+\contentsline {section}{\numberline {12.28}Appendix 3: Attachments and Contact Information}{316}
+\contentsline {section}{\numberline {12.29}Scilab Code}{316}

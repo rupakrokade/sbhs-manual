@@ -6,7 +6,7 @@ slope = 0.1; // change this to the slope that you have used in the experiment
 ind1=3;
 //Ramp Analysis
 exec('cost_approx.sci');
-exec('cost_f.sci');
+exec('cost.sci');
 exec('label.sci');
 
 data = fscanfMat(filename);
@@ -33,7 +33,7 @@ y = T;
 x0 = [.5 100]
 global('y','t');
 
-[f, xopt] = optim(cost_f,'b',[0.01 1],[10 200],x0,'ar' );
+[f, xopt] = optim(cost,x0);
 kp = xopt(1)/slope
 tau = xopt(2)
 

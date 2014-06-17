@@ -45,7 +45,7 @@ plot2d(t,y_prediction);
 plot2d(t,y);
 title = 'First Order model with tau = ';
 title = title+string(tau);
-title = title+', K='+string(kp);
+title = title+', Kp='+string(kp/delta_u);
 title = title+', Error='+string(lsterr)+'';
 label(title,4,'time (s)','Change in temperature (K)',4);
 kp = kp/delta_u

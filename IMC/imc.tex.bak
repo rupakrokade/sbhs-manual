@@ -1,0 +1,119 @@
+\chapter{Implementing Internal Model Controller for first order systems on a Single Board Heater System}
+This experiment aims to implement an Internal Model Controller for first order systems on a single board heater system. The target group is anyone possessing basic knowledge of Control Engineering.
+\begin{figure}
+	\centering
+		\includegraphics[width=\linewidth]{IMC/imc_virtual_xcos.png}
+	\caption{Xcos interface for this experiment}
+	\label{Xcos_imc}
+\end{figure}
+Scilab is used with Xcos as an interface for sending and receiving data. This interface is shown in Fig.\ref{Xcos_imc}. Fan speed and Heater current are the two inputs to the system. For this experiment, the heater current is used as a control effort (or manipulated variable). The fan input could be thought of as an external disturbance.
+
+\section{IMC Design for Single Board Heater System}
+Internal Model Controller contains explicit model of plant as its part, hence it is name as Internal Model Controller \cite{kmm09}. 
+The closed loop system can be stabilized with the use of a stable open loop transfer function and a stable controller. The IMC mainly used for stable plants.
+\input{IMC/imcfb.tex}
+Let, the transfer function of the stable plant be denoted by $G_p (z)$ and it's model is denoted by $G(z)$,hence
+\begin{align}
+y(n) = G(z)u(n)+\xi(n) 
+\end{align}
+where; \\
+y(n) = plant output;\\
+      u(n) = plant input;\\
+      $\xi$(n) = noise.
+      
+Fig.\ref{imcfeedback} shows method to control stable plant by using internal model control.
+For noise rejection with y=0 we required $G_Q=G_p^{-1}$ and $G=G_p$ i.e. for stable $G_Q$ we required an approximate inverse of G. Also, for internal stability transfer function between any to points in the feedback loop must be stable.\cite{kmmdc09}
+\input{IMC/equistdimc.tex}
+\section{Step for designing IMC for stable plant}
+IMC design refers to obtaining a realizable $G_Q$ that is stable and approximately inverse of G. This can be achieved by inverting the delay free plant model so that $G_Q$ is realizable. For non-minimum phase part of the plant, reciprocal polynomial is used for stable controller. Negative real part of the plant should be replaced with the steady state equivalent of that part to avoid oscillatory nature of control effort. Low pass filter must be used to avoid the high frequency components featuring because of the model mismatch.
+We have model of SBHS ,which is given by,
+\begin{align}
+	G&=Z^{-1} \frac{0.01163}{1-0.9723Z^{-1}}
+\intertext{Inverting delay free plant, We get}
+\frac{A}{B}&=\frac{1-0.9723Z^{-1}}{0.01163}
+\intertext{Now, Comparing plant model with equation,}
+G&=Z^{{-1}}\frac{B^g B^- B^{nm+}}{A}\\
+B^g&=0.01163\\
+B^-&=1\\
+B^{nm+}&=1\\
+A&=1-0.9723Z^{-1}
+\intertext{For the stable system internal model controller is give by}
+G_Q&=\frac{A}{B^gB^-_s B_r^{nm+}}G_f\\
+G_Q&=\frac{1-0.9723Z^{-1}}{0.01163}\frac{1-\alpha}{1-\alpha Z^{-1}}
+\intertext{Now,}
+G_c&=\frac{G_Q}{1-GG_Q}\\
+\frac{u}{e}&=\frac{\frac{1-0.9723Z^{-1}}{0.01163}\frac{1-\alpha}{1-\alpha Z^{-1}}}{1-Z^{-1}\frac{0.01163}{1-0.9723Z^{-1}}\frac{1-0.9723Z^{-1}}{0.01163}\frac{1-\alpha}{1-\alpha Z^{-1}}}\\
+\intertext{After simplifying, We get}
+\frac{u}{e}&=\frac{1-\alpha}{0.01163}\frac{1-0.9723Z^{-1}}{1-Z^{-1}}\\
+\frac{u}{e}&=b\frac{1-0.9723Z^{-1}}{1-Z^{-1}}
+\intertext{Where,}\\
+b&=\frac{1-\alpha}{0.01163}
+\intertext{Hence,}
+u(n)&=u(n-1)+b[e(n)-0.9723e(n-1)]
+\end{align}
+For implementing above IMC controller,  please follow the steps illustrated in section 2.1.2 of this document with following changes:
+\begin{enumerate}
+
+\item In step 1, change the directory to the folder {\tt imc\_controller} instead of {\tt StepTest}.
+\item In step 5, execute the file {\tt imc.sci} instead of {\tt step\_test.sci}.
+\item In step 6, execute the file {\tt imc.xcos} instead of {\tt step\_test.xcos}.
+
+\end{enumerate}
+
+The output of Xcos is shown in fig.\ref{imc}.
+Figure shows three plots. First sub plot shows setpoint and output temperature profile. Second sub plot shows control effort and third sub plot shows error between setpoint and plant output.
+
+
+
+\section{Experimental Results}
+\begin{figure}
+	\centering
+		\includegraphics[width=\linewidth]{IMC/imc_092_resp.png}
+	\caption{Experimental Results with IMC for $\alpha=0.92$}
+	\label{imc}
+\end{figure}
+\begin{figure}
+	\centering
+		\includegraphics[width=\linewidth]{IMC/imc_085_resp.png}
+		\caption{Experimental Results with IMC for $\alpha=0.85$}
+	\label{fig:0.98}
+\end{figure}
+By comparing above two graph we can say that for $\alpha=0.92$ the response of the controller is sluggish. For $\alpha=0.85$ the controller starts responding quickly and no overshoots are seen in the temperature profile.
+
+
+\subsection{Implementing IMC controller on SBHS, virtually}
+For implementing above IMC controller virtually,  please follow the steps illustrated in section 3.5.3 of this document with following changes:
+\begin{enumerate}
+
+\item In step 1, change the directory to the folder {\tt imc\_controller} instead of {\tt StepTest}.
+\item In step 5, execute the file {\tt imc\_virtual.sce} instead of {\tt step\_test.sce}.
+\item In step 6, execute the file {\tt imc.xcos} instead of {\tt step\_test.xcos}.
+
+\end{enumerate}
+
+
+\section{Scilab Code}\label{imccodes}
+\begin{code}
+\ccaption{ser\_init.sce}{\ttfamily ser\_init.sce}
+\lstinputlisting{Scilab/local/imc_controller/ser_init.sce}
+\end{code}
+
+\begin{code}
+ \ccaption{imc.sci}{\ttfamily imc.sci}
+\lstinputlisting{Scilab/local/imc_controller/imc.sci}
+\end{code}
+
+
+\begin{code}
+ \ccaption{imc\_virtual.sce}{\ttfamily imc\_virtual.sce}
+\lstinputlisting{Scilab/virtual/imc_controller/imc_virtual.sce}
+\end{code}
+
+
+\begin{code}
+ \ccaption{imc\_virtual.sci}{\ttfamily imc\_virtual.sci}
+\lstinputlisting{Scilab/virtual/imc_controller/imc_virtual.sci}
+\end{code}
+
+
+%\bibliography{imc} 

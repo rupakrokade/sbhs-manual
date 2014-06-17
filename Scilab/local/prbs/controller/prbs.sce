@@ -8,7 +8,7 @@ getd "dc/scilab"
 //**********************
 sampling_time=1;   //In seconds. Fractions are allowed
 //**********************//
-exec ("prbstest.sci");
+exec ("prbstest-virtual.sci");
 exec ("twodof_para.sce");
 //exec ("sbhs_control.sci");
 
