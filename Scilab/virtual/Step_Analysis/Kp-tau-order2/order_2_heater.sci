@@ -17,7 +17,7 @@ format('v',6); ord = [T y_prediction]; x = [t t t];
 plot2d(t,y_prediction);
 title = 'Comparison of model with data (tau1='
 title = title+string(tau1)+', tau2='+string(tau2)
-title = title+', K='+string(kp/delta_u)
+title = title+', K='+string(kp)
 title = title+', error='+string(lsterr)+')'
 label(title,4,'time (s)','Change in temperature (K)',4);
 endfunction;

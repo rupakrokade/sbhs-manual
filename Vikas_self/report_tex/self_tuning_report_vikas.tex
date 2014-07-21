@@ -702,21 +702,22 @@ The necessary code is listed in the section \ref{convcode_virtual} and section \
 The step by step procedure for conducting an experiment virtually, remains same as explained in section \ref{vlabsexpt} with the follwing changes.
 \begin{enumerate}
 \item Change the scilab working directory to the experiment folder you want to use. For example {\bf virtual/Self\_tuning\_controller/SelfTuning\_Vikas\\/PIControllerFandisturbance}
+\item Use the getd command as ../../../common\_files/
+\item Execute the required .sce file. \\For example, {\tt pi\_bda\_tuned\_dist\_virtual.sce} if you want to run the {\tt PI Controller Fan disturbance} experiment.  
+
 \end{enumerate}
- The required .sce 
-file is {\tt pi\_bda\_tuned\_dist\_virtual.sce} if you want to run the {\tt PI Controller Fan disturbance} experiment.  
+ 
 
 
-
-\subsection{Serial Communication}
+\section{Scilab Codes}
 \begin{code}
   \ccaption{ser\_init.sce}{\ttfamily ser\_init.sce}
-\lstinputlisting{Vikas_self/ser_init.sce}
+\lstinputlisting{Scilab/local/Self_tuning_controller/SelfTuning_Vikas/PIControllersetpointchange/ser_init.sce}
 \end{code}
 
 
 \subsection{Conventional Controller, local}\label{convcode_local}
-\subsection{Fan Disturbance in PI Controller}
+\subsubsection{Fan Disturbance in PI Controller}
 \begin{code}
   \ccaption{pi\_bda\_dist.sci}{\ttfamily pi\_bda\_dist.sci}
 \lstinputlisting{Scilab/local/Self_tuning_controller/ConventionalTuning_Vikas/PIControllerFandisturbance/pi_bda_dist.sci}
@@ -833,9 +834,6 @@ file is {\tt pi\_bda\_tuned\_dist\_virtual.sce} if you want to run the {\tt PI C
   \ccaption{pid\_bda\_tuned.sci}{\ttfamily pid\_bda\_tuned.sci}
 \lstinputlisting{Scilab/virtual/Self_tuning_controller/SelfTuning_Vikas/PIDControllersetpointchange/pid_bda_tuned_virtual.sci}
 \end{code}
-
-\section{Proceedure to perform experiments}
-\subsection{}
 
 
 

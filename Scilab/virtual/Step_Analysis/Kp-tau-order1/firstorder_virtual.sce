@@ -1,5 +1,5 @@
 mode(0)
-filename = "23Apr2014_21_36_03.txt"
+filename = "2014Jun17_19_18_40.txt"
 
 clf
 exec('costf_1.sci');
