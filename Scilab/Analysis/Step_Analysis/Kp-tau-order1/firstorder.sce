@@ -1,6 +1,5 @@
 mode(0)
-funcprot(0)
-filename = "2014-9-27-18-23-31.txt";
+filename = "step-data.txt"
 
 clf
 exec('costf_1.sci');
@@ -14,8 +13,8 @@ temp = data(:, 4);
 
 len = length(heater);
 
-time2 = time - time(1);
-time2 = time2/1000;
+time1 = time - time(1);
+time2 = time1/1000;
 
 len = length(heater);
 heaters1 = [heater(1); heater(1:len-1)];
@@ -24,7 +23,7 @@ ind = find(del_heat>1);
 
 step_instant = ind($)-1;
 
-t = time(step_instant:len);
+t = time2(step_instant:len);
 t = t - t(1);
 H = heater(step_instant:len);
 F = fan(step_instant:len);
@@ -44,14 +43,10 @@ tau = xopt(2);
 y_prediction = kp * ( 1 - exp(-t/tau) );
 plot2d(t,y_prediction);
 plot2d(t,y);
-//label('Showing First Order Model and Experimental Results',4,'Time (s)','Change in temperature (K)',4);
-
-
 title = 'First Order model with tau = ';
 title = title+string(tau);
 title = title+', Kp='+string(kp/delta_u);
 title = title+', Error='+string(lsterr)+'';
 label(title,4,'time (s)','Change in temperature (K)',4);
-
-kp = kp/delta_u;
-tau;
+kp = kp/delta_u
+tau

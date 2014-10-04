@@ -11,14 +11,13 @@ y_prediction = kp * delta_u * (1 - ...
 (tau1*exp(-(t)/tau1)-tau2*exp(-(t)/tau2)) ...
 /(tau1-tau2));
 format('v',6); ord = [T y_prediction]; x = [t t t];
-//xbasc(); 
-//plot2d(x,ord), xgrid();
-plot2d(t,T);
-plot2d(t,y_prediction);
+//xbasc();
+ plot2d(t,T);
 
-title = 'Second Order model with tau1='
+plot2d(t,y_prediction);
+title = 'Comparison of model with data (tau1='
 title = title+string(tau1)+', tau2='+string(tau2)
 title = title+', K='+string(kp)
-title = title+', Error='+string(lsterr)+''
+title = title+', error='+string(lsterr)+')'
 label(title,4,'time (s)','Change in temperature (K)',4);
 endfunction;
