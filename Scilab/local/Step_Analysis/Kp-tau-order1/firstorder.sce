@@ -1,12 +1,12 @@
 mode(0)
 funcprot(0)
-filename = "2014-4-17-13-31-57.txt";
+filename = "2014-9-27-18-23-31.txt";
 
 clf
 exec('costf_1.sci');
 exec('label.sci');
 data = fscanfMat(filename);
-time = data(:, 1);
+time = data(:, 5);
 heater = int(data(:, 2));
 fan = int(data(:, 3));
 temp = data(:, 4);
@@ -15,7 +15,7 @@ temp = data(:, 4);
 len = length(heater);
 
 time2 = time - time(1);
-//time2 = time1/1000;
+time2 = time2/1000;
 
 len = length(heater);
 heaters1 = [heater(1); heater(1:len-1)];
