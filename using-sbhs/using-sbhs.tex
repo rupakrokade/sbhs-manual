@@ -121,6 +121,19 @@ FTDI COM port drivers are not required for connecting the SBHS to the PC. After 
 Note down this number and change the value of the variable {\tt port1} inside the {ser\_init.sce} file, refer Fig.\ref{exec}. 
 
  Except for these changes rest all of the steps mentioned in Section \ref{local-steps} can be followed.
+\section{Summary of procedure to perform a local experiment}\label{local-summary}
+This section sumarrizes and only lists the required commands/activities to be done in the given order to do a local experiment. It doesnot explain the expected results etc. The procedure is common for both windows as well as linux users. However, make sure you have reffered to the earlier sections of this chapter for clarity.
+
+\begin{enumerate}
+\item Step1: Change/ensure scilab working directory to {\tt Step\_test}. Command {\tt pwd} can be used to know the present working directory of scilab
+\item Step2: Load the functions available in {\tt common\_files} directory by executing the command {\tt getd<space>..\textbackslash common\_files\ }
+\item Step3: Load the serial communication toolbox by executing the command {\tt exec<space>..\textbackslash common\_files\textbackslash loader.sce}
+\item Step4: Ensure correct communication port number in the {\tt ser\_init.sce} file and execute it. Execution can be done using the command \\{\tt exec<space>ser\_init.sce}
+\item Step5: Load step test function by executing command\\ {\tt exec<space>step\_test.sci}
+\item Step6: Launch Xcos code for step test and execute it. This can be done using the command {\tt xcos<space>step\_test.xcos}
+\end{enumerate}
+
+Note that advance users can always make use to {\tt start.sce} file for quickly performing the experiments.
 
 \section{Scilab Code under common\_files}\label{commonfiles}
 \begin{code}

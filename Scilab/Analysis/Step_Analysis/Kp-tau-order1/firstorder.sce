@@ -1,5 +1,5 @@
 mode(0)
-filename = "step-data.txt"
+filename = "step-data-local.txt"
 
 clf
 exec('costf_1.sci');

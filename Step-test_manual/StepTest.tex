@@ -11,7 +11,7 @@ function using step response data. The target group is anyone who has basic know
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{Step-test_manual/plot}
+\includegraphics[width=\linewidth]{Step-test_manual/ste-test.png}
 \caption{Graph shows heater current, fan speed and output temperature}
 \label{fig:scope_st}
 \end{figure}
@@ -23,35 +23,34 @@ in Xcos. The plots of their amplitude versus number of collected samples are als
 The output temperature profile, as read by the sensor, is also plotted. The data acquired in the process is stored on the 
 local drive and is available to the user for further calculations.
 
-\section{Procedure to perform Step Test}
-The procedure to perform a step test is explained in section \ref{scilab_sbhs}.\\ In the 
-{\tt step\_test.xcos} file, open the heater block's parameters to apply a step change of 
-say 5 percent to the heater at operating point of 30 percent of heater after 200 seconds. The block 
-parameters of the step input block will have {\tt Step time = 200}, {\tt Initial value = 30} and {\tt Final value = 35}. 
+ In the {\tt step\_test.xcos} file, open the heater block's parameters to apply a step change of say 10 percent to the heater at operating point of 30 percent of heater after 250 seconds. The block parameters of the step input block will have {\tt Step time = 250}, {\tt Initial value = 30} and {\tt Final value = 40}. 
 Keep the fan input constant at 50 percent. Start the experiment and let it continue until you see the temperature 
 reach the steady state. 
 
 \begin{table}
 \begin{verbatim}
- 0.100E+00  0.300E+02  0.50E+03  0.195E+02
- 0.200E+00  0.300E+02  0.50E+03  0.195E+02
+ 1.0    30.0    50.0    29.3   1412400132192.0
+ 2.0    30.0    50.0    29.5   1412400133044.0
 .
 .
- 0.700E+03  0.350E+02  0.50E+03  0.318E+02
- 0.800E+03  0.350E+02  0.50E+03  0.318E+02
+820.0    40.0     50.0    37.0   1412400950197.0
+821.0    40.0     50.0    37.2   1412400951202.0
 \end{verbatim}
-\caption{Step data obtained after performing the Step Test}
+\caption{Step data obtained after performing local Step Test}
 \label{stepdata}
 \end{table}
 
-The step test data file is saved in {\tt Step\_test} folder. The name of the file will be the date and time at which the 
-experiment was conducted. Referring to the data file thus obtained as shown in table \ref{stepdata}, the first column in this 
-table denotes samples. The second column in this table denotes heater in percentage. It starts at 30 and increases with a step size 
-of 5 units. The third column denotes the fan in percentage. It has been held constant at 50 percent. The fourth column refers to the 
-value of temperature.
+The step test data file will be saved in {\tt Step\_test} folder. The name of the file will be the date and time at which the experiment was conducted. A sample data file is provided in the same folder. The sample data file is named as {\tt step-data-local.txt} and {\tt step-data-virtual.txt}. Refer to the one depending on wheather you are performing a local or a virtual experiment. Referring to the data file thus obtained as shown in table \ref{stepdata}, the first column in this table denotes samples. The second column in this table denotes heater in percentage. It starts at 30 and increases with a step size of 10 units. The third column denotes the fan in percentage. It has been held constant at 50 percent. The fourth column refers to the value of temperature. The fifth column denotes time stamp. The virtual data file will have total four time stamp columns apart from first 3 columns. These four time stamp columns are client departure, server arrival, server departure and client arrival. These can be used for advanced control algorithms. These additional time stamps exist in virtual mode because of the presense of network delay.
+\section{Conducting Step Test on SBHS locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is exactly the same for this section.
+\section{Conducting Step Test on SBHS, virtually}
+The steps for conducting a step test experiment virtually is exactly same as explained in section \ref{vlabsexpt}.
+
+\section{Identifying First Order and Second Order Transfer Functions}
+In this section we shall determine the first and second order transer function model using the data obtained after performing step test experiment. Please note that this procedure is common for data obtained using both local and virtual experiments.
 
 
-\section{Determination of First Order Transfer Function}
+\subsection{Determination of First Order Transfer Function}
 Identification of the transfer function of a system is important as it helps us to 
 represent the physical system mathematically. Once the transfer function is obtained, one can acquire 
 the response of the system for various inputs without actually applying them to the system.
@@ -93,29 +92,31 @@ y(s)&= K[1 - e^{\frac{-t}\tau}]\Delta u
 \end{align}
 \subsection{Procedure}
 \begin{enumerate}
+\item Download the Analysis folder from the sbhs website. It will be available under {\tt downloads} section. The download will be in zip format. Extrat the downloaded zip file. You will get a folder {\tt Analysis}. 
+\item Open the {\tt Analysis} folder and then locate and open the folder {\tt Step\_Analysis}.
+\item Open the {\tt Kp-tau-order1} folder.
  \item Copy the step test data file to the folder {\tt Kp-tau-order1}.
  \item Change the Scilab working directory to {\tt Kp-tau-order1} folder under {\tt Step\_Analysis} folder.
- \item Open the file {\ttfamily firstorder.sce} and place the name of the data file 
-with extention in the filename field. 
+ \item Open the file {\ttfamily firstorder.sce} in scilab editor and enter the name of the data file (with extention) in the {\tt filename} field. 
 \item Save and run this code and obtain the plot as shown in figure \ref{firstorder_output}. 
 \end{enumerate}
 This code uses the routines {\ttfamily label.sci} and {\ttfamily costf\_1.sci}
 
 \begin{figure} 
 \centering
-\includegraphics[width=\linewidth]{Step-test_manual/step_first_order.jpg}
+\includegraphics[width=\linewidth]{Step-test_manual/local-1-order.png}
 \caption{Output of the Scilab code \ttfamily firstorder.sce}
 \label{firstorder_output}
 \end{figure} \label{firstorderplot}
 
 \begin{align}
 \intertext{The plot thus obtained is reasonably good. See the Scilab plot to get the values of $\tau$ and $K$. 
-The figure \ref{firstorder_output} shows a screen shot of the same. We obtain $\tau$ = 45.739234, K = 1.7326851. The transfer function 
+The figure \ref{firstorder_output} shows a screen shot of the same. We obtain $\tau$ = 58.64, K = 0.23. The transfer function 
 obtained here is at the operating point of 30 percentage of heat. If the experiment is repeated at a different operating point, 
 the transfer function obtained will be different. The gain will correspondingly be more at a higher operating point. 
 This means that the plant is faster at higher temperature. Thus the transfer function of the plant varies with the operating 
 point. Let the transfer function we obtain in this experiment be denoted as $G_s$. We obtain}
-G_s(s) =  \frac{1.7326851}{45.739234s+1} \label{12}
+G_s(s) =  \frac{0.23}{58.64s+1} \label{12}
 \end{align}
 % \begin{figure}
 % \centering
@@ -158,21 +159,22 @@ The only difference is that we now have to determine three parameters. Scilab co
 the gain and two time constants. 
 \subsection {Procedure}
 \begin{enumerate}
- \item Change the Scilab working diectory to the folder {\tt Kp-tau-order2}.
- \item Copy the step test data file to this folder. 
- \item Run the code {\tt secondorder.sce} with the appropriate data file name. 
+\item Download the Analysis folder from the sbhs website. It will be available under {\tt downloads} section. The download will be in zip format. Extrat the downloaded zip file. You will get a folder {\tt Analysis}. 
+\item Open the {\tt Analysis} folder and then locate and open the folder {\tt Step\_Analysis}.
+\item Open the {\tt Kp-tau-order2} folder.
+ \item Copy the step test data file to the folder {\tt Kp-tau-order2}.
+ \item Change the Scilab working directory to {\tt Kp-tau-order2} folder under {\tt Step\_Analysis} folder.
+ \item Open the file {\ttfamily secondorder.sce} in scilab editor and enter the name of the data file (with extention) in the {\tt filename} field. 
+\item Save and run this code and obtain the plot as shown in figure \ref{sorder}. 
 \end{enumerate}
-The plot shown in figure \ref{sorder} is obtained.  It corresponds to the following transfer function with the 
-parameters written at the top of the plot.
-
 \begin{align}
-G_{s}(s) & = \frac {0.420}{(34.4s+1)(1s+1)}
+G_{s}(s) & = \frac {0.235}{(57.39s+1)(1s+1)}
 \label{eq:step-1400}
 \end{align}
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{Step-test_manual/Sorder_fit.png}
+\includegraphics[width=\linewidth]{Step-test_manual/local-2-order.png}
 \caption{Output of the Scilab code \ttfamily secondorder.sce}
 \label{sorder}
 \end{figure}
@@ -182,55 +184,45 @@ order transfer function.
 
 
 \section{Discussion}
-We summarize our findings now. For the first order analysis, the gain is 1.7326851 and the 
-time constant $\tau$ is 45.739234 seconds. For the second order analysis, the initial inflexion is 
-well captured with the two time constants $\tau_1$=34.4, $\tau_2$= 1 and gain = 0.420. Negative steps 
+We summarize our findings now. For the first order analysis, the gain is 0.23 and the 
+time constant $\tau$ is 58.64 seconds. For the second order analysis, the initial inflexion is 
+well captured with the two time constants $\tau_1$=57.39, $\tau_2$= 1 and gain = 0.235. Negative steps 
 can also be introduced to make the experiment more informative. One need not keep a particular 
 input constant. By varying both the inputs, one can imagine it to be like a step varying disturbance signal.
  
-\section{Conducting Step Test on SBHS, virtually}
-The step by step procedure for conducting an experiment virtually is explained in 
-section \ref{vlabsexpt}. 
-\begin{enumerate}
- \item Go to {\tt virtual} folder and then {\tt StepTest} directory.
- \item Perform the experiment using {\tt stepc.sce}
- \item Perform first order analysis using {\tt firstorder\_virtual.sce}
- \item Perform second order analysis using {\tt secondorder\_virtual.sce}
-\end{enumerate}
 
-The necessary codes are listed in the section \ref{stepcodes}.
 
 
 \section{Scilab Code}\label{stepcodes}
 \begin{code}
 \ccaption{label.sci}{\ttfamily label.sci}
-\lstinputlisting{Scilab/local/Step_Analysis/Kp-tau-order1/label.sci}
+\lstinputlisting{Scilab/Analysis/Step_Analysis/Kp-tau-order1/label.sci}
 \end{code}
 
 \begin{code}
 \ccaption{costf\_1.sci}{\ttfamily costf\_1.sci}
-\lstinputlisting{Scilab/local/Step_Analysis/Kp-tau-order1/costf_1.sci}
+\lstinputlisting{Scilab/Analysis/Step_Analysis/Kp-tau-order1/costf_1.sci}
 \end{code}
 
 
 \begin{code}
 \ccaption{firstorder.sce}{\ttfamily firstorder.sce}
-\lstinputlisting{Scilab/local/Step_Analysis/Kp-tau-order1/firstorder.sce}
+\lstinputlisting{Scilab/Analysis/Step_Analysis/Kp-tau-order1/firstorder.sce}
 \end{code}
 
 \begin{code}
 \ccaption{costf\_2.sci}{\ttfamily costf\_2.sci}
-\lstinputlisting{Scilab/local/Step_Analysis/Kp-tau-order2/costf_2.sci}
+\lstinputlisting{Scilab/Analysis/Step_Analysis/Kp-tau-order2/costf_2.sci}
 \end{code}
 
 \begin{code}
 \ccaption{order\_2\_heater.sci}{\ttfamily order\_2\_heater.sci}
-\lstinputlisting{Scilab/local/Step_Analysis/Kp-tau-order2/order_2_heater.sci}
+\lstinputlisting{Scilab/Analysis/Step_Analysis/Kp-tau-order2/order_2_heater.sci}
 \end{code}
 
 \begin{code}
 \ccaption{secondorder.sce}{\ttfamily secondorder.sce}
-\lstinputlisting{Scilab/local/Step_Analysis/Kp-tau-order2/secondorder.sce}
+\lstinputlisting{Scilab/Analysis/Step_Analysis/Kp-tau-order2/secondorder.sce}
 \end{code}
 
 \begin{code}
@@ -253,15 +245,7 @@ The necessary codes are listed in the section \ref{stepcodes}.
 \lstinputlisting{Scilab/virtual/StepTest/steptest.sci}
 \end{code}
 
-\begin{code}
-\ccaption{firstorder\_virtual.sce}{\ttfamily firstorder\_virtual.sce}
-\lstinputlisting{Scilab/virtual/Step_Analysis/Kp-tau-order1/firstorder_virtual.sce}
-\end{code}
 
-\begin{code}
-\ccaption{secondorder\_virtual.sce}{\ttfamily secondorder\_virtual.sce}
-\lstinputlisting{Scilab/virtual/Step_Analysis/Kp-tau-order2/secondorder_virtual.sce}
-\end{code}
 
 
 
