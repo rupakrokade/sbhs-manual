@@ -41,6 +41,23 @@ e(t) &= \tau
 \end{align}
 This means that the error in following the ramp input is equal to $\tau$ for 
 large value of $t$ \cite{ogt05}. Hence, smaller the time constant $\tau$, smaller the steady state error.
+
+\section{Conducting Step Test on SBHS locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
+
+\begin{enumerate}
+\item Step1: The working directory is {\tt  Ramp\_test}
+\item Step2: Same
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load ramp test function by executing command\\ {\tt exec<space>ramp\_test.sci}
+\item Step6: Load Xcos code for ramp test using the command\\ {\tt exec<space>ramp\_test.xcos}
+\item Step7: Same
+\end{enumerate}
+
+\section{Conducting Step Test on SBHS, virtually}
+The steps for conducting a step test experiment virtually is exactly same as explained in section \ref{vlabsexpt}.
+
 \section{Procedure to perform Ramp Test}
 Follow the procedure explained in section \ref{scilab_sbhs}.
 \begin{enumerate}
@@ -108,7 +125,9 @@ The step by step procedure for conducting an experiment virtually is explained i
 \end{enumerate}
 
 The necessary codes are listed in the section \ref{rampcodes}.
+\end{document}
 
+###################################
 \section{Scilab Code}\label{rampcodes}
 \begin{code}
 \ccaption{ramp\_test.sci}{\ttfamily ramp\_test.sci}
