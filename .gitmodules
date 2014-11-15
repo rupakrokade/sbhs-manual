@@ -1,3 +1,9 @@
 [submodule "Scilab/virtual"]
 	path = Scilab/virtual
 	url = git@bitbucket.org:SBHS-virtual-labs/scilab_codes.git
+[submodule "Scilab/local"]
+	path = Scilab/local
+	url = git@bitbucket.org:SBHS-virtual-labs/scilab_local_codes.git
+[submodule "Scilab/Analysis"]
+	path = Scilab/Analysis
+	url = git@bitbucket.org:SBHS-virtual-labs/scilab_analysis_codes.git

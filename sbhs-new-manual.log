@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  18 OCT 2014 17:36
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  15 NOV 2014 16:43
 entering extended mode
  %&-line parsing enabled.
 **sbhs-new-manual.tex
@@ -1556,8 +1556,14 @@ File: vlabs/step-xcos.png Graphic file (type png)
 <vlabs/step-test-output.png, id=191, 1311.90125pt x 639.38875pt>
 File: vlabs/step-test-output.png Graphic file (type png)
 
-<use vlabs/step-test-output.png>) (./Step-test_manual/StepTest.tex [40 <./vlabs
-/step-xcos.png>] [41 <./vlabs/step-test-output.png (PNG copy)>]
+<use vlabs/step-test-output.png> [40 <./vlabs/step-xcos.png>]
+Overfull \hbox (21.51447pt too wide) in paragraph at lines 216--217
+[]\OT1/txr/m/n/12 Switch to the scilab con-sole and ex-e-cute the com-mand \OT1
+/txtt/m/n/12 getd ../common[]files 
+ []
+
+) (./Step-test_manual/StepTest.tex [41 <./vlabs/step-test-output.png (PNG copy)
+>]
 Chapter 4.
 <Step-test_manual/step_xcos.jpg, id=199, 526.96875pt x 402.50375pt>
 File: Step-test_manual/step_xcos.jpg Graphic file (type jpg)
@@ -1658,10 +1664,10 @@ LaTeX Warning: There were undefined references.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 18150 strings out of 493848
- 321932 string characters out of 1152823
- 509961 words of memory out of 3000000
- 20893 multiletter control sequences out of 15000+50000
+ 18153 strings out of 493848
+ 321968 string characters out of 1152823
+ 509998 words of memory out of 3000000
+ 20896 multiletter control sequences out of 15000+50000
  50793 words of font info for 135 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  49i,11n,56p,1507b,2809s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1675,7 +1681,7 @@ lic/txfonts/txsy.pfb></usr/share/texmf-texlive/fonts/type1/public/txfonts/txtt.
 pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texm
 f-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on sbhs-new-manual.pdf (65 pages, 2069477 bytes).
+Output written on sbhs-new-manual.pdf (65 pages, 2070852 bytes).
 PDF statistics:
  318 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

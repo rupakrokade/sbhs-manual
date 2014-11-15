@@ -128,9 +128,9 @@ The steps to be performed before and during each experiment are explained next.
 
 This section explains the procedure to use Single Board Heater System remotely using Scilab i.e. when you are accessing SBHS remotly using your computer over the virtual labs platform. An open loop experiment, step test is used for demonstrating this procedure. The process however remains the same for performing any other experiment explained in this section, unless specified otherwise. Let us first see the required files to be downloaded and installations to be done. Scilab is required to be installed on your computer. Please refer to Section \ref{driver} and Section \ref{linux-sbhs} for the procedure to install scilab on Windows and Linux system, respectively.
 
-SBHS scilab code for your OS,  under the title {\tt SBHS Virtual Code}, must be downloaded from {\tt http://sbhs.os-hardware.in/downloads}. The code downloaded will be in zip format. After the zip is unpacked, you will see the folder {\tt scilab\_codes\_windows} or {\tt scilab\_codes\_linux\_32} or {scilab\_codes\_linux\_64} depending on which one you download. All these downloads will have scilab experiment folders such as {\tt Step\_test}, {\tt Ramp\_Test}, {\tt pid\_controller} etc. We will be using the {Step\_test} folder. Do not alter the directory structure. If you want to copy or move an experiment outside the directory then make sure you also copy the {\tt common\_files} folder. The {\tt common\_files} folder must always be one directory outside the experiment folder. Now given that you have scilab installed and working and the required scilab code downloaded, let us see the step-by-step procedure to do a remote experiment.
+SBHS scilab code for your OS,  under the section {\tt SBHS Virtual Code}, must be downloaded from {\tt http://sbhs.os-hardware.in/downloads}. The code downloaded will be in zip format. After the zip is unpacked, you will see scilab experiment folders such as {\tt Step\_test}, {\tt Ramp\_Test}, {\tt pid\_controller} etc. We will be using the {Step\_test} folder. Do not alter the directory structure. If you want to copy or move an experiment outside the directory then make sure you also copy the {\tt common\_files} folder. The {\tt common\_files} folder must always be one directory outside the experiment folder. Now given that you have scilab installed and working and the required scilab code downloaded, let us see the step-by-step procedure to do a remote experiment.
 
-\subsection{Registration, Login and Slot Booking}
+\subsection{Registration, Login and Slot Booking}\label{regAndslot}
  Go to the website {\tt sbhs.os-hardware.in} and click on the {\tt Virtual labs} link available on the left hand side. The home page of Virtual labs is illustrated in Fig \ref{vlabs-home}. If you are a first time user, click on the link {\tt Login/Register}. Fill out the registration form and submit it. If the registration form is submitted successfully, you will receive an activation link on your registered Email id. Use this link to complete the registration process. If you skip this step you will not be able to login. Registration is a one time process and need not be repeated more than once. After completing registration login with your username and password. You should now get the options to Book Slot, Delete Slot etc. 
 
 View/Delete slot option allows you to delete your booked slots. This option however will work only for slots booked for the future. You cannot delete a past or the current slot. Download log files option gives you the facility to download your experiment log files. Clicking on it will give you a list of all of the experiments you had performed. Show video option can be used to see the live video feed of your SBHS. Web cameras are mounted on every SBHS. You can see the display of your SBHS as shown in Fig. \ref{web-cam}.
@@ -151,7 +151,7 @@ Clicking on the Book slot option will allow you to book an experiment time slot.
 \label{book-slot}
 \end{figure}
 
-\subsection{Configuring proxy settings and executing python based client}
+\subsection{Configuring proxy settings and executing python based client}\label{proxy}
 After booking a slot, the web activity is over. You may close the web browser unless you need it open to see live video feed of your SBHS. The next step is to establish the communication link between the server and your computer. A python based application is created which handles the network communication. 
 
 Let us first see how to do the proxy  settings if you are behind a proxy network. Open the folder {\tt common\_files}. Open the file {\tt config}. This files contains various arguments whose values must be eneterd to configure proxy. 
@@ -205,4 +205,17 @@ The experiment sampling time can be set inside the  {\tt stepc.sce} file. You ma
 \label{step-plot}
 \end{figure}
 
+\section{Summary}\label{virtual-summary}
 
+This section summarizes the process to perform an experiment on SBHS using virtual lab interface. This section assumes that the user has already created an account and booked a slot as explained in section \ref{regAndslot}. It also assumes that the proxy settings are already done as explained in section \ref{proxy}. The user should follow these steps within the booked slot time.
+\begin{itemize}
+\item Step1: Open the StepTest experiment directory
+\item Step2: Double-click on the file {\tt run}. Expect the SBHS cient application to open.
+\item Step3: Enter the username and password inside the SBHS cient application and press {\tt login} button. Expect the message {\tt Ready to execute scilab code}
+\item Step4: Switch to the StepTest experiment directory and double-click on the file {\tt stepc.sce}. This will launch scilab and also open the file {\tt stepc.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to StepTest and then open the {\tt stepc.sce} file in the scilab editor.
+\item Switch to the scilab console and execute the command {\tt getd ..\slash common\_files}
+\item Step5: Execute the file {\tt stepc.sce}. Expect the step test xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step6: Execute the step test xcos daiagram. You may change the input parameters, if required, before executing. Expect a plot window to open automatically showing three graphs.
+\item Step7: Stop the Xcos simulation after the experiment is completed properly. 
+
+\end{itemize}

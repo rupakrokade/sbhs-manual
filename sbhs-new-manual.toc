@@ -25,6 +25,7 @@
 \contentsline {subsection}{\numberline {3.5.1}Registration, Login and Slot Booking}{35}
 \contentsline {subsection}{\numberline {3.5.2}Configuring proxy settings and executing python based client}{36}
 \contentsline {subsection}{\numberline {3.5.3}Executing scilab code}{37}
+\contentsline {section}{\numberline {3.6}Summary}{40}
 \contentsline {chapter}{\numberline {4}Identification of Transfer Function of a Single Board Heater System through Step Response Experiment}{42}
 \contentsline {section}{\numberline {4.1}Conducting Step Test on SBHS locally}{44}
 \contentsline {section}{\numberline {4.2}Conducting Step Test on SBHS, virtually}{45}
