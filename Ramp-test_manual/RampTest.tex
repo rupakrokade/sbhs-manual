@@ -1,7 +1,6 @@
 \chapter{Identification of Transfer Function of a Single Board Heater System through Ramp Response Experiment}\label{chap2}
-The aim of this experiment is to perform ramp test on the Single Board Heater System and to identify the 
-system transfer function using ramp response data. The target group is anyone who has basic knowledge of control engineering.
-\section{About this experiment}
+The aim of this experiment is to perform ramp test on a Single Board Heater System and to identify system transfer 
+function using ramp response data. The target group is anyone who has basic knowledge of control engineering.
 
 \begin{figure}
 \centering
@@ -9,14 +8,58 @@ system transfer function using ramp response data. The target group is anyone wh
 \caption{Xcos for ramp test experiment}
 \label{Xcos_rt}
 \end{figure} 
-We have used Scilab 5.3.3 and Xcos for sending and receiving data. This interface is shown in figure \ref{Xcos_rt}. 
-Heater current and fan speed are the two inputs to the SBHS system. They are given in percentage of maximum output. 
-These inputs can be varied through the Xcos interface by setting the properties of the input blocks in Xcos. 
-The data acquired in the process is stored in the local drive and is available to the user for further analysis.
-\section{Theory}
-Identification of the transfer function of a system is important as it helps us model the physical system 
-mathematically. Once the transfer function is obtained, one can find out the response of the system to various inputs
-without actually applying them to the system.\\
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Ramp-test_manual/ramp_plot.jpg}
+\caption{Screen shot of ramp test experiment}
+\end{figure}
+
+We have used Scilab and Xcos as an interface for sending and receiving data. 
+Xcos diagram is shown in figure \ref{Xcos_rt}. Heater current and fan speed are the two inputs for this system. 
+They are given in percentage of maximum. These inputs can be varied by setting the properties of the input block's properties 
+in Xcos. The plots of their amplitude versus number of collected samples are also available on the scope windows. 
+The output temperature profile, as read by the sensor, is also plotted. The data acquired in the process is stored on the 
+local drive and is available to the user for further calculations.
+
+ In the {\tt ramp\_test.xcos} file, open the heater block's parameters to give a ramp input to the system with some value for slope. For this experiment, we have chosen slope = $0.1$. Double click on the ramp input block labled as {\tt Heater input}. Change the following values in the respective fields: slope = 0.1, start time = 200, initial output = 20. Keep the fan constant at 100.
+
+
+\begin{table}
+\begin{verbatim}
+Add Ramp Local Data here
+.
+820.0    40.0     50.0    37.0   1412400950197.0
+821.0    40.0     50.0    37.2   1412400951202.0
+\end{verbatim}
+\caption{Ramp data obtained after performing local Step Test}
+\label{rampdata}
+\end{table}
+
+The ramp test data file will be saved in {\tt Ramp\_Test} folder. The name of the file will be the date and time at which the experiment was conducted. A sample data file is provided in the same folder. The sample data file is named as {\tt ramp-data-local.txt} and {\tt ramp-data-virtual.txt}. Refer to the one depending on wheather you are performing a local or a virtual experiment. Referring to the data file thus obtained as shown in table \ref{rampdata}, the first column in this table denotes samples. The second column in this table denotes heater in percentage. It starts at 30 and increases with a step size of 10 units. The third column denotes the fan in percentage. It has been held constant at 50 percent. The fourth column refers to the value of temperature. The fifth column denotes time stamp. The virtual data file will have four time stamp columns apart from first 3 columns. These four time stamp columns are client departure, server arrival, server departure and client arrival. These can be used for advanced control algorithms. These additional time stamps exist in virtual mode because of the presense of network delay.
+
+\section{Conducting Ramp Test on SBHS locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
+
+\begin{enumerate}
+\item Step1: The working directory is {\tt  Ramp\_test}
+\item Step2: Same
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load ramp test function by executing command\\ {\tt exec<space>ramp\_test.sci}
+\item Step6: Load Xcos code for ramp test using the command\\ {\tt exec<space>ramp\_test.xcos}
+\item Step7: Same
+\end{enumerate}
+\section{Conducting Ramp Test on SBHS, virtually}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
+
+\section{Identifying First Order Transfer Function}
+In this section we shall determine the first order transer function model using the data obtained after performing step test experiment. Please note that this procedure is common for data obtained using both local and virtual experiments.
+
+Identification of the transfer function of a system is important as it helps us to 
+represent the physical system mathematically. Once the transfer function is obtained, one can acquire 
+the response of the system for various inputs without actually applying them to the system.
 Consider the standard first order transfer function given below
 \begin{align}
 G(s) &= \frac{ C(s)}{ R(s)}\\ 
@@ -42,92 +85,44 @@ e(t) &= \tau
 This means that the error in following the ramp input is equal to $\tau$ for 
 large value of $t$ \cite{ogt05}. Hence, smaller the time constant $\tau$, smaller the steady state error.
 
-\section{Conducting Step Test on SBHS locally}
-The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
 
+\subsection{Procedure}
 \begin{enumerate}
-\item Step1: The working directory is {\tt  Ramp\_test}
-\item Step2: Same
-\item Step3: Same
-\item Step4: Same
-\item Step5: Load ramp test function by executing command\\ {\tt exec<space>ramp\_test.sci}
-\item Step6: Load Xcos code for ramp test using the command\\ {\tt exec<space>ramp\_test.xcos}
-\item Step7: Same
+\item Download the Analysis folder from the sbhs website. It will be available under {\tt downloads} section. The download will be in zip format. Extrat the downloaded zip file. You will get a folder {\tt Analysis}. 
+\item Open the {\tt Analysis} folder and then locate and open the folder {\tt Ramp\_Analysis}.
+ \item Copy the ramp test data file to this folder.
+ \item Change the Scilab working directory to  {\tt Ramp\_Analysis}
+ \item Open the file {\ttfamily ramp\_virtual.sce} in scilab editor and enter the name of the data file (with extention) in the {\tt filename} field. 
+\item Save and run this code and obtain the plot as shown in figure \ref{firstorder_ramp}. 
 \end{enumerate}
+This code uses the routines {\ttfamily label.sci} and {\ttfamily costf\_1.sci}
 
-\section{Conducting Step Test on SBHS, virtually}
-The steps for conducting a step test experiment virtually is exactly same as explained in section \ref{vlabsexpt}.
-
-\section{Procedure to perform Ramp Test}
-Follow the procedure explained in section \ref{scilab_sbhs}.
-\begin{enumerate}
- \item Change the Scilab working directory to {\tt Ramp\_Test} folder.
- \item Execute the code {\tt ramp\_test.sci} instead of {\tt step\_test.sci}. 
- \item Open the Xcos file {\tt ramp\_test.xcos}. Give a ramp input to the system with some value for slope. For this 
- experiment, we have chosen slope = $0.1$.
- \item Double click on the ramp input block labled as ``Heater input''. Change the following values in the respective 
- fields- slope = 0.1, start time = 200, initial output = 20.
-\item Keep the fan constant at 100.
-\end{enumerate}
-% Note that the value of heater current will not exceed 40 PWM units due to the use of limit blocks. The Xcos code, on execution,
-% may warn you with a message saying ``No continuous-time states. Thresholds are ignored''. Ignore the message by clicking on OK 
-% button.
-\begin{figure}
+\begin{figure} 
 \centering
-\includegraphics[width=\linewidth]{Ramp-test_manual/ramp_plot.jpg}
-\caption{Screen shot of ramp test experiment}
-\end{figure}
+\includegraphics[width=\linewidth]{Ramp-test_manual/ramp_analysis.jpg}
+\caption{Output of the Scilab code{\ttfamily ramp\_virtual.sce}}
+\label{firstorder_ramp}
+\end{figure} \label{firstorderplot}
 
-\begin{table}
-\begin{verbatim}
- 0.000E+00  0.100E+02  0.100E+03  0.216E+02
- 0.100E+00  0.100E+02  0.100E+03  0.216E+02
-.
-.
- 0.251E+03  0.300E+02  0.100E+03  0.291E+02
- 0.251E+03  0.300E+02  0.100E+03  0.291E+02
-\end{verbatim}
-\caption{Ramp data obtained after performing the ramp test}
-\label{Rampdata}
-\end{table}
-The first column of table \ref{Rampdata} denotes samples. 
-The second column denotes heater in percentage. The third column denotes the fan. 
-It has been held constant at 100 units. The last column denotes the plate temperature.
-
-\section{Ramp Test Analysis}
-After completing the ramp test experiment, let us do the analysis. 
-\begin{enumerate}
- \item Change the directory to {\tt Ramp\_Analysis}.
- \item Execute the file {\tt ramp.sce}. 
-\end{enumerate}
-On executing this file, you get the values of Kp, tau and Kp approx and tau approx on the Scilab plot. 
-You will also get a plot of the ramp response calculated using the equation \ref{ct} for Kp and tau values.
-\begin{figure}[h]
-	\centering
-		\includegraphics[width=\linewidth]{Ramp-test_manual/ramp_analysis.jpg}
-	\caption{Ramp response for Kp and tau}
-	\label{fig:fit_curve_ramp}
-\end{figure}
+\begin{align}
+\intertext{The plot thus obtained is reasonably good. See the Scilab plot to get the values of $\tau$ and $K$. 
+The figure \ref{firstorder_ramp} shows a screen shot of the same. We obtain $\tau$ = enterValue, K = enterValue. The transfer function 
+obtained here is at the operating point of enterValue percentage of heat. If the experiment is repeated at a different operating point, the transfer function obtained will be different. The gain will correspondingly be more at a higher operating point. This means that the plant is faster at higher temperature. Thus the transfer function of the plant varies with the operating 
+point. Let the transfer function we obtain in this experiment be denoted as $G_s$. CHECK THE VALUES FIRST. We obtain}
+G_s(s) =  \frac{0.23}{58.64s+1} \label{12}
+\end{align}
 
 \section{Discussion}
 We summarize our findings now. The experiment has been performed by varying the heater current and keeping the fan 
 speed constant. However, the user is encouraged to experiment using different combinations of fan speed 
 and heater current. Negative ramp can also be used to make the experiment more informative. 
 It is not necessary to keep a particular input constant. For example, you can try giving a step input to the 
-disturbance signal, i.e., the fan input. The system can also be treated as a second order system. This consideration 
-is necessary as it increases the accuracy of the acquired transfer function \cite{kmm09}.
-\section{Conducting ramp test on SBHS, virtually}
-The step by step procedure for conducting an experiment virtually is explained in section \ref{vlabsexpt}. 
-\begin{enumerate}
- \item Go to {\tt virtual} folder and then {\tt RampTest} directory
- \item Execute {\tt ramptest.sce}
- \item Perform ramp test analysis by executing {\tt ramp\_virtual.sce} under {\tt Ramp\_Analysis} directory
-\end{enumerate}
+disturbance signal, i.e., the fan input. The system can also be treated as a second order system. This consideration is necessary as it increases the accuracy of the acquired transfer function \cite{kmm09}.
 
 The necessary codes are listed in the section \ref{rampcodes}.
-\end{document}
 
-###################################
+
+%###################################
 \section{Scilab Code}\label{rampcodes}
 \begin{code}
 \ccaption{ramp\_test.sci}{\ttfamily ramp\_test.sci}
@@ -136,17 +131,17 @@ The necessary codes are listed in the section \ref{rampcodes}.
 
 \begin{code}
 \ccaption{label.sci}{\ttfamily label.sci}
-\lstinputlisting{Scilab/local/Ramp_Analysis/label.sci}
+\lstinputlisting{Scilab/Analysis/Ramp_Analysis/label.sci}
 \end{code}
 
 \begin{code}
 \ccaption{cost.sci}{\ttfamily cost.sci}
-\lstinputlisting{Scilab/local/Ramp_Analysis/cost.sci}
+\lstinputlisting{Scilab/Analysis/Ramp_Analysis/cost.sci}
 \end{code}
 
 \begin{code}
 \ccaption{cost\_approx.sci}{\ttfamily cost\_approx.sci}
-\lstinputlisting{Scilab/local/Ramp_Analysis/cost_approx.sci}
+\lstinputlisting{Scilab/Analysis/Ramp_Analysis/cost_approx.sci}
 \end{code}
 
 \begin{code}
@@ -161,7 +156,7 @@ The necessary codes are listed in the section \ref{rampcodes}.
 
 \begin{code}
 \ccaption{ramp\_virtual.sce}{\ttfamily ramp\_virtual.sce}
-\lstinputlisting{Scilab/virtual/Ramp_Analysis/ramp_virtual.sce}
+\lstinputlisting{Scilab/Analysis/Ramp_Analysis/ramp_virtual.sce}
 \end{code}
 
 
