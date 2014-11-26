@@ -11,7 +11,7 @@ function using ramp response data. The target group is anyone who has basic know
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{Ramp-test_manual/ramp_plot.jpg}
+\includegraphics[width=\linewidth]{Ramp-test_manual/ramp-test.png}
 \caption{Screen shot of ramp test experiment}
 \end{figure}
 
@@ -27,10 +27,11 @@ local drive and is available to the user for further calculations.
 
 \begin{table}
 \begin{verbatim}
-Add Ramp Local Data here
+1.0      30.0      50.0       28.1   1416462726532.0
+2.0       30.0        50.0         28.1   1416462727574.0
 .
-820.0    40.0     50.0    37.0   1412400950197.0
-821.0    40.0     50.0    37.2   1412400951202.0
+999.0         100.0       50.0        47.6   1416463723533.0
+1000.0        100.0      50.0       47.6   1416463724533.0
 \end{verbatim}
 \caption{Ramp data obtained after performing local Step Test}
 \label{rampdata}
@@ -52,6 +53,43 @@ The detailed procedure to perform a local experiment is explained in Chapter\ref
 \end{enumerate}
 \section{Conducting Ramp Test on SBHS, virtually}
 The detailed procedure to perform a local experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
+\begin{enumerate}
+\item Step1: The working directory is {\tt  RampTest}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the RampTest experiment directory and double-click on the file {\tt ramptest.sce}. This will launch scilab and also open the file {\tt ramptest.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt  RampTest} and then open the {\tt  RampTest} file in the scilab editor.
+\item Step5: Same
+\item Step6: Execute the file {\tt ramptest.sce}.  Expect the ramp test xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the ramptest xcos diagram.
+\item Step8: Same
+\end{enumerate}
+
+
+ The virtual experiment response is shown in figure \ref{ramp-virtual}. The corresponding data file is shown in table \ref{rampdata}. The time stamps shown are cut short for better viewing. This data file can be found in {\tt RampTest} folder for virtual experiments. The name of this file is {\tt step-data-virtual.txt}.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Ramp-test_manual/ramp-virtual-plot.png}
+\caption{Ramp test Virtual experiment response}
+\label{ramp-virtual}
+\end{figure}
+
+
+\begin{table}
+\begin{verbatim}
+0 0 100 28.80 14...8993 14...0301 14...0318 14...9040 0.10000E+01
+1 30 50 28.80 14...2861 14...4172 14...4189 14...2908 0.10000E+01
+.
+.
+617 66 50 39.10 14...7141 14...8476 14...8494 14...7188 0.61700E+03
+618 66 50 39.10 14...8120 14...9456 14...9473 14...8167 0.61800E+03
+\end{verbatim}
+\caption{Ramp data obtained after performing virtual Ramp Test}
+\label{rampdata}
+\end{table}
+
 
 
 \section{Identifying First Order Transfer Function}
@@ -99,24 +137,31 @@ This code uses the routines {\ttfamily label.sci} and {\ttfamily costf\_1.sci}
 
 \begin{figure} 
 \centering
-\includegraphics[width=\linewidth]{Ramp-test_manual/ramp_analysis.jpg}
-\caption{Output of the Scilab code{\ttfamily ramp\_virtual.sce}}
+\includegraphics[width=\linewidth]{Ramp-test_manual/ramp-analysis.png}
+\caption{Output of the Scilab code {\ttfamily ramp\_virtual.sce}}
 \label{firstorder_ramp}
 \end{figure} \label{firstorderplot}
 
+\begin{figure} 
+\centering
+\includegraphics[width=\linewidth]{Ramp-test_manual/ramp-console.png}
+\caption{Scilab console after executing code{\ttfamily ramp\_virtual.sce}}
+\label{firstorder_ramp_console}
+\end{figure} \label{firstorderplot}
+
 \begin{align}
-\intertext{The plot thus obtained is reasonably good. See the Scilab plot to get the values of $\tau$ and $K$. 
-The figure \ref{firstorder_ramp} shows a screen shot of the same. We obtain $\tau$ = enterValue, K = enterValue. The transfer function 
+\intertext{The results presented are obtained for the data file {\tt ramp-data-virtual.txt}. This data file is present under the {\tt Ramp\_Test} directory for local experiments. The plot thus obtained is reasonably good. See the Scilab console to get the values of $\tau$ and $K$. It is as shown in figure \ref{firstorder_ramp_console}
+The figure \ref{firstorder_ramp} shows a screen shot of the same. We obtain $\tau$ = 78.92, K = 0.22. The transfer function 
 obtained here is at the operating point of enterValue percentage of heat. If the experiment is repeated at a different operating point, the transfer function obtained will be different. The gain will correspondingly be more at a higher operating point. This means that the plant is faster at higher temperature. Thus the transfer function of the plant varies with the operating 
-point. Let the transfer function we obtain in this experiment be denoted as $G_s$. CHECK THE VALUES FIRST. We obtain}
-G_s(s) =  \frac{0.23}{58.64s+1} \label{12}
+point. Let the transfer function we obtain in this experiment be denoted as $G_s$. We obtain}
+G_s(s) =  \frac{0.22}{78.92s+1} \label{12}
 \end{align}
 
 \section{Discussion}
 We summarize our findings now. The experiment has been performed by varying the heater current and keeping the fan 
 speed constant. However, the user is encouraged to experiment using different combinations of fan speed 
 and heater current. Negative ramp can also be used to make the experiment more informative. 
-It is not necessary to keep a particular input constant. For example, you can try giving a step input to the 
+It is not necessary to keep a particular input constant. For example, you can try giving a ramp input to the 
 disturbance signal, i.e., the fan input. The system can also be treated as a second order system. This consideration is necessary as it increases the accuracy of the acquired transfer function \cite{kmm09}.
 
 The necessary codes are listed in the section \ref{rampcodes}.

@@ -40,11 +40,34 @@ reach the steady state.
 \label{stepdata}
 \end{table}
 
-The step test data file will be saved in {\tt Step\_test} folder. The name of the file will be the date and time at which the experiment was conducted. A sample data file is provided in the same folder. The sample data file is named as {\tt step-data-local.txt} and {\tt step-data-virtual.txt}. Refer to the one depending on wheather you are performing a local or a virtual experiment. Referring to the data file thus obtained as shown in table \ref{stepdata}, the first column in this table denotes samples. The second column in this table denotes heater in percentage. It starts at 30 and increases with a step size of 10 units. The third column denotes the fan in percentage. It has been held constant at 50 percent. The fourth column refers to the value of temperature. The fifth column denotes time stamp. The virtual data file will have total four time stamp columns apart from first 3 columns. These four time stamp columns are client departure, server arrival, server departure and client arrival. These can be used for advanced control algorithms. These additional time stamps exist in virtual mode because of the presense of network delay.
+The step test data file will be saved in {\tt Step\_test} folder. The name of the file will be the date and time at which the experiment was conducted. A sample data file is provided in the same folder. The sample data file is named as {\tt step-data-local.txt} and {\tt step-data-virtual.txt}. Refer to the one depending on wheather you are performing a local or a virtual experiment. Referring to the data file thus obtained as shown in table \ref{stepdata}, the first column in this table denotes samples. The second column in this table denotes heater in percentage. It starts at 30 and increases with a step size of 10 units. The third column denotes the fan in percentage. It has been held constant at 50 percent. The fourth column refers to the value of temperature. The fifth column denotes time stamp. The virtual data file will havel four time stamp columns apart from first 3 columns. These four time stamp columns are client departure, server arrival, server departure and client arrival. These can be used for advanced control algorithms. These additional time stamps exist in virtual mode because of the presense of network delay.
 \section{Conducting Step Test on SBHS locally}
-The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is exactly the same for this section.
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is exactly the same for this section. The response is as shown in figure \ref{fig:scope_st}. The output data file is as shown in Table \ref{stepdata}
 \section{Conducting Step Test on SBHS, virtually}
-The detailed procedure to perform a local experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt} It is exactly the same for this section.
+The detailed procedure to perform a local experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt} It is exactly the same for this section. The virtual experiment response is shown in figure \ref{step-virtual}. The corresponding data file is shown in table \ref{stepdata}. The time stamps shown are cut short for better viewing. This data file can be found in {\tt StepTest} folder for virtual experiments. The name of this file is {\tt step-data-virtual.txt}.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Step-test_manual/step-virtual.png}
+\caption{Step test Virtual experiment response}
+\label{step-virtual}
+\end{figure}
+
+
+\begin{table}
+\begin{verbatim}
+ 0 0 100 29.30 14...8080 14...8955 14...8993 14...8158 0.10000E+01
+1 30 50 29.00 14...9364 14...0246 14...0263 14...9442 0.10000E+01
+.
+.
+711 40 50 36.20 14...9375 14...0280 14...0297 14...9437 0.71100E+03
+712 40 50 36.10 14...0370 14...2673 14...2691 14...1834 0.71200E+03
+\end{verbatim}
+\caption{Step data obtained after performing virtual Step Test}
+\label{stepdata}
+\end{table}
+
 \section{Identifying First Order and Second Order Transfer Functions}
 In this section we shall determine the first and second order transer function model using the data obtained after performing step test experiment. Please note that this procedure is common for data obtained using both local and virtual experiments.
 
@@ -104,12 +127,12 @@ This code uses the routines {\ttfamily label.sci} and {\ttfamily costf\_1.sci}
 \begin{figure} 
 \centering
 \includegraphics[width=\linewidth]{Step-test_manual/local-1-order.png}
-\caption{Output of the Scilab code \ttfamily firstorder.sce}
+\caption{Output of the Scilab code {\tt firstorder.sc}e for data file {\tt step-data-local.txt}}
 \label{firstorder_output}
 \end{figure} \label{firstorderplot}
 
 \begin{align}
-\intertext{The plot thus obtained is reasonably good. See the Scilab plot to get the values of $\tau$ and $K$. 
+\intertext{The results presented are obtained for the data file {\tt step-data-virtual.txt}. This data file is present under the {\tt Step\_Test} directory for local experiments.The plot thus obtained is reasonably good. See the Scilab plot to get the values of $\tau$ and $K$. 
 The figure \ref{firstorder_output} shows a screen shot of the same. We obtain $\tau$ = 58.64, K = 0.23. The transfer function 
 obtained here is at the operating point of 30 percentage of heat. If the experiment is repeated at a different operating point, 
 the transfer function obtained will be different. The gain will correspondingly be more at a higher operating point. 
