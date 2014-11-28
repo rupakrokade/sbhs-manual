@@ -1,22 +1,106 @@
 \chapter{Frequency Response Analysis of a Single Board Heater System by the Application of Sine Wave}
 The aim of this experiment is to do a frequency response analysis of a Single Board Heater System by the 
-application of sine wave. The target group is anyone who has basic knowledge of control engineering.\\
+application of sine wave. The target group is anyone who has basic knowledge of control engineering.
+
+
+%%%%%%%%%%%%%
+
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{sinetest_manual/sine_test.jpg}
-\caption{Xcos for this experiment}
+\caption{Xcos for local Sine Test}
 \label{xcos_sine}
 \end{figure}
-We have used Scilab with Xcos as an interface for sending and receiving data. 
-This interface is shown in figure \ref{xcos_sine}. Heater current and fan speed are the two inputs to the system. 
-The heater current is varied sinusoidally. A provision is made to set the parameters related to it like frequency, amplitude 
-and offset. The temperature profile thus obtained is the output.\\
-In this experiment we are applying a sine change in the heater current by keeping the fan speed constant. 
-After application of sine change, wait for sufficient amount of time to allow the temperature to reach a steady-state.
-\section{Theory}
+
+\begin{figure}
+\includegraphics[width=\linewidth]{sinetest_manual/sine-007-plot.png}
+\caption{Plot for sine input 0.007Hz}
+\label{fig:scope}
+\end{figure}
+
+We have used Scilab and Xcos as an interface for sending and receiving data. 
+Xcos diagram is shown in figure \ref{xcos_sine}.
+The heater current is varied sinusoidally. They are given in percentage of maximum. These inputs can be varied by setting the properties of the input block's properties in Xcos. A provision is made to set the parameters related to it like frequency, amplitude 
+and offset. The temperature profile thus obtained is the output. In this experiment we are applying a sine change in the heater current by keeping the fan speed constant. After application of sine change, wait for sufficient amount of time to allow the temperature to reach a steady-state. The plots of their amplitude versus number of collected samples are also available on the scope windows. The output temperature profile, as read by the sensor, is also plotted. The data acquired in the process is stored on the local drive and is available to the user for further calculations.
+
+ In the {\tt sine\_test.xcos} file, open the {\tt sinusoid generator} block's parameters to set the value of sine magnitude and frequency. For the experiment results shown, we have chosen Magnitude = $10$, Frequency = $2*3.14*0.007$. Note that the frequency is to be put in rad/sec. We keep the Phase = $0$. There is also a provision to give the sine input with an offset in amplitude. This can be set using the {\tt Offset} block. We have choosen offset of 20. The time at which the sine input is given after the experiment is started can also be set. This can be done using the {\tt Initial Time} block. Open the {\tt Initial Time} block's parameters. To make the sine input appear after 200 samples of start of the experiment, keep Step time = $200$, Initial Value = $0$ and Final Value = $1$. The initial value and final value will never change for any other value of step time.
+
+
+\begin{table}
+\begin{verbatim}
+1.0     20.0       50.0      20.0   1416642805261.0
+2.0       20.0       50.0        20.0   1416642806332.0
+.
+13093.0    28.5       50.0         26.6   1416656557353.0
+13094.0     28.5       50.0        26.6   1416656558363.0
+\end{verbatim}
+\caption{Data obtained after application of sine input of $0.007Hz$}
+\label{sinedata}
+\end{table}
+
+The sine test data file will be saved in {\tt Sine\_Test} folder. The name of the file will be the date and time at which the experiment was conducted. A sample data file is provided in the same folder. The sample data file is named as {\tt sine-data-local.txt} and {\tt sine-data-virtual.txt}. Refer to the one depending on wheather you are performing a local or a virtual experiment. Referring to the data file thus obtained as shown in table \ref{sinedata}, the first column in this table denotes samples. The second column in this table denotes heater in percentage. It starts at 20 and then varies sinosoidally. The third column denotes the fan in percentage. It has been held constant at 50 percent. The fourth column refers to the value of temperature. The fifth column denotes time stamp. The virtual data file will have four time stamp columns apart from first 3 columns. These four time stamp columns are client departure, server arrival, server departure and client arrival. These can be used for advanced control algorithms. These additional time stamps exist in virtual mode because of the presense of network delay.
+
+\section{Conducting Sine Test on SBHS locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
+
+\begin{enumerate}
+\item Step1: The working directory is {\tt  Sine\_test}
+\item Step2: Same
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load sine test function by executing command\\ {\tt exec<space>sine\_test.sci}
+\item Step6: Load Xcos code for sine test using the command\\ {\tt exec<space>sine\_test.xcos}
+\item Step7: Same
+\end{enumerate}
+
+
+\section{Conducting Sine Test on SBHS, virtually}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
+\begin{enumerate}
+\item Step1: The working directory is {\tt  SineTest}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the SineTest experiment directory and double-click on the file {\tt sinetest.sce}. This will launch scilab and also open the file {\tt sinetest.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt  SineTest} and then open the {\tt  sinetest.sce} file in the scilab editor.
+\item Step5: Same
+\item Step6: Execute the file {\tt sinetest.sce}.  Expect the sine test xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the sinetest xcos diagram.
+\item Step8: Same
+\end{enumerate}
+
+
+ The virtual experiment response is shown in figure \ref{sine-virtual}. The corresponding data file is shown in table \ref{sinedata}. The time stamps shown are cut short for better viewing. This data file can be found in {\tt SineTest} folder for virtual experiments. The name of this file is {\tt sine-data-virtual.txt}.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{sinetest_manual/sine-plot-virtual-007.png}
+\caption{Sine test Virtual experiment response}
+\label{sine-virtual}
+\end{figure}
+
+
+\begin{table}
+\begin{verbatim}
+0 0 100 28.80 14...4739 14...6427 14...6445 14...4786 0.10000E+01
+1 20 50 28.90 14...5247 14...6938 14...6956 14...5294 0.10000E+01
+.
+.
+999 18 50 31.00 14...2253 14...3973 14...3990 14...2299 0.99900E+03
+1000 19 50 31.00 14...3268 14...4989 14...5007 14...3315 0.10000E+04
+\end{verbatim}
+\caption{Sine data obtained after performing virtual Sine Test}
+\label{rampdata}
+\end{table}
+
+%%%
+
+
+\section{Frequency Analysis of sine test data}
  Frequency response of a system means its steady-state response to a sinusoidal input. 
  For obtaining a frequency response of a system, we vary the frequency of the input signal over a spectrum of interest. 
- The analysis is useful and simple because it can be carried out with the available signal generators and measuring devices.\\
+ The analysis is useful and simple because it can be carried out with the available signal generators and measuring devices. Let us see the theory and procedure.  Please note that this procedure is common for data obtained using both local and virtual experiments.
+
 Consider a sinusoidal input
 \begin{align}
 U(t) &= Asin \omega t
@@ -49,70 +133,29 @@ AR_n &=\frac{AR}{K}=\frac{1}{\sqrt{\omega^2 \tau^2 + 1}}
 Because the process steady state gain is constant, the normalized amplitude ratio is often used for 
 frequency response analysis \cite{dale04}.
 
-
-\section{Procedure to perform Sine Test}
-Follow the procedure explained in section \ref{scilab_sbhs}.
-\begin{enumerate}
- \item Change the current working directory of Scilab to the folder {\tt Sine\_Test}. 
- \item Execute the code {\tt sinetest.sce} and {\tt sinetest.sci}.
- \item Open the Xcos file {\tt sine\_test.xcos}. 
- \item Initiate a sine input to the system by setting sinusoid generator block properties with some value of the frequency  
-($0.007Hz$) and amplitude ($10$).
-\end{enumerate}
-Note that at high frequencies the plant output is not sinusoidal, which is not of any use. 
-Hence, avoid choosing frequencies above $0.04Hz$.
-
-\begin{figure}
-\includegraphics[width=\linewidth]{sinetest_manual/sine_resp.png}
-\caption{Plot for sine input 0.007Hz}
-\label{fig:scope}
-\end{figure}
-\begin{table}
-
-\begin{verbatim}
- 0.100E+00  0.200E+02  0.100E+03  0.239E+02
- 0.200E+00  0.201E+02  0.100E+03  0.238E+02
- 0.300E+00  0.201E+02  0.100E+03  0.238E+02
-.
-.
-.
- 0.749E+03  0.300E+02  0.100E+03  0.301E+02
- 0.749E+03  0.300E+02  0.100E+03  0.302E+02
- 0.749E+03  0.300E+02  0.100E+03  0.302E+02
-\end{verbatim}
-\caption{Data obtained after application of sine input of $0.04Hz$}
-\label{sine_data}
-\end{table}
-The sine test data file is shown in table \ref{sine_data}. Refering to table \ref{sine_data} the first column represents samples. 
-The second column represents heater in percentage. Here, it is sinusoidally varied. 
-The third column represents fan in percentage. Note that its value is 100 throughout the experiment. 
-The fourth column represents the output temperature.
-It should be taken into consideration that all the values mentioned in the data file are in percentage of maximum output,
-except for the temperature which is in \textcelsius. 
-
-\section{Sine Test Analysis}
+\subsection{Procedure}
 Now let us calculate amplitude ratio and phase difference. 
+
 \begin{enumerate}
- \item Change the current working directory of Scilab to the 
-folder {\tt Sine\_Analysis}.
-\item Copy the data files generated after the completion of the experiment into the 
-{\tt Sine\_Analysis} folder.
-\item Place the arguments {\ttfamily f} and {\ttfamily filename} in the Scilab code 
-{\ttfamily sine2.sce} for the calculation of the above parameters and execute it. Here {\ttfamily f}
-means input frequency.
+\item Download the Analysis folder from the sbhs website. It will be available under {\tt downloads} section. The download will be in zip format. Extrat the downloaded zip file. You will get a folder {\tt Analysis}. 
+\item Open the {\tt Analysis} folder and then locate and open the folder {\tt Sine\_Analysis}.
+ \item Copy the sine test data file to this folder.
+ \item Change the Scilab working directory to  {\tt Sine\_Analysis}
+ \item Open the file {\ttfamily sine-analysis.sce} in scilab editor and enter the name of the data file (with extention) in the {\tt filename} field.
+\item Put the value of frequency {\ttfamily f} for the calculation of amplitude ratio and phase difference and execute it. Here {\ttfamily f} means input frequency.
+\item Expect the values of amplitude ratio and phase difference on the scilab console.
 \end{enumerate}
 
   
 \begin{figure}
-\includegraphics[width=\linewidth]{sinetest_manual/bode_calc.png}
-\caption{Scilab Output}
+\includegraphics[width=\linewidth]{sinetest_manual/sine-local-analysis-console.png}
+\caption{Amplitude ratio and Phase difference for local data file}
 \label{scilab_op}
 \end{figure}
-It could be seen from figure \ref{scilab_op} that the amplitude r
-atio turns out to be $-2.047$dB and phase difference to be $-60.732$\textdegree.
+The results shown are for the data file {sine-data-local.txt}. It could be seen from figure \ref{scilab_op} that the amplitude ratio turns out to be $-0.915$dB and phase difference to be $-57.267$\textdegree.
 The plot thus obtained is shown in figure \ref{plot0.4}
 \begin{figure}
-\includegraphics[width=\linewidth]{sinetest_manual/bode_resp}
+\includegraphics[width=\linewidth]{sinetest_manual/sine-local-analysis}
 \caption{Plot of Input and Output vs time}
 \label{plot0.4}
 \end{figure}
@@ -144,16 +187,6 @@ To compare the two plots, we plot it on the same graph as shown in figure \ref{c
 \end{figure}
 
 
-\section{Conducting Sine Test on SBHS, virtually}
-The step by step procedure for conducting an experiment virtually is explained in section \ref{vlabsexpt}. 
-\begin{enumerate}
- \item Go to {\tt virtual} folder and then {\tt SineTest} directory .
- \item Execute {\tt sinetest.sce}.
- \item Perform sine test analysis by executing the file {\tt sine2\_virtual.sce} in {\tt Sine\_Analysis} directory 
- under {\tt virtual} folder.
-\end{enumerate}
-The necessary codes are listed in the section \ref{sinecodes}.
-
 
 \section{Scilab Code}\label{sinecodes}
 
@@ -174,39 +207,39 @@ The necessary codes are listed in the section \ref{sinecodes}.
 \end{code}
 
 \begin{code}
-\ccaption{sine2.sce}{\ttfamily sine2.sce}
-\lstinputlisting{Scilab/local/Sine_Analysis/sine2.sce}
+\ccaption{sine2.sce}{\ttfamily sine-analysis.sce}
+\lstinputlisting{Scilab/Analysis/Sine_Analysis/sine-analysis.sce}
 \end{code}
 
 \begin{code}
 \ccaption{lable.sci}{\ttfamily label.sci}
-\lstinputlisting{Scilab/local/Sine_Analysis/label.sci}
+\lstinputlisting{Scilab/Analysis/Sine_Analysis/label.sci}
 \end{code}
 
 \begin{code}
 \ccaption{bodeplot.sce}{\ttfamily bodeplot.sce}
-\lstinputlisting{Scilab/local/Sine_Analysis/bodeplot.sce}
+\lstinputlisting{Scilab/Analysis/Sine_Analysis/bodeplot.sce}
 \end{code}
 
 
 \begin{code}
 \ccaption{labelbode.sci}{\ttfamily labelbode.sci}
-\lstinputlisting{Scilab/local/Sine_Analysis/labelbode.sci}
+\lstinputlisting{Scilab/Analysis/Sine_Analysis/labelbode.sci}
 \end{code}
 
 
 \begin{code}
 \ccaption{TFbode.sce}{\ttfamily TFbode.sce}
-\lstinputlisting{Scilab/local/Sine_Analysis/TFbode.sce}
+\lstinputlisting{Scilab/Analysis/Sine_Analysis/TFbode.sce}
 \end{code}
 
 \begin{code}
 \ccaption{comparison.sce}{\ttfamily comparison.sce}
-\lstinputlisting{Scilab/local/Sine_Analysis/comparison.sce}
+\lstinputlisting{Scilab/Analysis/Sine_Analysis/comparison.sce}
 \end{code}
 
-\begin{code}
-\ccaption{sine2\_virtual.sce}{\ttfamily sine2\_virtual.sce}
-\lstinputlisting{Scilab/virtual/Sine_Analysis/sine2_virtual.sce}
-\end{code}
+%\begin{code}
+%\ccaption{sine2\_virtual.sce}{\ttfamily sine2\_virtual.sce}
+%\lstinputlisting{Scilab/Analysis/Sine_Analysis/sine2_virtual.sce}
+%\end{code}
 
