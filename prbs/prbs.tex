@@ -1,6 +1,18 @@
 \chapter{PRBS Modeling and Implementation of Pole Placement Controller}
 The aim of this chapter is to do PRBS testing on Single Board Heater System by the application of PRBS signal 
-and to design a pole-placement controller. The target group is anyone who has basic knowledge of control engineering. \\
+and to design a pole-placement controller. The target group is anyone who has basic knowledge of control engineering. The first half of this chapter is dedicated to do system identification of the SBHS system using the response obtained for a 
+PRBS (Pseudo Random Binary Sequence) input. In the second half, a pole-placement controller is designed using this model and 
+implemented on SBHS.
+
+\section{PRBS Modelling}
+
+Similar to Chapter \ref{chap1} and \ref{chap2}, we will find the transfer function model of SBHS. 
+But there are two major differences. First difference is that we will give a Pseudo Random Binary Sequence to the 
+heater input of SBHS and the second difference is that we will find the discrete time transfer function. A Pseudo Random 
+Binary Sequence is nothing but a signal whose amplitude varies between two limits randomly at any given time. An 
+illustration of the same is given in figure \ref{prbs-fig}. A PRBS signal can be easily generated using the $rand()$ 
+function in Scilab. Scilab code to generate the PRBS signal is given at the end of this chapter.
+
 We have used Scilab with Xcos as an interface for sending and receiving data. This interface is shown in figure \ref{prbs-xcos}.
 Heater current and fan speed are the two inputs to the system. The heater current is varied with a PRBS signal. A provision
 is made to set the parameters like PRBS amplitude and offset value. A provision is also made to time the occurance of the PRBS 
@@ -8,9 +20,7 @@ input using a step block. The value of step time in the step block has to be cho
 should be given to allow the temperature to reach a steady-state before the PRBS signal is applied. In this experiment we are
 keeping the fan speed constant at 50\%. The temperature profile thus obtained is the output.
 
-The first half of this chapter is dedicated to do system identification of the SBHS system using the response obtained for a 
-PRBS (Pseudo Random Binary Sequence) input. In the second half, a pole-placement controller is designed using this model and 
-implemented on SBHS.
+
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{prbs/prbs-xcos.png}
@@ -18,7 +28,7 @@ implemented on SBHS.
 \label{prbs-xcos}
 \end{figure}
 
-\section{Issues with Step Test and an Alternate Approach}
+\subsection{Issues with Step Test and an Alternate Approach}
 
 SBHS is an example of a heater. Suppose you are working in a full scale plant. Current control system designed to control
 one of the heaters of the plant is lousy and your supervisor asks you to design a new controller from scratch. The first step
@@ -47,25 +57,21 @@ Process Control, Spring 2013-14 lecture slides. Prof. S. C. Patwardhan, IIT Bomb
 \label{sample-prbs}
 \end{figure}
 
+\section{Conducting PRBS Test on SBHS locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
 
-\section{Step by step procedure to do PRBS testing}
+\begin{enumerate}
+\item Step1: The working directory is {\tt  prbs/identification}
+\item Step2:  Load the functions available in common files directory by executing the command
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load prbs test function by executing command\\ {\tt exec<space>sine\_test.sci}
+\item Step6: Load Xcos code for sine test using the command\\ {\tt exec<space>sine\_test.xcos}
+\item Step7: Same
+\end{enumerate}
 
-Similar to Chapter \ref{chap1} and \ref{chap2}, in this section we will find the transfer function model of SBHS. 
-But there are two major differences. First difference is that we will give a Pseudo Random Binary Sequence to the 
-heater input of SBHS and the second difference is that we will find the discrete time transfer function. A Pseudo Random 
-Binary Sequence is nothing but a signal whose amplitude varies between two limits randomly at any given time. An 
-illustration of the same is given in figure \ref{prbs-fig}. A PRBS signal can be easily generated using the $rand()$ 
-function in Scilab. Scilab code to generate the PRBS signal is given at the end of this chapter. Figure \ref{prbs-xcos} 
-shows the  Xcos diagram for PRBS testing. The PRBS amplitude and offset value to the input can be adjusted using the 
-relevant blocks. 
 
-The steps to be followed to conduct PRBS test experiment virtually remains same as explained in section \ref{vlabsexpt}. only for the following differences
-\begin{itemize}
-\item The working folder is prbs/identification/
-\item Use the getd command getd ../../common\_files
-\item In section \ref{vlabsexpt} read all instances of step\_test as prbstest
-\end{itemize} The PRBS response obtained after executing the experiment successfully is shown in 
-figure \ref{prbs-res}
+
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{prbs/prbs-illustration.png}
@@ -81,7 +87,7 @@ figure \ref{prbs-res}
 \end{figure}
 
 
-\section{Determination of Discrete Time Transfer Function}\label{prbs-model}
+\subsection{Determination of Discrete Time Transfer Function}\label{prbs-model}
 
 System identification is carried out to identify the transfer function between the input signal to the system and output 
 from the system. Firstly, a transfer function with unknown parameters is assumed. The system is given a known input and its

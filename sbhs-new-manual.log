@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.7.12)  19 NOV 2014 15:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.7.12)  29 NOV 2014 17:01
 entering extended mode
 **sbhs-new-manual.tex
-(F:\rupak\work\sbhs-manual\sbhs-new-manual.tex
+(f:\rupak\work\sbhs-manual\sbhs-new-manual.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -1345,12 +1345,36 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
 \arrowsize=\dimen171
 ))
 \c@codemass=\count193
- (F:\rupak\work\sbhs-manual\sbhs-new-manual.aux
+ (f:\rupak\work\sbhs-manual\sbhs-new-manual.aux
+
+LaTeX Warning: Label `stepdata' multiply defined.
+
+
+LaTeX Warning: Label `rampdata' multiply defined.
+
+
+LaTeX Warning: Label `firstorderplot' multiply defined.
+
 
 LaTeX Warning: Label `firstorderplot' multiply defined.
 
 
 LaTeX Warning: Label `12' multiply defined.
+
+
+LaTeX Warning: Label `rampdata' multiply defined.
+
+
+LaTeX Warning: Label `prbs-model' multiply defined.
+
+
+LaTeX Warning: Label `ziegler' multiply defined.
+
+
+LaTeX Warning: Label `fig:step31to45' multiply defined.
+
+
+LaTeX Warning: Label `mpccode' multiply defined.
 
 )
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 80.
@@ -1459,23 +1483,47 @@ Package pdftex.def Info: iitblogo.pdf used on input line 105.
 (pdftex.def)             Requested size: 117.00119pt x 114.76791pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <F:/rupak/work/sbhs-manual
-/iitblogo.pdf>] (F:\rupak\work\sbhs-manual\sbhs-new-manual.toc
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <f:/rupak/work/sbhs-manual
+/iitblogo.pdf>] (f:\rupak\work\sbhs-manual\sbhs-new-manual.toc
 Overfull \hbox (76.84799pt too wide) detected at line 2
 \OT1/txr/bx/n/12 List of Scilab Code 
  []
 
 [1
 
-])
-\tf@toc=\write4
- [2] (F:\rupak\work\sbhs-manual\sbhs-new-manual.cod)
-\tf@cod=\write5
- [3
+] [2]
+Overfull \hbox (1.13931pt too wide) in paragraph at lines 65--65
+ [][] []\OT1/txr/m/n/12 Implementing PI Con-troller us-ing For-ward Dif-fer-enc
+e Ap- 
+ []
 
-]
+
+Overfull \hbox (1.57137pt too wide) in paragraph at lines 66--66
+ [][] []\OT1/txr/m/n/12 Implementing PID Con-troller us-ing Back-ward Dif-fer-e
+nce Ap-prox- 
+ []
+
+
+Overfull \hbox (6.20264pt too wide) in paragraph at lines 80--80
+ [][] []\OT1/txr/m/n/12 Implementing 2DOF pole-placement con-troller us-ing PRB
+S model, 
+ []
+
+[3]
+Overfull \hbox (6.20264pt too wide) in paragraph at lines 81--81
+ [][] []\OT1/txr/m/n/12 Implementing 2DOF pole-placement con-troller us-ing PRB
+S model, 
+ []
+
+[4] [5])
+\tf@toc=\write4
+ [6] (f:\rupak\work\sbhs-manual\sbhs-new-manual.cod [7
+
+] [8])
+\tf@cod=\write5
+ [9]
 Chapter 1.
-<blkdiag.jpg, id=25, 602.25pt x 333.49594pt>
+<blkdiag.jpg, id=46, 602.25pt x 333.49594pt>
 File: blkdiag.jpg Graphic file (type jpg)
  <use blkdiag.jpg>
 Package pdftex.def Info: blkdiag.jpg used on input line 113.
@@ -1485,84 +1533,84 @@ LaTeX Font Info:    Try loading font information for TS1+txr on input line 117.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\ts1txr.fd"
 File: ts1txr.fd 2000/12/15 v3.1
-) [4
+) [10
 
-] [5 <F:/rupak/work/sbhs-manual/blkdiag.jpg>] <pwm.png, id=34, 513.92pt x 426.5
-9375pt>
+] [11 <f:/rupak/work/sbhs-manual/blkdiag.jpg>] <pwm.png, id=54, 513.92pt x 426.
+59375pt>
 File: pwm.png Graphic file (type png)
 
 <use pwm.png>
 Package pdftex.def Info: pwm.png used on input line 144.
 (pdftex.def)             Requested size: 195.0pt x 161.86646pt.
- [6 <F:/rupak/work/sbhs-manual/pwm.png>]
-<Inst_Amp.jpg, id=40, 460.72125pt x 245.718pt>
+ [12 <f:/rupak/work/sbhs-manual/pwm.png>]
+<Inst_Amp.jpg, id=59, 460.72125pt x 245.718pt>
 File: Inst_Amp.jpg Graphic file (type jpg)
  <use Inst_Amp.jpg>
 Package pdftex.def Info: Inst_Amp.jpg used on input line 162.
 (pdftex.def)             Requested size: 234.00238pt x 124.80086pt.
- [7]
-<c.jpg, id=47, 489.027pt x 361.35pt>
+ [13]
+<c.jpg, id=66, 489.027pt x 361.35pt>
 File: c.jpg Graphic file (type jpg)
  <use c.jpg>
 Package pdftex.def Info: c.jpg used on input line 177.
 (pdftex.def)             Requested size: 195.0pt x 144.09082pt.
- [8 <F:/rupak/work/sbhs-manual/Inst_Amp.jpg> <F:/rupak/work/sbhs-manual/c.jpg>]
-
-<RS232cable.jpg, id=51, 481.8pt x 361.35pt>
+ [14 <f:/rupak/work/sbhs-manual/Inst_Amp.jpg> <f:/rupak/work/sbhs-manual/c.jpg>
+]
+<RS232cable.jpg, id=70, 481.8pt x 361.35pt>
 File: RS232cable.jpg Graphic file (type jpg)
  <use RS232cable.jpg>
 Package pdftex.def Info: RS232cable.jpg used on input line 184.
 (pdftex.def)             Requested size: 195.0pt x 146.2467pt.
 
-<Serialport.jpg, id=52, 416.757pt x 361.35pt>
+<Serialport.jpg, id=71, 416.757pt x 361.35pt>
 File: Serialport.jpg Graphic file (type jpg)
  <use Serialport.jpg>
 Package pdftex.def Info: Serialport.jpg used on input line 189.
 (pdftex.def)             Requested size: 195.0pt x 169.07362pt.
 
-<usbc.jpg, id=53, 481.8pt x 361.35pt>
+<usbc.jpg, id=72, 481.8pt x 361.35pt>
 File: usbc.jpg Graphic file (type jpg)
  <use usbc.jpg>
 Package pdftex.def Info: usbc.jpg used on input line 197.
 (pdftex.def)             Requested size: 195.0pt x 146.2467pt.
 
-<usbp.jpg, id=54, 481.8pt x 370.38374pt>
+<usbp.jpg, id=73, 481.8pt x 370.38374pt>
 File: usbp.jpg Graphic file (type jpg)
  <use usbp.jpg>
 Package pdftex.def Info: usbp.jpg used on input line 202.
 (pdftex.def)             Requested size: 195.0pt x 149.90286pt.
 
-<display.jpg, id=55, 642.4pt x 481.8pt>
+<display.jpg, id=74, 642.4pt x 481.8pt>
 File: display.jpg Graphic file (type jpg)
  <use display.jpg>
 Package pdftex.def Info: display.jpg used on input line 212.
 (pdftex.def)             Requested size: 195.0pt x 146.24669pt.
 
-<r.jpg, id=56, 481.8pt x 328.8285pt>
+<r.jpg, id=75, 481.8pt x 328.8285pt>
 File: r.jpg Graphic file (type jpg)
  <use r.jpg>
 Package pdftex.def Info: r.jpg used on input line 219.
 (pdftex.def)             Requested size: 195.0pt x 133.08449pt.
- [9 <F:/rupak/work/sbhs-manual/RS232cable.jpg>] [10 <F:/rupak/work/sbhs-manual/
-Serialport.jpg> <F:/rupak/work/sbhs-manual/usbc.jpg>] (F:\rupak\work\sbhs-manua
-l\using-sbhs/using-sbhs.tex
-[11 <F:/rupak/work/sbhs-manual/usbp.jpg> <F:/rupak/work/sbhs-manual/display.jpg
->] [12 <F:/rupak/work/sbhs-manual/r.jpg>]
+ [15 <f:/rupak/work/sbhs-manual/RS232cable.jpg>] [16 <f:/rupak/work/sbhs-manual
+/Serialport.jpg> <f:/rupak/work/sbhs-manual/usbc.jpg>] (f:\rupak\work\sbhs-manu
+al\using-sbhs/using-sbhs.tex
+[17 <f:/rupak/work/sbhs-manual/usbp.jpg> <f:/rupak/work/sbhs-manual/display.jpg
+>] [18 <f:/rupak/work/sbhs-manual/r.jpg>]
 Chapter 2.
 LaTeX Font Info:    Try loading font information for OT1+txtt on input line 8.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\ot1txtt.fd"
 File: ot1txtt.fd 2000/12/15 v3.1
-) [13
+) [19
 
 ]
-<using-sbhs/COM.jpg, id=74, 597.73312pt x 435.12563pt>
+<using-sbhs/COM.jpg, id=93, 597.73312pt x 435.12563pt>
 File: using-sbhs/COM.jpg Graphic file (type jpg)
 
 <use using-sbhs/COM.jpg>
 Package pdftex.def Info: using-sbhs/COM.jpg used on input line 24.
 (pdftex.def)             Requested size: 272.99881pt x 198.73273pt.
- [14]
-<using-sbhs/port2.jpg, id=78, 489.32813pt x 346.29375pt>
+ [20]
+<using-sbhs/port2.jpg, id=97, 489.32813pt x 346.29375pt>
 File: using-sbhs/port2.jpg Graphic file (type jpg)
 
 <use using-sbhs/port2.jpg>
@@ -1574,7 +1622,7 @@ Overfull \hbox (6.33553pt too wide) in paragraph at lines 32--39
 /txtt/m/n/12 sbhs.os-hardware.in/downloads\OT1/txr/m/n/12 .
  []
 
-[15 <F:/rupak/work/sbhs-manual/using-sbhs/COM.jpg>]
+[21 <f:/rupak/work/sbhs-manual/using-sbhs/COM.jpg>]
 Overfull \hbox (10.53455pt too wide) in paragraph at lines 43--44
 \OT1/txr/m/n/12 "Change di-rec-tory". This can also be per-formed by typ-ing \O
 T1/txtt/m/n/12 cd<space>folder
@@ -1594,44 +1642,44 @@ Overfull \hbox (0.5263pt too wide) in paragraph at lines 44--45
 older path \OT1/txr/m/n/12 ar-gu-ment will be the com-
  []
 
-[16 <F:/rupak/work/sbhs-manual/using-sbhs/port2.jpg>] [17]
-<using-sbhs/commands.png, id=88, 525.46312pt x 369.63094pt>
+[22 <f:/rupak/work/sbhs-manual/using-sbhs/port2.jpg>] [23]
+<using-sbhs/commands.png, id=107, 525.46312pt x 369.63094pt>
 File: using-sbhs/commands.png Graphic file (type png)
 
 <use using-sbhs/commands.png>
 Package pdftex.def Info: using-sbhs/commands.png used on input line 65.
 (pdftex.def)             Requested size: 272.99881pt x 192.04562pt.
 
-<using-sbhs/ser_init.png, id=89, 489.32813pt x 414.04688pt>
+<using-sbhs/ser_init.png, id=108, 489.32813pt x 414.04688pt>
 File: using-sbhs/ser_init.png Graphic file (type png)
 
 <use using-sbhs/ser_init.png>
 Package pdftex.def Info: using-sbhs/ser_init.png used on input line 73.
 (pdftex.def)             Requested size: 272.99881pt x 231.00543pt.
 
-<using-sbhs/xcos.png, id=90, 466.74374pt x 376.40625pt>
+<using-sbhs/xcos.png, id=109, 466.74374pt x 376.40625pt>
 File: using-sbhs/xcos.png Graphic file (type png)
 
 <use using-sbhs/xcos.png>
 Package pdftex.def Info: using-sbhs/xcos.png used on input line 80.
 (pdftex.def)             Requested size: 272.99881pt x 220.17091pt.
 
-<using-sbhs/plot.png, id=91, 472.76625pt x 447.17062pt>
+<using-sbhs/plot.png, id=110, 472.76625pt x 447.17062pt>
 File: using-sbhs/plot.png Graphic file (type png)
 
 <use using-sbhs/plot.png>
 Package pdftex.def Info: using-sbhs/plot.png used on input line 95.
 (pdftex.def)             Requested size: 272.99881pt x 258.22647pt.
- [18 <F:/rupak/work/sbhs-manual/using-sbhs/commands.png>] [19 <F:/rupak/work/sb
-hs-manual/using-sbhs/ser_init.png> <F:/rupak/work/sbhs-manual/using-sbhs/xcos.p
-ng>] [20 <F:/rupak/work/sbhs-manual/using-sbhs/plot.png>] <using-sbhs/lstty.png
-, id=104, 537.00626pt x 211.79124pt>
+ [24 <f:/rupak/work/sbhs-manual/using-sbhs/commands.png>] [25 <f:/rupak/work/sb
+hs-manual/using-sbhs/ser_init.png> <f:/rupak/work/sbhs-manual/using-sbhs/xcos.p
+ng>] [26 <f:/rupak/work/sbhs-manual/using-sbhs/plot.png>] <using-sbhs/lstty.png
+, id=123, 537.00626pt x 211.79124pt>
 File: using-sbhs/lstty.png Graphic file (type png)
 
 <use using-sbhs/lstty.png>
 Package pdftex.def Info: using-sbhs/lstty.png used on input line 110.
 (pdftex.def)             Requested size: 272.99881pt x 107.66954pt.
- [21 <F:/rupak/work/sbhs-manual/using-sbhs/lstty.png>] (F:\rupak\work\sbhs-manu
+ [27 <f:/rupak/work/sbhs-manual/using-sbhs/lstty.png>] (f:\rupak\work\sbhs-manu
 al\Scilab/local/common_files/comm.sci
 LaTeX Font Info:    Try loading font information for OML+txr on input line 5.
 
@@ -1640,80 +1688,74 @@ File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <12> not available
 (Font)              Font shape `OML/txmi/m/it' tried instead on input line 5.
- [22] [23])
-(F:\rupak\work\sbhs-manual\Scilab/local/common_files/init.sci [24])
-(F:\rupak\work\sbhs-manual\Scilab/local/common_files/plotting.sci [25] [26]))
-(F:\rupak\work\sbhs-manual\vlabs/vlabs.tex [27]
+ [28] [29])
+(f:\rupak\work\sbhs-manual\Scilab/local/common_files/init.sci [30])
+(f:\rupak\work\sbhs-manual\Scilab/local/common_files/plotting.sci [31] [32]))
+(f:\rupak\work\sbhs-manual\vlabs/vlabs.tex [33]
 Chapter 3.
-[28
+[34
 
-]
-
-LaTeX Warning: Citation `vlabs-kmm' on page 29 undefined on input line 8.
-
-<vlabs/vlab-1.png, id=132, 716.6775pt x 378.41376pt>
+] <vlabs/vlab-1.png, id=151, 716.6775pt x 378.41376pt>
 File: vlabs/vlab-1.png Graphic file (type png)
- <use vlabs/vlab-1.png>
+
+<use vlabs/vlab-1.png>
 Package pdftex.def Info: vlabs/vlab-1.png used on input line 13.
 (pdftex.def)             Requested size: 390.0pt x 205.92827pt.
 
-<IEEE-Chile/figures/vlab-2.png, id=133, 716.6775pt x 370.38374pt>
+<IEEE-Chile/figures/vlab-2.png, id=152, 716.6775pt x 370.38374pt>
 File: IEEE-Chile/figures/vlab-2.png Graphic file (type png)
 
 <use IEEE-Chile/figures/vlab-2.png>
 Package pdftex.def Info: IEEE-Chile/figures/vlab-2.png used on input line 35.
 (pdftex.def)             Requested size: 390.0pt x 201.55843pt.
- [29 <F:/rupak/work/sbhs-manual/vlabs/vlab-1.png>] <vlabs/vlab-3.png, id=138, 8
+ [35 <f:/rupak/work/sbhs-manual/vlabs/vlab-1.png>] <vlabs/vlab-3.png, id=157, 8
 96.34875pt x 392.46625pt>
 File: vlabs/vlab-3.png Graphic file (type png)
 
 <use vlabs/vlab-3.png>
 Package pdftex.def Info: vlabs/vlab-3.png used on input line 55.
 (pdftex.def)             Requested size: 390.0pt x 170.75735pt.
- [30 <F:/rupak/work/sbhs-manual/IEEE-Chile/figures/vlab-2.png>] [31 <F:/rupak/w
+ [36 <f:/rupak/work/sbhs-manual/IEEE-Chile/figures/vlab-2.png>] [37 <f:/rupak/w
 ork/sbhs-manual/vlabs/vlab-3.png>]
-<vlabs/vlab-arch.png, id=148, 875.27pt x 481.8pt>
+<vlabs/vlab-arch.png, id=167, 875.27pt x 481.8pt>
 File: vlabs/vlab-arch.png Graphic file (type png)
  <use vlabs/vlab-arch.png>
 Package pdftex.def Info: vlabs/vlab-arch.png used on input line 99.
 (pdftex.def)             Requested size: 390.0pt x 214.67601pt.
 
 
-LaTeX Warning: Reference `fig:sbhs-website' on page 32 undefined on input line 
+LaTeX Warning: Reference `fig:sbhs-website' on page 38 undefined on input line 
 109.
 
-
-LaTeX Warning: Citation `vl010' on page 32 undefined on input line 109.
-
-[32 <F:/rupak/work/sbhs-manual/vlabs/vlab-arch.png>]
-<vlabs/webpage.png, id=153, 1313.90875pt x 746.79pt>
+[38 <f:/rupak/work/sbhs-manual/vlabs/vlab-arch.png>]
+<vlabs/webpage.png, id=172, 1313.90875pt x 746.79pt>
 File: vlabs/webpage.png Graphic file (type png)
  <use vlabs/webpage.png>
 Package pdftex.def Info: vlabs/webpage.png used on input line 114.
 (pdftex.def)             Requested size: 390.0pt x 221.66855pt.
 
-<vlabs/new-server-arch.pdf, id=154, 778.91pt x 431.6125pt>
+<vlabs/new-server-arch.pdf, id=173, 778.91pt x 431.6125pt>
 File: vlabs/new-server-arch.pdf Graphic file (type pdf)
 
 <use vlabs/new-server-arch.pdf>
 Package pdftex.def Info: vlabs/new-server-arch.pdf used on input line 122.
 (pdftex.def)             Requested size: 390.0pt x 216.10866pt.
- [33 <F:/rupak/work/sbhs-manual/vlabs/webpage.png>] [34 <F:/rupak/work/sbhs-man
+ [39 <f:/rupak/work/sbhs-manual/vlabs/webpage.png>] [40 <f:/rupak/work/sbhs-man
 ual/vlabs/new-server-arch.pdf>]
-<vlabs/display.jpg, id=167, 642.4pt x 481.8pt>
+<vlabs/display.jpg, id=186, 642.4pt x 481.8pt>
 File: vlabs/display.jpg Graphic file (type jpg)
  <use vlabs/display.jpg>
 Package pdftex.def Info: vlabs/display.jpg used on input line 140.
 (pdftex.def)             Requested size: 195.0pt x 146.24669pt.
- [35 <F:/rupak/work/sbhs-manual/vlabs/display.jpg>]
-<vlabs/book-slot.png, id=171, 713.66624pt x 601.24625pt>
+ [41 <f:/rupak/work/sbhs-manual/vlabs/display.jpg>]
+<vlabs/book-slot.png, id=190, 713.66624pt x 601.24625pt>
 File: vlabs/book-slot.png Graphic file (type png)
 
 <use vlabs/book-slot.png>
 Package pdftex.def Info: vlabs/book-slot.png used on input line 149.
 (pdftex.def)             Requested size: 272.99881pt x 229.9897pt.
- [36 <F:/rupak/work/sbhs-manual/vlabs/book-slot.png>]
-<vlabs/python-client.png, id=177, 363.3575pt x 631.35875pt>
+ [42 <f:/rupak/work/sbhs-manual/vlabs/book-slot.png>]
+<vlabs/python-client.png, id=196, 363.3575pt x 631.35875pt>
 File: vlabs/python-client.png Graphic file (type png)
 
 <use vlabs/python-client.png>
@@ -1725,162 +1767,1752 @@ Overfull \hbox (3.7078pt too wide) in paragraph at lines 183--184
 h scilab and also open the \OT1/txtt/m/n/12 stepc.sce
  []
 
-<vlabs/stepc.png, id=178, 619.31375pt x 489.83pt>
+<vlabs/stepc.png, id=197, 619.31375pt x 489.83pt>
 File: vlabs/stepc.png Graphic file (type png)
  <use vlabs/stepc.png>
 Package pdftex.def Info: vlabs/stepc.png used on input line 187.
 (pdftex.def)             Requested size: 272.99881pt x 215.92946pt.
 
-[37] [38 <F:/rupak/work/sbhs-manual/vlabs/python-client.png>]
-<vlabs/step-xcos.png, id=186, 671.50874pt x 534.99875pt>
+[43] [44 <f:/rupak/work/sbhs-manual/vlabs/python-client.png>]
+<vlabs/step-xcos.png, id=205, 671.50874pt x 534.99875pt>
 File: vlabs/step-xcos.png Graphic file (type png)
 
 <use vlabs/step-xcos.png>
 Package pdftex.def Info: vlabs/step-xcos.png used on input line 196.
 (pdftex.def)             Requested size: 272.99881pt x 217.4978pt.
- [39 <F:/rupak/work/sbhs-manual/vlabs/stepc.png>]
-<vlabs/step-test-output.png, id=191, 1311.90125pt x 639.38875pt>
+ [45 <f:/rupak/work/sbhs-manual/vlabs/stepc.png>]
+<vlabs/step-test-output.png, id=210, 1311.90125pt x 639.38875pt>
 File: vlabs/step-test-output.png Graphic file (type png)
 
 <use vlabs/step-test-output.png>
 Package pdftex.def Info: vlabs/step-test-output.png used on input line 203.
 (pdftex.def)             Requested size: 272.99881pt x 133.0463pt.
- [40 <F:/rupak/work/sbhs-manual/vlabs/step-xcos.png>]
-Overfull \hbox (21.51447pt too wide) in paragraph at lines 216--217
-[]\OT1/txr/m/n/12 Switch to the scilab con-sole and ex-e-cute the com-mand \OT1
-/txtt/m/n/12 getd ../common[]files 
- []
-
-) (F:\rupak\work\sbhs-manual\Step-test_manual/StepTest.tex [41 <F:/rupak/work/s
-bhs-manual/vlabs/step-test-output.png (PNG copy)>]
+ [46 <f:/rupak/work/sbhs-manual/vlabs/step-xcos.png>]) (f:\rupak\work\sbhs-manu
+al\Step-test_manual/StepTest.tex [47 <f:/rupak/work/sbhs-manual/vlabs/step-test
+-output.png (PNG copy)>]
 Chapter 4.
-<Step-test_manual/step_xcos.jpg, id=199, 526.96875pt x 402.50375pt>
+<Step-test_manual/step_xcos.jpg, id=218, 526.96875pt x 402.50375pt>
 File: Step-test_manual/step_xcos.jpg Graphic file (type jpg)
 
 <use Step-test_manual/step_xcos.jpg>
 Package pdftex.def Info: Step-test_manual/step_xcos.jpg used on input line 7.
 (pdftex.def)             Requested size: 390.0pt x 297.89723pt.
 
-<Step-test_manual/ste-test.png, id=200, 620.3175pt x 377.41pt>
+<Step-test_manual/ste-test.png, id=219, 620.3175pt x 377.41pt>
 File: Step-test_manual/ste-test.png Graphic file (type png)
 
 <use Step-test_manual/ste-test.png>
 Package pdftex.def Info: Step-test_manual/ste-test.png used on input line 14.
 (pdftex.def)             Requested size: 390.0pt x 237.28006pt.
- [42
+ [48
 
-] [43 <F:/rupak/work/sbhs-manual/Step-test_manual/step_xcos.jpg>] [44 <F:/rupak
+] [49 <f:/rupak/work/sbhs-manual/Step-test_manual/step_xcos.jpg>] [50 <f:/rupak
 /work/sbhs-manual/Step-test_manual/ste-test.png (PNG copy)>]
-Overfull \hbox (7.14587pt too wide) in paragraph at lines 48--48
+<Step-test_manual/step-virtual.png, id=230, 612.2875pt x 461.725pt>
+File: Step-test_manual/step-virtual.png Graphic file (type png)
+
+<use Step-test_manual/step-virtual.png>
+Package pdftex.def Info: Step-test_manual/step-virtual.png used on input line 5
+2.
+(pdftex.def)             Requested size: 390.0pt x 294.09392pt.
+
+Overfull \hbox (25.7992pt too wide) in paragraph at lines 60--60
+[] \OT1/txtt/m/n/12 0 0 100 29.30 14...8080 14...8955 14...8993 14...8158 0.100
+00E+01 
+ []
+
+
+Overfull \hbox (19.4992pt too wide) in paragraph at lines 61--61
+[]\OT1/txtt/m/n/12 1 30 50 29.00 14...9364 14...0246 14...0263 14...9442 0.1000
+0E+01[] 
+ []
+
+
+Overfull \hbox (32.09918pt too wide) in paragraph at lines 64--64
+[]\OT1/txtt/m/n/12 711 40 50 36.20 14...9375 14...0280 14...0297 14...9437 0.71
+100E+03[] 
+ []
+
+
+Overfull \hbox (32.09918pt too wide) in paragraph at lines 65--65
+[]\OT1/txtt/m/n/12 712 40 50 36.10 14...0370 14...2673 14...2691 14...1834 0.71
+200E+03[] 
+ []
+
+
+Overfull \hbox (7.14587pt too wide) in paragraph at lines 71--71
 []\OT1/txr/bx/n/17.28 Identifying First Or-der and Sec-ond Or-der Trans-
  []
 
-[45]
-Overfull \hbox (17.71048pt too wide) in paragraph at lines 95--96
+[51 <f:/rupak/work/sbhs-manual/Step-test_manual/step-virtual.png (PNG copy)>]
+[52]
+Overfull \hbox (17.71048pt too wide) in paragraph at lines 118--119
 []\OT1/txr/m/n/12 Open the \OT1/txtt/m/n/12 Analysis \OT1/txr/m/n/12 folder and
  then lo-cate and open the folder \OT1/txtt/m/n/12 Step[]Analysis\OT1/txr/m/n/1
 2 . 
  []
 
-[46]
-Overfull \hbox (51.5504pt too wide) in paragraph at lines 98--99
+[53]
+Overfull \hbox (51.5504pt too wide) in paragraph at lines 121--122
 []\OT1/txr/m/n/12 Change the Scilab work-ing di-rec-tory to \OT1/txtt/m/n/12 Kp
 -tau-order1 \OT1/txr/m/n/12 folder un-der \OT1/txtt/m/n/12 Step[]Analysis
  []
 
-<Step-test_manual/local-1-order.png, id=217, 1311.90125pt x 639.38875pt>
+<Step-test_manual/local-1-order.png, id=240, 1311.90125pt x 639.38875pt>
 File: Step-test_manual/local-1-order.png Graphic file (type png)
 
 <use Step-test_manual/local-1-order.png>
 Package pdftex.def Info: Step-test_manual/local-1-order.png used on input line 
-106.
+129.
 (pdftex.def)             Requested size: 390.0pt x 190.07172pt.
- [47 <F:/rupak/work/sbhs-manual/Step-test_manual/local-1-order.png (PNG copy)>]
- [48]
-Overfull \hbox (17.71048pt too wide) in paragraph at lines 162--163
+
+Underfull \hbox (badness 3128) in paragraph at lines 130--130
+[]\OT1/txr/m/n/12 Figure 4.4: Out-put of the Scilab code \OT1/txtt/m/n/12 first
+order.sc\OT1/txr/m/n/12 e for data file
+ []
+
+[54 <f:/rupak/work/sbhs-manual/Step-test_manual/local-1-order.png (PNG copy)>]
+[55]
+Overfull \hbox (17.71048pt too wide) in paragraph at lines 185--186
 []\OT1/txr/m/n/12 Open the \OT1/txtt/m/n/12 Analysis \OT1/txr/m/n/12 folder and
  then lo-cate and open the folder \OT1/txtt/m/n/12 Step[]Analysis\OT1/txr/m/n/1
 2 . 
  []
 
 
-Overfull \hbox (51.5504pt too wide) in paragraph at lines 165--166
+Overfull \hbox (51.5504pt too wide) in paragraph at lines 188--189
 []\OT1/txr/m/n/12 Change the Scilab work-ing di-rec-tory to \OT1/txtt/m/n/12 Kp
 -tau-order2 \OT1/txr/m/n/12 folder un-der \OT1/txtt/m/n/12 Step[]Analysis
  []
 
-<Step-test_manual/local-2-order.png, id=225, 1311.90125pt x 639.38875pt>
+<Step-test_manual/local-2-order.png, id=248, 1311.90125pt x 639.38875pt>
 File: Step-test_manual/local-2-order.png Graphic file (type png)
 
 <use Step-test_manual/local-2-order.png>
 Package pdftex.def Info: Step-test_manual/local-2-order.png used on input line 
-176.
+199.
 (pdftex.def)             Requested size: 390.0pt x 190.07172pt.
- [49]
-(F:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order1/label.sc
-i [50 <F:/rupak/work/sbhs-manual/Step-test_manual/local-2-order.png (PNG copy)>
+ [56]
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order1/label.sc
+i [57 <f:/rupak/work/sbhs-manual/Step-test_manual/local-2-order.png (PNG copy)>
 ])
-(F:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order1/costf_1.
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order1/costf_1.
 sci)
-(F:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order1/firstord
-er.sce [51] [52])
-(F:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order2/costf_2.
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order1/firstord
+er.sce [58] [59])
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order2/costf_2.
 sci)
-(F:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order2/order_2_
-heater.sci [53])
-(F:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order2/secondor
-der.sce [54]) (F:\rupak\work\sbhs-manual\Scilab/local/Step_test/ser_init.sce
-[55]) (F:\rupak\work\sbhs-manual\Scilab/local/Step_test/step_test.sci)
-(F:\rupak\work\sbhs-manual\Scilab/virtual/StepTest/stepc.sce)
-(F:\rupak\work\sbhs-manual\Scilab/virtual/StepTest/steptest.sci [56]))
-(F:\rupak\work\sbhs-manual\Ramp-test_manual/RampTest.tex [57]
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order2/order_2_
+heater.sci [60])
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Step_Analysis/Kp-tau-order2/secondor
+der.sce [61]) (f:\rupak\work\sbhs-manual\Scilab/local/Step_test/ser_init.sce
+[62]) (f:\rupak\work\sbhs-manual\Scilab/local/Step_test/step_test.sci)
+(f:\rupak\work\sbhs-manual\Scilab/virtual/StepTest/stepc.sce)
+(f:\rupak\work\sbhs-manual\Scilab/virtual/StepTest/steptest.sci [63]))
+(f:\rupak\work\sbhs-manual\Ramp-test_manual/RampTest.tex [64]
 Chapter 5.
-<Ramp-test_manual/ramp_test.jpg, id=254, 520.94624pt x 261.97874pt>
+<Ramp-test_manual/ramp_test.jpg, id=277, 520.94624pt x 261.97874pt>
 File: Ramp-test_manual/ramp_test.jpg Graphic file (type jpg)
 
 <use Ramp-test_manual/ramp_test.jpg>
 Package pdftex.def Info: Ramp-test_manual/ramp_test.jpg used on input line 7.
 (pdftex.def)             Requested size: 272.99881pt x 137.28905pt.
 
-<Ramp-test_manual/ramp_plot.jpg, id=255, 612.2875pt x 461.725pt>
-File: Ramp-test_manual/ramp_plot.jpg Graphic file (type jpg)
+<Ramp-test_manual/ramp-test.png, id=278, 622.325pt x 406.51875pt>
+File: Ramp-test_manual/ramp-test.png Graphic file (type png)
 
-<use Ramp-test_manual/ramp_plot.jpg>
-Package pdftex.def Info: Ramp-test_manual/ramp_plot.jpg used on input line 14.
+<use Ramp-test_manual/ramp-test.png>
+Package pdftex.def Info: Ramp-test_manual/ramp-test.png used on input line 14.
+(pdftex.def)             Requested size: 390.0pt x 254.76212pt.
+ [65
+
+ <f:/rupak/work/sbhs-manual/Ramp-test_manual/ramp_test.jpg>] [66 <f:/rupak/work
+/sbhs-manual/Ramp-test_manual/ramp-test.png (PNG copy)>] [67] [68]
+<Ramp-test_manual/ramp-virtual-plot.png, id=292, 612.2875pt x 461.725pt>
+File: Ramp-test_manual/ramp-virtual-plot.png Graphic file (type png)
+
+<use Ramp-test_manual/ramp-virtual-plot.png>
+Package pdftex.def Info: Ramp-test_manual/ramp-virtual-plot.png used on input l
+ine 74.
 (pdftex.def)             Requested size: 390.0pt x 294.09392pt.
- [58
 
- <F:/rupak/work/sbhs-manual/Ramp-test_manual/ramp_test.jpg>] [59 <F:/rupak/work
-/sbhs-manual/Ramp-test_manual/ramp_plot.jpg>] [60] [61]
+Overfull \hbox (19.4992pt too wide) in paragraph at lines 82--82
+[]\OT1/txtt/m/n/12 0 0 100 28.80 14...8993 14...0301 14...0318 14...9040 0.1000
+0E+01 
+ []
 
-LaTeX Warning: Citation `ogt05' on page 62 undefined on input line 86.
 
-[62]
-Overfull \hbox (17.71048pt too wide) in paragraph at lines 92--93
+Overfull \hbox (19.4992pt too wide) in paragraph at lines 83--83
+[]\OT1/txtt/m/n/12 1 30 50 28.80 14...2861 14...4172 14...4189 14...2908 0.1000
+0E+01[] 
+ []
+
+
+Overfull \hbox (32.09918pt too wide) in paragraph at lines 86--86
+[]\OT1/txtt/m/n/12 617 66 50 39.10 14...7141 14...8476 14...8494 14...7188 0.61
+700E+03[] 
+ []
+
+
+Overfull \hbox (32.09918pt too wide) in paragraph at lines 87--87
+[]\OT1/txtt/m/n/12 618 66 50 39.10 14...8120 14...9456 14...9473 14...8167 0.61
+800E+03[] 
+ []
+
+[69 <f:/rupak/work/sbhs-manual/Ramp-test_manual/ramp-virtual-plot.png (PNG copy
+)>] [70]
+Overfull \hbox (17.71048pt too wide) in paragraph at lines 130--131
 []\OT1/txr/m/n/12 Open the \OT1/txtt/m/n/12 Analysis \OT1/txr/m/n/12 folder and
  then lo-cate and open the folder \OT1/txtt/m/n/12 Ramp[]Analysis\OT1/txr/m/n/1
 2 . 
  []
 
-<Ramp-test_manual/ramp_analysis.jpg, id=273, 622.325pt x 406.51875pt>
-File: Ramp-test_manual/ramp_analysis.jpg Graphic file (type jpg)
+<Ramp-test_manual/ramp-analysis.png, id=300, 612.2875pt x 461.725pt>
+File: Ramp-test_manual/ramp-analysis.png Graphic file (type png)
 
-<use Ramp-test_manual/ramp_analysis.jpg>
-Package pdftex.def Info: Ramp-test_manual/ramp_analysis.jpg used on input line 
-102.
-(pdftex.def)             Requested size: 390.0pt x 254.76212pt.
- [63 <F:/rupak/work/sbhs-manual/Ramp-test_manual/ramp_analysis.jpg>]
+<use Ramp-test_manual/ramp-analysis.png>
+Package pdftex.def Info: Ramp-test_manual/ramp-analysis.png used on input line 
+140.
+(pdftex.def)             Requested size: 390.0pt x 294.09392pt.
 
-LaTeX Warning: Citation `kmm09' on page 64 undefined on input line 120.
+<Ramp-test_manual/ramp-console.png, id=301, 616.55344pt x 402.00188pt>
+File: Ramp-test_manual/ramp-console.png Graphic file (type png)
 
-(F:\rupak\work\sbhs-manual\Scilab/local/Ramp_Test/ramp_test.sci) [64]
-(F:\rupak\work\sbhs-manual\Scilab/Analysis/Ramp_Analysis/label.sci)
-(F:\rupak\work\sbhs-manual\Scilab/Analysis/Ramp_Analysis/cost.sci [65])
-(F:\rupak\work\sbhs-manual\Scilab/Analysis/Ramp_Analysis/cost_approx.sci)
-(F:\rupak\work\sbhs-manual\Scilab/virtual/RampTest/ramptest.sci)
-(F:\rupak\work\sbhs-manual\Scilab/virtual/RampTest/ramptest.sce [66])
-(F:\rupak\work\sbhs-manual\Scilab/Analysis/Ramp_Analysis/ramp_virtual.sce
-[67] [68])) [69] (F:\rupak\work\sbhs-manual\sbhs-new-manual.aux)
+<use Ramp-test_manual/ramp-console.png>
+Package pdftex.def Info: Ramp-test_manual/ramp-console.png used on input line 1
+47.
+(pdftex.def)             Requested size: 390.0pt x 254.29303pt.
+ [71] [72 <f:/rupak/work/sbhs-manual/Ramp-test_manual/ramp-analysis.png (PNG co
+py)>] [73 <f:/rupak/work/sbhs-manual/Ramp-test_manual/ramp-console.png>]
+(f:\rupak\work\sbhs-manual\Scilab/local/Ramp_Test/ramp_test.sci [74])
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Ramp_Analysis/label.sci)
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Ramp_Analysis/cost.sci [75])
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Ramp_Analysis/cost_approx.sci)
+(f:\rupak\work\sbhs-manual\Scilab/virtual/RampTest/ramptest.sci [76])
+(f:\rupak\work\sbhs-manual\Scilab/virtual/RampTest/ramptest.sce)
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Ramp_Analysis/ramp_virtual.sce
+[77] [78])) (f:\rupak\work\sbhs-manual\sinetest_manual/SineTest.tex [79]
+Chapter 6.
+<sinetest_manual/sine_test.jpg, id=331, 557.08125pt x 345.29pt>
+File: sinetest_manual/sine_test.jpg Graphic file (type jpg)
+
+<use sinetest_manual/sine_test.jpg>
+Package pdftex.def Info: sinetest_manual/sine_test.jpg used on input line 10.
+(pdftex.def)             Requested size: 390.0pt x 241.73294pt.
+
+<sinetest_manual/sine-007-plot.png, id=332, 612.2875pt x 461.725pt>
+File: sinetest_manual/sine-007-plot.png Graphic file (type png)
+
+<use sinetest_manual/sine-007-plot.png>
+Package pdftex.def Info: sinetest_manual/sine-007-plot.png used on input line 1
+6.
+(pdftex.def)             Requested size: 390.0pt x 294.09392pt.
+ [80
+
+] [81 <f:/rupak/work/sbhs-manual/sinetest_manual/sine_test.jpg>] [82 <f:/rupak/
+work/sbhs-manual/sinetest_manual/sine-007-plot.png (PNG copy)>] [83]
+<sinetest_manual/sine-plot-virtual-007.png, id=345, 612.2875pt x 461.725pt>
+File: sinetest_manual/sine-plot-virtual-007.png Graphic file (type png)
+
+<use sinetest_manual/sine-plot-virtual-007.png>
+Package pdftex.def Info: sinetest_manual/sine-plot-virtual-007.png used on inpu
+t line 77.
+(pdftex.def)             Requested size: 390.0pt x 294.09392pt.
+
+Overfull \hbox (19.4992pt too wide) in paragraph at lines 85--85
+[]\OT1/txtt/m/n/12 0 0 100 28.80 14...4739 14...6427 14...6445 14...4786 0.1000
+0E+01 
+ []
+
+
+Overfull \hbox (19.4992pt too wide) in paragraph at lines 86--86
+[]\OT1/txtt/m/n/12 1 20 50 28.90 14...5247 14...6938 14...6956 14...5294 0.1000
+0E+01[] 
+ []
+
+
+Overfull \hbox (32.09918pt too wide) in paragraph at lines 89--89
+[]\OT1/txtt/m/n/12 999 18 50 31.00 14...2253 14...3973 14...3990 14...2299 0.99
+900E+03[] 
+ []
+
+
+Overfull \hbox (38.39917pt too wide) in paragraph at lines 90--90
+[]\OT1/txtt/m/n/12 1000 19 50 31.00 14...3268 14...4989 14...5007 14...3315 0.1
+0000E+04[] 
+ []
+
+[84] [85 <f:/rupak/work/sbhs-manual/sinetest_manual/sine-plot-virtual-007.png (
+PNG copy)>] [86]
+Overfull \hbox (17.71048pt too wide) in paragraph at lines 141--142
+[]\OT1/txr/m/n/12 Open the \OT1/txtt/m/n/12 Analysis \OT1/txr/m/n/12 folder and
+ then lo-cate and open the folder \OT1/txtt/m/n/12 Sine[]Analysis\OT1/txr/m/n/1
+2 . 
+ []
+
+
+<sinetest_manual/sine-local-analysis-console.png, id=356, 616.55344pt x 402.001
+88pt>
+File: sinetest_manual/sine-local-analysis-console.png Graphic file (type png)
+ <use sinetest_manual/sine-local-analysis-console.png>
+Package pdftex.def Info: sinetest_manual/sine-local-analysis-console.png used o
+n input line 151.
+(pdftex.def)             Requested size: 390.0pt x 254.29303pt.
+ [87]
+<sinetest_manual/sine-local-analysis.png, id=360, 612.2875pt x 461.725pt>
+File: sinetest_manual/sine-local-analysis.png Graphic file (type png)
+
+<use sinetest_manual/sine-local-analysis.png>
+Package pdftex.def Info: sinetest_manual/sine-local-analysis.png used on input 
+line 158.
+(pdftex.def)             Requested size: 390.0pt x 294.09392pt.
+
+<sinetest_manual/bodeplot.png, id=361, 612.2875pt x 461.725pt>
+File: sinetest_manual/bodeplot.png Graphic file (type png)
+
+<use sinetest_manual/bodeplot.png>
+Package pdftex.def Info: sinetest_manual/bodeplot.png used on input line 167.
+(pdftex.def)             Requested size: 390.0pt x 294.09392pt.
+
+<sinetest_manual/plant_bode_tf.png, id=362, 612.2875pt x 461.725pt>
+File: sinetest_manual/plant_bode_tf.png Graphic file (type png)
+
+<use sinetest_manual/plant_bode_tf.png>
+Package pdftex.def Info: sinetest_manual/plant_bode_tf.png used on input line 1
+76.
+(pdftex.def)             Requested size: 390.0pt x 294.09392pt.
+
+<sinetest_manual/bode_comparison.png, id=363, 612.2875pt x 461.725pt>
+File: sinetest_manual/bode_comparison.png Graphic file (type png)
+
+<use sinetest_manual/bode_comparison.png>
+Package pdftex.def Info: sinetest_manual/bode_comparison.png used on input line
+ 184.
+(pdftex.def)             Requested size: 390.0pt x 294.09392pt.
+ [88 <f:/rupak/work/sbhs-manual/sinetest_manual/sine-local-analysis-console.png
+>] [89 <f:/rupak/work/sbhs-manual/sinetest_manual/sine-local-analysis.png (PNG 
+copy)>] [90 <f:/rupak/work/sbhs-manual/sinetest_manual/bodeplot.png (PNG copy)>
+] [91 <f:/rupak/work/sbhs-manual/sinetest_manual/plant_bode_tf.png (PNG copy)>]
+ [92 <f:/rupak/work/sbhs-manual/sinetest_manual/bode_comparison.png (PNG copy)>
+]
+(f:\rupak\work\sbhs-manual\Scilab/local/Sine_Test/sine_test.sci)
+(f:\rupak\work\sbhs-manual\Scilab/virtual/SineTest/sinetest.sce)
+(f:\rupak\work\sbhs-manual\Scilab/virtual/SineTest/sinetest.sci [93])
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Sine_Analysis/sine-analysis.sce
+[94]) (f:\rupak\work\sbhs-manual\Scilab/Analysis/Sine_Analysis/label.sci
+[95]) (f:\rupak\work\sbhs-manual\Scilab/Analysis/Sine_Analysis/bodeplot.sce)
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Sine_Analysis/labelbode.sci [96])
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Sine_Analysis/TFbode.sce)
+(f:\rupak\work\sbhs-manual\Scilab/Analysis/Sine_Analysis/comparison.sce
+[97]
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 17.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\omstxr.fd"
+File: omstxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 17.
+))
+(f:\rupak\work\sbhs-manual\pid_manual/PID.tex [98]
+Chapter 7.
+<pid_manual/pid_xcos.png, id=399, 624.3325pt x 492.84125pt>
+File: pid_manual/pid_xcos.png Graphic file (type png)
+
+<use pid_manual/pid_xcos.png>
+Package pdftex.def Info: pid_manual/pid_xcos.png used on input line 6.
+(pdftex.def)             Requested size: 272.99881pt x 215.5047pt.
+ [99
+
+] [100 <f:/rupak/work/sbhs-manual/pid_manual/pid_xcos.png (PNG copy)>] [101]
+Overfull \hbox (0.23285pt too wide) in paragraph at lines 92--92
+[]\OT1/txr/bx/n/17.28 Ziegler-Nichols Rule for Tun-ing PID Con-trollers 
+ []
+
+<pid_manual/ReacCurve.png, id=409, 722.7pt x 451.6875pt>
+File: pid_manual/ReacCurve.png Graphic file (type png)
+
+<use pid_manual/ReacCurve.png>
+Package pdftex.def Info: pid_manual/ReacCurve.png used on input line 97.
+(pdftex.def)             Requested size: 390.0pt x 243.74908pt.
+ [102]
+<pid_manual/PIDUGtune.png, id=414, 722.7pt x 421.575pt>
+File: pid_manual/PIDUGtune.png Graphic file (type png)
+
+<use pid_manual/PIDUGtune.png>
+Package pdftex.def Info: pid_manual/PIDUGtune.png used on input line 134.
+(pdftex.def)             Requested size: 390.0pt x 227.49915pt.
+ [103 <f:/rupak/work/sbhs-manual/pid_manual/ReacCurve.png>] <pid_manual/forder_
+fit.png, id=418, 612.2875pt x 461.725pt>
+File: pid_manual/forder_fit.png Graphic file (type png)
+
+<use pid_manual/forder_fit.png>
+Package pdftex.def Info: pid_manual/forder_fit.png used on input line 167.
+(pdftex.def)             Requested size: 272.99881pt x 205.86504pt.
+ [104] [105 <f:/rupak/work/sbhs-manual/pid_manual/PIDUGtune.png> <f:/rupak/work
+/sbhs-manual/pid_manual/forder_fit.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
+
+ []
+
+<pid_manual/pi_ta_xcos.png, id=425, 625.33624pt x 472.76625pt>
+File: pid_manual/pi_ta_xcos.png Graphic file (type png)
+
+<use pid_manual/pi_ta_xcos.png>
+Package pdftex.def Info: pid_manual/pi_ta_xcos.png used on input line 188.
+(pdftex.def)             Requested size: 272.99881pt x 206.39468pt.
+ [106] [107 <f:/rupak/work/sbhs-manual/pid_manual/pi_ta_xcos.png (PNG copy)>]
+Overfull \hbox (7.30637pt too wide) in paragraph at lines 232--233
+[]\OT1/txr/m/n/12 In step 6, ex-e-cute the file \OT1/txtt/m/n/12 pi[]ta[]virtua
+l.xcos \OT1/txr/m/n/12 in-stead of \OT1/txtt/m/n/12 step[]test.xcos\OT1/txr/m/n
+/12 . 
+ []
+
+<pid_manual/pi_ta.png, id=432, 612.2875pt x 461.725pt>
+File: pid_manual/pi_ta.png Graphic file (type png)
+
+<use pid_manual/pi_ta.png>
+Package pdftex.def Info: pid_manual/pi_ta.png used on input line 240.
+(pdftex.def)             Requested size: 234.00238pt x 176.45776pt.
+
+Overfull \hbox (7.69785pt too wide) in paragraph at lines 245--245
+[]\OT1/txr/bx/n/17.28 Implementing PI Con-troller us-ing Back-ward Dif-
+ []
+
+[108 <f:/rupak/work/sbhs-manual/pid_manual/pi_ta.png (PNG copy)>] [109]
+<pid_manual/pi_bda.jpg, id=440, 612.2875pt x 461.725pt>
+File: pid_manual/pi_bda.jpg Graphic file (type jpg)
+
+<use pid_manual/pi_bda.jpg>
+Package pdftex.def Info: pid_manual/pi_bda.jpg used on input line 282.
+(pdftex.def)             Requested size: 234.00238pt x 176.45776pt.
+
+Overfull \hbox (1.00638pt too wide) in paragraph at lines 294--295
+[]\OT1/txr/m/n/12 In step 5, ex-e-cute the file \OT1/txtt/m/n/12 pi[]bda[]virtu
+al.sce \OT1/txr/m/n/12 in-stead of \OT1/txtt/m/n/12 step[]test.sce\OT1/txr/m/n/
+12 . 
+ []
+
+
+Overfull \hbox (13.60635pt too wide) in paragraph at lines 295--296
+[]\OT1/txr/m/n/12 In step 6, ex-e-cute the file \OT1/txtt/m/n/12 pi[]bda[]virtu
+al.xcos \OT1/txr/m/n/12 in-stead of \OT1/txtt/m/n/12 step[]test.xcos\OT1/txr/m/
+n/12 . 
+ []
+
+[110 <f:/rupak/work/sbhs-manual/pid_manual/pi_bda.jpg>] [111]
+<pid_manual/pi_fda.png, id=447, 612.2875pt x 461.725pt>
+File: pid_manual/pi_fda.png Graphic file (type png)
+
+<use pid_manual/pi_fda.png>
+Package pdftex.def Info: pid_manual/pi_fda.png used on input line 335.
+(pdftex.def)             Requested size: 234.00238pt x 176.45776pt.
+
+Overfull \hbox (7.52505pt too wide) in paragraph at lines 340--340
+[]\OT1/txr/bx/n/14.4 Implementing PI Con-troller us-ing For-ward Dif-fer-ence A
+p-
+ []
+
+
+Overfull \hbox (1.00638pt too wide) in paragraph at lines 346--347
+[]\OT1/txr/m/n/12 In step 5, ex-e-cute the file \OT1/txtt/m/n/12 pi[]fda[]virtu
+al.sce \OT1/txr/m/n/12 in-stead of \OT1/txtt/m/n/12 step[]test.sce\OT1/txr/m/n/
+12 . 
+ []
+
+
+Overfull \hbox (13.60635pt too wide) in paragraph at lines 347--348
+[]\OT1/txr/m/n/12 In step 6, ex-e-cute the file \OT1/txtt/m/n/12 pi[]fda[]virtu
+al.xcos \OT1/txr/m/n/12 in-stead of \OT1/txtt/m/n/12 step[]test.xcos\OT1/txr/m/
+n/12 . 
+ []
+
+<pid_manual/pid_bda_virtual_xcos.png, id=448, 624.3325pt x 492.84125pt>
+File: pid_manual/pid_bda_virtual_xcos.png Graphic file (type png)
+
+<use pid_manual/pid_bda_virtual_xcos.png>
+Package pdftex.def Info: pid_manual/pid_bda_virtual_xcos.png used on input line
+ 356.
+(pdftex.def)             Requested size: 234.00238pt x 184.71724pt.
+ [112 <f:/rupak/work/sbhs-manual/pid_manual/pi_fda.png (PNG copy)>] [113 <f:/ru
+pak/work/sbhs-manual/pid_manual/pid_bda_virtual_xcos.png (PNG copy)>]
+<pid_manual/pid_bda_graph.jpg, id=455, 612.2875pt x 461.725pt>
+File: pid_manual/pid_bda_graph.jpg Graphic file (type jpg)
+
+<use pid_manual/pid_bda_graph.jpg>
+Package pdftex.def Info: pid_manual/pid_bda_graph.jpg used on input line 399.
+(pdftex.def)             Requested size: 272.99881pt x 205.86504pt.
+
+Overfull \hbox (1.52026pt too wide) in paragraph at lines 405--405
+[]\OT1/txr/bx/n/14.4 Implementing PID Con-troller us-ing Back-ward Dif-fer-ence
+
+ []
+
+[114]
+Overfull \hbox (7.30637pt too wide) in paragraph at lines 411--412
+[]\OT1/txr/m/n/12 In step 5, ex-e-cute the file \OT1/txtt/m/n/12 pid[]bda[]virt
+ual.sce \OT1/txr/m/n/12 in-stead of \OT1/txtt/m/n/12 step[]test.sce\OT1/txr/m/n
+/12 . 
+ []
+
+
+Overfull \hbox (19.90634pt too wide) in paragraph at lines 412--413
+[]\OT1/txr/m/n/12 In step 6, ex-e-cute the file \OT1/txtt/m/n/12 pid[]bda[]virt
+ual.xcos \OT1/txr/m/n/12 in-stead of \OT1/txtt/m/n/12 step[]test.xcos\OT1/txr/m
+/n/12 . 
+ []
+
+
+Overfull \hbox (0.26744pt too wide) in paragraph at lines 418--418
+[]\OT1/txr/bx/n/17.28 Implementing PID Con-troller us-ing Trape-zoidal
+ []
+
+
+Overfull \hbox (4.91682pt too wide) in paragraph at lines 418--418
+\OT1/txr/bx/n/17.28 Ap-prox-i-ma-tion for In-te-gral Mode and Back-ward
+ []
+
+
+Overfull \hbox (16.30435pt too wide) in paragraph at lines 418--418
+\OT1/txr/bx/n/17.28 Dif-fer-ence Ap-prox-i-ma-tion for the Deriva-tive Mode 
+ []
+
+[115 <f:/rupak/work/sbhs-manual/pid_manual/pid_bda_graph.jpg>] [116]
+<pid_manual/pid_ta_bda_graph.jpg, id=466, 352.31625pt x 363.60844pt>
+File: pid_manual/pid_ta_bda_graph.jpg Graphic file (type jpg)
+
+<use pid_manual/pid_ta_bda_graph.jpg>
+Package pdftex.def Info: pid_manual/pid_ta_bda_graph.jpg used on input line 456
+.
+(pdftex.def)             Requested size: 234.00238pt x 241.50252pt.
+
+Overfull \hbox (0.13783pt too wide) in paragraph at lines 463--463
+[]\OT1/txr/bx/n/14.4 Implementing PID Con-troller us-ing Trape-zoidal Ap-prox-
+ []
+
+
+Overfull \hbox (24.22635pt too wide) in paragraph at lines 469--470
+[]\OT1/txr/m/n/12 In step 5, ex-e-cute the file \OT1/txtt/m/n/12 pid[]ta[]bda[]
+virtual.sce \OT1/txr/m/n/12 in-stead of \OT1/txtt/m/n/12 step[]test.sce\OT1/txr
+/m/n/12 . 
+ []
+
+[117 <f:/rupak/work/sbhs-manual/pid_manual/pid_ta_bda_graph.jpg>]
+Overfull \hbox (36.82632pt too wide) in paragraph at lines 470--471
+[]\OT1/txr/m/n/12 In step 6, ex-e-cute the file \OT1/txtt/m/n/12 pid[]ta[]bda[]
+virtual.xcos \OT1/txr/m/n/12 in-stead of \OT1/txtt/m/n/12 step[]test.xcos\OT1/t
+xr/m/n/12 . 
+ []
+
+<pid_manual/pidN_virtual_xcos.png, id=470, 781.92125pt x 502.87875pt>
+File: pid_manual/pidN_virtual_xcos.png Graphic file (type png)
+
+<use pid_manual/pidN_virtual_xcos.png>
+Package pdftex.def Info: pid_manual/pidN_virtual_xcos.png used on input line 48
+1.
+(pdftex.def)             Requested size: 234.00238pt x 150.49646pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 482--482
+[]\OT1/txr/m/n/12 Figure 7.12: Xcos for PID con-troller with fil-ter-ing avail-
+able as
+ []
+
+[118 <f:/rupak/work/sbhs-manual/pid_manual/pidN_virtual_xcos.png (PNG copy)>]
+[119] <pid_manual/pid_filter.jpg, id=477, 612.2875pt x 461.725pt>
+File: pid_manual/pid_filter.jpg Graphic file (type jpg)
+
+<use pid_manual/pid_filter.jpg>
+Package pdftex.def Info: pid_manual/pid_filter.jpg used on input line 529.
+(pdftex.def)             Requested size: 272.99881pt x 205.86504pt.
+ [120 <f:/rupak/work/sbhs-manual/pid_manual/pid_filter.jpg>]
+Overfull \hbox (26.20633pt too wide) in paragraph at lines 543--544
+[]\OT1/txr/m/n/12 In step 5, ex-e-cute the file \OT1/txtt/m/n/12 pid[]filter[]v
+irtual.sce \OT1/txr/m/n/12 in-stead of \OT1/txtt/m/n/12 step[]test.sce\OT1/txr/
+m/n/12 . 
+ []
+
+
+Overfull \hbox (2.98636pt too wide) in paragraph at lines 544--545
+[]\OT1/txr/m/n/12 In step 6, ex-e-cute the file \OT1/txtt/m/n/12 pidN[]virtual.
+xcos \OT1/txr/m/n/12 in-stead of \OT1/txtt/m/n/12 step[]test.xcos\OT1/txr/m/n/1
+2 . 
+ []
+
+(f:\rupak\work\sbhs-manual\Scilab/local/pid_controller/ser_init.sce)
+(f:\rupak\work\sbhs-manual\Scilab/local/pid_controller/pi_ta.sci [121])
+(f:\rupak\work\sbhs-manual\Scilab/local/pid_controller/pi_bda.sci [122])
+(f:\rupak\work\sbhs-manual\Scilab/local/pid_controller/pi_fda.sci [123])
+(f:\rupak\work\sbhs-manual\Scilab/local/pid_controller/pid_bda.sci [124])
+(f:\rupak\work\sbhs-manual\Scilab/local/pid_controller/pid_ta_bda.sci [125])
+(f:\rupak\work\sbhs-manual\Scilab/local/pid_controller/pid_filter.sci [126])
+(f:\rupak\work\sbhs-manual\Scilab/virtual/pid_controller/pid_bda_virtual.sce)
+(f:\rupak\work\sbhs-manual\Scilab/virtual/pid_controller/pid_bda_virtual.sci
+[127])) (f:\rupak\work\sbhs-manual\prbs/prbs.tex [128]
+Chapter 8.
+<prbs/prbs-xcos.png, id=507, 684.5575pt x 631.35875pt>
+File: prbs/prbs-xcos.png Graphic file (type png)
+
+<use prbs/prbs-xcos.png>
+Package pdftex.def Info: prbs/prbs-xcos.png used on input line 16.
+(pdftex.def)             Requested size: 272.99881pt x 251.78758pt.
+
+Overfull \hbox (0.47575pt too wide) in paragraph at lines 21--21
+[]\OT1/txr/bx/n/17.28 Issues with Step Test and an Al-ter-nate Ap-proach 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--31
+
+ []
+
+[129
+
+] [130 <f:/rupak/work/sbhs-manual/prbs/prbs-xcos.png>]
+<prbs/PRBS.jpg, id=515, 408.52625pt x 343.2825pt>
+File: prbs/PRBS.jpg Graphic file (type jpg)
+ <use prbs/PRBS.jpg>
+Package pdftex.def Info: prbs/PRBS.jpg used on input line 42.
+(pdftex.def)             Requested size: 234.00238pt x 196.6316pt.
+ [131]
+<prbs/prbs-illustration.png, id=519, 1311.90125pt x 639.38875pt>
+File: prbs/prbs-illustration.png Graphic file (type png)
+
+<use prbs/prbs-illustration.png>
+Package pdftex.def Info: prbs/prbs-illustration.png used on input line 65.
+(pdftex.def)             Requested size: 272.99881pt x 133.0463pt.
+
+<prbs/prbs-expt.png, id=520, 622.325pt x 406.51875pt>
+File: prbs/prbs-expt.png Graphic file (type png)
+ <use prbs/prbs-expt.png>
+Package pdftex.def Info: prbs/prbs-expt.png used on input line 72.
+(pdftex.def)             Requested size: 272.99881pt x 178.32913pt.
+
+[132 <f:/rupak/work/sbhs-manual/prbs/PRBS.jpg>] [133 <f:/rupak/work/sbhs-manual
+/prbs/prbs-illustration.png (PNG copy)> <f:/rupak/work/sbhs-manual/prbs/prbs-ex
+pt.png (PNG copy)>]
+Overfull \hbox (4.2568pt too wide) in paragraph at lines 111--120
+[]\OT1/txr/m/n/12 The op-ti-miza-tion is per-formed us-ing the op-ti-miza-tion 
+rou-tine \op-tim" of Scilab.
+ []
+
+<prbs/prbs-fit.png, id=528, 622.325pt x 406.51875pt>
+File: prbs/prbs-fit.png Graphic file (type png)
+ <use prbs/prbs-fit.png>
+Package pdftex.def Info: prbs/prbs-fit.png used on input line 129.
+(pdftex.def)             Requested size: 272.99881pt x 178.32913pt.
+
+<prbs/prbs-model.png, id=529, 658.46pt x 717.68124pt>
+File: prbs/prbs-model.png Graphic file (type png)
+
+<use prbs/prbs-model.png>
+Package pdftex.def Info: prbs/prbs-model.png used on input line 136.
+(pdftex.def)             Requested size: 272.99881pt x 297.5584pt.
+ [134] [135 <f:/rupak/work/sbhs-manual/prbs/prbs-fit.png (PNG copy)> <f:/rupak/
+work/sbhs-manual/prbs/prbs-model.png>]
+
+LaTeX Warning: Reference `2dof' on page 136 undefined on input line 154.
+
+<prbs/prbs-2dof-controller.png, id=537, 1102.1175pt x 606.265pt>
+File: prbs/prbs-2dof-controller.png Graphic file (type png)
+
+<use prbs/prbs-2dof-controller.png>
+Package pdftex.def Info: prbs/prbs-2dof-controller.png used on input line 159.
+(pdftex.def)             Requested size: 350.99762pt x 193.08368pt.
+
+Overfull \hbox (10.73549pt too wide) in paragraph at lines 170--170
+[] 
+ []
+
+[136 <f:/rupak/work/sbhs-manual/prbs/prbs-2dof-controller.png>]
+(f:\rupak\work\sbhs-manual\Scilab/local/prbs/identification/ser_init.sce
+[137])
+(f:\rupak\work\sbhs-manual\Scilab/local/prbs/identification/costfunction.sci)
+(f:\rupak\work\sbhs-manual\Scilab/local/prbs/identification/optimize.sce
+[138] [139])
+(f:\rupak\work\sbhs-manual\Scilab/local/prbs/identification/prbs.sci [140])
+(f:\rupak\work\sbhs-manual\Scilab/local/prbs/identification/prbstest.sci)
+(f:\rupak\work\sbhs-manual\Scilab/local/prbs/identification/second_order.sci
+[141]) (f:\rupak\work\sbhs-manual\Scilab/local/prbs/identification/start.sce)
+[142] (f:\rupak\work\sbhs-manual\Scilab/local/prbs/controller/prbs.sce)
+(f:\rupak\work\sbhs-manual\Scilab/local/prbs/controller/prbs_pp.sci [143])
+(f:\rupak\work\sbhs-manual\Scilab/local/prbs/controller/ser_init.sce)
+(f:\rupak\work\sbhs-manual\Scilab/local/prbs/controller/start.sce [144])
+(f:\rupak\work\sbhs-manual\Scilab/local/prbs/controller/twodof_para.sce
+[145]) [146]
+(f:\rupak\work\sbhs-manual\Scilab/virtual/prbs/identification/costfunction.sci)
+(f:\rupak\work\sbhs-manual\Scilab/virtual/prbs/identification/optimize.sce
+[147]
+LaTeX Font Info:    Font shape `OML/txr/m/n' in size <8> not available
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 16.
+ [148]) [149]
+(f:\rupak\work\sbhs-manual\Scilab/virtual/prbs/identification/prbs.sci)
+(f:\rupak\work\sbhs-manual\Scilab/virtual/prbs/identification/prbstest.sci)
+(f:\rupak\work\sbhs-manual\Scilab/virtual/prbs/identification/prbstest.sce
+[150])
+(f:\rupak\work\sbhs-manual\Scilab/virtual/prbs/identification/second_order.sci
+[151]) (f:\rupak\work\sbhs-manual\Scilab/virtual/prbs/controller/prbs.sce
+[152])
+(f:\rupak\work\sbhs-manual\Scilab/virtual/prbs/controller/prbscontrol-virtual.s
+ci) (f:\rupak\work\sbhs-manual\Scilab/virtual/prbs/controller/twodof_para.sce
+[153] [154]))
+(f:\rupak\work\sbhs-manual\Vikas_self/report_tex/self_tuning_report_vikas.tex
+[155]
+Chapter 9.
+[156
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+[157]
+
+LaTeX Warning: File `Vikas_self/report_tex/Closed Loop Circuit.jpg' not found o
+n input line 68.
+
+
+<Vikas_self/report_tex/Closed Loop Circuit.jpg, id=608, 453.94594pt x 140.02313
+pt>
+File: Vikas_self/report_tex/Closed Loop Circuit.jpg Graphic file (type jpg)
+ <use Vikas_self/report_tex/Closed Loop Circuit.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/Closed Loop Circuit.jpg used on 
+input line 68.
+(pdftex.def)             Requested size: 9078.89648pt x 2800.45563pt.
+ [158 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/Closed Loop Circuit.jpg>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+
+ []
+
+[159] <Vikas_self/report_tex/ziegler.jpg, id=615, 168.63pt x 98.61844pt>
+File: Vikas_self/report_tex/ziegler.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/ziegler.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/ziegler.jpg used on input line 1
+06.
+(pdftex.def)             Requested size: 272.99881pt x 159.65863pt.
+
+Overfull \hbox (0.45857pt too wide) in paragraph at lines 138--138
+[]\OT1/txr/bx/n/17.28 Step Test Ex-per-i-ments and Parme-ter Es-ti-ma-tion 
+ []
+
+
+<Vikas_self/report_tex/parameter_estimation/10to15.jpg, id=616, 438.13687pt x 1
+97.98969pt>
+File: Vikas_self/report_tex/parameter_estimation/10to15.jpg Graphic file (type 
+jpg)
+ <use Vikas_self/report_tex/parameter_estimation/10to15.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/parameter_estimation/10to15.jpg 
+used on input line 146.
+(pdftex.def)             Requested size: 272.99881pt x 123.3656pt.
+
+[160 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/ziegler.jpg>]
+<Vikas_self/report_tex/parameter_estimation/optimized10to15.jpg, id=620, 455.45
+157pt x 336.50719pt>
+File: Vikas_self/report_tex/parameter_estimation/optimized10to15.jpg Graphic fi
+le (type jpg)
+
+<use Vikas_self/report_tex/parameter_estimation/optimized10to15.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/parameter_estimation/optimized10
+to15.jpg used on input line 155.
+(pdftex.def)             Requested size: 292.5pt x 216.11351pt.
+ [161 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/parameter_estimation/10t
+o15.jpg> <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/parameter_estimation/
+optimized10to15.jpg>]
+<Vikas_self/report_tex/parameter_estimation/20to25.jpg, id=624, 455.45157pt x 2
+01.00093pt>
+File: Vikas_self/report_tex/parameter_estimation/20to25.jpg Graphic file (type 
+jpg)
+ <use Vikas_self/report_tex/parameter_estimation/20to25.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/parameter_estimation/20to25.jpg 
+used on input line 164.
+(pdftex.def)             Requested size: 272.99881pt x 120.48186pt.
+
+<Vikas_self/report_tex/parameter_estimation/optimized20to25.jpg, id=625, 456.20
+438pt x 344.78813pt>
+File: Vikas_self/report_tex/parameter_estimation/optimized20to25.jpg Graphic fi
+le (type jpg)
+
+<use Vikas_self/report_tex/parameter_estimation/optimized20to25.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/parameter_estimation/optimized20
+to25.jpg used on input line 171.
+(pdftex.def)             Requested size: 272.99881pt x 206.33258pt.
+ [162 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/parameter_estimation/20t
+o25.jpg> <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/parameter_estimation/
+optimized20to25.jpg>]
+<Vikas_self/report_tex/parameter_estimation/30to35.jpg, id=630, 456.20438pt x 1
+97.98969pt>
+File: Vikas_self/report_tex/parameter_estimation/30to35.jpg Graphic file (type 
+jpg)
+ <use Vikas_self/report_tex/parameter_estimation/30to35.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/parameter_estimation/30to35.jpg 
+used on input line 180.
+(pdftex.def)             Requested size: 272.99881pt x 118.48355pt.
+
+<Vikas_self/report_tex/parameter_estimation/optimized30to35.jpg, id=631, 456.20
+438pt x 345.54094pt>
+File: Vikas_self/report_tex/parameter_estimation/optimized30to35.jpg Graphic fi
+le (type jpg)
+
+<use Vikas_self/report_tex/parameter_estimation/optimized30to35.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/parameter_estimation/optimized30
+to35.jpg used on input line 187.
+(pdftex.def)             Requested size: 292.5pt x 221.55142pt.
+ [163 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/parameter_estimation/30t
+o35.jpg> <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/parameter_estimation/
+optimized30to35.jpg>]
+Overfull \hbox (50.83203pt too wide) in paragraph at lines 195--202
+[][] 
+ []
+
+
+<Vikas_self/report_tex/parameter_estimation/kp.jpg, id=635, 357.58594pt x 205.5
+178pt>
+File: Vikas_self/report_tex/parameter_estimation/kp.jpg Graphic file (type jpg)
+
+ <use Vikas_self/report_tex/parameter_estimation/kp.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/parameter_estimation/kp.jpg used
+ on input line 243.
+(pdftex.def)             Requested size: 390.0pt x 224.16049pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<Vikas_self/report_tex/parameter_estimation/taup.jpg, id=636, 420.82219pt x 205
+.5178pt>
+File: Vikas_self/report_tex/parameter_estimation/taup.jpg Graphic file (type jp
+g)
+ <use Vikas_self/report_tex/parameter_estimation/taup.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/parameter_estimation/taup.jpg us
+ed on input line 250.
+(pdftex.def)             Requested size: 390.0pt x 190.4679pt.
+ [164]
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--274
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+
+ []
+
+[165 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/parameter_estimation/kp.j
+pg>]
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
+
+ []
+
+
+<Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg, id=643, 624.3325pt x 50
+6.89375pt>
+File: Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg Graphic file (type 
+jpg)
+ <use Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/implementation/Pi_dist_xcos.jpg 
+used on input line 287.
+(pdftex.def)             Requested size: 272.99881pt x 221.64944pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[166 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/parameter_estimation/taup
+.jpg>]
+<Vikas_self/report_tex/implementation/pid_dist.png, id=647, 644.4075pt x 547.04
+375pt>
+File: Vikas_self/report_tex/implementation/pid_dist.png Graphic file (type png)
+
+ <use Vikas_self/report_tex/implementation/pid_dist.png>
+Package pdftex.def Info: Vikas_self/report_tex/implementation/pid_dist.png used
+ on input line 325.
+(pdftex.def)             Requested size: 272.99881pt x 231.76013pt.
+ [167 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/implementation/Pi_dist_x
+cos.jpg>]
+[168 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/implementation/pid_dist.p
+ng>] [169]
+<Vikas_self/report_tex/implementation/pi_dist_self.png, id=660, 587.19376pt x 4
+15.5525pt>
+File: Vikas_self/report_tex/implementation/pi_dist_self.png Graphic file (type 
+png)
+ <use Vikas_self/report_tex/implementation/pi_dist_self.png>
+Package pdftex.def Info: Vikas_self/report_tex/implementation/pi_dist_self.png 
+used on input line 366.
+(pdftex.def)             Requested size: 390.0pt x 275.99654pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--381
+
+ []
+
+[170 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/implementation/pi_dist_se
+lf.png>] [171]
+<Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSynthes
+is/step32to37.jpg, id=668, 587.94656pt x 247.67531pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSy
+nthesis/step32to37.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSyn
+thesis/step32to37.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/NewSetpo
+int_change/DirectSynthesis/step32to37.jpg used on input line 407.
+(pdftex.def)             Requested size: 272.99881pt x 115.00154pt.
+
+<Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSynthes
+is/step35to45.jpg, id=669, 587.94656pt x 247.67531pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSy
+nthesis/step35to45.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSyn
+thesis/step35to45.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/NewSetpo
+int_change/DirectSynthesis/step35to45.jpg used on input line 417.
+(pdftex.def)             Requested size: 272.99881pt x 115.00154pt.
+
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direct_Sy
+nthesis/step32to37.jpg, id=670, 587.94656pt x 247.67531pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Dire
+ct_Synthesis/step32to37.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direc
+t_Synthesis/step32to37.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Setpointchange/Direct_Synthesis/step32to37.jpg used on input line 426.
+(pdftex.def)             Requested size: 272.99881pt x 115.00154pt.
+ [172 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/self_tuning/
+NewSetpoint_change/DirectSynthesis/step32to37.jpg> <f:/rupak/work/sbhs-manual/V
+ikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/DirectSynthesis
+/step35to45.jpg>]
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direct_Sy
+nthesis/step35to45.jpg, id=674, 587.94656pt x 250.68657pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Dire
+ct_Synthesis/step35to45.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direc
+t_Synthesis/step35to45.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Setpointchange/Direct_Synthesis/step35to45.jpg used on input line 433.
+(pdftex.def)             Requested size: 272.99881pt x 116.39973pt.
+ [173 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/Conventional
+_Tuning/Setpointchange/Direct_Synthesis/step32to37.jpg> <f:/rupak/work/sbhs-man
+ual/Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/Direct
+_Synthesis/step35to45.jpg>]
+<Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step32to37
+.jpg, id=678, 597.73312pt x 247.67531pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step3
+2to37.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step32
+to37.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/NewSetpo
+int_change/PI/step32to37.jpg used on input line 448.
+(pdftex.def)             Requested size: 272.99881pt x 113.11949pt.
+
+<Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step35to45
+.jpg, id=679, 592.46344pt x 247.67531pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step3
+5to45.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step35
+to45.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/NewSetpo
+int_change/PI/step35to45.jpg used on input line 456.
+(pdftex.def)             Requested size: 272.99881pt x 114.12854pt.
+
+<Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step40to45
+.jpg, id=680, 587.94656pt x 247.67531pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step4
+0to45.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PI/step40
+to45.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/NewSetpo
+int_change/PI/step40to45.jpg used on input line 468.
+(pdftex.def)             Requested size: 272.99881pt x 115.00154pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[174 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/self_tuning/N
+ewSetpoint_change/PI/step32to37.jpg> <f:/rupak/work/sbhs-manual/Vikas_self/repo
+rt_tex/PID_results/self_tuning/NewSetpoint_change/PI/step35to45.jpg>]
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step32
+to37.jpg, id=685, 596.98032pt x 247.67531pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/s
+tep32to37.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/st
+ep32to37.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Setpointchange/PI/step32to37.jpg used on input line 476.
+(pdftex.def)             Requested size: 272.99881pt x 113.26309pt.
+ [175 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/self_tuning/
+NewSetpoint_change/PI/step40to45.jpg> <f:/rupak/work/sbhs-manual/Vikas_self/rep
+ort_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step32to37.jpg>]
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step35
+to45.jpg, id=689, 710.655pt x 249.18094pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/s
+tep35to45.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/st
+ep35to45.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Setpointchange/PI/step35to45.jpg used on input line 481.
+(pdftex.def)             Requested size: 272.99881pt x 95.72392pt.
+
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step40
+to45.jpg, id=690, 710.655pt x 241.65282pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/s
+tep40to45.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/st
+ep40to45.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Setpointchange/PI/step40to45.jpg used on input line 487.
+(pdftex.def)             Requested size: 272.99881pt x 92.83197pt.
+ [176 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/Conventional
+_Tuning/Setpointchange/PI/step35to45.jpg> <f:/rupak/work/sbhs-manual/Vikas_self
+/report_tex/PID_results/Conventional_Tuning/Setpointchange/PI/step40to45.jpg>]
+<Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step32to3
+7.jpg, id=694, 587.94656pt x 247.67531pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step
+32to37.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step3
+2to37.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/NewSetpo
+int_change/PID/step32to37.jpg used on input line 502.
+(pdftex.def)             Requested size: 272.99881pt x 115.00154pt.
+
+<Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step32to4
+6.jpg, id=695, 587.94656pt x 247.67531pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step
+32to46.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/NewSetpoint_change/PID/step3
+2to46.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/NewSetpo
+int_change/PID/step32to46.jpg used on input line 509.
+(pdftex.def)             Requested size: 272.99881pt x 115.00154pt.
+
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/step3
+2to37.jpg, id=696, 635.37375pt x 247.67531pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/
+step32to37.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/s
+tep32to37.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Setpointchange/PID/step32to37.jpg used on input line 519.
+(pdftex.def)             Requested size: 272.99881pt x 106.41893pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/step3
+1to45.jpg, id=697, 587.94656pt x 247.67531pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/
+step31to45.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/s
+tep31to45.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Setpointchange/PID/step31to45.jpg used on input line 527.
+(pdftex.def)             Requested size: 272.99881pt x 115.00154pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[177 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/self_tuning/N
+ewSetpoint_change/PID/step32to37.jpg> <f:/rupak/work/sbhs-manual/Vikas_self/rep
+ort_tex/PID_results/self_tuning/NewSetpoint_change/PID/step32to46.jpg>]
+[178 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/Conventional_
+Tuning/Setpointchange/PID/step32to37.jpg> <f:/rupak/work/sbhs-manual/Vikas_self
+/report_tex/PID_results/Conventional_Tuning/Setpointchange/PID/step31to45.jpg>]
+
+<Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthesis/s
+tep50to100.jpg, id=704, 710.655pt x 401.24907pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthe
+sis/step50to100.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthes
+is/step50to100.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/FanDistu
+rbance/DirectSynthesis/step50to100.jpg used on input line 576.
+(pdftex.def)             Requested size: 272.99881pt x 154.14156pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[179]
+<Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthesis/s
+tep100to50.jpg, id=708, 710.655pt x 401.24907pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthe
+sis/step100to50.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthes
+is/step100to50.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/FanDistu
+rbance/DirectSynthesis/step100to50.jpg used on input line 586.
+(pdftex.def)             Requested size: 272.99881pt x 154.14156pt.
+ [180 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/self_tuning/
+FanDisturbance/DirectSynthesis/step50to100.jpg> <f:/rupak/work/sbhs-manual/Vika
+s_self/report_tex/PID_results/self_tuning/FanDisturbance/DirectSynthesis/step10
+0to50.jpg>]
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Direct_S
+ysthesis/step50to100.jpg, id=713, 587.94656pt x 350.05782pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Dir
+ect_Systhesis/step50to100.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Dire
+ct_Systhesis/step50to100.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Fan_disturbance/Direct_Systhesis/step50to100.jpg used on input line 600.
+(pdftex.def)             Requested size: 272.99881pt x 162.54016pt.
+
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Direct_S
+ysthesis/step100to50.jpg, id=714, 587.94656pt x 353.06906pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Dir
+ect_Systhesis/step100to50.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/Dire
+ct_Systhesis/step100to50.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Fan_disturbance/Direct_Systhesis/step100to50.jpg used on input line 606.
+(pdftex.def)             Requested size: 272.99881pt x 163.93837pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[181 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/Conventional_
+Tuning/Fan_disturbance/Direct_Systhesis/step50to100.jpg>]
+<Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step50to100fin
+al.jpg, id=718, 710.655pt x 446.41782pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step50to1
+00final.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step50to10
+0final.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/FanDistu
+rbance/PI/step50to100final.jpg used on input line 618.
+(pdftex.def)             Requested size: 272.99881pt x 171.49333pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[182 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/Conventional_
+Tuning/Fan_disturbance/Direct_Systhesis/step100to50.jpg>]
+<Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step100to50.jp
+g, id=722, 710.655pt x 401.24907pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step100to
+50.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PI/step100to5
+0.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/FanDistu
+rbance/PI/step100to50.jpg used on input line 629.
+(pdftex.def)             Requested size: 272.99881pt x 154.14156pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 634--637
+
+ []
+
+[183 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/self_tuning/F
+anDisturbance/PI/step50to100final.jpg>]
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/step5
+0to100.jpg, id=726, 587.94656pt x 354.57469pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/
+step50to100.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/s
+tep50to100.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Fan_disturbance/PI/step50to100.jpg used on input line 642.
+(pdftex.def)             Requested size: 292.5pt x 176.3996pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/step1
+00to50.jpg, id=727, 587.94656pt x 356.83313pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/
+step100to50.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PI/s
+tep100to50.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Fan_disturbance/PI/step100to50.jpg used on input line 648.
+(pdftex.def)             Requested size: 292.5pt x 177.52316pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[184 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/self_tuning/F
+anDisturbance/PI/step100to50.jpg>]
+<Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step50to100.j
+pg, id=731, 710.655pt x 445.665pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step50to
+100.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step50to1
+00.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/FanDistu
+rbance/PID/step50to100.jpg used on input line 661.
+(pdftex.def)             Requested size: 272.99881pt x 171.20413pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[185 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/Conventional_
+Tuning/Fan_disturbance/PI/step50to100.jpg>]
+<Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step100to50.j
+pg, id=735, 710.655pt x 476.53032pt>
+File: Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step100t
+o50.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/self_tuning/FanDisturbance/PID/step100to
+50.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/self_tuning/FanDistu
+rbance/PID/step100to50.jpg used on input line 672.
+(pdftex.def)             Requested size: 272.99881pt x 183.06119pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[186 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/Conventional_
+Tuning/Fan_disturbance/PI/step100to50.jpg>]
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID/step
+50to100.jpg, id=740, 587.94656pt x 349.305pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID
+/step50to100.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID/
+step50to100.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Fan_disturbance/PID/step50to100.jpg used on input line 683.
+(pdftex.def)             Requested size: 292.5pt x 173.77795pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID/step
+100to50.jpg, id=741, 587.94656pt x 355.3275pt>
+File: Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID
+/step100to50.jpg Graphic file (type jpg)
+
+<use Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID/
+step100to50.jpg>
+Package pdftex.def Info: Vikas_self/report_tex/PID_results/Conventional_Tuning/
+Fan_disturbance/PID/step100to50.jpg used on input line 690.
+(pdftex.def)             Requested size: 292.5pt x 176.77411pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[187 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_results/self_tuning/F
+anDisturbance/PID/step50to100.jpg>] [188 <f:/rupak/work/sbhs-manual/Vikas_self/
+report_tex/PID_results/self_tuning/FanDisturbance/PID/step100to50.jpg>]
+(f:\rupak\work\sbhs-manual\Scilab/local/Self_tuning_controller/SelfTuning_Vikas
+/PIControllersetpointchange/ser_init.sce)
+(f:\rupak\work\sbhs-manual\Scilab/local/Self_tuning_controller/ConventionalTuni
+ng_Vikas/PIControllerFandisturbance/pi_bda_dist.sci [189 <f:/rupak/work/sbhs-ma
+nual/Vikas_self/report_tex/PID_results/Conventional_Tuning/Fan_disturbance/PID/
+step50to100.jpg>] [190 <f:/rupak/work/sbhs-manual/Vikas_self/report_tex/PID_res
+ults/Conventional_Tuning/Fan_disturbance/PID/step100to50.jpg>])
+(f:\rupak\work\sbhs-manual\Scilab/local/Self_tuning_controller/ConventionalTuni
+ng_Vikas/PIControllersetpointchange/pi_bda.sci) [191]
+(f:\rupak\work\sbhs-manual\Scilab/local/Self_tuning_controller/ConventionalTuni
+ng_Vikas/PIDControllerFandisturbance/pid_bda_dist.sci) [192]
+(f:\rupak\work\sbhs-manual\Scilab/local/Self_tuning_controller/ConventionalTuni
+ng_Vikas/PIDControllersetpointchange/pid_bda.sci) [193]
+(f:\rupak\work\sbhs-manual\Scilab/local/Self_tuning_controller/SelfTuning_Vikas
+/PIControllerFandisturbance/pi_bda_tuned_dist.sci [194])
+(f:\rupak\work\sbhs-manual\Scilab/local/Self_tuning_controller/SelfTuning_Vikas
+/PIControllersetpointchange/pi_bda_tuned.sci [195])
+(f:\rupak\work\sbhs-manual\Scilab/local/Self_tuning_controller/SelfTuning_Vikas
+/PIDControllerFandisturbance/pid_bda_tuned_dist.sci [196])
+(f:\rupak\work\sbhs-manual\Scilab/local/Self_tuning_controller/SelfTuning_Vikas
+/PIDControllersetpointchange/pid_bda_tuned.sci [197])
+(f:\rupak\work\sbhs-manual\Scilab/virtual/Self_tuning_controller/ConventionalTu
+ning_Vikas/PIControllerFandisturbance/pi_bda_dist_virtual.sci [198])
+(f:\rupak\work\sbhs-manual\Scilab/virtual/Self_tuning_controller/ConventionalTu
+ning_Vikas/PIControllersetpointchange/pi_bda_virtual.sci [199])
+(f:\rupak\work\sbhs-manual\Scilab/virtual/Self_tuning_controller/ConventionalTu
+ning_Vikas/PIDControllerFandisturbance/pid_bda_dist_virtual.sci [200])
+(f:\rupak\work\sbhs-manual\Scilab/virtual/Self_tuning_controller/ConventionalTu
+ning_Vikas/PIDControllersetpointchange/pid_bda_virtual.sci [201])
+(f:\rupak\work\sbhs-manual\Scilab/virtual/Self_tuning_controller/SelfTuning_Vik
+as/PIControllerFandisturbance/pi_bda_tuned_dist_virtual.sci [202])
+(f:\rupak\work\sbhs-manual\Scilab/virtual/Self_tuning_controller/SelfTuning_Vik
+as/PIControllersetpointchange/pi_bda_tuned_virtual.sci)
+(f:\rupak\work\sbhs-manual\Scilab/virtual/Self_tuning_controller/SelfTuning_Vik
+as/PIDControllerFandisturbance/pid_bda_tuned_dist_virtual.sci [203])
+(f:\rupak\work\sbhs-manual\Scilab/virtual/Self_tuning_controller/SelfTuning_Vik
+as/PIDControllersetpointchange/pid_bda_tuned_virtual.sci [204]))
+(f:\rupak\work\sbhs-manual\mpc/mpc.tex [205]
+Chapter 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+[206
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+[207] [208] <mpc/mpc_xcos.png, id=811, 506.89375pt x 432.61626pt>
+File: mpc/mpc_xcos.png Graphic file (type png)
+
+<use mpc/mpc_xcos.png>
+Package pdftex.def Info: mpc/mpc_xcos.png used on input line 78.
+(pdftex.def)             Requested size: 341.44241pt x 284.53743pt.
+ [209] (f:\rupak\work\sbhs-manual\mpc/mpc_run.sci
+[210 <f:/rupak/work/sbhs-manual/mpc/mpc_xcos.png>] [211] [212]) [213]
+Underfull \hbox (badness 10000) in paragraph at lines 99--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--103
+
+ []
+
+<mpc/table_normal.png, id=830, 484.05844pt x 341.02406pt>
+File: mpc/table_normal.png Graphic file (type png)
+
+<use mpc/table_normal.png>
+Package pdftex.def Info: mpc/table_normal.png used on input line 112.
+(pdftex.def)             Requested size: 272.99881pt x 192.34071pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--114
+
+ []
+
+[214] <mpc/1_1.png, id=834, 399.74344pt x 467.49657pt>
+File: mpc/1_1.png Graphic file (type png)
+ <use mpc/1_1.png>
+Package pdftex.def Info: mpc/1_1.png used on input line 122.
+(pdftex.def)             Requested size: 341.4487pt x 426.81355pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--124
+
+ []
+
+<mpc/1_1_heater_final.png, id=835, 393.72093pt x 463.7325pt>
+File: mpc/1_1_heater_final.png Graphic file (type png)
+
+<use mpc/1_1_heater_final.png>
+Package pdftex.def Info: mpc/1_1_heater_final.png used on input line 126.
+(pdftex.def)             Requested size: 341.42903pt x 426.80182pt.
+ [215 <f:/rupak/work/sbhs-manual/mpc/table_normal.png>] [216 <f:/rupak/work/sbh
+s-manual/mpc/1_1.png>]
+<mpc/2_1.PNG, id=845, 394.47375pt x 470.50781pt>
+File: mpc/2_1.PNG Graphic file (type png)
+ <use mpc/2_1.PNG>
+Package pdftex.def Info: mpc/2_1.PNG used on input line 136.
+(pdftex.def)             Requested size: 341.43178pt x 426.7915pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--138
+
+ []
+
+[217 <f:/rupak/work/sbhs-manual/mpc/1_1_heater_final.png>]
+<mpc/2_1_heater_final.png, id=850, 397.485pt x 464.4853pt>
+File: mpc/2_1_heater_final.png Graphic file (type png)
+
+<use mpc/2_1_heater_final.png>
+Package pdftex.def Info: mpc/2_1_heater_final.png used on input line 140.
+(pdftex.def)             Requested size: 341.44226pt x 426.80011pt.
+ [218] [219 <f:/rupak/work/sbhs-manual/mpc/2_1.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+[220 <f:/rupak/work/sbhs-manual/mpc/2_1_heater_final.png>]
+File: mpc/1_1.png Graphic file (type png)
+ <use mpc/1_1.png>
+Package pdftex.def Info: mpc/1_1.png used on input line 151.
+(pdftex.def)             Requested size: 341.4487pt x 426.81355pt.
+
+[221]
+File: mpc/1_1_heater_final.png Graphic file (type png)
+ <use mpc/1_1_heater_final.png>
+Package pdftex.def Info: mpc/1_1_heater_final.png used on input line 157.
+(pdftex.def)             Requested size: 341.42903pt x 426.80182pt.
+ [222] [223] [224]
+<mpc/1_2.png, id=875, 411.03563pt x 469.00218pt>
+File: mpc/1_2.png Graphic file (type png)
+ <use mpc/1_2.png>
+Package pdftex.def Info: mpc/1_2.png used on input line 167.
+(pdftex.def)             Requested size: 341.43544pt x 426.78549pt.
+
+<mpc/1_2_heater_final.png, id=876, 401.24907pt x 462.97969pt>
+File: mpc/1_2_heater_final.png Graphic file (type png)
+
+<use mpc/1_2_heater_final.png>
+Package pdftex.def Info: mpc/1_2_heater_final.png used on input line 173.
+(pdftex.def)             Requested size: 341.45515pt x 426.7942pt.
+ [225 <f:/rupak/work/sbhs-manual/mpc/1_2.png>]
+[226] <mpc/1_3.PNG, id=884, 401.24907pt x 465.99094pt>
+File: mpc/1_3.PNG Graphic file (type png)
+ <use mpc/1_3.PNG>
+Package pdftex.def Info: mpc/1_3.PNG used on input line 181.
+(pdftex.def)             Requested size: 341.45515pt x 426.80415pt.
+
+<mpc/1_3_heater_final.png, id=885, 402.00188pt x 464.4853pt>
+File: mpc/1_3_heater_final.png Graphic file (type png)
+
+<use mpc/1_3_heater_final.png>
+Package pdftex.def Info: mpc/1_3_heater_final.png used on input line 185.
+(pdftex.def)             Requested size: 341.4333pt x 426.80011pt.
+ [227 <f:/rupak/work/sbhs-manual/mpc/1_2_heater_final.png>] [228 <f:/rupak/work
+/sbhs-manual/mpc/1_3.PNG>]
+File: mpc/2_1.PNG Graphic file (type png)
+ <use mpc/2_1.PNG>
+Package pdftex.def Info: mpc/2_1.PNG used on input line 193.
+(pdftex.def)             Requested size: 341.43178pt x 426.7915pt.
+
+[229 <f:/rupak/work/sbhs-manual/mpc/1_3_heater_final.png>]
+File: mpc/2_1_heater_final.png Graphic file (type png)
+
+<use mpc/2_1_heater_final.png>
+Package pdftex.def Info: mpc/2_1_heater_final.png used on input line 198.
+(pdftex.def)             Requested size: 341.44226pt x 426.80011pt.
+ [230]
+Overfull \hbox (1.49232pt too wide) in paragraph at lines 204--204
+[]\OT1/txr/bx/n/14.4 Negative Step Change and (We, Wu)=(10,10) (Expt 2.2) 
+ []
+
+<mpc/2_2.PNG, id=902, 402.00188pt x 467.49657pt>
+File: mpc/2_2.PNG Graphic file (type png)
+ <use mpc/2_2.PNG>
+Package pdftex.def Info: mpc/2_2.PNG used on input line 206.
+(pdftex.def)             Requested size: 341.4333pt x 426.81355pt.
+
+<mpc/2_2_heater_final.png, id=903, 392.96812pt x 464.4853pt>
+File: mpc/2_2_heater_final.png Graphic file (type png)
+
+<use mpc/2_2_heater_final.png>
+Package pdftex.def Info: mpc/2_2_heater_final.png used on input line 210.
+(pdftex.def)             Requested size: 341.45377pt x 426.80011pt.
+ [231] [232 <f:/rupak/work/sbhs-manual/mpc/2_2.PNG>]
+Overfull \hbox (1.49232pt too wide) in paragraph at lines 215--215
+[]\OT1/txr/bx/n/14.4 Negative Step Change and (We, Wu)=(40,40) (Expt 2.3) 
+ []
+
+<mpc/2_3.PNG, id=911, 398.23781pt x 469.755pt>
+File: mpc/2_3.PNG Graphic file (type png)
+ <use mpc/2_3.PNG>
+Package pdftex.def Info: mpc/2_3.PNG used on input line 217.
+(pdftex.def)             Requested size: 341.44481pt x 426.78961pt.
+
+<mpc/2_3_heater_final.png, id=912, 399.74344pt x 469.755pt>
+File: mpc/2_3_heater_final.png Graphic file (type png)
+
+<use mpc/2_3_heater_final.png>
+Package pdftex.def Info: mpc/2_3_heater_final.png used on input line 221.
+(pdftex.def)             Requested size: 341.4487pt x 426.78961pt.
+ [233 <f:/rupak/work/sbhs-manual/mpc/2_2_heater_final.png>] [234 <f:/rupak/work
+/sbhs-manual/mpc/2_3.PNG>]
+<mpc/5_1.PNG, id=922, 415.5525pt x 465.99094pt>
+File: mpc/5_1.PNG Graphic file (type png)
+ <use mpc/5_1.PNG>
+Package pdftex.def Info: mpc/5_1.PNG used on input line 230.
+(pdftex.def)             Requested size: 341.4464pt x 426.80415pt.
+ [235 <f:/rupak/work/sbhs-manual/mpc/2_3_heater_final.png>]
+<mpc/5_1_heater_final.png, id=927, 395.97937pt x 459.21562pt>
+File: mpc/5_1_heater_final.png Graphic file (type png)
+
+<use mpc/5_1_heater_final.png>
+Package pdftex.def Info: mpc/5_1_heater_final.png used on input line 235.
+(pdftex.def)             Requested size: 341.4359pt x 426.81386pt.
+ [236 <f:/rupak/work/sbhs-manual/mpc/5_1.PNG>]
+<mpc/5_2.PNG, id=932, 398.99063pt x 467.49657pt>
+File: mpc/5_2.PNG Graphic file (type png)
+ <use mpc/5_2.PNG>
+Package pdftex.def Info: mpc/5_2.PNG used on input line 243.
+(pdftex.def)             Requested size: 341.44493pt x 426.81355pt.
+ [237 <f:/rupak/work/sbhs-manual/mpc/5_1_heater_final.png>]
+<mpc/5_2_heater_final.png, id=937, 406.51875pt x 461.47406pt>
+File: mpc/5_2_heater_final.png Graphic file (type png)
+
+<use mpc/5_2_heater_final.png>
+Package pdftex.def Info: mpc/5_2_heater_final.png used on input line 248.
+(pdftex.def)             Requested size: 406.51775pt x 461.47292pt.
+
+Overfull \hbox (16.51775pt too wide) in paragraph at lines 248--249
+[][] 
+ []
+
+[238 <f:/rupak/work/sbhs-manual/mpc/5_2.PNG>]
+<mpc/5_3.PNG, id=942, 398.99063pt x 466.74374pt>
+File: mpc/5_3.PNG Graphic file (type png)
+ <use mpc/5_3.PNG>
+Package pdftex.def Info: mpc/5_3.PNG used on input line 256.
+(pdftex.def)             Requested size: 341.44493pt x 426.80995pt.
+ [239 <f:/rupak/work/sbhs-manual/mpc/5_2_heater_final.png>]
+<mpc/5_3_heater_final.png, id=947, 393.72093pt x 464.4853pt>
+File: mpc/5_3_heater_final.png Graphic file (type png)
+
+<use mpc/5_3_heater_final.png>
+Package pdftex.def Info: mpc/5_3_heater_final.png used on input line 261.
+(pdftex.def)             Requested size: 341.42903pt x 426.80011pt.
+
+Overfull \hbox (0.92082pt too wide) in paragraph at lines 259--263
+[]\OT1/txr/m/n/12 We ob-serve that this ex-per-i-ments per-forms bet-ter than i
+n the last sec-tion (where
+ []
+
+[240 <f:/rupak/work/sbhs-manual/mpc/5_3.PNG>]
+<mpc/5_4.PNG, id=953, 386.19281pt x 465.99094pt>
+File: mpc/5_4.PNG Graphic file (type png)
+ <use mpc/5_4.PNG>
+Package pdftex.def Info: mpc/5_4.PNG used on input line 269.
+(pdftex.def)             Requested size: 341.43587pt x 426.80415pt.
+ [241 <f:/rupak/work/sbhs-manual/mpc/5_3_heater_final.png>]
+<mpc/5_4_heater_final.png, id=958, 396.7322pt x 465.23813pt>
+File: mpc/5_4_heater_final.png Graphic file (type png)
+
+<use mpc/5_4_heater_final.png>
+Package pdftex.def Info: mpc/5_4_heater_final.png used on input line 274.
+(pdftex.def)             Requested size: 396.73122pt x 465.23698pt.
+
+Overfull \hbox (6.73122pt too wide) in paragraph at lines 274--275
+[][] 
+ []
+
+[242 <f:/rupak/work/sbhs-manual/mpc/5_4.PNG>] [243 <f:/rupak/work/sbhs-manual/m
+pc/5_4_heater_final.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+
+ []
+
+[244] <mpc/3_1.PNG, id=970, 402.00188pt x 467.49657pt>
+File: mpc/3_1.PNG Graphic file (type png)
+ <use mpc/3_1.PNG>
+Package pdftex.def Info: mpc/3_1.PNG used on input line 303.
+(pdftex.def)             Requested size: 341.4333pt x 426.81355pt.
+
+<mpc/3_1_heater_final.png, id=971, 405.76593pt x 462.22687pt>
+File: mpc/3_1_heater_final.png Graphic file (type png)
+
+<use mpc/3_1_heater_final.png>
+Package pdftex.def Info: mpc/3_1_heater_final.png used on input line 307.
+(pdftex.def)             Requested size: 341.44164pt x 426.79143pt.
+ [245] [246 <f:/rupak/work/sbhs-manual/mpc/3_1.PNG>] <mpc/3_2.PNG, id=980, 394.
+47375pt x 465.99094pt>
+File: mpc/3_2.PNG Graphic file (type png)
+ <use mpc/3_2.PNG>
+Package pdftex.def Info: mpc/3_2.PNG used on input line 314.
+(pdftex.def)             Requested size: 341.43178pt x 426.80415pt.
+
+<mpc/3_2_heater_final.png, id=981, 398.99063pt x 469.00218pt>
+File: mpc/3_2_heater_final.png Graphic file (type png)
+
+<use mpc/3_2_heater_final.png>
+Package pdftex.def Info: mpc/3_2_heater_final.png used on input line 318.
+(pdftex.def)             Requested size: 341.44493pt x 426.78549pt.
+ [247 <f:/rupak/work/sbhs-manual/mpc/3_1_heater_final.png>] [248 <f:/rupak/work
+/sbhs-manual/mpc/3_2.PNG>]
+<mpc/3_3.PNG, id=990, 411.03563pt x 469.00218pt>
+File: mpc/3_3.PNG Graphic file (type png)
+ <use mpc/3_3.PNG>
+Package pdftex.def Info: mpc/3_3.PNG used on input line 325.
+(pdftex.def)             Requested size: 341.43544pt x 426.78549pt.
+
+<mpc/3_3_heater_final.png, id=991, 401.24907pt x 462.97969pt>
+File: mpc/3_3_heater_final.png Graphic file (type png)
+
+<use mpc/3_3_heater_final.png>
+Package pdftex.def Info: mpc/3_3_heater_final.png used on input line 329.
+(pdftex.def)             Requested size: 341.45515pt x 426.7942pt.
+ [249 <f:/rupak/work/sbhs-manual/mpc/3_2_heater_final.png>] [250 <f:/rupak/work
+/sbhs-manual/mpc/3_3.PNG>]
+<mpc/4_1.PNG, id=1000, 399.74344pt x 469.00218pt>
+File: mpc/4_1.PNG Graphic file (type png)
+ <use mpc/4_1.PNG>
+Package pdftex.def Info: mpc/4_1.PNG used on input line 337.
+(pdftex.def)             Requested size: 341.4487pt x 426.78549pt.
+
+<mpc/4_1_heater_final.png, id=1001, 403.5075pt x 462.97969pt>
+File: mpc/4_1_heater_final.png Graphic file (type png)
+
+<use mpc/4_1_heater_final.png>
+Package pdftex.def Info: mpc/4_1_heater_final.png used on input line 341.
+(pdftex.def)             Requested size: 341.43758pt x 426.7942pt.
+ [251 <f:/rupak/work/sbhs-manual/mpc/3_3_heater_final.png>] [252 <f:/rupak/work
+/sbhs-manual/mpc/4_1.PNG>]
+<mpc/4_2.PNG, id=1011, 395.97937pt x 469.00218pt>
+File: mpc/4_2.PNG Graphic file (type png)
+ <use mpc/4_2.PNG>
+Package pdftex.def Info: mpc/4_2.PNG used on input line 348.
+(pdftex.def)             Requested size: 341.4359pt x 426.78549pt.
+
+<mpc/4_2_heater_final.png, id=1012, 402.75468pt x 462.97969pt>
+File: mpc/4_2_heater_final.png Graphic file (type png)
+
+<use mpc/4_2_heater_final.png>
+Package pdftex.def Info: mpc/4_2_heater_final.png used on input line 352.
+(pdftex.def)             Requested size: 341.43355pt x 426.7942pt.
+ [253 <f:/rupak/work/sbhs-manual/mpc/4_1_heater_final.png>] [254 <f:/rupak/work
+/sbhs-manual/mpc/4_2.PNG>]
+<mpc/4_3.PNG, id=1021, 402.00188pt x 467.49657pt>
+File: mpc/4_3.PNG Graphic file (type png)
+ <use mpc/4_3.PNG>
+Package pdftex.def Info: mpc/4_3.PNG used on input line 359.
+(pdftex.def)             Requested size: 341.4333pt x 426.81355pt.
+
+<mpc/4_3_heater_final.png, id=1022, 392.96812pt x 464.4853pt>
+File: mpc/4_3_heater_final.png Graphic file (type png)
+
+<use mpc/4_3_heater_final.png>
+Package pdftex.def Info: mpc/4_3_heater_final.png used on input line 363.
+(pdftex.def)             Requested size: 341.45377pt x 426.80011pt.
+ [255 <f:/rupak/work/sbhs-manual/mpc/4_2_heater_final.png>] [256 <f:/rupak/work
+/sbhs-manual/mpc/4_3.PNG>] [257 <f:/rupak/work/sbhs-manual/mpc/4_3_heater_final
+.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 384--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--390
+
+ []
+
+[258]
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--404
+
+ []
+
+[259]
+Underfull \hbox (badness 10000) in paragraph at lines 406--408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--416
+
+ []
+
+(f:\rupak\work\sbhs-manual\mpc/matrix.txt [260])
+Underfull \hbox (badness 10000) in paragraph at lines 417--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--448
+
+ []
+
+[261] (f:\rupak\work\sbhs-manual\Scilab/virtual/mpc/mpc.sci) [262]
+(f:\rupak\work\sbhs-manual\Scilab/local/mpc/mpc_init_local.sce)
+(f:\rupak\work\sbhs-manual\Scilab/local/mpc/mpc_local.sci [263]))
+(f:\rupak\work\sbhs-manual\sbhs-new-manual.bbl [264]
+Underfull \hbox (badness 2726) in paragraph at lines 46--50
+[]\OT1/txr/m/n/12 Virtual labs project.  Sin-gle board heater sys-tem.  http://
+www.co-
+ []
+
+) [265
+
+] (f:\rupak\work\sbhs-manual\sbhs-new-manual.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1892,13 +3524,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20551 strings out of 493921
- 388389 string characters out of 3147279
- 554432 words of memory out of 3000000
- 23248 multiletter control sequences out of 15000+200000
- 50793 words of font info for 135 fonts, out of 3000000 for 9000
+ 21600 strings out of 493921
+ 429255 string characters out of 3147279
+ 555359 words of memory out of 3000000
+ 23948 multiletter control sequences out of 15000+200000
+ 55606 words of font info for 143 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 48i,11n,67p,1507b,2809s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,13n,67p,1507b,2809s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/txfonts/rtcxr.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/txfonts/rtxb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
@@ -1907,11 +3539,12 @@ rtxr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/txfonts/txmia.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/txfonts/txtt.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
-imes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sbhs-new-manual.pdf (70 pages, 2081480 bytes).
+imes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sbhs-new-manual.pdf (266 pages, 6685057 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
+ 1110 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 198 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 718 words of extra memory for PDF output out of 10000 (max. 10000000)
 
