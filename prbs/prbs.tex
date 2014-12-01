@@ -62,14 +62,67 @@ The detailed procedure to perform a local experiment is explained in Chapter\ref
 
 \begin{enumerate}
 \item Step1: The working directory is {\tt  prbs/identification}
-\item Step2:  Load the functions available in common files directory by executing the command
+\item Step2:  Load the functions available in common files directory by executing the command {\tt getd<space>..\textbackslash ..\textbackslash common\_files\ }
 \item Step3: Same
 \item Step4: Same
-\item Step5: Load prbs test function by executing command\\ {\tt exec<space>sine\_test.sci}
-\item Step6: Load Xcos code for sine test using the command\\ {\tt exec<space>sine\_test.xcos}
+\item Step5: Load prbstest function by executing command\\ {\tt exec<space>prbstest.sci}. Load prbs signal generation function by executing command {\tt exec<space>prbs.sci}
+\item Step6: Load Xcos code for prbs test using the command\\ {\tt exec<space>prbstest.xcos}
 \item Step7: Same
 \end{enumerate}
 
+The response is as shown in figure \ref{prbs-test-local}. The data file thus obtained is as shown in the Table \ref{prbs-local-data}. This data file is available for reference in the directory {\tt prbs/identification} with name {\tt prbs-data-local.txt}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{prbs/prbs-local.png}
+\caption{PRBS Local response}
+\label{prbs-test-local}
+\end{figure}
+
+\begin{table}
+\begin{verbatim}
+1.0        50.0         50.0       36.4   1417298828422.0
+2.0         50.0        50.0      36.2   1417298828525.0
+.
+ 999.0       40.0        50.0        42.9   1417298933585.0
+ 1000.0     40.0         50.0         42.9   1417298933694.0
+\end{verbatim}
+\caption{PRBS local experiment data}
+\label{prbs-local-data}
+\end{table}
+
+\section{Conducting Sine Test on SBHS, virtually}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
+\begin{enumerate}
+\item Step1: The working directory is {\tt  prbs/identification}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the working experiment directory and double-click on the file {\tt prbstest.sce}. This will launch scilab and also open the file {\tt prbstest.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt  prbs/identification} and then open the {\tt  prbstest.sce} file in the scilab editor.
+\item Step5:  Load the functions available in common files directory by executing the command {\tt getd<space>..\textbackslash ..\textbackslash common\_files\ }
+\item Step6: Execute the file {\tt prbstest.sce}.  Expect the prbs test xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the prbstest xcos diagram.
+\item Step8: Same
+\end{enumerate}
+
+
+ The virtual experiment response is shown in figure \ref{prbs-res}. The corresponding data file is shown in table \ref{prbs-data-virtual}. The time stamps shown are cut short for better viewing. This data file can be found in {\tt prbs/identification} folder for virtual experiments. The name of this file is {\tt prbs-data-virtual.txt}.
+
+
+
+\begin{table}
+\begin{verbatim}
+0 0 100 28.40 14...1731 14...4105 14...4123 14...1763 0.10000E+01
+1 50 50 28.30 14...4706 14...7078 14...7096 14...4738 0.10000E+01
+.
+.
+983 40 50 36.70 14...6728 14...9131 14...9148 14...6759 0.98300E+03
+984 40 50 36.50 14...7712 14...0115 14...0133 14...7743 0.98400E+03
+\end{verbatim}
+\caption{Sine data obtained after performing virtual Sine Test}
+\label{prbs-data-virtual}
+\end{table}
 
 
 \begin{figure}
@@ -81,13 +134,13 @@ The detailed procedure to perform a local experiment is explained in Chapter\ref
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{prbs/prbs-expt.png}
-\caption{PRBS testing response}
+\includegraphics[width=0.7\linewidth]{prbs/prbs-virtual.png}
+\caption{PRBS testing response for virtual experiment}
 \label{prbs-res}
 \end{figure}
 
 
-\subsection{Determination of Discrete Time Transfer Function}\label{prbs-model}
+\subsection{Determination of Discrete Time Transfer Function models}\label{prbs-model}
 
 System identification is carried out to identify the transfer function between the input signal to the system and output 
 from the system. Firstly, a transfer function with unknown parameters is assumed. The system is given a known input and its
@@ -120,51 +173,84 @@ assumed, which can be written as a difference equation:
 \hat{y}(k) = -a_1\hat{y}(k - 1) - a_2\hat{y}(k - 2) + b_1 u(k - d) + b_2 u(k - 1 - d)
 \end{align}
 
-The optimization is performed using the optimization routine “optim” of Scilab. Copy the  data file to the folder 
-{\tt prbs\_analysis}. Change the Scilab working directory to {\tt prbs\_analysis} folder. Open the file {\tt optimize.sce} 
-and put the name of the data file (with extention) in the filename field. Save and run this code and obtain the plot as 
-shown in figure 4.3. This code uses the routines {\tt label.sci}, {\tt costfunction.sci} and {\tt second\_order.sci}. This 
-code will give optimized values for $a_1, a_2, b_1, b_2$ which can be used to define a second order discrete time transfer 
-function as given in equation \ref{DTF}. The results generated after executing optimization routine over the data file 
-obtained earlier is shown in figure \ref{prbs-fit} and figure \ref{prbs-model}. The initial values were chosen to be 
-[0.5 0.5 0.5 0.5]. The value of $err$ along with the fit obtained has to be used to change the initial values and the value 
-of $delay$. The transfer function thus obtained is 
 
-\begin{align}\label{model}
-G(z)=\frac{0.0057384 - 0.0057355 z^{-1}}{1.9529968z^{-1}+0.9162750z^{-2}}z^{-4}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{prbs/prbs-1-fit.png}
+\caption{PRBS first order fit}
+\label{prbs1-fit}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{prbs/prbs-1-model.png}
+\caption{PRBS first order model}
+\label{prbs-1-model}
+\end{figure}
+
+\subsection{Determination of First order Discrete time Transfer Function}
+\begin{enumerate}
+\item Download the Analysis folder from the sbhs website. It will be available under {\tt downloads} section. The download will be in zip format. Extrat the downloaded zip file. You will get a folder {\tt Analysis}. 
+\item Open the {\tt Analysis} folder and then locate and open the folder {\tt Step\_Analysis}.
+\item Inside this folder, locate and open the folder {\tt Discrete-order1}
+ \item Copy the prbs test data file to this folder.
+ \item Start scilab and change the working directory to  {\tt Discrete-order1}
+ \item Open the file {\ttfamily optimize.sce} in scilab editor and enter the name of the data file (with extention) in the {\tt filename} field. 
+\item Save and run this code and obtain the plot as shown in figure \ref{prbs1-fit}. This plot will also show the first order discrete time transfer function's coefficients a1 and b1.
+\item The values are also shown on scilab console as shown in figure \ref{prbs-1-model} 
+\end{enumerate}
+
+\begin{align}
+\intertext{The results presented are obtained for the data file {\tt prbs-data-virtual.txt}. This data file is present under the {\tt prbs} directory for virtual experiments.The plot thus obtained is reasonably good. See the Scilab plot to get the values of $a1$ and $b1$. 
+The figure \ref{prbs1-fit} shows a screen shot of the same. We obtain $a1$ = -0.97, $b1$= 0.004. The transfer function 
+obtained here is at the operating point of 50 percentage of heat. If the experiment is repeated at a different operating point, 
+the transfer function obtained will be different. The gain will correspondingly be more at a higher operating point. 
+This means that the plant is faster at higher temperature. Thus the transfer function of the plant varies with the operating 
+point. Let the transfer function we obtain in this experiment be denoted as $G(z)$. We obtain}
+G(z)=\frac{0.004}{1-0.97z^{-1}}z^{-5}
 \end{align}
 
 
+\subsection{Determination of Second order Discrete time Transfer Function}
+\begin{enumerate}
+\item Download the Analysis folder from the sbhs website. It will be available under {\tt downloads} section. The download will be in zip format. Extrat the downloaded zip file. You will get a folder {\tt Analysis}. 
+\item Open the {\tt Analysis} folder and then locate and open the folder {\tt Step\_Analysis}.
+\item Inside this folder, locate and open the folder {\tt Discrete-order2}
+ \item Copy the prbs test data file to this folder.
+ \item Start scilab and change the working directory to  {\tt Discrete-order2}
+ \item Open the file {\ttfamily optimize.sce} in scilab editor and enter the name of the data file (with extention) in the {\tt filename} field. 
+\item Save and run this code and obtain the plot as shown in figure \ref{prbs-2-fit}. This plot will also show the second order discrete time transfer function's coefficients a1, a2, b1 and b2.
+\item The values are also shown on scilab console as shown in figure \ref{prbs-2-model} 
+\end{enumerate}
+
+\begin{align}
+\intertext{The results presented are obtained for the data file {\tt prbs-data-virtual.txt}. This data file is present under the {\tt prbs} directory for virtual experiments.The plot thus obtained is reasonably good. See the Scilab plot to get the values of $a1$, $a2$, $b1$ and $b2$. 
+The figure \ref{prbs-2-fit} shows a screen shot of the same. We obtain $a1$ = -1.82, $a2$= 0.833, $b1$ = 0.0017, $b2$= -0.00086, . The transfer function obtained here is at the operating point of 50 percentage of heat. If the experiment is repeated at a different operating point, the transfer function obtained will be different. The gain will correspondingly be more at a higher operating point. 
+This means that the plant is faster at higher temperature. Thus the transfer function of the plant varies with the operating 
+point. Let the transfer function we obtain in this experiment be denoted as $G(z)$. We obtain}
+G(z)=\frac{0.0017 -0.00086z^{-1}}{1-1.826z^{-1}+0.833z^{-2}}z^{-5}
+\end{align}
+
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{prbs/prbs-fit.png}
-\caption{PRBS testing response}
-\label{prbs-fit}
+\includegraphics[width=0.7\linewidth]{prbs/prbs-2-fit.png}
+\caption{PRBS second order fit}
+\label{prbs-2-fit}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{prbs/prbs-model.png}
-\caption{PRBS testing response}
-\label{prbs-model}
+\includegraphics[width=0.7\linewidth]{prbs/prbs-2-model.png}
+\caption{PRBS second order model}
+\label{prbs-2-model}
 \end{figure}
 
-
-
-\section{Performing PRBS testing on SBHS, locally}
-The step by step procedure for conducting an experiment locally remains same as explained in section \ref{local-steps} with the following changes
-\begin{itemize}
-\item The working folder is prbs/identification/
-\item Use the getd command getd ../../common\_files
-\item In section \ref{local-steps} read all instances of step\_test as prbstest
-\end{itemize}
-The steps to identify the transfer remains same as explained in the section \ref{prbs-model}
 
 \section{Implementing 2DOF pole-placement controller using PRBS model, virtually}
 
 For deriving the Two degrees of freedom control law, please refer to the chapter \ref{2dof}
-The controller was designed for the given transient conditions, rise time = 10 sec, overshoot = 0.1. The experimental result and performance of the controller for setpoint temperature change from 38.00 to 43.00 degree C, i.e. 5 degree C positive step change, has been shown below in Fig \ref{2dof-controller}
+The controller was designed for the given transient conditions, rise time = 10 sec, overshoot = 0.1. The experimental result and performance of the controller for setpoint temperature change from 38.00 to 43.00 degree C, i.e. 5 degree C positive step change, has been shown below in Fig \ref{2dof-controller}. The controller designed is not derived for the model explained in earlier sections.
 
 \begin{figure}
 \centering
@@ -186,18 +272,27 @@ The paramenters are computed by the file {\tt twodof\_para.sce}.
 
 The steps to be followed to conduct PRBS test experiment virtually remains same as explained in section \ref{vlabsexpt}. only for the following differences
 \begin{itemize}
-\item The working folder is prbs/controller/
-\item Use the getd command getd ../../common\_files
-\item In section \ref{vlabsexpt} read all instances of step\_test as prbstest
+\item Step1: The working directory is {\tt prbs/controller}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the {\tt controller} experiment directory and double-click on the file {\tt prbs.sce}. This will launch scilab and also open the file {\tt prbs.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt controller} and then open the {\tt  prbs.sce} file in the scilab editor.
+\item Step5:  Load the functions available in common files directory by executing the command {\tt getd<space>..\textbackslash ..\textbackslash common\_files\ }
+\item Step6: Execute the file {\tt prbs.sce}.  Expect the prbs test xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message. The values of Rc, Sc, Tc and $\gamma$ are to be entered in the xcos diagram.
+\item Step7: Execute the prbstest xcos diagram.
+\item Step8: Same
 \end{itemize}
 
 \section{Implementing 2DOF pole-placement controller using PRBS model, locally}
-The step by step procedure for conducting an experiment locally remains same as explained in section \ref{local-steps} with the following changes
-\begin{itemize}
-\item The working folder is prbs/controller/
-\item Use the getd command getd ../../common\_files
-\item In section \ref{vlabsexpt} read all instances of step\_test as prbstest
-\end{itemize}
+The step by step procedure for conducting an experiment locally remains same as explained in section \ref{local-summary} with the following changes
+\begin{enumerate}
+\item Step1: The working directory is {\tt  prbs/controller}
+\item Step2:  Load the functions available in common files directory by executing the command {\tt getd<space>..\textbackslash ..\textbackslash common\_files\ }
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load prbstest function by executing command\\ {\tt exec<space>prbs\_pp.sci}.
+\item Step6: Load Xcos code for prbs test using the command\\ {\tt exec<space>prbs\_pp.xcos}.  The values of Rc, Sc, Tc and $\gamma$ are to be entered in the xcos diagram.
+\item Step7: Same
+\end{enumerate}
 
 \section{Scilab Local codes}\label{prbs-local-codes}
 \subsection{Identification codes}
