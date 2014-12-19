@@ -182,30 +182,47 @@ T_c&=1-0.9723z^{-1}\\
 
 All the above calculations are incorporated into a single Scilab code named {\ttfamily twodof\_para.sce} 
 \footnote{All the Scilab codes are given at the end of this chapter in the section \ref{2dof-local}}.
-\subsection{Procedure to use the Scilab/Xcos Code for a Local Experiment }\label{sec-steps}
+\subsection{Procedure to calculate 2DOF parameters using scilab }\label{sec-steps}
+The procedure explained here is applicable to both virtual as well as local experiments. The following steps must be executed properly to calculate the controller parameters. 
 \begin{enumerate}
-\item Change the directory to {\tt local/2dof\_controller}. 
-\item Execute the command {\tt getd dc/scilab}
-\item Open the Scilab code {\tt twodof\_para.sce}. Define the variable {\tt TFcont} with first order transfer 
-function (or second order transfer function) of your SBHS. Execute the Scilab code. With this, the 2-DOF controller 
-parameters have been calculated. Figure \ref{2dof-para-out} shows the calculated 2-DOF controller parameters on the 
-Scilab console.
-
-\item Open the Scilab code {\tt twodof.sci}. Make sure that the first order control law (or second order control law in 
-case of second order plant transfer function) is uncommented and the second order control law (or first order control law
-in case of second order transfer function) is commented.
-\item Now follow the steps for performing a local experiment, as explained in the Chapter \ref{sercomm}. Note that all 
-occurrences of {\tt step\_test} will now be {\tt twodof}. {\tt step\_test.sci} will be {\tt twodof.sci}. {\tt  step\_test.sce}
-will  be {\tt twodof.sce} and {\tt step\_test.xcos} will be {\tt twodof.xcos}.
-
-In the {\ttfamily twodof.xcos} Xcos file, change the setpoint to the desired value. Make sure the period of the clock block
-is the same as the sampling time used for discretisation.  The Xcos diagram is shown in figure \ref{2dof-xcos}. 
-
-You can also use the Xcos file {\tt twodof\_simulation.xcos}, shown in figure \ref{2dof-sim-xcos}, to simulate your 
-controller before implementing on SBHS. This will help you validate your controller. You need to execute {\tt getd dc/scilab}
-and then execute the file {\tt twodof\_para.sce}. Now run {\tt twodof\_simulation.xcos}. Figure \ref{2dof-sim-res} shows the
-simulation results. Note that, execution of this Xcos file is not mandatory for performing a virtual experiment.
+\item Change the directory to {\tt 2dof\_controller}. 
+\item Execute the command {\tt getd dc/scilab} in the scilab console.
+\item Open the Scilab code {\tt twodof\_para.sce}. Define the variable {\tt TFcont} with first order transfer function (or second order transfer function) of your SBHS. Execute the Scilab code. With this, the 2-DOF controller parameters have been calculated. Figure \ref{2dof-para-out} shows the calculated 2-DOF controller parameters on the Scilab console.
+\item Open the Scilab code {\tt twodof.sci}. Make sure that the first order control law (or second order control law in case of second order plant transfer function) is uncommented and the second order control law (or first order control law in case of second order transfer function) is commented.
 \end{enumerate}
+
+\section{Implementing 2DOF controller locally}
+
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
+
+\begin{enumerate}
+\item Step1: The working directory is {\tt 2dof\_controller}
+\item Step2: Same
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load 2DOF controller function by executing command\\ {\tt exec<space>twodof.sci}. Make sure the correct order of control law is choosen in this file as explained in section \ref{sec-steps}
+\item Step6: Load Xcos code for 2DOF controller using the command\\ {\tt exec<space>twodof.xcos}. In the {\ttfamily twodof.xcos} Xcos file, change the setpoint to the desired value. Make sure the period of the clock block is the same as the sampling time used for discretisation.  The Xcos diagram is shown in figure \ref{2dof-xcos}. 
+\item Step7: Same
+\end{enumerate}
+
+\subsection{Implementing 2-DOF Controller on SBHS, Virtually}
+
+The detailed procedure to perform a virtual experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
+\begin{enumerate}
+\item Step1: The working directory is {\tt 2dof\_controller}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the 2dof controller experiment directory and double-click on the file {\tt twodof.sce}. This will launch scilab and also open the file {\tt twodof.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt 2dof\_controller} and then open the {\tt  twodof.sce} file in the scilab editor.
+\item Step5: Same
+\item Step6: Execute the file {\tt twodof.sce}.  Expect the PI controller xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the PI controller xcos diagram.
+\item Step8: Same
+\end{enumerate}
+
+\section{Performing pure simulation of 2DOF controller}
+You can also use the Xcos file {\tt twodof\_simulation.xcos}, shown in figure \ref{2dof-sim-xcos}, to simulate your controller before implementing on SBHS. This will help you validate your controller. You need to execute {\tt getd dc/scilab} and then execute the file {\tt twodof\_para.sce}. Now run {\tt twodof\_simulation.xcos}. Figure \ref{2dof-sim-res} shows the simulation results. Note that, execution of this Xcos file is not mandatory for performing a virtual experiment.
+
 
 \begin{figure}
 \centering
@@ -243,15 +260,7 @@ The performance of the controller is shown in figure \ref{rt_127}.
 It is seen that the output (temperature) tracks the setpoint irrespective of the step changes in the fan speed.
 We see that the overshoot turns out to be 6\% and rise time turns out to be 60 seconds, which is acceptable.
 
-\subsection{Implementing 2-DOF Controller on SBHS, Virtually}
-The step by step procedure for conducting a virtual experiment is explained in Chapter \ref{virtual}. 
-After logging in using the SBHS Client, open Scilab. Change the directory to {\tt virtual/2dof\_controller}.
-% Execute the command {\tt getd dc/scilab}. Now run the code {\tt twodof\_para.sce}. 
-Make sure you input the correct transfer function and control law as explained in \ref{sec-steps}. Now follow the 
-steps for performing a virtual experiment, as explained in Chapter \ref{virtual}. Note that all occurrences of
-{\tt step\_test} will now be {\tt twodof}.
 
-All the required Scilab codes are listed in the section \ref{2dofcode}.
 
 \section{Scilab Code for Local Experiment} \label{2dof-local}
 \begin{code}

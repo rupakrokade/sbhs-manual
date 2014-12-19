@@ -63,15 +63,7 @@ b&=\frac{1-\alpha}{0.01163}
 \intertext{Hence,}
 u(n)&=u(n-1)+b[e(n)-0.9723e(n-1)]
 \end{align}
-For implementing the IMC given above, please follow the steps illustrated in section \ref{scilab_sbhs} 
-of this document with the following changes:
-\begin{enumerate}
 
-\item In step 1, change the directory to the folder {\tt imc\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt imc.sci} instead of {\tt step\_test.sci}.
-\item In step 6, execute the file {\tt imc.xcos} instead of {\tt step\_test.xcos}.
-
-\end{enumerate}
 
 The output of Xcos is shown in figure \ref{imc}.
 Figure shows three plots. First sub plot shows setpoint and output temperature profile. 
@@ -79,7 +71,7 @@ Second sub plot shows control effort and third sub plot shows error between setp
 
 
 
-\section{Experimental Results}
+
 \begin{figure}
 	\centering
 		\includegraphics[width=\linewidth]{IMC/imc_092_resp.png}
@@ -90,21 +82,39 @@ Second sub plot shows control effort and third sub plot shows error between setp
 	\centering
 		\includegraphics[width=\linewidth]{IMC/imc_085_resp.png}
 		\caption{Experimental results with IMC for $\alpha=0.85$}
-	\label{fig:0.98}
+	\label{fig:0.85}
 \end{figure}
+
+The same experiment result for $\alpha=0.85$ is as shown in fig \ref{fig:0.85}.
 By comparing the two graphs, we can say that for $\alpha=0.92$ the response of the controller is sluggish. For $\alpha=0.85$,
 the controller starts responding quickly and no overshoots are seen in the temperature profile.
 
+\subsection{Implementing IMC locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
 
-\subsection{Implementing IMC on SBHS, virtually}
-For implementing the IMC virtually, please follow the steps illustrated in 
-section \ref{vlabsexpt} of this document with the following changes:
 \begin{enumerate}
+\item Step1: The working directory is {\tt  imc\_controller}
+\item Step2: Same
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load ramp test function by executing command\\ {\tt exec<space>imc.sci}
+\item Step6: Load Xcos code for ramp test using the command\\ {\tt exec<space>imc.xcos}
+\item Step7: Same
+\end{enumerate}
 
-\item In step 1, change the directory to the folder {\tt imc\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt imc\_virtual.sce} instead of {\tt step\_test.sce}.
-\item In step 6, execute the file {\tt imc.xcos} instead of {\tt step\_test.xcos}.
+\subsection{Implementing IMC virtually}
 
+The detailed procedure to perform a virtual experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
+\begin{enumerate}
+\item Step1: The working directory is {\tt  imc\_controller}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the IMC  experiment directory and double-click on the file {\tt imc.sce}. This will launch scilab and also open the file {\tt imc.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt imc\_controller} and then open the {\tt  imc.sce} file in the scilab editor.
+\item Step5: Same
+\item Step6: Execute the file {\tt imc.sce}.  Expect the IMC controller xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the IMC controller xcos diagram.
+\item Step8: Same
 \end{enumerate}
 
 

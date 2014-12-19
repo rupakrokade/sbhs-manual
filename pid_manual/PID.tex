@@ -181,7 +181,7 @@ K&=8\\
 \end{align*}
 While performing the experiment, fine tunning of $K,\tau_i,\tau_d$ may be required.\\
 
-\section{Implementing PI Controller using Trapezoidal Approximation}
+\section{PI Controller using Trapezoidal Approximation}
 Figure \ref{pi_cos} shows Xcos diagram for implementing PI controller.
 \begin{figure}
 \centering
@@ -207,32 +207,37 @@ s_0&=K\left(1+\frac{T_s}{2\tau_i}\right) \\
 s_1&=K\left(-1+\frac{T_s}{2\tau_i}\right)
 \end{align}
 
-For implementing the PI controller, please follow the steps illustrated in section \ref{scilab_sbhs} of this document with the following changes:
+\subsection{Implementing locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
+
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pi\_ta.sci} instead of {\tt step\_test.sci}.
-\item In step 6, execute the file {\tt pi\_ta.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}
+\item Step2: Same
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load ramp test function by executing command\\ {\tt exec<space>pi\_ta.sci}
+\item Step6: Load Xcos code for ramp test using the command\\ {\tt exec<space>pi\_ta.xcos}
+\item Step7: Same
 \end{enumerate}
 
 The output of Xcos is shown in figure \ref{pi_ta}.
 Figure shows three plots. First sub plot shows setpoint and output temperature profile. Second sub plot shows 
 control effort and third sub plot shows error between setpoint and plant output.
 
-\subsection{Implementing PI controller using Trapezoidal Approximation on SBHS, virtually}
+\subsection{Implementing virtually}
 
+The detailed procedure to perform a virtual experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
 
-For implementing above PI controller virtually, please follow the steps illustrated in section \ref{vlabsexpt} of this 
-document with the following changes:
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pi\_ta\_virtual.sce} instead of {\tt step\_test.sce}.
-\item In step 6, execute the file {\tt pi\_ta\_virtual.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the PID controller experiment directory and double-click on the file {\tt pi\_ta\_virtual.sce}. This will launch scilab and also open the file {\tt pi\_ta\_virtual.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt pid\_controller} and then open the {\tt  pi\_ta\_virtual.sce} file in the scilab editor.
+\item Step5: Same
+\item Step6: Execute the file {\tt pi\_ta\_virtual.sce}.  Expect the PI controller xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the PI controller xcos diagram.
+\item Step8: Same
 \end{enumerate}
-
 
 
 \begin{figure}
@@ -262,15 +267,19 @@ s_0&=K\left(1+\frac{T_s}{\tau_i}\right) \\
 s_1&=-K
 \end{align}
 
-For implementing the PI controller,  please follow the steps illustrated in section \ref{scilab_sbhs} of this document with the 
-following changes:
+\subsection{Implementing locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
+
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pi\_bda.sci} instead of {\tt step\_test.sci}.
-\item In step 6, execute the file {\tt pi\_bda.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}
+\item Step2: Same
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load ramp test function by executing command\\ {\tt exec<space>pi\_bda.sci}
+\item Step6: Load Xcos code for ramp test using the command\\ {\tt exec<space>pi\_bda.xcos}
+\item Step7: Same
 \end{enumerate}
+
 
 The Xcos output is shown in figure \ref{pi_bda}.
 Figure shows three plots. First sub plot shows setpoint and output temperature profile. 
@@ -284,17 +293,22 @@ Second sub plot shows control effort and third sub plot shows error between setp
 \label{pi_bda}
 \end{figure}
 
+\subsection{Implementing virtually}
 
-\subsection{Implementing PI Controller using Backward Difference Approximation on SBHS, virtually}
-For implementing above PI controller virtually, please follow the steps illustrated in section \ref{vlabsexpt} 
-of this document with the following changes:
+The detailed procedure to perform a virtual experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pi\_bda\_virtual.sce} instead of {\tt step\_test.sce}.
-\item In step 6, execute the file {\tt pi\_bda\_virtual.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the PID controller experiment directory and double-click on the file {\tt pi\_bda\_virtual.sce}. This will launch scilab and also open the file {\tt pi\_bda\_virtual.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt pid\_controller} and then open the {\tt  pi\_bda\_virtual.sce} file in the scilab editor.
+\item Step5: Same
+\item Step6: Execute the file {\tt pi\_bda\_virtual.sce}.  Expect the PI controller xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the PI controller xcos diagram.
+\item Step8: Same
 \end{enumerate}
+
+
 
 
 \section{Implementing PI Controller using Forward Difference Approximation}
@@ -316,15 +330,19 @@ s_0&=K \\
 s_1&=K\left(-1+\frac{T_s}{\tau_i}\right)
 \end{align}
 
-For implementing the PI controller, please follow the steps illustrated in section \ref{scilab_sbhs} of this document with the 
-following changes:
+\subsection{Implementing locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
+
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pi\_fda.sci} instead of {\tt step\_test.sci}.
-\item In step 6, execute the file {\tt pi\_fda.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}
+\item Step2: Same
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load ramp test function by executing command\\ {\tt exec<space>pi\_fda.sci}
+\item Step6: Load Xcos code for ramp test using the command\\ {\tt exec<space>pi\_fda.xcos}
+\item Step7: Same
 \end{enumerate}
+
 
 The Xcos output is shown in figure \ref{pi_fda}.
 Figure shows three plots. First sub plot shows setpoint and output temperature profile. Second sub plot shows 
@@ -337,18 +355,22 @@ control effort and third sub plot shows error between setpoint and plant output.
 \label{pi_fda}
 \end{figure}
 
-\subsection{Implementing PI Controller using Forward Difference Approximation on SBHS, virtually}
-For implementing above PI controller virtually, please follow the steps illustrated in section \ref{vlabsexpt} of 
-this document with the following changes:
+\subsection{Implementing virtually}
+
+The detailed procedure to perform a virtual experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pi\_fda\_virtual.sce} instead of {\tt step\_test.sce}.
-\item In step 6, execute the file {\tt pi\_fda\_virtual.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the PID controller experiment directory and double-click on the file {\tt pi\_fda\_virtual.sce}. This will launch scilab and also open the file {\tt pi\_fda\_virtual.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt pid\_controller} and then open the {\tt  pi\_fda\_virtual.sce} file in the scilab editor.
+\item Step5: Same
+\item Step6: Execute the file {\tt pi\_fda\_virtual.sce}.  Expect the PI controller xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the PI controller xcos diagram.
+\item Step8: Same
 \end{enumerate}
 
-\
+
 \section{Implementing PID Controller using Backward Difference Approximation}
 Figure \ref{pid_cos} shows Xcos diagram for implementing PID controller.\\
 \begin{figure}
@@ -379,14 +401,18 @@ s_1&=K\left[-1-2\frac{\tau_d}{T_s}\right]\\
 s_2&=K\left[\frac{\tau_d}{T_s}\right]
 \end{align}
 
-For implementing the PID controller, please follow the steps illustrated in section \ref{scilab_sbhs} of this document with the 
-following changes:
+
+\subsection{Implementing locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
+
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pid\_bda.sci} instead of {\tt step\_test.sci}.
-\item In step 6, execute the file {\tt pid\_bda.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}
+\item Step2: Same
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load ramp test function by executing command\\ {\tt exec<space>pid\_bda.sci}
+\item Step6: Load Xcos code for ramp test using the command\\ {\tt exec<space>pid\_bda.xcos}
+\item Step7: Same
 \end{enumerate}
 
 The output of Xcos is shown in figure \ref{pid_bda}.
@@ -401,17 +427,21 @@ control effort and third sub plot shows error between setpoint and plant output.
 \label{pid_bda}
 \end{figure}
 
+\subsection{Implementing virtually}
 
-\subsection{Implementing PID Controller using Backward Difference Approximation on SBHS, virtually}
-For implementing above PI controller virtually, please follow the steps illustrated in section \ref{vlabsexpt} of this 
-document with the following changes:
+The detailed procedure to perform a virtual experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pid\_bda\_virtual.sce} instead of {\tt step\_test.sce}.
-\item In step 6, execute the file {\tt pid\_bda\_virtual.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the PID controller experiment directory and double-click on the file {\tt pid\_bda\_virtual.sce}. This will launch scilab and also open the file {\tt pid\_bda\_virtual.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt pid\_controller} and then open the {\tt  pid\_bda\_virtual.sce} file in the scilab editor.
+\item Step5: Same
+\item Step6: Execute the file {\tt pid\_bda\_virtual.sce}.  Expect the PI controller xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the PI controller xcos diagram.
+\item Step8: Same
 \end{enumerate}
+
 
 
 \section{Implementing PID Controller using Trapezoidal Approximation for Integral Mode and Backward Difference Approximation 
@@ -437,15 +467,19 @@ s_1&=K\left[-1+\frac{T_s}{2\tau_i}-2\frac{\tau_d}{T_s}\right]\\
 s_2&=K\frac{\tau_d}{T_s}
 \end{align}
 
-For implementing the PID controller, please follow the steps illustrated in section \ref{scilab_sbhs} of this document with the 
-following changes:
+\subsection{Implementing locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
+
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pid\_ta\_bda.sci} instead of {\tt step\_test.sci}.
-\item In step 6, execute the file {\tt pid\_ta\_bda.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}
+\item Step2: Same
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load ramp test function by executing command\\ {\tt exec<space>pid\_ta\_bda.sci}
+\item Step6: Load Xcos code for ramp test using the command\\ {\tt exec<space>pid\_ta\_bda.xcos}
+\item Step7: Same
 \end{enumerate}
+
 
 The Xcos output is shown in figure \ref{pid_ta_bda}.
 Figure shows three plots. First sub plot shows setpoint and output temperature profile. Second sub plot shows control 
@@ -458,18 +492,21 @@ effort and third sub plot shows error between setpoint and plant output.
 \label{pid_ta_bda}
 \end{figure}
  
+\subsection{Implementing virtually}
 
-\subsection{Implementing PID Controller using Trapezoidal Approximation for Integral Mode and Backward Difference 
-Approximation for the Derivative Mode on SBHS, virtually}
-For implementing above PID controller virtually, please follow the steps illustrated in section \ref{vlabsexpt} of this 
-document with the following changes:
+The detailed procedure to perform a virtual experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pid\_ta\_bda\_virtual.sce} instead of {\tt step\_test.sce}.
-\item In step 6, execute the file {\tt pid\_ta\_bda\_virtual.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the PID controller experiment directory and double-click on the file {\tt pid\_ta\_bda\_virtual.sce}. This will launch scilab and also open the file {\tt pid\_ta\_bda\_virtual.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt pid\_controller} and then open the {\tt  pid\_ta\_bda\_virtual.sce} file in the scilab editor.
+\item Step5: Same
+\item Step6: Execute the file {\tt pid\_ta\_bda\_virtual.sce}.  Expect the PI controller xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the PI controller xcos diagram.
+\item Step8: Same
 \end{enumerate}
+
 Due to the introduction of derivative action, control effort shows lots of fluctuations. By using filtered form of 
 PID, we can make derivative mode implementable.
 
@@ -510,14 +547,17 @@ s_1&=K\left[r_1(1+\frac{T_s}{\tau_i}+2N)-1\right]\\
 s_2&=-K\left[r_1(1+N)\right]
 \end{align}
 
-For implementing the PID controller, please follow the steps illustrated in section \ref{scilab_sbhs} of this document with 
-the following changes:
+\subsection{Implementing locally}
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
+
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pid\_filter.sci} instead of {\tt step\_test.sci}.
-\item In step 6, execute the file {\tt pidN.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}
+\item Step2: Same
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load ramp test function by executing command\\ {\tt exec<space>pid\_filter.sci}
+\item Step6: Load Xcos code for ramp test using the command\\ {\tt exec<space>pidN.xcos}
+\item Step7: Same
 \end{enumerate}
 
 The Xcos output is shown in figure \ref{pid_filter}.
@@ -534,16 +574,21 @@ effort and third sub plot shows error between setpoint and plant output.
 By comparing figure \ref{pid_bda} and figure \ref{pid_filter}, it is clear that introduction of filtered form of 
 PID reduces fluctuations in control effort.
 
-\subsection{Implementing PID Controller with Filtering using Backward Difference Approximation on SBHS, virtually}
-For implementing the PID controller virtually, please follow the steps illustrated in section \ref{vlabsexpt} of this 
-document with the following changes:
+\subsection{Implementing virtually}
+
+The detailed procedure to perform a virtual experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
 \begin{enumerate}
-
-\item In step 1, change the directory to the folder {\tt pid\_controller} instead of {\tt StepTest}.
-\item In step 5, execute the file {\tt pid\_filter\_virtual.sce} instead of {\tt step\_test.sce}.
-\item In step 6, execute the file {\tt pidN\_virtual.xcos} instead of {\tt step\_test.xcos}.
-
+\item Step1: The working directory is {\tt  pid\_controller}. Open this directory.
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the PID controller experiment directory and double-click on the file {\tt pid\_filter\_virtual.sce}. This will launch scilab and also open the file {\tt pid\_filter\_virtual.sce} in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to {\tt pid\_controller} and then open the {\tt  pid\_filter\_virtual.sce} file in the scilab editor.
+\item Step5: Same
+\item Step6: Execute the file {\tt pid\_filter\_virtual.sce}.  Expect the PI controller xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the PI controller xcos diagram.
+\item Step8: Same
 \end{enumerate}
+
 
 
 \section{Scilab Code}\label{pidcodes}
