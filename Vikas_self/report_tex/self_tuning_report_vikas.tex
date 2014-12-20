@@ -11,10 +11,6 @@ variable, when a set point is given. Suitable values of these parameters can be 
 known. However, with large changes in the controlled variable, there may be appreciable changes in the plant transfer 
 function itself. Therefore, it is needed to dynamically update the controller parameters according to the transfer function.
 
-\subsection{Objective}%\label{umlauts}
-The objective is to design and implement an algorithm that would dynamically update the values 
-of the controller parameters that are used to control the temperature in the Single Board Heater System (SBHS).
-
 
 
 \section{Theory}
@@ -280,7 +276,7 @@ The graphs showing the variation of Kp and $\tau_p$ are shown below:
 \end{enumerate}
 
 
-\section{Implementation}
+\section{PID controller theory}
 \subsection{PI Controller}
 \begin{figure}[h]
 \centering
@@ -359,7 +355,6 @@ s_1 &= K\left[-1 - 2\frac{\tau_d}{T_s}\right]\\
 s_2 &= K\left[\frac{\tau_d}{T_s}\right]
 \end{align}
 
-\newpage
 \subsection{Self Tuning Controller}
 \begin{figure}[h]
 \centering
@@ -695,18 +690,38 @@ For comparison, corresponding results are also shown for conventional PID contro
 \subsection{Conclusion}
 We see that the self tuning controller manages to keep the temperature close to the set point temperature, even when the 
 change in fan input is encountered. This shows that it can reject the disturbances quite nicely.
-\newpage
-\section{Implementing Self Tuning controller on SBHS, virtually}
-Under the {\tt virtual} folder locate {\tt Self\_tuning\_controller} folder. You will see two folders {\tt ConventionalTuning\_Vikas} and {\tt SelfTuning\_Vikas}. These two directories will contain four more folders categorized as 
-The necessary code is listed in the section \ref{convcode_virtual} and section \ref{selfcode_virtual}
-The step by step procedure for conducting an experiment virtually, remains same as explained in section \ref{vlabsexpt} with the follwing changes.
-\begin{enumerate}
-\item Change the scilab working directory to the experiment folder you want to use. For example {\bf virtual/Self\_tuning\_controller/SelfTuning\_Vikas\\/PIControllerFandisturbance}
-\item Use the getd command as ../../../common\_files/
-\item Execute the required .sce file. \\For example, {\tt pi\_bda\_tuned\_dist\_virtual.sce} if you want to run the {\tt PI Controller Fan disturbance} experiment.  
 
+\section{Conducting experiments locally}
+Under the {\tt local} folder locate {\tt Self\_tuning\_controller} folder. You will see two folders {\tt ConventionalTuning\_Vikas} and {\tt SelfTuning\_Vikas}. These two directories will contain four more folders, two for PI and two for PID.
+
+The detailed procedure to perform a local experiment is explained in Chapter\ref{sercomm}. A summary of the same is provided in section \ref{local-summary} It is same for this section with following changes.
+
+\begin{enumerate}
+\item Step1: The working directory is one of the four experiments you want to do. For example {\bf virtual/Self\_tuning\_controller/SelfTuning\_Vikas\\/PIControllerFandisturbance}
+\item Step2:  Load the functions available in common files directory by executing the command {\tt getd<space>..\textbackslash ..\textbackslash ..\textbackslash common\_files\ }
+\item Step3: Same
+\item Step4: Same
+\item Step5: Load required function by using exec command.\\For example, {\tt exec<space>pi\_bda\_tuned\_dist.sce} if you want to run the {\tt PI Controller Fan disturbance} experiment.  
+\item Step6: Load Xcos code for corresponding experiment using xcos command.\\For example  {\tt exec<space>pi\_tuned\_dist.xcos}
+\item Step7: Same
 \end{enumerate}
- 
+
+\section{Conducting experiments virtually}
+Under the {\tt local} folder locate {\tt Self\_tuning\_controller} folder. You will see two folders {\tt ConventionalTuning\_Vikas} and {\tt SelfTuning\_Vikas}. These two directories will contain four more folders, two for PI and two for PID.
+
+The detailed procedure to perform a virtual experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
+
+\begin{enumerate}
+\item Step1:  The working directory is one of the four experiments you want to do. For example {\bf virtual/Self\_tuning\_controller/SelfTuning\_Vikas\\/PIControllerFandisturbance}
+\item Step2: Same
+\item Step3: Same
+\item Step4:  Switch to the working experiment directory and double-click on the .sce file corresponding to the experiment you want to perform.  For example, {\tt pi\_bda\_tuned\_dist.sce} if you want to run the {\tt PI Controller Fan disturbance} experiment. This will launch scilab and also open the file in the scilab editor. Linux users will have to launch scilab manually. They also have to change the working directory to corresponding experiment and then open the .sce file in the scilab editor.
+\item Step5:  Load the functions available in common files directory by executing the command {\tt getd<space>..\textbackslash ..\textbackslash ..\textbackslash common\_files\ }
+\item Step6: Execute the .sce file.  Expect the corresponding xcos diagram to open automatically. If this doesnt happen, check the scilab console for error message.
+\item Step7: Execute the xcos diagram.
+\item Step8: Same
+\end{enumerate}
+
 
 
 \section{Scilab Codes}
