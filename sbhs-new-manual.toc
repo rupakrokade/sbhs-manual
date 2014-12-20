@@ -94,18 +94,18 @@
 \contentsline {section}{\numberline {9.1}PRBS Modelling}{173}
 \contentsline {subsection}{\numberline {9.1.1}Issues with Step Test and an Alternate Approach}{174}
 \contentsline {section}{\numberline {9.2}Conducting PRBS Test on SBHS locally}{176}
-\contentsline {section}{\numberline {9.3}Conducting Sine Test on SBHS, virtually}{177}
-\contentsline {subsection}{\numberline {9.3.1}Determination of Discrete Time Transfer Function models}{179}
-\contentsline {subsection}{\numberline {9.3.2}Determination of First order Discrete time Transfer Function}{180}
-\contentsline {subsection}{\numberline {9.3.3}Determination of Second order Discrete time Transfer Function}{182}
-\contentsline {section}{\numberline {9.4}Implementing 2DOF pole-placement controller using PRBS model, virtually}{183}
-\contentsline {section}{\numberline {9.5}Implementing 2DOF pole-placement controller using PRBS model, locally}{186}
-\contentsline {section}{\numberline {9.6}Scilab Local codes}{186}
-\contentsline {subsection}{\numberline {9.6.1}Identification codes}{186}
-\contentsline {subsection}{\numberline {9.6.2}Controller codes}{191}
-\contentsline {section}{\numberline {9.7}Scilab Virtual codes}{195}
-\contentsline {subsection}{\numberline {9.7.1}Identification codes}{195}
-\contentsline {subsection}{\numberline {9.7.2}Controller codes}{200}
+\contentsline {section}{\numberline {9.3}Conducting PRBS Test on SBHS, virtually}{177}
+\contentsline {section}{\numberline {9.4}Determination of Discrete Time Transfer Function models}{179}
+\contentsline {section}{\numberline {9.5}Determination of First order Discrete time Transfer Function}{180}
+\contentsline {section}{\numberline {9.6}Determination of Second order Discrete time Transfer Function}{182}
+\contentsline {section}{\numberline {9.7}Implementing 2DOF pole-placement controller using PRBS model, virtually}{183}
+\contentsline {section}{\numberline {9.8}Implementing 2DOF pole-placement controller using PRBS model, locally}{186}
+\contentsline {section}{\numberline {9.9}Scilab Local codes}{186}
+\contentsline {subsection}{\numberline {9.9.1}Identification codes}{186}
+\contentsline {subsection}{\numberline {9.9.2}Controller codes}{191}
+\contentsline {section}{\numberline {9.10}Scilab Virtual codes}{195}
+\contentsline {subsection}{\numberline {9.10.1}Identification codes}{195}
+\contentsline {subsection}{\numberline {9.10.2}Controller codes}{200}
 \contentsline {chapter}{\numberline {10}Implementing Internal Model Controller for First Order System on a Single Board Heater System}{205}
 \contentsline {section}{\numberline {10.1}IMC Design for Single Board Heater System}{205}
 \contentsline {section}{\numberline {10.2}Step for Designing IMC for Stable Plant}{207}
@@ -121,26 +121,24 @@
 \contentsline {subsection}{\numberline {11.4.2}Negative Step Change to Set Point and Fan}{222}
 \contentsline {section}{\numberline {11.5}Effect of Tuning parameters: Weighting factors, We and Wu}{224}
 \contentsline {subsection}{\numberline {11.5.1}Positive Step Change and (We, Wu)=(1,1)}{225}
-\contentsline {subsection}{\numberline {11.5.2}Positive Step Change and (We, Wu)=(10,10)}{228}
-\contentsline {subsection}{\numberline {11.5.3}Positive Step Change and (We, Wu)=(40,40)}{231}
-\contentsline {subsection}{\numberline {11.5.4}Negative Step Change and (We,Wu)=(1,1)}{233}
-\contentsline {subsection}{\numberline {11.5.5}Negative Step Change and (We, Wu)=(10,10)}{235}
-\contentsline {subsection}{\numberline {11.5.6}Negative Step Change and (We, Wu)=(40,40)}{237}
-\contentsline {subsection}{\numberline {11.5.7}For different We and Wu factors}{238}
-\contentsline {subsection}{\numberline {11.5.8}We =100 and Wu = 2 (Expt 5.1) }{239}
-\contentsline {section}{\numberline {11.6}Conclusion on Weighting factor experiments}{247}
-\contentsline {section}{\numberline {11.7}Effect of Control Horizon Paramter, q}{247}
-\contentsline {section}{\numberline {11.8}For positive step change in Set point and Fan speed }{248}
-\contentsline {section}{\numberline {11.9}For negative step change in Set point and Fan speed}{254}
-\contentsline {subsection}{\numberline {11.9.1}For q =4 (Expt 4.3) }{259}
-\contentsline {section}{\numberline {11.10}Conclusion on the effect of Control Horizon parameter }{260}
-\contentsline {section}{\numberline {11.11}Implementing Model Predictive controller on SBHS, locally}{261}
-\contentsline {subsection}{\numberline {11.11.1}Implementing MPC virtually}{262}
-\contentsline {section}{\numberline {11.12}Procedure to implement MPC on SBHS}{262}
-\contentsline {section}{\numberline {11.13}Conclusion for MPC project}{263}
-\contentsline {section}{\numberline {11.14}Acknowledgement }{263}
-\contentsline {section}{\numberline {11.15}Appendix}{264}
-\contentsline {section}{\numberline {11.16}Appendix 1: General Information on Experiments for this Project}{264}
-\contentsline {section}{\numberline {11.17}Appendix 2: Values of State Space matrices}{264}
-\contentsline {section}{\numberline {11.18}Appendix 3: Attachments and Contact Information}{266}
-\contentsline {section}{\numberline {11.19}Scilab Code}{266}
+\contentsline {subsection}{\numberline {11.5.2}Positive Step Change and (We, Wu)=(10,10)}{227}
+\contentsline {subsection}{\numberline {11.5.3}Positive Step Change and (We, Wu)=(40,40)}{229}
+\contentsline {subsection}{\numberline {11.5.4}Negative Step Change and (We,Wu)=(1,1)}{231}
+\contentsline {subsection}{\numberline {11.5.5}Negative Step Change and (We, Wu)=(10,10)}{233}
+\contentsline {subsection}{\numberline {11.5.6}Negative Step Change and (We, Wu)=(40,40)}{235}
+\contentsline {section}{\numberline {11.6}For different We and Wu factors}{236}
+\contentsline {subsection}{\numberline {11.6.1}We =100 and Wu = 2}{237}
+\contentsline {subsection}{\numberline {11.6.2}We = 2 and Wu = 100}{239}
+\contentsline {subsection}{\numberline {11.6.3}We =10 and Wu = 100}{241}
+\contentsline {subsection}{\numberline {11.6.4}We =100 and Wu = 10}{242}
+\contentsline {subsection}{\numberline {11.6.5}Conclusion on Weighting factor experiments}{245}
+\contentsline {section}{\numberline {11.7}Effect of Control Horizon Paramter, q}{245}
+\contentsline {subsection}{\numberline {11.7.1}For positive step change in Set point and Fan speed }{246}
+\contentsline {subsection}{\numberline {11.7.2}For negative step change in Set point and Fan speed}{252}
+\contentsline {subsection}{\numberline {11.7.3}Conclusion on the effect of Control Horizon parameter }{257}
+\contentsline {section}{\numberline {11.8}Implementing MPC locally}{258}
+\contentsline {section}{\numberline {11.9}Implementing MPC virtually}{258}
+\contentsline {section}{\numberline {11.10}Conclusion for MPC project}{259}
+\contentsline {section}{\numberline {11.11}Acknowledgement }{260}
+\contentsline {section}{\numberline {11.12}General Information on Experiments for this Project}{260}
+\contentsline {section}{\numberline {11.13}Scilab Code}{262}

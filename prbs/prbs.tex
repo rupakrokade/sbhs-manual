@@ -92,7 +92,7 @@ The response is as shown in figure \ref{prbs-test-local}. The data file thus obt
 \label{prbs-local-data}
 \end{table}
 
-\section{Conducting Sine Test on SBHS, virtually}
+\section{Conducting PRBS Test on SBHS, virtually}
 The detailed procedure to perform a local experiment is explained in Chapter\ref{virtual}. A summary of the same is provided in section \ref{vlabsexpt}. It is same for this section with following changes.
 
 \begin{enumerate}
@@ -120,7 +120,7 @@ The detailed procedure to perform a local experiment is explained in Chapter\ref
 983 40 50 36.70 14...6728 14...9131 14...9148 14...6759 0.98300E+03
 984 40 50 36.50 14...7712 14...0115 14...0133 14...7743 0.98400E+03
 \end{verbatim}
-\caption{Sine data obtained after performing virtual Sine Test}
+\caption{PRBS data obtained after performing virtual PRBS Test}
 \label{prbs-data-virtual}
 \end{table}
 
@@ -140,7 +140,7 @@ The detailed procedure to perform a local experiment is explained in Chapter\ref
 \end{figure}
 
 
-\subsection{Determination of Discrete Time Transfer Function models}\label{prbs-model}
+\section{Determination of Discrete Time Transfer Function models}\label{prbs-model}
 
 System identification is carried out to identify the transfer function between the input signal to the system and output 
 from the system. Firstly, a transfer function with unknown parameters is assumed. The system is given a known input and its
@@ -188,7 +188,7 @@ assumed, which can be written as a difference equation:
 \label{prbs-1-model}
 \end{figure}
 
-\subsection{Determination of First order Discrete time Transfer Function}
+\section{Determination of First order Discrete time Transfer Function}
 \begin{enumerate}
 \item Download the Analysis folder from the sbhs website. It will be available under {\tt downloads} section. The download will be in zip format. Extrat the downloaded zip file. You will get a folder {\tt Analysis}. 
 \item Open the {\tt Analysis} folder and then locate and open the folder {\tt Step\_Analysis}.
@@ -211,7 +211,7 @@ G(z)=\frac{0.004}{1-0.97z^{-1}}z^{-5}
 \end{align}
 
 
-\subsection{Determination of Second order Discrete time Transfer Function}
+\section{Determination of Second order Discrete time Transfer Function}
 \begin{enumerate}
 \item Download the Analysis folder from the sbhs website. It will be available under {\tt downloads} section. The download will be in zip format. Extrat the downloaded zip file. You will get a folder {\tt Analysis}. 
 \item Open the {\tt Analysis} folder and then locate and open the folder {\tt Step\_Analysis}.

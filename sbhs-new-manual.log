@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  19 DEC 2014 17:26
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  20 DEC 2014 15:18
 entering extended mode
  %&-line parsing enabled.
 **sbhs-new-manual.tex
@@ -1393,12 +1393,6 @@ nce Ap-prox-
  []
 
 [3]
-Overfull \hbox (10.06807pt too wide) in paragraph at lines 100--100
- [][] []\OT1/txr/m/n/12 Determination of Sec-ond or-der Dis-crete time Trans-fe
-r Func- 
- []
-
-
 Overfull \hbox (6.20264pt too wide) in paragraph at lines 101--101
  [][] []\OT1/txr/m/n/12 Implementing 2DOF pole-placement con-troller us-ing PRB
 S model, 
@@ -2089,9 +2083,8 @@ File: prbs/prbs-1-fit.png Graphic file (type png)
 File: prbs/prbs-1-model.png Graphic file (type png)
 
 <use prbs/prbs-1-model.png>
-Overfull \hbox (4.53078pt too wide) in paragraph at lines 191--191
-[]\OT1/txr/bx/n/14.4 Determination of First or-der Dis-crete time Trans-fer Fun
-c-
+Overfull \hbox (8.64932pt too wide) in paragraph at lines 191--191
+[]\OT1/txr/bx/n/17.28 Determination of First or-der Dis-crete time Trans-
  []
 
 
@@ -2103,6 +2096,11 @@ Overfull \hbox (17.71048pt too wide) in paragraph at lines 194--195
 
 [180 <./prbs/prbs-1-fit.png (PNG copy)>] [181 <./prbs/prbs-1-model.png (PNG cop
 y)>]
+Overfull \hbox (25.94658pt too wide) in paragraph at lines 214--214
+[]\OT1/txr/bx/n/17.28 Determination of Sec-ond or-der Dis-crete time Trans-
+ []
+
+
 Overfull \hbox (17.71048pt too wide) in paragraph at lines 217--218
 []\OT1/txr/m/n/12 Open the \OT1/txtt/m/n/12 Analysis \OT1/txr/m/n/12 folder and
  then lo-cate and open the folder \OT1/txtt/m/n/12 Step[]Analysis\OT1/txr/m/n/1
@@ -2218,214 +2216,190 @@ al.png>]
 File: mpc/1_1.png Graphic file (type png)
  <use mpc/1_1.png> [224]
 File: mpc/1_1_heater_final.png Graphic file (type png)
- <use mpc/1_1_heater_final.png> [225] [226]
-<mpc/1_2.png, id=850, 411.03563pt x 469.00218pt>
+ <use mpc/1_1_heater_final.png> [225]
+<mpc/1_2.png, id=847, 411.03563pt x 469.00218pt>
 File: mpc/1_2.png Graphic file (type png)
- <use mpc/1_2.png> [227]
-<mpc/1_2_heater_final.png, id=854, 401.24907pt x 462.97969pt>
+ <use mpc/1_2.png> [226]
+<mpc/1_2_heater_final.png, id=851, 401.24907pt x 462.97969pt>
 File: mpc/1_2_heater_final.png Graphic file (type png)
 
-<use mpc/1_2_heater_final.png> [228 <./mpc/1_2.png>] [229 <./mpc/1_2_heater_fin
-al.png>] <mpc/1_3.PNG, id=864, 401.24907pt x 465.99094pt>
+<use mpc/1_2_heater_final.png> [227 <./mpc/1_2.png>]
+<mpc/1_3.PNG, id=856, 401.24907pt x 465.99094pt>
 File: mpc/1_3.PNG Graphic file (type png)
  <use mpc/1_3.PNG>
-<mpc/1_3_heater_final.png, id=865, 402.00188pt x 464.4853pt>
+<mpc/1_3_heater_final.png, id=857, 402.00188pt x 464.4853pt>
 File: mpc/1_3_heater_final.png Graphic file (type png)
 
-<use mpc/1_3_heater_final.png> [230] [231 <./mpc/1_3.PNG>]
+<use mpc/1_3_heater_final.png> [228 <./mpc/1_2_heater_final.png>] [229 <./mpc/1
+_3.PNG>]
 File: mpc/2_1.PNG Graphic file (type png)
- <use mpc/2_1.PNG>
-[232 <./mpc/1_3_heater_final.png>]
+ <use mpc/2_1.PNG> [230 <./mpc/1_3_heater_final.png>]
 File: mpc/2_1_heater_final.png Graphic file (type png)
- <use mpc/2_1_heater_final.png> [233]
-<mpc/2_2.PNG, id=880, 402.00188pt x 467.49657pt>
+
+<use mpc/2_1_heater_final.png> [231]
+<mpc/2_2.PNG, id=874, 402.00188pt x 467.49657pt>
 File: mpc/2_2.PNG Graphic file (type png)
  <use mpc/2_2.PNG>
-<mpc/2_2_heater_final.png, id=881, 392.96812pt x 464.4853pt>
+<mpc/2_2_heater_final.png, id=875, 392.96812pt x 464.4853pt>
 File: mpc/2_2_heater_final.png Graphic file (type png)
 
-<use mpc/2_2_heater_final.png> [234] [235 <./mpc/2_2.PNG>]
-<mpc/2_3.PNG, id=890, 398.23781pt x 469.755pt>
+<use mpc/2_2_heater_final.png> [232] [233 <./mpc/2_2.PNG>]
+<mpc/2_3.PNG, id=883, 398.23781pt x 469.755pt>
 File: mpc/2_3.PNG Graphic file (type png)
  <use mpc/2_3.PNG>
-<mpc/2_3_heater_final.png, id=891, 399.74344pt x 469.755pt>
+<mpc/2_3_heater_final.png, id=884, 399.74344pt x 469.755pt>
 File: mpc/2_3_heater_final.png Graphic file (type png)
 
-<use mpc/2_3_heater_final.png> [236 <./mpc/2_2_heater_final.png>] [237 <./mpc/2
-_3.PNG>] <mpc/5_1.PNG, id=900, 415.5525pt x 465.99094pt>
+<use mpc/2_3_heater_final.png> [234 <./mpc/2_2_heater_final.png>] [235 <./mpc/2
+_3.PNG>] <mpc/5_1.PNG, id=894, 415.5525pt x 465.99094pt>
 File: mpc/5_1.PNG Graphic file (type png)
  <use mpc/5_1.PNG>
-[238 <./mpc/2_3_heater_final.png>]
-<mpc/5_1_heater_final.png, id=905, 395.97937pt x 459.21562pt>
+[236 <./mpc/2_3_heater_final.png>]
+<mpc/5_1_heater_final.png, id=899, 395.97937pt x 459.21562pt>
 File: mpc/5_1_heater_final.png Graphic file (type png)
 
-<use mpc/5_1_heater_final.png> [239 <./mpc/5_1.PNG>]
-<mpc/5_2.PNG, id=910, 398.99063pt x 467.49657pt>
+<use mpc/5_1_heater_final.png> [237 <./mpc/5_1.PNG>]
+<mpc/5_2.PNG, id=904, 398.99063pt x 467.49657pt>
 File: mpc/5_2.PNG Graphic file (type png)
- <use mpc/5_2.PNG> [240 <./mpc/5_1_heater_final.png>]
-<mpc/5_2_heater_final.png, id=916, 406.51875pt x 461.47406pt>
+ <use mpc/5_2.PNG> [238 <./mpc/5_1_heater_final.png>]
+<mpc/5_2_heater_final.png, id=909, 406.51875pt x 461.47406pt>
 File: mpc/5_2_heater_final.png Graphic file (type png)
 
 <use mpc/5_2_heater_final.png>
-Overfull \hbox (16.51775pt too wide) in paragraph at lines 210--211
-[][] 
+Overfull \hbox (16.51775pt too wide) in paragraph at lines 230--231
+ [][] 
  []
 
-[241 <./mpc/5_2.PNG>] <mpc/5_3.PNG, id=921, 398.99063pt x 466.74374pt>
+[239 <./mpc/5_2.PNG>] <mpc/5_3.PNG, id=914, 398.99063pt x 466.74374pt>
 File: mpc/5_3.PNG Graphic file (type png)
 
-<use mpc/5_3.PNG> [242 <./mpc/5_2_heater_final.png>]
-<mpc/5_3_heater_final.png, id=926, 393.72093pt x 464.4853pt>
+<use mpc/5_3.PNG> [240 <./mpc/5_2_heater_final.png>]
+<mpc/5_3_heater_final.png, id=920, 393.72093pt x 464.4853pt>
 File: mpc/5_3_heater_final.png Graphic file (type png)
 
 <use mpc/5_3_heater_final.png>
-Overfull \hbox (0.92082pt too wide) in paragraph at lines 220--224
+Overfull \hbox (0.92082pt too wide) in paragraph at lines 241--246
 []\OT1/txr/m/n/12 We ob-serve that this ex-per-i-ments per-forms bet-ter than i
 n the last sec-tion (where
  []
 
-[243 <./mpc/5_3.PNG>] <mpc/5_4.PNG, id=931, 386.19281pt x 465.99094pt>
+[241 <./mpc/5_3.PNG>] <mpc/5_4.PNG, id=925, 386.19281pt x 465.99094pt>
 File: mpc/5_4.PNG Graphic file (type png)
 
-<use mpc/5_4.PNG> [244 <./mpc/5_3_heater_final.png>]
-<mpc/5_4_heater_final.png, id=936, 396.7322pt x 465.23813pt>
+<use mpc/5_4.PNG> [242 <./mpc/5_3_heater_final.png>]
+<mpc/5_4_heater_final.png, id=930, 396.7322pt x 465.23813pt>
 File: mpc/5_4_heater_final.png Graphic file (type png)
 
 <use mpc/5_4_heater_final.png>
-Overfull \hbox (6.73122pt too wide) in paragraph at lines 235--236
-[][] 
+Overfull \hbox (6.73122pt too wide) in paragraph at lines 258--259
+ [][] 
  []
 
-[245 <./mpc/5_4.PNG>] [246 <./mpc/5_4_heater_final.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 258--260
+[243 <./mpc/5_4.PNG>] [244 <./mpc/5_4_heater_final.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 281--283
 
  []
 
-[247] <mpc/3_1.PNG, id=949, 402.00188pt x 467.49657pt>
+[245] <mpc/3_1.PNG, id=942, 402.00188pt x 467.49657pt>
 File: mpc/3_1.PNG Graphic file (type png)
  <use mpc/3_1.PNG>
-<mpc/3_1_heater_final.png, id=950, 405.76593pt x 462.22687pt>
+<mpc/3_1_heater_final.png, id=943, 405.76593pt x 462.22687pt>
 File: mpc/3_1_heater_final.png Graphic file (type png)
 
-<use mpc/3_1_heater_final.png> [248] [249 <./mpc/3_1.PNG>]
-<mpc/3_2.PNG, id=958, 394.47375pt x 465.99094pt>
+<use mpc/3_1_heater_final.png> [246 <./mpc/3_1.PNG>]
+<mpc/3_2.PNG, id=949, 394.47375pt x 465.99094pt>
 File: mpc/3_2.PNG Graphic file (type png)
  <use mpc/3_2.PNG>
-<mpc/3_2_heater_final.png, id=959, 398.99063pt x 469.00218pt>
+<mpc/3_2_heater_final.png, id=950, 398.99063pt x 469.00218pt>
 File: mpc/3_2_heater_final.png Graphic file (type png)
 
-<use mpc/3_2_heater_final.png> [250 <./mpc/3_1_heater_final.png>] [251 <./mpc/3
-_2.PNG>] <mpc/3_3.PNG, id=968, 411.03563pt x 469.00218pt>
+<use mpc/3_2_heater_final.png> [247 <./mpc/3_1_heater_final.png>] [248 <./mpc/3
+_2.PNG>] <mpc/3_3.PNG, id=959, 411.03563pt x 469.00218pt>
 File: mpc/3_3.PNG Graphic file (type png)
  <use mpc/3_3.PNG>
-<mpc/3_3_heater_final.png, id=969, 401.24907pt x 462.97969pt>
+<mpc/3_3_heater_final.png, id=960, 401.24907pt x 462.97969pt>
 File: mpc/3_3_heater_final.png Graphic file (type png)
 
-<use mpc/3_3_heater_final.png> [252 <./mpc/3_2_heater_final.png>] [253 <./mpc/3
-_3.PNG>] <mpc/4_1.PNG, id=979, 399.74344pt x 469.00218pt>
+<use mpc/3_3_heater_final.png> [249 <./mpc/3_2_heater_final.png>] [250 <./mpc/3
+_3.PNG>] <mpc/4_1.PNG, id=969, 399.74344pt x 469.00218pt>
 File: mpc/4_1.PNG Graphic file (type png)
  <use mpc/4_1.PNG>
-<mpc/4_1_heater_final.png, id=980, 403.5075pt x 462.97969pt>
+<mpc/4_1_heater_final.png, id=970, 403.5075pt x 462.97969pt>
 File: mpc/4_1_heater_final.png Graphic file (type png)
 
-<use mpc/4_1_heater_final.png> [254 <./mpc/3_3_heater_final.png>] [255 <./mpc/4
-_1.PNG>] <mpc/4_2.PNG, id=989, 395.97937pt x 469.00218pt>
+<use mpc/4_1_heater_final.png> [251 <./mpc/3_3_heater_final.png>] [252 <./mpc/4
+_1.PNG>] <mpc/4_2.PNG, id=980, 395.97937pt x 469.00218pt>
 File: mpc/4_2.PNG Graphic file (type png)
  <use mpc/4_2.PNG>
-<mpc/4_2_heater_final.png, id=990, 402.75468pt x 462.97969pt>
+<mpc/4_2_heater_final.png, id=981, 402.75468pt x 462.97969pt>
 File: mpc/4_2_heater_final.png Graphic file (type png)
 
-<use mpc/4_2_heater_final.png> [256 <./mpc/4_1_heater_final.png>] [257 <./mpc/4
-_2.PNG>] <mpc/4_3.PNG, id=999, 402.00188pt x 467.49657pt>
+<use mpc/4_2_heater_final.png> [253 <./mpc/4_1_heater_final.png>] [254 <./mpc/4
+_2.PNG>] <mpc/4_3.PNG, id=990, 402.00188pt x 467.49657pt>
 File: mpc/4_3.PNG Graphic file (type png)
  <use mpc/4_3.PNG>
-<mpc/4_3_heater_final.png, id=1000, 392.96812pt x 464.4853pt>
+<mpc/4_3_heater_final.png, id=991, 392.96812pt x 464.4853pt>
 File: mpc/4_3_heater_final.png Graphic file (type png)
 
-<use mpc/4_3_heater_final.png> [258 <./mpc/4_2_heater_final.png>] [259 <./mpc/4
-_3.PNG>] [260 <./mpc/4_3_heater_final.png>] [261] [262]
-Underfull \hbox (badness 10000) in paragraph at lines 385--391
+<use mpc/4_3_heater_final.png> [255 <./mpc/4_2_heater_final.png>] [256 <./mpc/4
+_3.PNG>] [257 <./mpc/4_3_heater_final.png>] [258]
+Underfull \hbox (badness 10000) in paragraph at lines 405--410
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--391
+Underfull \hbox (badness 10000) in paragraph at lines 405--410
+
+ []
+
+[259]
+Underfull \hbox (badness 10000) in paragraph at lines 416--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--391
+Underfull \hbox (badness 10000) in paragraph at lines 416--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--391
+Underfull \hbox (badness 10000) in paragraph at lines 423--425
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--397
+Underfull \hbox (badness 10000) in paragraph at lines 423--425
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--397
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--397
-
- []
-
-[263]
-Underfull \hbox (badness 10000) in paragraph at lines 400--405
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--405
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 407--409
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 407--409
-
- []
-
-[264]
-Underfull \hbox (badness 10000) in paragraph at lines 413--417
+[260]
+Underfull \hbox (badness 10000) in paragraph at lines 429--433
 
  []
 
 (./mpc/matrix.txt)
-Underfull \hbox (badness 10000) in paragraph at lines 418--421
+Underfull \hbox (badness 10000) in paragraph at lines 434--437
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--435
+Underfull \hbox (badness 10000) in paragraph at lines 449--451
 
  []
 
-[265]
-Underfull \hbox (badness 10000) in paragraph at lines 447--449
+[261]
+Underfull \hbox (badness 10000) in paragraph at lines 463--465
 
  []
 
-(./Scilab/virtual/mpc/mpc.sci [266]) (./Scilab/local/mpc/mpc_init_local.sce)
-(./Scilab/local/mpc/mpc_local.sci [267])) (./sbhs-new-manual.bbl [268]
+(./Scilab/virtual/mpc/mpc.sci) (./Scilab/local/mpc/mpc_init_local.sce [262])
+(./Scilab/local/mpc/mpc_local.sci)) (./sbhs-new-manual.bbl [263]
 Underfull \hbox (badness 2726) in paragraph at lines 46--50
 []\OT1/txr/m/n/12 Virtual labs project.  Sin-gle board heater sys-tem.  http://
 www.co-
  []
 
-) [269
+) [264
 
 ] (./sbhs-new-manual.aux)
 
@@ -2441,7 +2415,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  19446 strings out of 493848
  348189 string characters out of 1152823
- 515749 words of memory out of 3000000
+ 515748 words of memory out of 3000000
  21837 multiletter control sequences out of 15000+50000
  53939 words of font info for 141 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -2457,9 +2431,9 @@ fb></usr/share/texmf-texlive/fonts/type1/public/txfonts/txtt.pfb></usr/share/te
 xmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on sbhs-new-manual.pdf (270 pages, 3519134 bytes).
+Output written on sbhs-new-manual.pdf (265 pages, 3515206 bytes).
 PDF statistics:
- 1091 PDF objects out of 1200 (max. 8388607)
+ 1076 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  578 words of extra memory for PDF output out of 10000 (max. 10000000)
 
