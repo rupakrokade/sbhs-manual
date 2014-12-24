@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  20 DEC 2014 16:45
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.4.25)  24 DEC 2014 18:23
 entering extended mode
  %&-line parsing enabled.
 **sbhs-new-manual.tex
@@ -1639,14 +1639,7 @@ Overfull \hbox (7.14587pt too wide) in paragraph at lines 71--71
 []\OT1/txr/bx/n/17.28 Identifying First Or-der and Sec-ond Or-der Trans-
  []
 
-[52 <./Step-test_manual/step-virtual.png (PNG copy)>] [53]
-Overfull \hbox (17.71048pt too wide) in paragraph at lines 118--119
-[]\OT1/txr/m/n/12 Open the \OT1/txtt/m/n/12 Analysis \OT1/txr/m/n/12 folder and
- then lo-cate and open the folder \OT1/txtt/m/n/12 Step[]Analysis\OT1/txr/m/n/1
-2 . 
- []
-
-[54]
+[52 <./Step-test_manual/step-virtual.png (PNG copy)>] [53] [54]
 Overfull \hbox (51.5504pt too wide) in paragraph at lines 121--122
 []\OT1/txr/m/n/12 Change the Scilab work-ing di-rec-tory to \OT1/txtt/m/n/12 Kp
 -tau-order1 \OT1/txr/m/n/12 folder un-der \OT1/txtt/m/n/12 Step[]Analysis
@@ -1661,14 +1654,7 @@ Underfull \hbox (badness 3128) in paragraph at lines 130--130
 order.sc\OT1/txr/m/n/12 e for data file
  []
 
-[55 <./Step-test_manual/local-1-order.png (PNG copy)>] [56]
-Overfull \hbox (17.71048pt too wide) in paragraph at lines 185--186
-[]\OT1/txr/m/n/12 Open the \OT1/txtt/m/n/12 Analysis \OT1/txr/m/n/12 folder and
- then lo-cate and open the folder \OT1/txtt/m/n/12 Step[]Analysis\OT1/txr/m/n/1
-2 . 
- []
-
-
+[55] [56 <./Step-test_manual/local-1-order.png (PNG copy)>]
 Overfull \hbox (51.5504pt too wide) in paragraph at lines 188--189
 []\OT1/txr/m/n/12 Change the Scilab work-ing di-rec-tory to \OT1/txtt/m/n/12 Kp
 -tau-order2 \OT1/txr/m/n/12 folder un-der \OT1/txtt/m/n/12 Step[]Analysis
@@ -1680,15 +1666,15 @@ File: Step-test_manual/local-2-order.png Graphic file (type png)
 <use Step-test_manual/local-2-order.png> [57]
 (./Scilab/Analysis/Step_Analysis/Kp-tau-order1/label.sci [58 <./Step-test_manua
 l/local-2-order.png (PNG copy)>])
-(./Scilab/Analysis/Step_Analysis/Kp-tau-order1/costf_1.sci)
-(./Scilab/Analysis/Step_Analysis/Kp-tau-order1/firstorder.sce [59] [60])
-(./Scilab/Analysis/Step_Analysis/Kp-tau-order2/costf_2.sci)
-(./Scilab/Analysis/Step_Analysis/Kp-tau-order2/order_2_heater.sci [61])
+(./Scilab/Analysis/Step_Analysis/Kp-tau-order1/costf_1.sci) [59]
+(./Scilab/Analysis/Step_Analysis/Kp-tau-order1/firstorder.sce [60])
+(./Scilab/Analysis/Step_Analysis/Kp-tau-order2/costf_2.sci [61])
+(./Scilab/Analysis/Step_Analysis/Kp-tau-order2/order_2_heater.sci)
 (./Scilab/Analysis/Step_Analysis/Kp-tau-order2/secondorder.sce [62])
 (./Scilab/local/Step_test/ser_init.sce [63])
-(./Scilab/local/Step_test/step_test.sci) (./Scilab/virtual/StepTest/stepc.sce)
-(./Scilab/virtual/StepTest/steptest.sci [64])) (./Ramp-test_manual/RampTest.tex
-[65]
+(./Scilab/local/Step_test/step_test.sci) (./Scilab/virtual/StepTest/stepc.sce
+[64]) (./Scilab/virtual/StepTest/steptest.sci))
+(./Ramp-test_manual/RampTest.tex [65]
 Chapter 5.
 <Ramp-test_manual/ramp_test.jpg, id=280, 520.94624pt x 261.97874pt>
 File: Ramp-test_manual/ramp_test.jpg Graphic file (type jpg)
@@ -1729,12 +1715,6 @@ Overfull \hbox (32.09918pt too wide) in paragraph at lines 87--87
  []
 
 [70 <./Ramp-test_manual/ramp-virtual-plot.png (PNG copy)>] [71]
-Overfull \hbox (17.71048pt too wide) in paragraph at lines 130--131
-[]\OT1/txr/m/n/12 Open the \OT1/txtt/m/n/12 Analysis \OT1/txr/m/n/12 folder and
- then lo-cate and open the folder \OT1/txtt/m/n/12 Ramp[]Analysis\OT1/txr/m/n/1
-2 . 
- []
-
 <Ramp-test_manual/ramp-analysis.png, id=303, 612.2875pt x 461.725pt>
 File: Ramp-test_manual/ramp-analysis.png Graphic file (type png)
 
@@ -1792,17 +1772,11 @@ Overfull \hbox (38.39917pt too wide) in paragraph at lines 90--90
  []
 
 [85] [86 <./sinetest_manual/sine-plot-virtual-007.png (PNG copy)>] [87]
-Overfull \hbox (17.71048pt too wide) in paragraph at lines 141--142
-[]\OT1/txr/m/n/12 Open the \OT1/txtt/m/n/12 Analysis \OT1/txr/m/n/12 folder and
- then lo-cate and open the folder \OT1/txtt/m/n/12 Sine[]Analysis\OT1/txr/m/n/1
-2 . 
- []
-
-
-<sinetest_manual/sine-local-analysis-console.png, id=359, 616.55344pt x 402.001
+[88]
+<sinetest_manual/sine-local-analysis-console.png, id=362, 616.55344pt x 402.001
 88pt>
 File: sinetest_manual/sine-local-analysis-console.png Graphic file (type png)
- <use sinetest_manual/sine-local-analysis-console.png> [88]
+ <use sinetest_manual/sine-local-analysis-console.png>
 <sinetest_manual/sine-local-analysis.png, id=363, 612.2875pt x 461.725pt>
 File: sinetest_manual/sine-local-analysis.png Graphic file (type png)
 
@@ -1814,23 +1788,23 @@ File: sinetest_manual/bodeplot.PNG Graphic file (type png)
 <sinetest_manual/plant_bode_tf.png, id=365, 612.2875pt x 461.725pt>
 File: sinetest_manual/plant_bode_tf.png Graphic file (type png)
 
-<use sinetest_manual/plant_bode_tf.png>
-<sinetest_manual/bode_comparison.png, id=366, 612.2875pt x 461.725pt>
+<use sinetest_manual/plant_bode_tf.png> [89 <./sinetest_manual/sine-local-analy
+sis-console.png (PNG copy)>] [90 <./sinetest_manual/sine-local-analysis.png (PN
+G copy)>] [91 <./sinetest_manual/bodeplot.PNG (PNG copy)>]
+<sinetest_manual/bode_comparison.png, id=376, 612.2875pt x 461.725pt>
 File: sinetest_manual/bode_comparison.png Graphic file (type png)
 
-<use sinetest_manual/bode_comparison.png> [89 <./sinetest_manual/sine-local-ana
-lysis-console.png (PNG copy)>] [90 <./sinetest_manual/sine-local-analysis.png (
-PNG copy)>] [91 <./sinetest_manual/bodeplot.PNG (PNG copy)>] [92 <./sinetest_ma
-nual/plant_bode_tf.png (PNG copy)>] [93 <./sinetest_manual/bode_comparison.png 
-(PNG copy)>] (./Scilab/local/Sine_Test/sine_test.sci)
+<use sinetest_manual/bode_comparison.png>
+(./Scilab/local/Sine_Test/sine_test.sci [92 <./sinetest_manual/plant_bode_tf.pn
+g (PNG copy)>] [93 <./sinetest_manual/bode_comparison.png (PNG copy)>])
 (./Scilab/virtual/SineTest/sinetest.sce)
-(./Scilab/virtual/SineTest/sinetest.sci [94])
+(./Scilab/virtual/SineTest/sinetest.sci) [94]
 (./Scilab/Analysis/Sine_Analysis/sine-analysis.sce [95])
-(./Scilab/Analysis/Sine_Analysis/label.sci [96])
-(./Scilab/Analysis/Sine_Analysis/bodeplot.sce)
+(./Scilab/Analysis/Sine_Analysis/label.sci)
+(./Scilab/Analysis/Sine_Analysis/bodeplot.sce [96])
 (./Scilab/Analysis/Sine_Analysis/labelbode.sci [97])
 (./Scilab/Analysis/Sine_Analysis/TFbode.sce)
-(./Scilab/Analysis/Sine_Analysis/comparison.sce [98]
+(./Scilab/Analysis/Sine_Analysis/comparison.sce
 LaTeX Font Info:    Try loading font information for OMS+txr on input line 17.
 
 (/usr/share/texmf-texlive/tex/latex/txfonts/omstxr.fd
@@ -1838,8 +1812,8 @@ File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 17.
-)) (./pid_manual/PID.tex
-[99]
+ [98]))
+(./pid_manual/PID.tex [99]
 Chapter 7.
 <pid_manual/pid_xcos.png, id=402, 624.3325pt x 492.84125pt>
 File: pid_manual/pid_xcos.png Graphic file (type png)
@@ -2092,24 +2066,10 @@ Overfull \hbox (8.64932pt too wide) in paragraph at lines 191--191
 []\OT1/txr/bx/n/17.28 Determination of First or-der Dis-crete time Trans-
  []
 
-
-Overfull \hbox (17.71048pt too wide) in paragraph at lines 194--195
-[]\OT1/txr/m/n/12 Open the \OT1/txtt/m/n/12 Analysis \OT1/txr/m/n/12 folder and
- then lo-cate and open the folder \OT1/txtt/m/n/12 Step[]Analysis\OT1/txr/m/n/1
-2 . 
- []
-
 [182 <./prbs/prbs-1-fit.png (PNG copy)>] [183 <./prbs/prbs-1-model.png (PNG cop
 y)>]
 Overfull \hbox (25.94658pt too wide) in paragraph at lines 214--214
 []\OT1/txr/bx/n/17.28 Determination of Sec-ond or-der Dis-crete time Trans-
- []
-
-
-Overfull \hbox (17.71048pt too wide) in paragraph at lines 217--218
-[]\OT1/txr/m/n/12 Open the \OT1/txtt/m/n/12 Analysis \OT1/txr/m/n/12 folder and
- then lo-cate and open the folder \OT1/txtt/m/n/12 Step[]Analysis\OT1/txr/m/n/1
-2 . 
  []
 
 [184] <prbs/prbs-2-fit.png, id=699, 961.5925pt x 646.415pt>
@@ -2146,9 +2106,9 @@ g (PNG copy)>] (./Scilab/local/prbs/identification/ser_init.sce [188])
 (./Scilab/virtual/prbs/identification/prbs.sci [200])
 (./Scilab/virtual/prbs/identification/prbstest.sci)
 (./Scilab/virtual/prbs/identification/prbstest.sce [201])
-(./Scilab/virtual/prbs/identification/second_order.sci)
-(./Scilab/virtual/prbs/controller/prbs.sce [202])
-(./Scilab/virtual/prbs/controller/prbscontrol-virtual.sci) [203]
+(./Scilab/virtual/prbs/identification/second_order.sci) [202]
+(./Scilab/virtual/prbs/controller/prbs.sce)
+(./Scilab/virtual/prbs/controller/prbscontrol-virtual.sci [203])
 (./Scilab/virtual/prbs/controller/twodof_para.sce [204] [205])) (./IMC/imc.tex
 [206]
 Chapter 10.
@@ -2874,7 +2834,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  19738 strings out of 493848
  367942 string characters out of 1152823
- 516113 words of memory out of 3000000
+ 522113 words of memory out of 3000000
  22027 multiletter control sequences out of 15000+50000
  53939 words of font info for 141 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -2890,7 +2850,7 @@ fb></usr/share/texmf-texlive/fonts/type1/public/txfonts/txtt.pfb></usr/share/te
 xmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on sbhs-new-manual.pdf (318 pages, 5599042 bytes).
+Output written on sbhs-new-manual.pdf (318 pages, 5601931 bytes).
 PDF statistics:
  1286 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

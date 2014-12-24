@@ -48,7 +48,7 @@
 \contentsline {section}{\numberline {6.2}Conducting Sine Test on SBHS, virtually}{84}
 \contentsline {section}{\numberline {6.3}Frequency Analysis of sine test data}{85}
 \contentsline {subsection}{\numberline {6.3.1}Procedure}{88}
-\contentsline {section}{\numberline {6.4}Scilab Code}{94}
+\contentsline {section}{\numberline {6.4}Scilab Code}{92}
 \contentsline {chapter}{\numberline {7}Controlling Single Board Heater System using PID controller}{100}
 \contentsline {section}{\numberline {7.1}Theory}{100}
 \contentsline {subsection}{\numberline {7.1.1}Proportional Control Action}{101}
@@ -98,14 +98,14 @@
 \contentsline {section}{\numberline {9.4}Determination of Discrete Time Transfer Function models}{181}
 \contentsline {section}{\numberline {9.5}Determination of First order Discrete time Transfer Function}{182}
 \contentsline {section}{\numberline {9.6}Determination of Second order Discrete time Transfer Function}{184}
-\contentsline {section}{\numberline {9.7}Implementing 2DOF pole-placement controller using PRBS model, virtually}{185}
+\contentsline {section}{\numberline {9.7}Implementing 2DOF pole-placement controller using PRBS model, virtually}{186}
 \contentsline {section}{\numberline {9.8}Implementing 2DOF pole-placement controller using PRBS model, locally}{188}
 \contentsline {section}{\numberline {9.9}Scilab Local codes}{188}
 \contentsline {subsection}{\numberline {9.9.1}Identification codes}{188}
 \contentsline {subsection}{\numberline {9.9.2}Controller codes}{193}
 \contentsline {section}{\numberline {9.10}Scilab Virtual codes}{197}
 \contentsline {subsection}{\numberline {9.10.1}Identification codes}{197}
-\contentsline {subsection}{\numberline {9.10.2}Controller codes}{202}
+\contentsline {subsection}{\numberline {9.10.2}Controller codes}{203}
 \contentsline {chapter}{\numberline {10}Implementing Internal Model Controller for First Order System on a Single Board Heater System}{207}
 \contentsline {section}{\numberline {10.1}IMC Design for Single Board Heater System}{207}
 \contentsline {section}{\numberline {10.2}Step for Designing IMC for Stable Plant}{209}
