@@ -205,6 +205,16 @@ The experiment sampling time can be set inside the  {\tt stepc.sce} file. You ma
 \label{step-plot}
 \end{figure}
 
+\subsection{Conducting experiments over virtual labs through ARM based computer}
+This section talks about accessing the SBHS virtual labs using an ARM based computer. These ARM based computers could be netbooks, laptops or even tablets running a Linux operting system. Let us see the additional steps to be follwed for using over an ARM computer.
+\begin{enumerate}
+\item The scilab codes are separate for windows, linux and ARM based linux. Download the scilab code from {\tt http://sbhs.os-hardware.in/downloads}. You need to download the file against the label {\tt SBHS Scilab codes for ARM} under the {\tt SBHS Virtual Code} section. The name of the file downloaded will be {\tt sbhs\_codes\_arm}. This will be a zip file. Extract its connets in order to use it.
+\item Open a terminal by pressing the {\tt Alt+Ctrl+T} keys together. Change the directory to {\tt sbhs\_codes\_arm} directory using the {\tt cd} command. For example, if the {\tt sbhs\_codes\_arm} folder is saved on the desktop, the command will look like {\tt cd Desktop/sbhs\_codes\_arm}
+\item Execute the command {\tt chmod +x install.sh} 
+\item Then execute the command {\tt ./install.sh}. It may ask you to enter the sudo password. Hence, this step requires you to know the sudo password of the computer you are using.
+\item With these steps done, now follow the instructions explained in Section \ref{vlabsexpt} throughout its subsections. Note that you need NOT download {\tt SBHS Scilab codes for Linux - (32 bit)
+} file while refering to this section. This is because all scilab codes are included inside the {\tt sbhs\_codes\_arm} directory
+\end{enumerate}
 \section{Summary}\label{virtual-summary}
 
 This section summarizes the process to perform an experiment on SBHS using virtual lab interface. This section assumes that the user has already created an account and booked a slot as explained in section \ref{regAndslot}. It also assumes that the proxy settings are already done as explained in section \ref{proxy}. The user should follow these steps within the booked slot time.
